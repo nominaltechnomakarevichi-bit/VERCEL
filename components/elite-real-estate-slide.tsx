@@ -166,7 +166,7 @@ const targetAudience = {
     "Ценит приватность и безопасность",
     "Выбирает объекты через рекомендации",
     "Ориентирован на статус и престиж",
-    "Рассматривает недвижимость как актив",
+    "Рассматривает недвижимость к��к актив",
     "Предпочитает персональный сервис",
   ],
 }
@@ -257,7 +257,7 @@ export function EliteRealEstateSlide() {
                   alt="NT Technology"
                   className="h-10 w-auto object-contain flex-shrink-0"
                 />
-                <h1 className="text-3xl font-bold text-foreground lg:text-4xl">
+                <h1 className="text-xl font-bold text-foreground lg:text-2xl">
                   Решение для продвижения элитной недвижимости с использованием Rich Media и programmatic подхода
                 </h1>
               </div>
