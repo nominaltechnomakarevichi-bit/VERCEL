@@ -125,7 +125,7 @@ export function FmcgRichMediaSlide() {
                 <div className="rounded-lg bg-primary/10 border border-primary p-4">
                   <h3 className="mb-2 font-semibold text-primary">ЧАСТОТА ПОКУПОК</h3>
                   <p className="text-base text-foreground">
-                    Среднее количество покупок бренда за период теми, кто его покупал
+                    Среднее количество покупок бренда за период те��и, кто его покупал
                   </p>
                 </div>
               </div>
@@ -231,7 +231,7 @@ export function FmcgRichMediaSlide() {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground mb-2">Запускаем медийную рекламную кампанию</p>
-                      <p className="text-base text-foreground">Размещаем баннер в медийных сетях и на подходящих площадках. Настраиваем таргинги по целевой аудитории, географии и интересам. Ежедневно мониторим показатели и оптимизируем кампанию.</p>
+                      <p className="text-base text-foreground">Размещаем баннер в медийных сетях и на подходящих площадках. Настраиваем таргетинги по целевой аудитории, географии и интересам. Ежедневно мониторим показатели и оптимизируем кампанию.</p>
                     </div>
                   </div>
                 </div>
