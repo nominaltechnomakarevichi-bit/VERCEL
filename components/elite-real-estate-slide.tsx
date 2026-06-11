@@ -548,8 +548,8 @@ export function EliteRealEstateSlide() {
                   </Badge>
                 ))}
               </div>
-              <div className="rounded-lg bg-blue-50 p-4 border border-blue-200">
-                <p className="font-semibold text-foreground mb-2">Почему эти площадки:</p>
+              <div className="rounded-lg bg-primary/5 p-4 border border-primary/30">
+                <p className="font-semibold text-primary mb-2">Почему эти площадки:</p>
                 <p className="text-muted-foreground">
                   White List обеспечивает размещение на верифицированных, качественных площадках с высокой концентрацией целевой аудитории. Это исключает мошеннический трафик и гарантирует видимость объявлений перед правильной аудиторией.
                 </p>
