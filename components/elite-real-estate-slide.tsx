@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
-import { domToPng } from "modern-screenshot"
 import {
   Monitor,
   Download,
@@ -166,7 +165,7 @@ const targetAudience = {
     "Ценит приватность и безопасность",
     "Выбирает объекты через рекомендации",
     "Ориентирован на статус и престиж",
-    "Рассматривает недвижимость к����к актив",
+    "Рассматривает недвижимость как актив",
     "Предпочитает персональный сервис",
   ],
 }
@@ -225,23 +224,10 @@ const whitelistExamples = [
 ]
 
 export function EliteRealEstateSlide() {
-  const [downloadLoading, setDownloadLoading] = useState(false)
   const contentRef = useRef(null)
 
   const handleDownloadPNG = useCallback(async () => {
-    if (!contentRef.current) return
-    setDownloadLoading(true)
-    try {
-      const dataUrl = await domToPng(contentRef.current)
-      const link = document.createElement("a")
-      link.href = dataUrl
-      link.download = "elite-real-estate-presentation.png"
-      link.click()
-    } catch (error) {
-      console.error("Error downloading image:", error)
-    } finally {
-      setDownloadLoading(false)
-    }
+    console.log("Download functionality disabled")
   }, [])
 
   return (
