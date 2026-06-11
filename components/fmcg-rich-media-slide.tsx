@@ -125,7 +125,7 @@ export function FmcgRichMediaSlide() {
                 <div className="rounded-lg bg-primary/10 border border-primary p-4">
                   <h3 className="mb-2 font-semibold text-primary">ЧАСТОТА ПОКУПОК</h3>
                   <p className="text-base text-foreground">
-                    Среднее количество покупок бренда за период те��и, кто его покупал
+                    Среднее количество покупок бренда за период теми, кто его покупал
                   </p>
                 </div>
               </div>
