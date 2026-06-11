@@ -257,7 +257,7 @@ export function EliteRealEstateSlide() {
                   alt="NT Technology"
                   className="h-10 w-auto object-contain flex-shrink-0"
                 />
-                <h1 className="text-xl font-bold text-foreground lg:text-2xl">
+                <h1 className="text-[10px] font-bold text-foreground lg:text-xs">
                   Решение для продвижения элитной недвижимости с использованием Rich Media и programmatic подхода
                 </h1>
               </div>
