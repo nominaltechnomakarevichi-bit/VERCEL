@@ -244,8 +244,11 @@ export function EliteRealEstateSlide() {
                   className="h-10 w-auto object-contain flex-shrink-0"
                 />
                 <h1 className="text-3xl font-bold text-foreground">
-                  Решение для продвижения элитной недвижимости с использованием Rich Media и programmatic подхода
+                  Programmatic НЕ «охватная медийка», а измеримый вклад в бизнес-результат
                 </h1>
+                <p className="mt-2 text-lg text-muted-foreground">
+                  Programmatic Brandformance для агентств недвижимости
+                </p>
               </div>
             </div>
           </div>
@@ -253,6 +256,140 @@ export function EliteRealEstateSlide() {
       </div>
 
       <div ref={contentRef} className="mx-auto max-w-7xl space-y-12 px-4 py-12 md:px-6 lg:px-8">
+        {/* Pain Points Section */}
+        <section>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Как Programmatic реагирует на Pain Points агентств недвижимости</h2>
+          
+          <Tabs defaultValue="pain-1" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsTrigger value="pain-1">Рост стоимости лида</TabsTrigger>
+              <TabsTrigger value="pain-2">Высокая конкуренция</TabsTrigger>
+              <TabsTrigger value="pain-3">Длинный цикл сделки</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="pain-1" className="space-y-6">
+              <div className="grid gap-6 md:grid-cols-2">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что происходит на рынке</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Агентства конкурируют в одних и тех же каналах, что приводит к росту стоимости привлечения клиента</p>
+                    <p>• Большая часть спроса контролируется агрегаторами (Циан, Авито, Домклик)</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что делает programmatic</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Выход за пределы агрегаторов — поиск аудитории на тысячах площадок</p>
+                    <p>• Закупка только релевантных показов</p>
+                    <p>• Формирование собственного спроса через медийные и видеоформаты, независимые от классифайдов</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что получает агентство</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Снижение CPL</p>
+                    <p>• Увеличение объема качественных обращений</p>
+                    <p>• Снижение зависимости от внешних площадок</p>
+                    <p>• Рост собственной клиентской базы</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="pain-2" className="space-y-6">
+              <div className="grid gap-6 md:grid-cols-2">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что происходит на рынке</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>В РФ работает 53 000+ риелторских компаний. Большинство агентств предлагает схожие офферы.</p>
+                    <p className="font-semibold">Инсайт: клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что делает programmatic</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Геотаргетинг, таргетинг по доходу, интересам, намерению покупки</p>
+                    <p>• Персонализированные креативы</p>
+                    <p>• Построение узнаваемости через premium-инвентарь, видео, CTV и DOOH</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что получает агентство</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Возможность выделиться среди конкурентов и увеличить долю рынка</p>
+                    <p>• Рост brand awareness и узнаваемости агентства</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="pain-3" className="space-y-6">
+              <div className="grid gap-6 md:grid-cols-2">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что происходит на рынке</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Покупка недвижимости может занимать несколько месяцев</p>
+                    <p>• Решение зависит от ставок, господдержки, цен и экономической ситуации</p>
+                    <p>• Большинство пользователей не оставляют заявку при первом посещении сайта</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что делает programmatic</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Последовательный ретаргетинг</p>
+                    <p>• Коммуникация на всех этапах воронки</p>
+                    <p>• Динамические объявления</p>
+                    <p>• Персонализированные сообщения</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
+                  <CardHeader>
+                    <CardTitle className="text-primary">Что получает агентство</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Возврат аудитории</p>
+                    <p>• Увеличение количества конверсий</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </section>
+
+        {/* Brandformance Section */}
+        <section>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Brandformance для агентств недвижимости</h2>
+          <div className="rounded-lg overflow-hidden bg-white border border-border">
+            <img 
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2012%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_39_20-hOcw22aHjDXxjN6JScecUEEf8pbVZx.png"
+              alt="Brandformance Funnel"
+              className="w-full h-auto"
+            />
+          </div>
+        </section>
+
         {/* Rich Media Форматы */}
         <section>
           <h2 className="mb-6 text-3xl font-bold text-foreground">Rich Media форматы</h2>
