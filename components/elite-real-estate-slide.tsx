@@ -166,7 +166,7 @@ const targetAudience = {
     "Выбирает объекты через рекомендации",
     "Ориентирован на статус и престиж",
     "Рассматривает недвижимость как актив",
-    "Предпочитае�� персональный сервис",
+    "Предпочитает персональный сервис",
   ],
 }
 
@@ -298,7 +298,7 @@ export function EliteRealEstateSlide() {
                   </CardContent>
                 </Card>
 
-                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
+                <Card style={{ backgroundColor: "#CCD8ED20", borderColor: "#CCD8ED" }} className="md:col-span-2 border">
                   <CardHeader>
                     <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
                   </CardHeader>
@@ -320,7 +320,27 @@ export function EliteRealEstateSlide() {
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>В РФ работает 53 000+ риелторских компаний. Большинство агентств предлагает схожие офферы.</p>
-                    <p className="font-semibold">Инсайт: клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-sm font-semibold text-white bg-[#0029FF] rounded-lg px-3 py-2 inline-block">
+                      Инсайт
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>Клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.</p>
+                  </CardContent>
+                </Card>
+
+                <Card style={{ backgroundColor: "#CCD8ED20", borderColor: "#CCD8ED" }} className="md:col-span-2 border">
+                  <CardHeader>
+                    <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Возможность выделиться среди конкурентов и увеличить долю рынка</p>
+                    <p>• Рост brand awareness и узнаваемости агентства</p>
                   </CardContent>
                 </Card>
 
@@ -335,30 +355,9 @@ export function EliteRealEstateSlide() {
                   </CardContent>
                 </Card>
 
-                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
+                <Card style={{ backgroundColor: "#CCD8ED20", borderColor: "#CCD8ED" }} className="md:col-span-2 border">
                   <CardHeader>
                     <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3 text-sm">
-                    <p>В РФ работает 53 000+ риелторских компаний. Большинство агентств предлагает схожие офферы.</p>
-                    <p className="font-semibold">Инсайт: клиент часто выбирает площадку или бренд, а не конкретное риелторское а��ентство.</p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-primary">Что делает programmatic</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3 text-sm">
-                    <p>• Геотаргетинг, таргетинг по доходу, интересам, намерению покупки</p>
-                    <p>• Персонализированные креативы</p>
-                    <p>• Построение узнаваемости через premium-инвентарь, видео, CTV и DOOH</p>
-                  </CardContent>
-                </Card>
-
-                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
-                  <CardHeader>
-                    <CardTitle className="text-primary">Что получает агентство</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Возможность выделиться среди конкурентов и увеличить долю рынка</p>
@@ -393,7 +392,7 @@ export function EliteRealEstateSlide() {
                   </CardContent>
                 </Card>
 
-                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
+                <Card style={{ backgroundColor: "#CCD8ED20", borderColor: "#CCD8ED" }} className="md:col-span-2 border">
                   <CardHeader>
                     <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
                   </CardHeader>
@@ -464,7 +463,7 @@ export function EliteRealEstateSlide() {
                         >
                           <div className="flex items-center gap-2">
                             {segment.featured && (
-                              <CheckCircle2 className="h-5 w-5 text-primary" />
+                              <CheckCircle2 className="h-5 w-5 text-[#0029FF]" />
                             )}
                             <span className={segment.featured ? "font-semibold text-[#0029FF]" : "text-foreground"}>
                               {segment.name}
@@ -535,7 +534,7 @@ export function EliteRealEstateSlide() {
                       <ul className="space-y-2">
                         {targetAudience.interests.map((interest, idx) => (
                           <li key={idx} className="flex gap-2 text-sm">
-                            <span className="text-primary mt-0.5">•</span>
+                            <span className="text-[#0029FF] mt-0.5">•</span>
                             <span className="text-foreground">{interest}</span>
                           </li>
                         ))}
@@ -555,7 +554,7 @@ export function EliteRealEstateSlide() {
                       <ul className="space-y-2">
                         {targetAudience.behavior.map((behavior, idx) => (
                           <li key={idx} className="flex gap-2 text-sm">
-                            <span className="text-primary mt-0.5">•</span>
+                            <span className="text-[#0029FF] mt-0.5">•</span>
                             <span className="text-foreground">{behavior}</span>
                           </li>
                         ))}
@@ -620,7 +619,7 @@ export function EliteRealEstateSlide() {
                       <ul className="space-y-2">
                         {femaleAudience.interests.map((interest, idx) => (
                           <li key={idx} className="flex gap-2 text-sm">
-                            <span className="text-primary mt-0.5">•</span>
+                            <span className="text-[#0029FF] mt-0.5">•</span>
                             <span className="text-foreground">{interest}</span>
                           </li>
                         ))}
@@ -640,7 +639,7 @@ export function EliteRealEstateSlide() {
                       <ul className="space-y-2">
                         {femaleAudience.behavior.map((behavior, idx) => (
                           <li key={idx} className="flex gap-2 text-sm">
-                            <span className="text-primary mt-0.5">•</span>
+                            <span className="text-[#0029FF] mt-0.5">•</span>
                             <span className="text-foreground">{behavior}</span>
                           </li>
                         ))}
@@ -690,7 +689,7 @@ export function EliteRealEstateSlide() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <Sparkles className="h-5 w-5 text-primary" />
+                    <Sparkles className="h-5 w-5 text-[#0029FF]" />
                     Рекомендуемые площадки в РФ
                   </CardTitle>
                 </CardHeader>
