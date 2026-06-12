@@ -171,17 +171,17 @@ export function WalledGardensSlide() {
         <section className="py-8">
           <div className="space-y-12">
             {/* Business Question */}
-            <div className="flex gap-6 md:gap-12 items-start">
+            <div className="flex gap-6 md:gap-12 items-center">
               <div className="flex-shrink-0 flex flex-col items-center">
                 <img 
                   src="/images/business-woman.png"
                   alt="Бизнес"
-                  className="w-20 h-20 rounded-full object-cover border-4 border-[#0029FF]"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-[#0029FF]"
                 />
-                <p className="mt-2 text-sm font-bold text-foreground">Бизнес</p>
+                <p className="mt-3 text-sm font-bold text-foreground">Бизнес</p>
               </div>
-              <div className="flex-1 pt-4">
-                <div className="bg-white border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
+              <div className="flex-1">
+                <div className="bg-white border-2 border-[#0029FF] rounded-3xl p-6 md:p-8 h-full flex items-center">
                   <p className="text-foreground text-base md:text-lg">
                     Что лучше выбрать для продвижения бренда: рекламу в Яндекс и VK или Programmatic?
                   </p>
@@ -190,9 +190,9 @@ export function WalledGardensSlide() {
             </div>
 
             {/* Expert Answer */}
-            <div className="flex gap-6 md:gap-12 items-start justify-end">
-              <div className="flex-1 pt-4">
-                <div className="bg-white border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
+            <div className="flex gap-6 md:gap-12 items-center justify-end">
+              <div className="flex-1">
+                <div className="bg-white border-2 border-[#0029FF] rounded-3xl p-6 md:p-8 h-full flex items-center">
                   <p className="text-foreground text-base md:text-lg">
                     Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией
                   </p>
@@ -202,9 +202,9 @@ export function WalledGardensSlide() {
                 <img 
                   src="/images/digital-expert-man.png"
                   alt="Digital-эксперт"
-                  className="w-20 h-20 rounded-full object-cover border-4 border-[#0029FF]"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-[#0029FF]"
                 />
-                <p className="mt-2 text-sm font-bold text-foreground">Digital-эксперт</p>
+                <p className="mt-3 text-sm font-bold text-foreground">Digital-эксперт</p>
               </div>
             </div>
           </div>
@@ -256,7 +256,7 @@ export function WalledGardensSlide() {
 
         {/* Block 4: Risks */}
         <section>
-          <h2 className="mb-8 text-3xl font-bold text-foreground">Риски продвижения только в закрытых экосистемах</h2>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Риски продвижения только в закрытых ��косистемах</h2>
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {risksData.map((risk, idx) => (
@@ -281,8 +281,9 @@ export function WalledGardensSlide() {
                 Главный риск
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-foreground font-semibold text-sm">
-              Работа только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.
+            <CardContent className="text-foreground text-sm">
+              <span className="font-semibold">Главный риск</span>
+              <span className="font-normal"> — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
             </CardContent>
           </Card>
         </section>
