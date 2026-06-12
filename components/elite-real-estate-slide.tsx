@@ -166,7 +166,7 @@ const targetAudience = {
     "Выбирает объекты через рекомендации",
     "Ориентирован на статус и престиж",
     "Рассматривает недвижимость как актив",
-    "Предпочитает персональный сервис",
+    "Предпочитае�� персональный сервис",
   ],
 }
 
@@ -326,7 +326,7 @@ export function EliteRealEstateSlide() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-[#0029FF]">Что делае�� programmatic</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что делает programmatic</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Геотаргетинг, таргетинг по доходу, интересам, намерению покупки</p>
