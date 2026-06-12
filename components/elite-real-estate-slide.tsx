@@ -166,7 +166,7 @@ const targetAudience = {
     "Выбирает объекты через рекомендации",
     "Ориентирован на статус и престиж",
     "Рассматривает недвижимость как актив",
-    "Предпочитает персональный сервис",
+    "Предпочитае�� персональный сервис",
   ],
 }
 
@@ -319,28 +319,8 @@ export function EliteRealEstateSlide() {
                     <CardTitle className="text-[#0029FF]">Что происходит на рынке</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
-                    <p>В РФ работает 53 000+ риелторских компаний. Большинство агентств предлагает схожие офферы.</p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-sm font-semibold text-white bg-[#0029FF] rounded-lg px-3 py-2 inline-block">
-                      Инсайт
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3 text-sm">
-                    <p>Клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.</p>
-                  </CardContent>
-                </Card>
-
-                <Card style={{ backgroundColor: "#CCD8ED20", borderColor: "#CCD8ED" }} className="md:col-span-2 border">
-                  <CardHeader>
-                    <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3 text-sm">
-                    <p>• Возможность выделиться среди конкурентов и увеличить долю рынка</p>
-                    <p>• Рост brand awareness и узнаваемости агентства</p>
+                    <p>• В РФ работает 53 000+ риелторских компаний.</p>
+                    <p>• Большинство агентств предлагает схожие офферы.</p>
                   </CardContent>
                 </Card>
 
@@ -352,6 +332,17 @@ export function EliteRealEstateSlide() {
                     <p>• Геотаргетинг, таргетинг по доходу, интересам, намерению покупки</p>
                     <p>• Персонализированные креативы</p>
                     <p>• Построение узнаваемости через premium-инвентарь, видео, CTV и DOOH</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="text-sm font-semibold text-white bg-[#0029FF] rounded-lg px-3 py-2 inline-block">
+                      Инсайт
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>Клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.</p>
                   </CardContent>
                 </Card>
 
