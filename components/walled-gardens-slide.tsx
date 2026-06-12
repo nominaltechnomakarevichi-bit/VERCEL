@@ -256,7 +256,7 @@ export function WalledGardensSlide() {
 
         {/* Block 4: Risks */}
         <section>
-          <h2 className="mb-8 text-3xl font-bold text-foreground">Риски продвижения только в закрытых ��косистемах</h2>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Риски продвижения только в закрытых экосистемах</h2>
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {risksData.map((risk, idx) => (
@@ -282,8 +282,7 @@ export function WalledGardensSlide() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-foreground text-sm">
-              <span className="font-semibold">Главный риск</span>
-              <span className="font-normal"> — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
+              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
             </CardContent>
           </Card>
         </section>
