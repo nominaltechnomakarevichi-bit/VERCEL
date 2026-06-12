@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle2, AlertCircle, TrendingUp } from "lucide-react"
+import { CheckCircle2, AlertCircle, TrendingUp, Zap } from "lucide-react"
 
 export function WalledGardensSlide() {
   const risksData = [
@@ -29,22 +29,22 @@ export function WalledGardensSlide() {
 
   const advantagesData = [
     {
-      icon: "🎯",
+      icon: Zap,
       title: "Полный охват",
       description: "Walled Gardens охватывают пользователей внутри своих экосистем, а Programmatic достраивает охват за их пределами в Open Internet",
     },
     {
-      icon: "📊",
+      icon: TrendingUp,
       title: "Диверсификация бюджета",
       description: "Бюджет распределяется между разными источниками инвентаря, что снижает риски роста цен и изменений правил отдельных площадок",
     },
     {
-      icon: "🔄",
+      icon: CheckCircle2,
       title: "Оптимизация воронки",
       description: "Закрытые экосистемы хорошо работают на сбор спроса и вовлечение, а Programmatic усиливает узнаваемость и поддерживает пользователя на разных этапах Customer Journey",
     },
     {
-      icon: "📱",
+      icon: Zap,
       title: "Премиум-каналы",
       description: "Мобильные приложения, CTV, DOOH и другие premium каналы доступны только через Programmatic",
     },
@@ -94,187 +94,208 @@ export function WalledGardensSlide() {
   ]
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <section className="bg-gradient-to-b from-[#0029FF] to-[#C13FFF] text-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-5xl font-bold text-balance leading-tight">
-            Walled Gardens vs NT Technology
-          </h1>
+    <main className="min-h-screen bg-background">
+      {/* Header with gradient background */}
+      <div className="w-full bg-gradient-to-r from-primary/5 to-transparent px-4 py-6 md:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex items-center gap-6">
+            <img 
+              src="/nt-logo.png"
+              alt="NT Technology"
+              className="h-14 w-auto object-contain flex-shrink-0"
+            />
+            <div className="h-12 w-px bg-border" />
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+                <Zap className="h-6 w-6 text-[#0029FF]" />
+              </div>
+              <div className="flex-1">
+                <h1 className="text-3xl font-bold text-foreground leading-tight">
+                  Walled Gardens vs NT Technology
+                </h1>
+                <p className="mt-2 text-base text-muted-foreground">
+                  Почему медиамикс — лучшая стратегия
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
-      {/* Block 1: Introduction */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="space-y-8">
+      {/* Content */}
+      <div className="mx-auto max-w-7xl space-y-12 px-4 py-12 md:px-6 lg:px-8">
+        
+        {/* Block 1: Introduction */}
+        <section className="space-y-8">
           <div>
-            <h2 className="text-3xl font-bold text-[#0029FF] mb-4">Walled Gardens</h2>
-            <p className="text-lg text-[#000018] mb-6">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Walled Gardens</h2>
+            <p className="text-lg text-foreground mb-6">
               Закрытые рекламные экосистемы с собственными данными и инвентарем.
             </p>
             <div className="flex flex-wrap gap-3">
               {["Яндекс", "VK", "Ozon", "Wildberries", "Авито"].map((platform, idx) => (
-                <span key={idx} className="px-4 py-2 bg-[#F0F0F0] text-[#000018] rounded-full font-medium">
+                <span key={idx} className="px-4 py-2 bg-muted text-foreground rounded-full font-medium text-sm">
                   {platform}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <Card className="border-[#CCD8ED]">
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card>
               <CardHeader>
                 <CardTitle className="text-[#0029FF]">Open Internet</CardTitle>
               </CardHeader>
-              <CardContent className="text-[#000018]">
+              <CardContent className="text-foreground">
                 Совокупность всех открытых цифровых площадок, доступных для programmatic-закупки.
               </CardContent>
             </Card>
 
-            <Card className="border-[#CCD8ED]">
+            <Card>
               <CardHeader>
                 <CardTitle className="text-[#0029FF]">NT Technology</CardTitle>
               </CardHeader>
-              <CardContent className="text-[#000018]">
+              <CardContent className="text-foreground">
                 Технологическая платформа для эффективной закупки и управления рекламой в Open Internet.
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Block 1b: Dialog */}
-      <section className="bg-[#F0F0F0] py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="space-y-8 max-w-2xl">
-            <div className="bg-white p-6 rounded-lg border-l-4 border-[#0029FF]">
-              <p className="font-semibold text-[#000018] mb-2">Бизнес:</p>
-              <p className="text-[#000018]">Что лучше выбрать для продвижения бренда: рекламу в Яндекс и VK или Programmatic?</p>
+        {/* Block 1b: Dialog */}
+        <section style={{ backgroundColor: "#CCD8ED20", borderColor: "#CCD8ED" }} className="bg-muted/20 py-6 px-6 rounded-lg border">
+          <div className="space-y-6 max-w-3xl">
+            <div className="bg-background p-6 rounded-lg border-l-4 border-[#0029FF]">
+              <p className="font-semibold text-foreground mb-2">Бизнес:</p>
+              <p className="text-foreground">Что лучше выбрать для продвижения бренда: рекламу в Яндекс и VK или Programmatic?</p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border-l-4 border-[#C13FFF]">
-              <p className="font-semibold text-[#000018] mb-2">Эксперт:</p>
+            <div className="bg-background p-6 rounded-lg border-l-4 border-[#C13FFF]">
+              <p className="font-semibold text-foreground mb-2">Эксперт:</p>
               <p className="text-[#0029FF] font-semibold">
                 Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Block 2: Comparison Table */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold text-[#0029FF] mb-8">Сравнение подходов</h2>
-        
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="bg-[#CCD8ED]">
-                <th className="border border-[#CCD8ED] p-4 text-left font-bold text-[#000018]">Критерий</th>
-                <th className="border border-[#CCD8ED] p-4 text-left font-bold text-[#000018]">Walled Gardens</th>
-                <th className="border border-[#CCD8ED] p-4 text-left font-bold text-[#000018]">Programmatic-платформа</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tableData.map((row, idx) => (
-                <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[#F0F0F0]"}>
-                  <td className="border border-[#CCD8ED] p-4 font-semibold text-[#000018]">{row.criterion}</td>
-                  <td className="border border-[#CCD8ED] p-4 text-[#000018]">{row.walledGardens}</td>
-                  <td className="border border-[#CCD8ED] p-4 text-[#000018]">{row.programmatic}</td>
+        {/* Block 2: Comparison Table */}
+        <section>
+          <h2 className="text-3xl font-bold text-foreground mb-8">Сравнение подходов</h2>
+          
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr style={{ backgroundColor: "#CCD8ED" }}>
+                  <th className="border border-border p-4 text-left font-bold text-foreground">Критерий</th>
+                  <th className="border border-border p-4 text-left font-bold text-foreground">Walled Gardens</th>
+                  <th className="border border-border p-4 text-left font-bold text-foreground">Programmatic-платформа</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {tableData.map((row, idx) => (
+                  <tr key={idx} style={{ backgroundColor: idx % 2 === 0 ? "#FFFFFF" : "#F0F0F0" }}>
+                    <td className="border border-border p-4 font-semibold text-foreground">{row.criterion}</td>
+                    <td className="border border-border p-4 text-foreground">{row.walledGardens}</td>
+                    <td className="border border-border p-4 text-foreground">{row.programmatic}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
-        <p className="mt-8 text-lg text-[#000018] leading-relaxed">
-          Walled Gardens обеспечивают доступ к собственной аудитории внутри экосистемы, а Programmatic-платформа позволяет централизованно работать с аудиторией и инвентарем всего Open Internet, обеспечивая больший контроль, гибкость и прозрачность закупки.
-        </p>
-      </section>
+          <p className="mt-8 text-base text-foreground leading-relaxed">
+            Walled Gardens обеспечивают доступ к собственной аудитории внутри экосистемы, а Programmatic-платформа позволяет централизованно работать с аудиторией и инвентарем всего Open Internet, обеспечивая больший контроль, гибкость и прозрачность закупки.
+          </p>
+        </section>
 
-      {/* Block 3: Interactive Map */}
-      <section className="bg-gradient-to-b from-[#0029FF]/5 to-transparent py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-[#0029FF] mb-8">Карта возможностей</h2>
-          <div className="bg-white rounded-lg p-8 border border-[#CCD8ED]">
+        {/* Block 3: Interactive Map */}
+        <section>
+          <h2 className="text-3xl font-bold text-foreground mb-8">Карта возможностей</h2>
+          <div className="bg-background rounded-lg p-6 border border-border">
             <iframe
               src="https://market.nt1.tech/"
-              className="w-full h-[600px] rounded-lg border border-[#CCD8ED]"
-              style={{ borderRadius: "8px" }}
+              className="w-full h-[600px] rounded-lg border border-border"
+              title="NT Market"
             />
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Block 4: Risks */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold text-[#0029FF] mb-8">Риски продвижения только в закрытых экосистемах</h2>
-        
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
-          {risksData.map((risk, idx) => (
-            <Card key={idx} className="border-[#CCD8ED]">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-[#000018]">
-                  <AlertCircle className="h-5 w-5 text-[#0029FF]" />
-                  <span className="text-lg">{idx + 1}. {risk.title}</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#000018]">
-                {risk.description}
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        <Card style={{ backgroundColor: "#FF6B6B20", borderColor: "#FF6B6B" }} className="border-2">
-          <CardHeader>
-            <CardTitle className="text-[#000018] flex items-center gap-2">
-              <TrendingUp className="h-5 w-5 text-[#0029FF]" />
-              Главный риск
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="text-[#000018] font-semibold">
-            Работа только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Block 5: Why Media Mix */}
-      <section className="bg-gradient-to-b from-[#C13FFF]/10 to-transparent py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-[#0029FF] mb-12">Почему медиамикс – лучшая стратегия?</h2>
+        {/* Block 4: Risks */}
+        <section>
+          <h2 className="text-3xl font-bold text-foreground mb-8">Риски продвижения только в закрытых экосистемах</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            {advantagesData.map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg border border-[#CCD8ED]">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-[#0029FF] mb-3">{item.title}</h3>
-                <p className="text-[#000018]">{item.description}</p>
-              </div>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {risksData.map((risk, idx) => (
+              <Card key={idx}>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-foreground">
+                    <AlertCircle className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
+                    <span className="text-base">{idx + 1}. {risk.title}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-foreground text-sm">
+                  {risk.description}
+                </CardContent>
+              </Card>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Block 6: Conclusion */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <Card style={{ backgroundColor: "#0029FF", borderColor: "#0029FF" }} className="border-2">
-          <CardHeader>
-            <CardTitle className="text-white text-2xl">Вывод</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 text-white">
-            <p>
-              Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией.
-            </p>
-            <p>
-              Закрытые экосистемы дают доступ к сильным данным и вовлеченной аудитории, а Programmatic обеспечивает дополнительный охват, гибкость и контроль над всей медиастратегией.
-            </p>
-          </CardContent>
-        </Card>
-      </section>
+          <Card style={{ backgroundColor: "#FF6B6B15", borderColor: "#FF6B6B" }} className="border-2">
+            <CardHeader>
+              <CardTitle className="text-foreground flex items-center gap-2">
+                <AlertCircle className="h-5 w-5 text-[#0029FF]" />
+                Главный риск
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-foreground font-semibold">
+              Работа только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.
+            </CardContent>
+          </Card>
+        </section>
 
-      {/* Footer spacing */}
-      <div className="h-10" />
-    </div>
+        {/* Block 5: Why Media Mix */}
+        <section>
+          <h2 className="text-3xl font-bold text-foreground mb-12">Почему медиамикс – лучшая стратегия?</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {advantagesData.map((item, idx) => {
+              const IconComponent = item.icon
+              return (
+                <Card key={idx}>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-3 text-foreground">
+                      <IconComponent className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
+                      <span className="text-base">{item.title}</span>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-foreground text-sm">
+                    {item.description}
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
+        </section>
+
+        {/* Block 6: Conclusion */}
+        <section>
+          <Card style={{ backgroundColor: "#0029FF", borderColor: "#0029FF" }} className="border">
+            <CardHeader>
+              <CardTitle className="text-white text-2xl">Вывод</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-white">
+              <p>
+                Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией.
+              </p>
+              <p>
+                Закрытые экосистемы дают доступ к сильным данным и вовлеченной аудитории, а Programmatic обеспечивает дополнительный охват, гибкость и контроль над всей медиастратегией.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
+      </div>
+    </main>
   )
 }
