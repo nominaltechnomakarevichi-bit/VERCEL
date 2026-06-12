@@ -250,7 +250,7 @@ export function EliteRealEstateSlide() {
                 </div>
                 <div className="flex-1">
                   <h1 className="text-3xl font-bold text-foreground leading-tight">
-                    Programmatic НЕ «охватная медийка», а инструмент для управления вниманием
+                    Programmatic НЕ «охватная медийка», а измеримый вклад в бизнес-результат
                   </h1>
                   <p className="mt-2 text-base text-muted-foreground">
                     Programmatic Brandformance для агентств недвижимости
@@ -279,7 +279,7 @@ export function EliteRealEstateSlide() {
               <div className="grid gap-6 md:grid-cols-2">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-primary">Что происходит на рынке</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что происходит на рынке</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Агентства конкурируют в одних и тех же каналах, что приводит к росту стоимости привлечения клиента</p>
@@ -289,7 +289,7 @@ export function EliteRealEstateSlide() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-primary">Что делает programmatic</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что делает programmatic</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Выход за пределы агрегаторов — поиск аудитории на тысячах площадок</p>
@@ -300,7 +300,7 @@ export function EliteRealEstateSlide() {
 
                 <Card className="md:col-span-2 bg-primary/5 border-primary/20">
                   <CardHeader>
-                    <CardTitle className="text-primary">Что получает агентство</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Снижение CPL</p>
@@ -316,7 +316,28 @@ export function EliteRealEstateSlide() {
               <div className="grid gap-6 md:grid-cols-2">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-primary">Что происходит на рынке</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что происходит на рынке</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>В РФ работает 53 000+ риелторских компаний. Большинство агентств предлагает схожие офферы.</p>
+                    <p className="font-semibold">Инсайт: клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.</p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-[#0029FF]">Что делает programmatic</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3 text-sm">
+                    <p>• Геотаргетинг, таргетинг по доходу, интересам, намерению покупки</p>
+                    <p>• Персонализированные креативы</p>
+                    <p>• Построение узнаваемости через premium-инвентарь, видео, CTV и DOOH</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="md:col-span-2 bg-primary/5 border-primary/20">
+                  <CardHeader>
+                    <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>В РФ работает 53 000+ риелторских компаний. Большинство агентств предлагает схожие офферы.</p>
@@ -351,7 +372,7 @@ export function EliteRealEstateSlide() {
               <div className="grid gap-6 md:grid-cols-2">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-primary">Что происходит на рынке</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что происходит на рынке</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Покупка недвижимости может занимать несколько месяцев</p>
@@ -362,7 +383,7 @@ export function EliteRealEstateSlide() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-primary">Что делает programmatic</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что делает programmatic</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Последовательный ретаргетинг</p>
@@ -374,7 +395,7 @@ export function EliteRealEstateSlide() {
 
                 <Card className="md:col-span-2 bg-primary/5 border-primary/20">
                   <CardHeader>
-                    <CardTitle className="text-primary">Что получает агентство</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что получает агентство</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Возврат аудитории</p>
@@ -386,21 +407,9 @@ export function EliteRealEstateSlide() {
           </Tabs>
         </section>
 
-        {/* Brandformance Section */}
-        <section>
-          <h2 className="mb-8 text-3xl font-bold text-foreground">Brandformance для агентств недвижимости</h2>
-          <div className="rounded-lg overflow-hidden bg-white border border-border">
-            <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2012%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_39_20-hOcw22aHjDXxjN6JScecUEEf8pbVZx.png"
-              alt="Brandformance Funnel"
-              className="w-full h-auto"
-            />
-          </div>
-        </section>
-
         {/* Unified Data Blocks with Tabs */}
         <section>
-          <h2 className="mb-8 text-3xl font-bold text-foreground">Инструменты для управления вниманием</h2>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Brandformance для агентств недвижимости</h2>
           
           <Tabs defaultValue="rich-media" className="w-full">
             <TabsList className="grid w-full grid-cols-5 mb-8">
@@ -457,7 +466,7 @@ export function EliteRealEstateSlide() {
                             {segment.featured && (
                               <CheckCircle2 className="h-5 w-5 text-primary" />
                             )}
-                            <span className={segment.featured ? "font-semibold text-primary" : "text-foreground"}>
+                            <span className={segment.featured ? "font-semibold text-[#0029FF]" : "text-foreground"}>
                               {segment.name}
                             </span>
                           </div>
@@ -647,7 +656,7 @@ export function EliteRealEstateSlide() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <Layers className="h-5 w-5 text-primary" />
+                    <Layers className="h-5 w-5 text-[#0029FF]" />
                     ОФД маркеры для таргетирования
                   </CardTitle>
                 </CardHeader>
@@ -656,7 +665,7 @@ export function EliteRealEstateSlide() {
                     <CardContent className="pt-6 space-y-4">
                       {ofdData.map((point, idx) => (
                         <div key={idx} className="flex gap-3">
-                          <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                          <CheckCircle2 className="h-5 w-5 text-[#0029FF] shrink-0 mt-0.5" />
                           <p className="text-foreground">{point}</p>
                         </div>
                       ))}
@@ -705,274 +714,6 @@ export function EliteRealEstateSlide() {
           </Tabs>
         </section>
 
-        {/* Сегменты аудитории */}
-        <section>
-          <h2 className="mb-6 text-3xl font-bold text-foreground">Сегменты аудитории</h2>
-          <div className="space-y-8">
-            {audienceSegments.map((categoryData, idx) => (
-              <div key={idx}>
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-muted-foreground">
-                    Сегменты {categoryData.category}
-                  </h3>
-                </div>
-                <div className="space-y-2">
-                  {categoryData.segments.map((segment, segIdx) => (
-                    <div
-                      key={segIdx}
-                      className={`flex items-center justify-between rounded-lg p-3 ${
-                        segment.featured
-                          ? "bg-primary/10 border-2 border-primary"
-                          : "bg-white border border-border"
-                      }`}
-                    >
-                      <div className="flex items-center gap-2">
-                        {segment.featured && (
-                          <CheckCircle2 className="h-5 w-5 text-primary" />
-                        )}
-                        <span className={segment.featured ? "font-semibold text-primary" : "text-foreground"}>
-                          {segment.name}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Портрет целевого пользователя */}
-        <section>
-          <h2 className="mb-6 text-3xl font-bold text-foreground">Портрет целевого пользователя</h2>
-          
-          {/* Male Portrait Row */}
-          <div className="mb-8">
-            <h3 className="text-xl font-semibold text-foreground mb-4">Мужской портрет</h3>
-            <div className="grid gap-6 lg:grid-cols-4">
-              {/* Illustration */}
-              <Card className="lg:col-span-1 flex flex-col items-center justify-center p-6">
-                <div className="w-full h-48 bg-gradient-to-b from-primary/10 to-primary/5 rounded-lg flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2021%20%D0%BC%D0%B0%D1%8F%202026%20%D0%B3.%2C%2016_37_28-7brOGIBt615s89PKnVGTTIeUuBPYyg.png"
-                    alt="Elite Buyer"
-                    className="w-full h-full object-cover rounded"
-                  />
-                </div>
-                <div className="mt-4 space-y-2">
-                  <p className="text-xs font-semibold text-foreground">Акцент в креативах на</p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">технические характеристики</span>
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">инженерные решения</span>
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">инвестиционны�� потенциал</span>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Demographics */}
-              <Card className="lg:col-span-1">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-base">
-                    <Users className="h-5 w-5" />
-                    Демографика
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {targetAudience.demographics.map((item, idx) => (
-                      <div key={idx}>
-                        <p className="text-xs font-semibold text-muted-foreground">{item.label}</p>
-                        <p className="text-sm font-medium text-foreground">{item.value}</p>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Interests */}
-              <Card className="lg:col-span-1">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-base">
-                    <Target className="h-5 w-5" />
-                    Интересы
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {targetAudience.interests.map((interest, idx) => (
-                      <li key={idx} className="flex gap-2 text-sm">
-                        <span className="text-primary mt-0.5">•</span>
-                        <span className="text-foreground">{interest}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Behavior */}
-              <Card className="lg:col-span-1">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-base">
-                    <TrendingUp className="h-5 w-5" />
-                    Поведение
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {targetAudience.behavior.map((behavior, idx) => (
-                      <li key={idx} className="flex gap-2 text-sm">
-                        <span className="text-primary mt-0.5">•</span>
-                        <span className="text-foreground">{behavior}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          {/* Female Portrait Row */}
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-4">Женский портрет</h3>
-            <div className="grid gap-6 lg:grid-cols-4">
-              {/* Illustration */}
-              <Card className="lg:col-span-1 flex flex-col items-center justify-center p-6">
-                <div className="w-full h-48 bg-gradient-to-b from-primary/10 to-primary/5 rounded-lg flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%BC%D0%B0%D1%8F%202026%20%D0%B3.%2C%2016_25_42-X5KuNjVyXNap0SYamCaSWzhalbmRYp.png"
-                    alt="Elite Buyer Women"
-                    className="w-full h-full object-cover rounded"
-                  />
-                </div>
-                <div className="mt-4 space-y-2">
-                  <p className="text-xs font-semibold text-foreground">Акцент в креативах на</p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">SPA и Wellnes</span>
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">медитативные пространства</span>
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">дизайн и комфорт</span>
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">семейный образ жизни</span>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Demographics */}
-              <Card className="lg:col-span-1">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-base">
-                    <Users className="h-5 w-5" />
-                    Демографика
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {femaleAudience.demographics.map((item, idx) => (
-                      <div key={idx}>
-                        <p className="text-xs font-semibold text-muted-foreground">{item.label}</p>
-                        <p className="text-sm font-medium text-foreground">{item.value}</p>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Interests */}
-              <Card className="lg:col-span-1">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-base">
-                    <Target className="h-5 w-5" />
-                    Интересы
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {femaleAudience.interests.map((interest, idx) => (
-                      <li key={idx} className="flex gap-2 text-sm">
-                        <span className="text-primary mt-0.5">•</span>
-                        <span className="text-foreground">{interest}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Behavior */}
-              <Card className="lg:col-span-1">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-base">
-                    <TrendingUp className="h-5 w-5" />
-                    Поведение
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {femaleAudience.behavior.map((behavior, idx) => (
-                      <li key={idx} className="flex gap-2 text-sm">
-                        <span className="text-primary mt-0.5">•</span>
-                        <span className="text-foreground">{behavior}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* ОФД Данные */}
-        <section>
-          <h2 className="mb-6 text-3xl font-bold text-foreground">ОФД данные</h2>
-          
-          {/* Main OFD Info */}
-          <Card className="bg-gradient-to-br from-primary/5 to-transparent mb-6">
-            <CardContent className="pt-6 space-y-4">
-              {ofdData.map((point, idx) => (
-                <div key={idx} className="flex gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <p className="text-foreground">{point}</p>
-                </div>
-              ))}
-              <div className="mt-6 flex flex-col gap-3">
-                <p className="font-semibold text-foreground">ОФД-партне�� NT</p>
-                <div className="flex items-center justify-center px-8 py-4 rounded-2xl bg-white border border-gray-200 w-fit">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7cRdRxNSqU7uytNaq24iDGEMH7ml7T.png"
-                    alt="CleverData"
-                    className="h-6 w-auto object-contain"
-                  />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* White List */}
-        <section>
-          <h2 className="mb-6 text-3xl font-bold text-foreground">White List площадок</h2>
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Sparkles className="h-5 w-5 text-primary" />
-                Рекомендуемые площадки в РФ
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="flex flex-wrap gap-3">
-                {whitelistExamples.map((platform, idx) => (
-                  <Badge key={idx} variant="outline" className="px-4 py-2 text-sm font-medium hover:bg-primary hover:text-white hover:border-primary transition-colors cursor-default">
-                    {platform.name}
-                  </Badge>
-                ))}
-              </div>
-              <div className="rounded-lg bg-blue-50 p-4 border border-blue-200">
-                <p className="font-semibold text-foreground mb-2">Почему эти площадки:</p>
-                <p className="text-muted-foreground">
-                  White List обеспечивает размещение на верифицированных, качественных площадках с высокой концентрацией целевой аудитории. Это исключает мошеннический трафик и гарантирует видимость объявлений перед правильной аудиторией.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
         {/* Programmatic Подход */}
         <section>
           <h2 className="mb-6 text-3xl font-bold text-foreground">Programmatic подход</h2>
@@ -1003,7 +744,7 @@ export function EliteRealEstateSlide() {
                     const StepIcon = step.icon
                     return (
                       <div key={idx} className="flex gap-4">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white font-bold shrink-0">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0029FF] text-white font-bold shrink-0">
                           {idx + 1}
                         </div>
                         <div>
@@ -1016,7 +757,7 @@ export function EliteRealEstateSlide() {
                 </div>
 
                 <div className="mt-6 rounded-lg bg-white border-2 border-primary/30 p-4">
-                  <p className="font-semibold text-primary mb-2">Результат:</p>
+                  <p className="font-semibold text-[#0029FF] mb-2">Результат:</p>
                   <p className="text-foreground">
                     Синергия всех компонентов обеспечивает максимальную эффективность РК: качественный трафик на понятный оффер через правильные каналы, с полной аналитикой для оптимизации и масштабирования.
                   </p>
