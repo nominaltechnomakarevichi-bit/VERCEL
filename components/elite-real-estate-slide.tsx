@@ -166,7 +166,7 @@ const targetAudience = {
     "Выбирает объекты через рекомендации",
     "Ориентирован на статус и престиж",
     "Рассматривает недвижимость как актив",
-    "Предпочитает персональный сервис",
+    "Предпочитае�� персональный сервис",
   ],
 }
 
@@ -237,19 +237,27 @@ export function EliteRealEstateSlide() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex-1">
+            <div className="flex items-center gap-6">
+              <img 
+                src="/nt-logo.png"
+                alt="NT Technology"
+                className="h-14 w-auto object-contain flex-shrink-0"
+              />
+              <div className="h-12 w-px bg-border" />
               <div className="flex items-center gap-4">
-                <img 
-                  src="/nt-logo.png"
-                  alt="NT Technology"
-                  className="h-10 w-auto object-contain flex-shrink-0"
-                />
-                <h1 className="text-3xl font-bold text-foreground">
-                  Programmatic НЕ «охватная медийка», а измеримый вклад в бизнес-результат
-                </h1>
-                <p className="mt-2 text-lg text-muted-foreground">
-                  Programmatic Brandformance для агентств недвижимости
-                </p>
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+                  <Home className="h-6 w-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h1 className="text-3xl font-bold text-foreground leading-tight">
+                    Programmatic <span className="text-[#0029FF]">НЕ «охватная медийка»</span>, а <span className="text-[#0029FF]">инструмент для управления вниманием</span>
+                  </h1>
+                  <p className="mt-2 text-base text-muted-foreground">
+                    Programmatic Brandformance для агентств недвижимости
+                  </p>
+                </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -390,27 +398,180 @@ export function EliteRealEstateSlide() {
           </div>
         </section>
 
-        {/* Rich Media Форматы */}
+        {/* Unified Data Blocks with Tabs */}
         <section>
-          <h2 className="mb-6 text-3xl font-bold text-foreground">Rich Media форматы</h2>
-          <div className="grid gap-6 lg:grid-cols-2">
-            {richMediaFormats.map((format, idx) => {
-              const PreviewComponent = format.preview
-              return (
-                <Card key={idx} className="overflow-hidden">
-                  <CardHeader>
-                    <div>
-                      <CardTitle className="text-xl">{format.name}</CardTitle>
-                      <p className="mt-1 text-sm text-muted-foreground">{format.description}</p>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Инструменты для управления вниманием</h2>
+          
+          <Tabs defaultValue="rich-media" className="w-full">
+            <TabsList className="grid w-full grid-cols-5 mb-8">
+              <TabsTrigger value="rich-media">Rich Media форматы</TabsTrigger>
+              <TabsTrigger value="segments">Сегменты аудитории</TabsTrigger>
+              <TabsTrigger value="portrait">Портрет пользователя</TabsTrigger>
+              <TabsTrigger value="ofd">ОФД данные</TabsTrigger>
+              <TabsTrigger value="whitelist">White List</TabsTrigger>
+            </TabsList>
+
+            {/* Rich Media Tab */}
+            <TabsContent value="rich-media" className="space-y-4">
+              <div className="grid gap-6 lg:grid-cols-2">
+                {richMediaFormats.map((format, idx) => {
+                  const PreviewComponent = format.preview
+                  return (
+                    <Card key={idx} className="overflow-hidden">
+                      <CardHeader>
+                        <div>
+                          <CardTitle className="text-xl">{format.name}</CardTitle>
+                          <p className="mt-1 text-sm text-muted-foreground">{format.description}</p>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <PreviewComponent />
+                      </CardContent>
+                    </Card>
+                  )
+                })}
+              </div>
+            </TabsContent>
+
+            {/* Segments Tab */}
+            <TabsContent value="segments" className="space-y-6">
+              <div className="space-y-8">
+                {audienceSegments.map((categoryData, idx) => (
+                  <div key={idx}>
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-lg font-semibold text-muted-foreground">
+                        Сегменты {categoryData.category}
+                      </h3>
                     </div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <PreviewComponent />
-                  </CardContent>
-                </Card>
-              )
-            })}
-          </div>
+                    <div className="space-y-2">
+                      {categoryData.segments.map((segment, segIdx) => (
+                        <div
+                          key={segIdx}
+                          className={`flex items-center justify-between rounded-lg p-3 ${
+                            segment.featured
+                              ? "bg-primary/10 border-2 border-primary"
+                              : "bg-white border border-border"
+                          }`}
+                        >
+                          <div className="flex items-center gap-2">
+                            {segment.featured && (
+                              <CheckCircle2 className="h-5 w-5 text-primary" />
+                            )}
+                            <span className={segment.featured ? "font-semibold text-primary" : "text-foreground"}>
+                              {segment.name}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </TabsContent>
+
+            {/* Portrait Tab */}
+            <TabsContent value="portrait" className="space-y-4">
+              <div className="grid gap-6 md:grid-cols-2">
+                {[targetAudience, femaleAudience].map((portrait, idx) => (
+                  <Card key={idx} className="flex flex-col">
+                    <CardHeader>
+                      <CardTitle className="text-lg flex items-center gap-2">
+                        <Users className="h-5 w-5 text-primary shrink-0" />
+                        {portrait.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-1 space-y-4">
+                      <div className="space-y-3">
+                        {portrait.demographics.map((demo, dIdx) => (
+                          <div key={dIdx} className="flex justify-between items-start py-1 border-b border-border/50">
+                            <span className="text-sm font-medium text-foreground">{demo.label}</span>
+                            <span className="text-sm text-muted-foreground">{demo.value}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="pt-3">
+                        <p className="text-sm font-semibold text-foreground mb-2">Интересы:</p>
+                        <div className="flex flex-wrap gap-2">
+                          {portrait.interests.map((interest, iIdx) => (
+                            <Badge key={iIdx} variant="secondary" className="text-xs">
+                              {interest}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="pt-3 border-t border-border">
+                        <p className="text-sm font-semibold text-foreground mb-2">Поведение:</p>
+                        <div className="space-y-1">
+                          {portrait.behavior.map((behavior, bIdx) => (
+                            <p key={bIdx} className="text-sm text-foreground">• {behavior}</p>
+                          ))}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+
+            {/* OFD Tab */}
+            <TabsContent value="ofd" className="space-y-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Layers className="h-5 w-5 text-primary" />
+                    ОФД маркеры для таргетирования
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="grid gap-6">
+                    {ofdData.map((item, idx) => (
+                      <div key={idx} className="border-l-4 border-primary pl-4">
+                        <p className="font-semibold text-foreground mb-2">{item.name}</p>
+                        <p className="text-muted-foreground text-sm">{item.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-6 flex flex-col gap-3">
+                    <p className="font-semibold text-foreground">ОФД-партнер NT</p>
+                    <div className="flex items-center justify-center px-8 py-4 rounded-2xl bg-white border border-gray-200 w-fit">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7cRdRxNSqU7uytNaq24iDGEMH7ml7T.png"
+                        alt="CleverData"
+                        className="h-6 w-auto object-contain"
+                      />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* White List Tab */}
+            <TabsContent value="whitelist" className="space-y-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Sparkles className="h-5 w-5 text-primary" />
+                    Рекомендуемые площадки в РФ
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="flex flex-wrap gap-3">
+                    {whitelistExamples.map((platform, idx) => (
+                      <Badge key={idx} variant="outline" className="px-4 py-2 text-sm font-medium hover:bg-primary hover:text-white hover:border-primary transition-colors cursor-default">
+                        {platform.name}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="rounded-lg bg-blue-50 p-4 border border-blue-200">
+                    <p className="font-semibold text-foreground mb-2">Почему эти площадки:</p>
+                    <p className="text-muted-foreground">
+                      White List обеспечивает размещение на верифицированных, качественных площадках с высокой концентрацией целевой аудитории. Это исключает мошеннический трафик и гарантирует видимость объявлений перед правильной аудиторией.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </section>
 
         {/* Сегменты аудитории */}
@@ -472,7 +633,7 @@ export function EliteRealEstateSlide() {
                   <div className="flex flex-wrap gap-2">
                     <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">технические характеристики</span>
                     <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">инженерные решения</span>
-                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">инвестиционный потенциал</span>
+                    <span className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-xs font-medium text-foreground">инвестиционны�� потенциал</span>
                   </div>
                 </div>
               </Card>
@@ -640,7 +801,7 @@ export function EliteRealEstateSlide() {
                 </div>
               ))}
               <div className="mt-6 flex flex-col gap-3">
-                <p className="font-semibold text-foreground">ОФД-партнер NT</p>
+                <p className="font-semibold text-foreground">ОФД-партне�� NT</p>
                 <div className="flex items-center justify-center px-8 py-4 rounded-2xl bg-white border border-gray-200 w-fit">
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7cRdRxNSqU7uytNaq24iDGEMH7ml7T.png"
