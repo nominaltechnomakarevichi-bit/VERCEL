@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { AlertCircle, Zap, Home } from "lucide-react"
+import { AlertCircle, Zap } from "lucide-react"
 
 export function WalledGardensSlide() {
   const risksData = [
@@ -103,7 +103,7 @@ export function WalledGardensSlide() {
             <div className="h-12 w-px bg-border" />
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
-                <Home className="h-6 w-6 text-gray-600" />
+                <Zap className="h-6 w-6 text-gray-600" />
               </div>
               <div className="flex-1">
                 <h1 className="text-3xl font-bold text-foreground leading-tight">
@@ -135,12 +135,12 @@ export function WalledGardensSlide() {
                 <p className="text-foreground text-sm">
                   Закрытые рекламные экосистемы с собственными данными и инвентарем.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Яндекс", "VK", "Ozon", "Wildberries", "Авито"].map((platform, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-muted text-foreground rounded-full font-medium text-xs">
-                      {platform}
-                    </span>
-                  ))}
+                <div className="flex flex-wrap gap-3 items-center">
+                  <img src="/logos/yandex.png" alt="Яндекс" className="h-10 w-auto" />
+                  <img src="/logos/vk.png" alt="VK" className="h-10 w-auto" />
+                  <img src="/logos/ozon.png" alt="Ozon" className="h-10 w-auto" />
+                  <img src="/logos/wildberries.png" alt="Wildberries" className="h-10 w-auto" />
+                  <img src="/logos/avito.png" alt="Авито" className="h-10 w-auto" />
                 </div>
               </CardContent>
             </Card>
@@ -188,7 +188,7 @@ export function WalledGardensSlide() {
             <div className="flex gap-6 md:gap-12 items-start justify-end">
               <div className="flex-1 pt-4">
                 <div className="bg-background border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
-                  <p className="text-[#0029FF] font-semibold text-base md:text-lg">
+                  <p className="text-foreground text-base md:text-lg">
                     Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией
                   </p>
                 </div>
