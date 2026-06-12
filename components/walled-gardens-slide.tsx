@@ -136,11 +136,11 @@ export function WalledGardensSlide() {
                   Закрытые рекламные экосистемы с собственными данными и инвентарем.
                 </p>
                 <div className="flex flex-wrap gap-3 items-center">
-                  <img src="/logos/yandex.png" alt="Яндекс" className="h-10 w-auto" />
-                  <img src="/logos/vk.png" alt="VK" className="h-10 w-auto" />
-                  <img src="/logos/ozon.png" alt="Ozon" className="h-10 w-auto" />
-                  <img src="/logos/wildberries.png" alt="Wildberries" className="h-10 w-auto" />
-                  <img src="/logos/avito.png" alt="Авито" className="h-10 w-auto" />
+                  <img src="/logos/yandex.png" alt="Яндекс" className="h-10 w-10 object-contain" />
+                  <img src="/logos/vk.png" alt="VK" className="h-10 w-10 object-contain" />
+                  <img src="/logos/ozon.png" alt="Ozon" className="h-10 w-10 object-contain" />
+                  <img src="/logos/wildberries.png" alt="Wildberries" className="h-10 w-10 object-contain" />
+                  <img src="/logos/avito.png" alt="Авито" className="h-10 w-10 object-contain" />
                 </div>
               </CardContent>
             </Card>
