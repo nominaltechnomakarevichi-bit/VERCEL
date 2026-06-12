@@ -127,7 +127,7 @@ export function WalledGardensSlide() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Walled Gardens Card */}
-            <Card className="border border-border">
+            <Card className="border border-border bg-white">
               <CardHeader>
                 <CardTitle className="text-[#0029FF] text-lg font-bold">Walled Gardens</CardTitle>
               </CardHeader>
@@ -146,7 +146,7 @@ export function WalledGardensSlide() {
             </Card>
 
             {/* Open Internet Card */}
-            <Card className="border border-border">
+            <Card className="border border-border bg-white">
               <CardHeader>
                 <CardTitle className="text-[#0029FF] text-lg font-bold">Open Internet</CardTitle>
               </CardHeader>
@@ -156,7 +156,7 @@ export function WalledGardensSlide() {
             </Card>
 
             {/* NT Technology Card */}
-            <Card className="border border-border">
+            <Card className="border border-border bg-white">
               <CardHeader>
                 <CardTitle className="text-[#0029FF] text-lg font-bold">NT Technology</CardTitle>
               </CardHeader>
@@ -176,7 +176,7 @@ export function WalledGardensSlide() {
                 <div className="w-20 h-20 rounded-full bg-[#0029FF] flex items-center justify-center flex-shrink-0" />
               </div>
               <div className="flex-1 pt-4">
-                <div className="bg-background border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
+                <div className="bg-white border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
                   <p className="text-foreground text-base md:text-lg">
                     Что лучше выбрать для продвижения бренда: рекламу в Яндекс и VK или Programmatic?
                   </p>
@@ -187,7 +187,7 @@ export function WalledGardensSlide() {
             {/* Expert Answer */}
             <div className="flex gap-6 md:gap-12 items-start justify-end">
               <div className="flex-1 pt-4">
-                <div className="bg-background border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
+                <div className="bg-white border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
                   <p className="text-foreground text-base md:text-lg">
                     Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией
                   </p>
@@ -250,7 +250,7 @@ export function WalledGardensSlide() {
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {risksData.map((risk, idx) => (
-              <Card key={idx} className="border border-border">
+              <Card key={idx} className="border border-border bg-white">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-foreground text-sm font-bold">
                     <AlertCircle className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
@@ -283,7 +283,7 @@ export function WalledGardensSlide() {
           
           <div className="grid md:grid-cols-2 gap-6">
             {advantagesData.map((item, idx) => (
-              <Card key={idx} className="border border-border">
+              <Card key={idx} className="border border-border bg-white">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-foreground text-sm font-bold">
                     <Zap className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
