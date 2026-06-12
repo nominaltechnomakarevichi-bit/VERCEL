@@ -172,8 +172,13 @@ export function WalledGardensSlide() {
           <div className="space-y-12">
             {/* Business Question */}
             <div className="flex gap-6 md:gap-12 items-start">
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-[#0029FF] flex items-center justify-center flex-shrink-0" />
+              <div className="flex-shrink-0 flex flex-col items-center">
+                <img 
+                  src="/images/business-woman.png"
+                  alt="Бизнес"
+                  className="w-20 h-20 rounded-full object-cover border-4 border-[#0029FF]"
+                />
+                <p className="mt-2 text-sm font-bold text-foreground">Бизнес</p>
               </div>
               <div className="flex-1 pt-4">
                 <div className="bg-white border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
@@ -193,8 +198,13 @@ export function WalledGardensSlide() {
                   </p>
                 </div>
               </div>
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-[#0029FF] flex items-center justify-center flex-shrink-0" />
+              <div className="flex-shrink-0 flex flex-col items-center">
+                <img 
+                  src="/images/digital-expert-man.png"
+                  alt="Digital-эксперт"
+                  className="w-20 h-20 rounded-full object-cover border-4 border-[#0029FF]"
+                />
+                <p className="mt-2 text-sm font-bold text-foreground">Digital-эксперт</p>
               </div>
             </div>
           </div>
