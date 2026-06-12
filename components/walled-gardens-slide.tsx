@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { AlertCircle, Zap } from "lucide-react"
+import { AlertCircle, Zap, Home } from "lucide-react"
 
 export function WalledGardensSlide() {
   const risksData = [
@@ -90,8 +90,8 @@ export function WalledGardensSlide() {
   ]
 
   return (
-    <main className="min-h-screen bg-background font-sans">
-      {/* Header with gradient background */}
+    <main className="min-h-screen bg-background">
+      {/* Header */}
       <div className="w-full bg-gradient-to-r from-primary/5 to-transparent px-4 py-6 md:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center gap-6">
@@ -102,8 +102,8 @@ export function WalledGardensSlide() {
             />
             <div className="h-12 w-px bg-border" />
             <div className="flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-                <Zap className="h-6 w-6 text-primary" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+                <Home className="h-6 w-6 text-gray-600" />
               </div>
               <div className="flex-1">
                 <h1 className="text-3xl font-bold text-foreground leading-tight">
@@ -123,16 +123,16 @@ export function WalledGardensSlide() {
         
         {/* Block 1: Dictionary of Terms */}
         <section className="space-y-8">
-          <h2 className="text-3xl font-bold text-foreground">Словарь терминов</h2>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Словарь терминов</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Walled Gardens Card */}
             <Card className="border border-border">
               <CardHeader>
-                <CardTitle className="text-primary text-xl">Walled Gardens</CardTitle>
+                <CardTitle className="text-[#0029FF] text-lg font-bold">Walled Gardens</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-foreground">
+                <p className="text-foreground text-sm">
                   Закрытые рекламные экосистемы с собственными данными и инвентарем.
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -148,9 +148,9 @@ export function WalledGardensSlide() {
             {/* Open Internet Card */}
             <Card className="border border-border">
               <CardHeader>
-                <CardTitle className="text-primary text-xl">Open Internet</CardTitle>
+                <CardTitle className="text-[#0029FF] text-lg font-bold">Open Internet</CardTitle>
               </CardHeader>
-              <CardContent className="text-foreground">
+              <CardContent className="text-foreground text-sm">
                 Совокупность всех открытых цифровых площадок, доступных для programmatic-закупки.
               </CardContent>
             </Card>
@@ -158,9 +158,9 @@ export function WalledGardensSlide() {
             {/* NT Technology Card */}
             <Card className="border border-border">
               <CardHeader>
-                <CardTitle className="text-primary text-xl">NT Technology</CardTitle>
+                <CardTitle className="text-[#0029FF] text-lg font-bold">NT Technology</CardTitle>
               </CardHeader>
-              <CardContent className="text-foreground">
+              <CardContent className="text-foreground text-sm">
                 Технологическая платформа для эффективной закупки и управления рекламой в Open Internet.
               </CardContent>
             </Card>
@@ -168,15 +168,15 @@ export function WalledGardensSlide() {
         </section>
 
         {/* Block 1b: Dialog */}
-        <section className="py-12">
+        <section className="py-8">
           <div className="space-y-12">
             {/* Business Question */}
             <div className="flex gap-6 md:gap-12 items-start">
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center flex-shrink-0" />
+                <div className="w-20 h-20 rounded-full bg-[#0029FF] flex items-center justify-center flex-shrink-0" />
               </div>
               <div className="flex-1 pt-4">
-                <div className="bg-background border-2 border-primary rounded-3xl p-6 md:p-8">
+                <div className="bg-background border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
                   <p className="text-foreground text-base md:text-lg">
                     Что лучше выбрать для продвижения бренда: рекламу в Яндекс и VK или Programmatic?
                   </p>
@@ -187,14 +187,14 @@ export function WalledGardensSlide() {
             {/* Expert Answer */}
             <div className="flex gap-6 md:gap-12 items-start justify-end">
               <div className="flex-1 pt-4">
-                <div className="bg-background border-2 border-primary rounded-3xl p-6 md:p-8">
-                  <p className="text-primary font-semibold text-base md:text-lg">
+                <div className="bg-background border-2 border-[#0029FF] rounded-3xl p-6 md:p-8">
+                  <p className="text-[#0029FF] font-semibold text-base md:text-lg">
                     Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией
                   </p>
                 </div>
               </div>
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center flex-shrink-0" />
+                <div className="w-20 h-20 rounded-full bg-[#0029FF] flex items-center justify-center flex-shrink-0" />
               </div>
             </div>
           </div>
@@ -202,31 +202,31 @@ export function WalledGardensSlide() {
 
         {/* Block 2: Comparison Table */}
         <section>
-          <h2 className="text-3xl font-bold text-foreground mb-8">Сравнение подходов</h2>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Сравнение подходов</h2>
           
           <div className="overflow-x-auto rounded-lg border border-border">
             <table className="w-full border-collapse">
               <thead>
                 <tr style={{ backgroundColor: "#0029FF" }}>
-                  <th className="border border-primary p-4 text-left font-bold text-white"></th>
-                  <th className="border border-primary p-4 text-left font-bold text-white">Walled Gardens<br /><span className="font-normal text-sm">(Яндекс, VK, Ozon и др)</span></th>
-                  <th className="border border-primary p-4 text-left font-bold text-white">Programmatic-платформа<br /><span className="font-normal text-sm">(NT Technology)</span></th>
+                  <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm"></th>
+                  <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Walled Gardens<br /><span className="font-normal text-xs">(Яндекс, VK, Ozon и др)</span></th>
+                  <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Programmatic-платформа<br /><span className="font-normal text-xs">(NT Technology)</span></th>
                 </tr>
               </thead>
               <tbody>
                 {tableData.map((row, idx) => (
                   <tr key={idx} style={{ backgroundColor: idx % 2 === 0 ? "#FFFFFF" : "#F0F0F0" }}>
-                    <td className="border border-border p-4 font-semibold text-foreground whitespace-nowrap">{row.criterion}</td>
-                    <td className="border border-border p-4 text-foreground">{row.walledGardens}</td>
-                    <td className="border border-border p-4 text-foreground">{row.programmatic}</td>
+                    <td className="border border-border p-4 font-semibold text-foreground text-sm whitespace-nowrap">{row.criterion}</td>
+                    <td className="border border-border p-4 text-foreground text-sm">{row.walledGardens}</td>
+                    <td className="border border-border p-4 text-foreground text-sm">{row.programmatic}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div style={{ backgroundColor: "#0029FF" }} className="mt-6 p-6 rounded-lg">
-            <p className="text-white">
+          <div className="mt-8 p-6 rounded-lg" style={{ backgroundColor: "#0029FF" }}>
+            <p className="text-white text-sm">
               Walled Gardens обеспечивают доступ к собственной аудитории внутри экосистемы, а Programmatic-платформа позволяет централизованно работать с аудиторией и инвентарем всего Open Internet, обеспечивая больший контроль, гибкость и прозрачность закупки.
             </p>
           </div>
@@ -234,7 +234,7 @@ export function WalledGardensSlide() {
 
         {/* Block 3: Interactive Map */}
         <section>
-          <h2 className="text-3xl font-bold text-foreground mb-8">Карта digital-рекламы России</h2>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Карта digital-рекламы России</h2>
           <div className="bg-background rounded-lg p-6 border border-border">
             <iframe
               src="https://market.nt1.tech/"
@@ -246,15 +246,15 @@ export function WalledGardensSlide() {
 
         {/* Block 4: Risks */}
         <section>
-          <h2 className="text-3xl font-bold text-foreground mb-8">Риски продвижения только в закрытых экосистемах</h2>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Риски продвижения только в закрытых экосистемах</h2>
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {risksData.map((risk, idx) => (
               <Card key={idx} className="border border-border">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-foreground">
-                    <AlertCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-base">{risk.title}</span>
+                  <CardTitle className="flex items-center gap-2 text-foreground text-sm font-bold">
+                    <AlertCircle className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
+                    <span>{risk.title}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-foreground text-sm">
@@ -266,12 +266,12 @@ export function WalledGardensSlide() {
 
           <Card style={{ backgroundColor: "#FF6B6B15", borderColor: "#FF6B6B" }} className="border-2">
             <CardHeader>
-              <CardTitle className="text-foreground flex items-center gap-2">
-                <AlertCircle className="h-5 w-5 text-primary" />
+              <CardTitle className="text-foreground flex items-center gap-2 text-sm font-bold">
+                <AlertCircle className="h-5 w-5 text-[#0029FF]" />
                 Главный риск
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-foreground font-semibold">
+            <CardContent className="text-foreground font-semibold text-sm">
               Работа только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.
             </CardContent>
           </Card>
@@ -279,15 +279,15 @@ export function WalledGardensSlide() {
 
         {/* Block 5: Why Media Mix */}
         <section>
-          <h2 className="text-3xl font-bold text-foreground mb-12">Почему медиамикс – лучшая стратегия?</h2>
+          <h2 className="mb-12 text-3xl font-bold text-foreground">Почему медиамикс – лучшая стратегия?</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             {advantagesData.map((item, idx) => (
               <Card key={idx} className="border border-border">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-foreground">
-                    <Zap className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-base">{item.title}</span>
+                  <CardTitle className="flex items-center gap-3 text-foreground text-sm font-bold">
+                    <Zap className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
+                    <span>{item.title}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-foreground text-sm">
@@ -302,9 +302,9 @@ export function WalledGardensSlide() {
         <section>
           <Card style={{ backgroundColor: "#0029FF", borderColor: "#0029FF" }} className="border">
             <CardHeader>
-              <CardTitle className="text-white text-2xl">Вывод</CardTitle>
+              <CardTitle className="text-white text-lg font-bold">Вывод</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4 text-white">
+            <CardContent className="space-y-4 text-white text-sm">
               <p>
                 Лучший результат достигается не выбором между Walled Gardens и Programmatic, а их комбинацией.
               </p>
