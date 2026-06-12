@@ -326,7 +326,7 @@ export function EliteRealEstateSlide() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-[#0029FF]">Что делае�� programmatic</CardTitle>
+                    <CardTitle className="text-[#0029FF]">Что делает programmatic</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm">
                     <p>• Геотаргетинг, таргетинг по доходу, интересам, намерению покупки</p>
@@ -335,14 +335,11 @@ export function EliteRealEstateSlide() {
                   </CardContent>
                 </Card>
 
-                <Card className="md:col-span-2">
-                  <CardHeader>
-                    <CardTitle className="text-sm font-semibold text-white bg-[#0029FF] rounded-lg px-3 py-2 inline-block">
-                      Инсайт
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-0 text-sm">
-                    <p className="inline">Клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.</p>
+                <Card className="md:col-span-2 bg-[#0029FF] border-[#0029FF]">
+                  <CardContent className="p-4">
+                    <p className="text-white text-sm font-medium">
+                      <span className="font-semibold">Инсайт:</span> клиент часто выбирает площадку или бренд, а не конкретное риелторское агентство.
+                    </p>
                   </CardContent>
                 </Card>
 
