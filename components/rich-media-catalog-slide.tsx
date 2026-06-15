@@ -13,7 +13,7 @@ const richMediaFormats = [
     description: "Баннер с эффектом подвижных шторок",
     advantages: ["Пользователь самостоятельно исследует ассортимент, что увеличивает время контакта с брендом", "Подходит для новых линеек и продуктовых коллекций", "Не требует перехода на сайт для первичного знакомства с ассортиментом"],
     forWhom: "Напитки, FMCG и food-бренды, Beauty",
-    sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500",
+    sizes: "970x250, 480x320, 750x200, 640x200, 580x400",
     videoUrl: "/videos/multi-layer-banner.mov",
   },
   {
@@ -339,9 +339,9 @@ export function RichMediaCatalogSlide() {
               </CardHeader>
               <CardContent className="pt-6 space-y-4">
                 {pricingData.costs.map((item, idx) => (
-                  <div key={idx} className="flex justify-between items-center p-4 rounded-lg bg-secondary border border-border">
+                  <div key={idx} className="flex justify-between items-center p-4 rounded-lg border border-border">
                     <span className="text-sm font-medium text-foreground">{item.label}</span>
-                    <span className="text-lg font-bold text-primary">{item.value}</span>
+                    <span className="text-lg font-bold text-[#0029FF]">{item.value}</span>
                   </div>
                 ))}
               </CardContent>
@@ -357,9 +357,9 @@ export function RichMediaCatalogSlide() {
               <CardContent className="pt-6">
                 <div className="space-y-4 mb-6">
                   {pricingData.coefficients.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-center p-4 rounded-lg bg-secondary border border-border">
+                    <div key={idx} className="flex justify-between items-center p-4 rounded-lg border border-border">
                       <span className="text-sm font-medium text-foreground">{item.category}</span>
-                      <span className="text-lg font-bold text-primary">{item.value}</span>
+                      <span className="text-lg font-bold text-[#0029FF]">{item.value}</span>
                     </div>
                   ))}
                 </div>
