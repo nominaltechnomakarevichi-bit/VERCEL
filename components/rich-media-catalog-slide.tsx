@@ -7,6 +7,16 @@ import { Sparkles, Gift } from "lucide-react"
 // Rich Media Creative Examples with full details
 const richMediaFormats = [
   {
+    id: 0,
+    name: "Multi-Layer Banner",
+    isNew: true,
+    description: "Баннер с эффектом подвижных шторок",
+    advantages: ["Пользователь самостоятельно исследует ассортимент, что увеличивает время контакта с брендом", "Подходит для новых линеек и продуктовых коллекций", "Не требует перехода на сайт для первичного знакомства с ассортиментом"],
+    forWhom: "Напитки, FMCG и food-бренды, Beauty",
+    sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500",
+    videoUrl: "/videos/multi-layer-banner.mov",
+  },
+  {
     id: 1,
     name: "Banner Spinner",
     isNew: true,
@@ -93,7 +103,7 @@ const richMediaFormats = [
   {
     id: 10,
     name: "3D-баннер",
-    description: "Интерактивный баннер с эффектом объема",
+    description: "Интерактивный банне�� с эффектом объема",
     advantages: ["Привлекает ����������нимание за счет 3D-эффекта", "Позволяет детально продемонстрировать товар", "Подходит для брендовых и имиджевых кампаний"],
     forWhom: "Всем без ограничений",
     sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500, 970x250",
@@ -182,7 +192,7 @@ export function RichMediaCatalogSlide() {
               <Card key={idx} className="flex flex-col hover:shadow-md transition-shadow overflow-hidden relative">
                 {/* NEW Badge */}
                 {example.isNew && (
-                  <div className="absolute top-3 right-3 z-10 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full">
+                  <div className="absolute top-3 right-3 z-10 bg-[#0029FF] text-white text-xs font-bold px-2 py-1 rounded-full">
                     NEW
                   </div>
                 )}
@@ -247,7 +257,7 @@ export function RichMediaCatalogSlide() {
             <div className="mt-8 text-center">
               <button
                 onClick={() => setDisplayCount(displayCount + 3)}
-                className="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+                className="px-6 py-2 bg-[#0029FF] text-white font-semibold rounded-lg hover:bg-[#0029FF]/90 transition-colors"
               >
                 Показать ещё
               </button>
@@ -295,7 +305,7 @@ export function RichMediaCatalogSlide() {
             }
           `}</style>
           
-          <div className="mb-8 rounded-lg bg-gradient-to-r from-primary via-primary to-primary overflow-hidden">
+          <div className="mb-8 rounded-lg bg-gradient-to-r from-[#0029FF] via-[#0029FF] to-[#0029FF] overflow-hidden">
             <div className="flex gap-4 py-4 px-4">
               <div className="ribbon-container flex gap-4 whitespace-nowrap">
                 {/* Original items */}
