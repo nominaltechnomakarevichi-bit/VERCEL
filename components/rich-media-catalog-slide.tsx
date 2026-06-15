@@ -339,9 +339,9 @@ export function RichMediaCatalogSlide() {
               </CardHeader>
               <CardContent className="pt-6 space-y-4">
                 {pricingData.costs.map((item, idx) => (
-                  <div key={idx} className="flex justify-between items-center p-4 rounded-lg bg-secondary border border-border">
+                  <div key={idx} className="flex justify-between items-center p-4 rounded-lg border border-border">
                     <span className="text-sm font-medium text-foreground">{item.label}</span>
-                    <span className="text-lg font-bold text-primary">{item.value}</span>
+                    <span className="text-lg font-bold text-[#0029FF]">{item.value}</span>
                   </div>
                 ))}
               </CardContent>
@@ -357,9 +357,9 @@ export function RichMediaCatalogSlide() {
               <CardContent className="pt-6">
                 <div className="space-y-4 mb-6">
                   {pricingData.coefficients.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-center p-4 rounded-lg bg-secondary border border-border">
+                    <div key={idx} className="flex justify-between items-center p-4 rounded-lg border border-border">
                       <span className="text-sm font-medium text-foreground">{item.category}</span>
-                      <span className="text-lg font-bold text-primary">{item.value}</span>
+                      <span className="text-lg font-bold text-[#0029FF]">{item.value}</span>
                     </div>
                   ))}
                 </div>
