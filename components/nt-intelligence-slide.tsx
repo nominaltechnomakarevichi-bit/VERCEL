@@ -325,20 +325,26 @@ export function NTIntelligenceSlide() {
                   <div className="space-y-4">
                     <div className="grid grid-cols-2 gap-6">
                       <div className="space-y-4 p-6 bg-slate-50 rounded-xl border border-border">
-                        <p className="font-semibold text-foreground text-center">Статичный баннер</p>
+                        <p className="font-bold text-foreground text-center">Статичный баннер</p>
                         <div className="flex flex-col items-center gap-6">
                           <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
                             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/240x400-qI4qJgSwXJCqjbBshdZJ48ZIJKX5Ou.jpg" alt="Статичный баннер" className="max-h-full object-contain p-2" />
                           </div>
-                          <div className="text-center">
-                            <p className="text-2xl font-bold text-[#0029FF]">30% viewability</p>
-                            <p className="text-2xl font-bold text-[#0029FF]">0.05% CTR</p>
+                          <div className="grid grid-cols-2 gap-12 text-center w-full">
+                            <div>
+                              <p className="text-2xl font-bold text-[#0029FF]">30%</p>
+                              <p className="text-sm text-muted-foreground">viewability</p>
+                            </div>
+                            <div>
+                              <p className="text-2xl font-bold text-[#0029FF]">0.05%</p>
+                              <p className="text-sm text-muted-foreground">ctr</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                       
                       <div className="space-y-4 p-6 bg-[#0029FF] rounded-xl border-2 border-[#0029FF]">
-                        <p className="font-semibold text-white text-center">Banner Spinner</p>
+                        <p className="font-bold text-white text-center">Banner Spinner</p>
                         <div className="flex flex-col items-center gap-6">
                           <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
                             <video 
@@ -349,17 +355,19 @@ export function NTIntelligenceSlide() {
                               muted
                             />
                           </div>
-                          <div className="text-center">
-                            <p className="text-2xl font-bold text-white">75% viewability</p>
-                            <p className="text-2xl font-bold text-white">0.2% CTR</p>
+                          <div className="grid grid-cols-2 gap-12 text-center w-full">
+                            <div>
+                              <p className="text-2xl font-bold text-white">75%</p>
+                              <p className="text-sm text-white/70">viewability</p>
+                            </div>
+                            <div>
+                              <p className="text-2xl font-bold text-white">0.2%</p>
+                              <p className="text-sm text-white/70">ctr</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  <div className="p-4 rounded-lg bg-blue-50 border border-blue-100 text-left">
-                    <p className="font-semibold text-foreground">Banner Spinner показал +45% к Viewability и увеличил CTR в 4 раза</p>
                   </div>
                 </CardContent>
               </Card>

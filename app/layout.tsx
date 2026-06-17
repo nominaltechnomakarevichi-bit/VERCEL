@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { Gilroy } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
  
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const gilroy = Gilroy({ subsets: ["latin"], variable: "--font-gilroy" })
  
 export const metadata: Metadata = {
   title: 'Pharma Solutions | Программатик платформа',
@@ -36,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ru" className="bg-background">
+    <html lang="ru" className="bg-background" style={{ fontFamily: 'var(--font-gilroy), sans-serif' }}>
       <body className="font-sans antialiased">
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
