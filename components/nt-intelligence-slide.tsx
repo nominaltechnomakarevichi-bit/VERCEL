@@ -60,7 +60,7 @@ export function NTIntelligenceSlide() {
           <div className="flex items-center gap-3">
             <img src="/logos/nt-logo.png" alt="NT" className="h-12 w-12 object-contain" />
             <BarChart3 className="w-8 h-8 text-[#0029FF]" />
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground">Programmatic, который влияет на бизнес-результат</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground">Programmatic, который влияет на бизнес-результат</h1>
           </div>
         </section>
 
@@ -87,7 +87,7 @@ export function NTIntelligenceSlide() {
                   </div>
                 </div>
                 <div className="flex items-center justify-end">
-                  <span className="text-[#0029FF]">{item.solution}</span>
+                  <span className="text-[#0029FF] text-right">{item.solution}</span>
                 </div>
               </div>
             ))}
@@ -243,7 +243,7 @@ export function NTIntelligenceSlide() {
                       <CardTitle className="text-[#0029FF] text-3xl">NT Technology × Дапален гель</CardTitle>
                       <p className="text-lg font-medium text-muted-foreground mt-3">Как с помощью Rich Media увеличить CTR в 1,5 раза?</p>
                     </div>
-                    <div className="w-16 h-16 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">Дапален</div>
+                    <img src="/logos/lamyra-logo.png" alt="Lamyra Pharmacare" className="w-16 h-16 rounded-full flex-shrink-0 object-cover" />
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -251,7 +251,7 @@ export function NTIntelligenceSlide() {
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">цель:</span> рост эффективности текущей кампании</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">каналы:</span> Display</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">формат:</span> banner slider, scratch-баннер</p>
-                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">процесс:</span> Анимировали первоначальный баннер и получили рост CTR на 43%, а затем ещё на 5%. При этом визуал остался без изменений и не требовал дополнительных согласований.</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">процесс:</span> анимировали первоначальный баннер и получили рост CTR на 43%, а затем ещё на 5%. При этом визуал остался без изменений и не требовал дополнительных согласований</p>
                   </div>
                   
                   <div className="space-y-4">
@@ -311,7 +311,7 @@ export function NTIntelligenceSlide() {
                       <CardTitle className="text-[#0029FF] text-3xl">NT Technology × МТБанк</CardTitle>
                       <p className="text-lg font-medium text-muted-foreground mt-3">Rich Media vs Статика: чей CTR выше и причём тут кошка?</p>
                     </div>
-                    <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">МТ</div>
+                    <img src="/logos/mtbank-logo.png" alt="МТБанк" className="w-16 h-16 rounded-full flex-shrink-0 object-cover" />
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -390,7 +390,7 @@ export function NTIntelligenceSlide() {
                   <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
                     <li>Пользователь совершает микроконверсию внутри баннера (наводит курсор, проходит мини-опрос или прокручивает каталог)</li>
                     <li>Действие регистрируется как успешный ивент</li>
-                    <li>Алгоритм DSP анализирует профиль этого пользователя и контекст показа</li>
+                    <li>Алгоритм DSP анализирует профиль этого ��ользователя и контекст показа</li>
                     <li>Ставки на аукционе повышаются для тех сегментов, которые с наибольшей вероятностью совершат целевое действие</li>
                   </ol>
                   <p className="text-muted-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: дает возможность отслеживать точные микроконверсии и оптимизировать РК по ним, а не только по кликам</p>
