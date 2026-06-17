@@ -237,73 +237,118 @@ export function NTIntelligenceSlide() {
               {/* Case 1: Dapalen */}
               <Card className="border-2 border-border bg-white">
                 <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">NT Technology × Дапален гель</CardTitle>
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <p className="text-sm text-[#0029FF] font-bold mb-2">КЕЙС</p>
+                      <CardTitle className="text-[#0029FF] text-3xl">NT Technology × Дапален гель</CardTitle>
+                      <p className="text-lg font-medium text-muted-foreground mt-3">Как с помощью Rich Media увеличить CTR в 1,5 раза?</p>
+                    </div>
+                    <div className="w-16 h-16 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">Дапален</div>
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Как с помощью Rich Media увеличить CTR в 1,5 раза?</p>
-                    <p className="text-muted-foreground text-sm mb-4">Компания использовала статичные баннеры, banner slider и scratch-баннер на Display канале для продвижения сухого геля</p>
+                  <div className="space-y-2">
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">цель:</span> рост эффективности текущей кампании</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">каналы:</span> Display</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">формат:</span> banner slider, scratch-баннер</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">процесс:</span> Анимировали первоначальный баннер и получили рост CTR на 43%, а затем ещё на 5%. При этом визуал остался без изменений и не требовал дополнительных согласований.</p>
                   </div>
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div className="p-4 rounded-lg bg-slate-50 border border-border">
-                      <p className="text-sm text-muted-foreground mb-2">Статичный баннер</p>
-                      <p className="text-3xl font-bold text-[#0029FF]">0.28%</p>
-                      <p className="text-xs text-muted-foreground">CTR</p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-slate-50 border border-border">
-                      <p className="text-sm text-muted-foreground mb-2">Banner Slider</p>
-                      <p className="text-3xl font-bold text-[#0029FF]">0.4%</p>
-                      <p className="text-xs text-muted-foreground">CTR</p>
-                    </div>
-                    <div className="p-4 rounded-lg bg-[#0029FF] border border-[#0029FF]">
-                      <p className="text-sm text-white mb-2">Scratch-баннер</p>
-                      <p className="text-3xl font-bold text-white">0.42%</p>
-                      <p className="text-xs text-white/80">CTR +1.5x</p>
+                  
+                  <div className="space-y-4">
+                    <p className="font-semibold text-foreground text-center">Сравнение баннеров</p>
+                    <div className="grid grid-cols-3 gap-4">
+                      <div className="space-y-3 flex flex-col items-center">
+                        <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dapalen-static-jD3K2pL9mO1q2r3s.jpg" alt="Статичный баннер" className="max-h-full object-contain" />
+                        </div>
+                        <div className="text-center">
+                          <p className="text-2xl font-bold text-[#0029FF]">0.28%</p>
+                          <p className="text-sm text-muted-foreground">статичный баннер</p>
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-3 flex flex-col items-center">
+                        <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dapalen-slider-mP2q3r4s5t6u.png" alt="Banner Slider" className="max-h-full object-contain" />
+                        </div>
+                        <div className="text-center">
+                          <p className="text-2xl font-bold text-[#0029FF]">0.4%</p>
+                          <p className="text-sm text-muted-foreground">banner slider</p>
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-3 flex flex-col items-center border-2 border-[#0029FF] rounded-xl p-2">
+                        <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dapalen-scratch-nL3m4n5o6p.png" alt="Scratch-баннер" className="max-h-full object-contain" />
+                        </div>
+                        <div className="text-center">
+                          <p className="text-2xl font-bold text-[#0029FF]">0.42%</p>
+                          <p className="text-sm font-semibold text-[#0029FF]">scratch-баннер (+1.5x)</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground font-bold">Результат: Rich Media увеличила CTR на 1,5 раза</p>
                 </CardContent>
               </Card>
 
               {/* Case 2: MTBank */}
               <Card className="border-2 border-border bg-white">
                 <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">NT Technology × МТБанк</CardTitle>
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <p className="text-sm text-[#0029FF] font-bold mb-2">КЕЙС</p>
+                      <CardTitle className="text-[#0029FF] text-3xl">NT Technology × МТБанк</CardTitle>
+                      <p className="text-lg font-medium text-muted-foreground mt-3">Rich Media vs Статика: чей CTR выше и причём тут кошка?</p>
+                    </div>
+                    <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">МТ</div>
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Rich Media vs Статика: чей CTR выше и причём тут кошка?</p>
-                    <p className="text-muted-foreground text-sm mb-4">Банк тестировал статичные баннеры против banner spinner на Display канале с targeting на Республику Беларусь</p>
+                  <div className="space-y-2">
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">цель:</span> продвижение новой МТКарты</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">каналы:</span> Display</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">гео:</span> Республика Беларусь</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">формат:</span> статичные баннеры, banner spinner</p>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="p-4 rounded-lg bg-slate-50 border border-border">
-                      <p className="text-sm text-muted-foreground mb-4">Статичный баннер</p>
-                      <div className="space-y-3">
-                        <div>
-                          <p className="text-2xl font-bold text-[#0029FF]">30%</p>
-                          <p className="text-xs text-muted-foreground">viewability</p>
+                  
+                  <div className="space-y-4">
+                    <p className="font-semibold text-foreground text-center">Сравнение показателей</p>
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="space-y-4 p-6 bg-slate-50 rounded-xl border border-border">
+                        <p className="font-semibold text-foreground text-center">Статичный баннер</p>
+                        <div className="flex flex-col items-center gap-6">
+                          <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mtb-capybara-aB1c2d3e4f.jpg" alt="Статичный баннер" className="max-h-full object-contain p-2" />
+                          </div>
+                          <div className="text-center">
+                            <p className="text-3xl font-bold text-[#0029FF] mb-1">30%</p>
+                            <p className="text-sm text-muted-foreground mb-4">viewability</p>
+                            <p className="text-3xl font-bold text-[#0029FF]">0.05%</p>
+                            <p className="text-sm text-muted-foreground">CTR</p>
+                          </div>
                         </div>
-                        <div>
-                          <p className="text-2xl font-bold text-[#0029FF]">0.05%</p>
-                          <p className="text-xs text-muted-foreground">CTR</p>
+                      </div>
+                      
+                      <div className="space-y-4 p-6 bg-[#0029FF] rounded-xl border-2 border-[#0029FF]">
+                        <p className="font-semibold text-white text-center">Banner Spinner</p>
+                        <div className="flex flex-col items-center gap-6">
+                          <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mtb-cat-xY7z8a9b0c.png" alt="Banner Spinner" className="max-h-full object-contain p-2" />
+                          </div>
+                          <div className="text-center">
+                            <p className="text-3xl font-bold text-white mb-1">75%</p>
+                            <p className="text-sm text-white/70 mb-4">viewability</p>
+                            <p className="text-3xl font-bold text-white">0.2%</p>
+                            <p className="text-sm text-white/70">CTR 4x выше</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div className="p-4 rounded-lg bg-[#0029FF] border border-[#0029FF]">
-                      <p className="text-sm text-white mb-4">Banner Spinner</p>
-                      <div className="space-y-3">
-                        <div>
-                          <p className="text-2xl font-bold text-white">75%</p>
-                          <p className="text-xs text-white/80">viewability</p>
-                        </div>
-                        <div>
-                          <p className="text-2xl font-bold text-white">0.2%</p>
-                          <p className="text-xs text-white/80">CTR 4x выше</p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-                  <p className="text-sm text-muted-foreground font-bold">Результат: Rich Media улучшила viewability на 45% и увеличила CTR в 4 раза</p>
+                  
+                  <div className="p-4 rounded-lg bg-blue-50 border border-blue-100 text-center">
+                    <p className="font-semibold text-foreground">Результат: Rich Media улучшила viewability на 45% и увеличила CTR в 4 раза</p>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -380,7 +425,7 @@ export function NTIntelligenceSlide() {
                 <CardTitle className="text-[#0029FF] text-2xl">Sales Lift</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="font-medium text-foreground">Как работает:</p>
+                <p className="font-medium text-foreground">Как работа��т:</p>
                 <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
                   <li>После запуска рекламной кампании аудитория делится на две равные группы: тестовая группа (пользователи, которые видели рекламное объявление) и контрольная группа (пользователи с точно такими же характеристиками, которым рекламу не показывали)</li>
                   <li>Система отслеживает покупки ��ли другие целевые действия в обеих г��уппах</li>
