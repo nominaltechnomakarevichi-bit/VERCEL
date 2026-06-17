@@ -255,11 +255,16 @@ export function NTIntelligenceSlide() {
                   </div>
                   
                   <div className="space-y-4">
-                    <p className="font-semibold text-foreground text-center">Сравнение баннеров</p>
                     <div className="grid grid-cols-3 gap-4">
                       <div className="space-y-3 flex flex-col items-center">
                         <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dapalen-static-jD3K2pL9mO1q2r3s.jpg" alt="Статичный баннер" className="max-h-full object-contain" />
+                          <video 
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-17%20%D0%B2%2017.58.03-dELEOGj6boHwWJMer4qibftAwrYHIQ.mov"
+                            className="max-h-full object-contain"
+                            autoPlay
+                            loop
+                            muted
+                          />
                         </div>
                         <div className="text-center">
                           <p className="text-2xl font-bold text-[#0029FF]">0.28%</p>
@@ -269,7 +274,13 @@ export function NTIntelligenceSlide() {
                       
                       <div className="space-y-3 flex flex-col items-center">
                         <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dapalen-slider-mP2q3r4s5t6u.png" alt="Banner Slider" className="max-h-full object-contain" />
+                          <video 
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-17%20%D0%B2%2017.58.24-KphEe1CAEqzbKkghMFHK7ZbECEYDk9.mov"
+                            className="max-h-full object-contain"
+                            autoPlay
+                            loop
+                            muted
+                          />
                         </div>
                         <div className="text-center">
                           <p className="text-2xl font-bold text-[#0029FF]">0.4%</p>
@@ -279,11 +290,11 @@ export function NTIntelligenceSlide() {
                       
                       <div className="space-y-3 flex flex-col items-center border-2 border-[#0029FF] rounded-xl p-2">
                         <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dapalen-scratch-nL3m4n5o6p.png" alt="Scratch-баннер" className="max-h-full object-contain" />
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0YF9UdGIbKad9sl2J6LA9uIW5rGani.png" alt="Scratch-баннер" className="max-h-full object-contain" />
                         </div>
                         <div className="text-center">
                           <p className="text-2xl font-bold text-[#0029FF]">0.42%</p>
-                          <p className="text-sm font-semibold text-[#0029FF]">scratch-баннер (+1.5x)</p>
+                          <p className="text-sm text-muted-foreground">scratch-баннер</p>
                         </div>
                       </div>
                     </div>
@@ -312,19 +323,16 @@ export function NTIntelligenceSlide() {
                   </div>
                   
                   <div className="space-y-4">
-                    <p className="font-semibold text-foreground text-center">Сравнение показателей</p>
                     <div className="grid grid-cols-2 gap-6">
                       <div className="space-y-4 p-6 bg-slate-50 rounded-xl border border-border">
                         <p className="font-semibold text-foreground text-center">Статичный баннер</p>
                         <div className="flex flex-col items-center gap-6">
                           <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mtb-capybara-aB1c2d3e4f.jpg" alt="Статичный баннер" className="max-h-full object-contain p-2" />
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/240x400-qI4qJgSwXJCqjbBshdZJ48ZIJKX5Ou.jpg" alt="Статичный баннер" className="max-h-full object-contain p-2" />
                           </div>
                           <div className="text-center">
-                            <p className="text-3xl font-bold text-[#0029FF] mb-1">30%</p>
-                            <p className="text-sm text-muted-foreground mb-4">viewability</p>
-                            <p className="text-3xl font-bold text-[#0029FF]">0.05%</p>
-                            <p className="text-sm text-muted-foreground">CTR</p>
+                            <p className="text-2xl font-bold text-[#0029FF]">30% viewability</p>
+                            <p className="text-2xl font-bold text-[#0029FF]">0.05% CTR</p>
                           </div>
                         </div>
                       </div>
@@ -333,21 +341,25 @@ export function NTIntelligenceSlide() {
                         <p className="font-semibold text-white text-center">Banner Spinner</p>
                         <div className="flex flex-col items-center gap-6">
                           <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mtb-cat-xY7z8a9b0c.png" alt="Banner Spinner" className="max-h-full object-contain p-2" />
+                            <video 
+                              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-17%20%D0%B2%2018.03.59-zmQi8E6yW2kYyIv34O1cO58fnLlLH1.mov"
+                              className="max-h-full object-contain p-2"
+                              autoPlay
+                              loop
+                              muted
+                            />
                           </div>
                           <div className="text-center">
-                            <p className="text-3xl font-bold text-white mb-1">75%</p>
-                            <p className="text-sm text-white/70 mb-4">viewability</p>
-                            <p className="text-3xl font-bold text-white">0.2%</p>
-                            <p className="text-sm text-white/70">CTR 4x выше</p>
+                            <p className="text-2xl font-bold text-white">75% viewability</p>
+                            <p className="text-2xl font-bold text-white">0.2% CTR</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="p-4 rounded-lg bg-blue-50 border border-blue-100 text-center">
-                    <p className="font-semibold text-foreground">Результат: Rich Media улучшила viewability на 45% и увеличила CTR в 4 раза</p>
+                  <div className="p-4 rounded-lg bg-blue-50 border border-blue-100 text-left">
+                    <p className="font-semibold text-foreground">Banner Spinner показал +45% к Viewability и увеличил CTR в 4 раза</p>
                   </div>
                 </CardContent>
               </Card>
