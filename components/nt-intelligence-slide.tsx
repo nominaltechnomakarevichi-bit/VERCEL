@@ -57,17 +57,10 @@ export function NTIntelligenceSlide() {
 
         {/* Header Section */}
         <section className="space-y-4">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3">
+            <img src="/logos/nt.png" alt="NT" className="h-10 w-10 object-contain" />
             <BarChart3 className="w-8 h-8 text-[#0029FF]" />
-            <span className="text-xl font-bold text-[#0029FF]">NT Technology</span>
-          </div>
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground">
-              Programmatic, который влияет на бизнес-результат, а не только на медийные метрики.
-            </h1>
-            <p className="text-xl text-muted-foreground">
-              Партнеры выбирают NT Technology за влияние на продажи и эффективность рекламных инвестиций
-            </p>
+            <span className="text-2xl font-bold text-[#0029FF]">Programmatic, который влияет на бизнес-результат</span>
           </div>
         </section>
 
@@ -86,15 +79,15 @@ export function NTIntelligenceSlide() {
             {comparisonData.map((item, idx) => (
               <div key={idx} className="grid grid-cols-3 gap-4 p-4 rounded-lg border border-border bg-white">
                 <div className="flex items-center">
-                  <span className="font-medium text-foreground">{item.approach}</span>
+                  <span className="text-foreground">{item.approach}</span>
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="px-3 py-1 rounded-full bg-red-100 border border-red-300">
-                    <span className="text-sm text-red-700 font-medium">{item.problem}</span>
+                    <span className="text-foreground text-red-700">{item.problem}</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-end">
-                  <span className="text-sm font-medium text-[#0029FF]">{item.solution}</span>
+                  <span className="text-[#0029FF]">{item.solution}</span>
                 </div>
               </div>
             ))}
@@ -102,8 +95,8 @@ export function NTIntelligenceSlide() {
 
           {/* Insight Badge */}
           <div className="p-6 rounded-lg bg-[#0029FF] border-2 border-[#0029FF]">
-            <p className="text-white font-bold text-lg">
-              💡 Инсайт: стандартный подход подразумевает закупку показов, но не всегда учитывает управление вниманием и вклад в продажи.
+            <p className="text-white text-lg">
+              💡 <span className="font-bold">Инсайт:</span> стандартный подход подразумевает закупку показов, но не всегда учитывает управление вниманием и вклад в продажи.
             </p>
           </div>
 
@@ -177,8 +170,7 @@ export function NTIntelligenceSlide() {
             </Card>
 
             <div className="p-6 rounded-lg border-2 border-[#0029FF] bg-white">
-              <p className="font-bold text-foreground text-lg mb-2">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
-              <p className="text-muted-foreground">Media Buying + Creative Intelligence = Performance Growth</p>
+              <p className="text-foreground text-lg">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
             </div>
           </section>
         )}
@@ -189,12 +181,6 @@ export function NTIntelligenceSlide() {
             <h2 className="text-4xl font-bold text-foreground">Optimization Intelligence</h2>
             
             <div className="space-y-6">
-              <div className="p-6 rounded-lg border-2 border-border bg-white">
-                <p className="font-bold text-foreground text-lg mb-2">Как работает оптимизация</p>
-                <p className="text-muted-foreground">Мы используем сигналы, которые происходят внутри баннера и после взаимодействия пользователя, для повышения эффективности кампании</p>
-              </div>
-
-              <Card className="border-2 border-border bg-white">
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">In-Banner Events Optimization</CardTitle>
                 </CardHeader>
@@ -206,7 +192,7 @@ export function NTIntelligenceSlide() {
                     <li>Алгоритм DSP анализирует профиль этого пользователя и контекст показа</li>
                     <li>Ставки на аукционе повышаются для тех сегментов, которые с наибольшей вероятностью совершат целевое действие</li>
                   </ol>
-                  <p className="text-muted-foreground font-medium text-[#0029FF] mt-4">Преимущество подхода: дает возможность отслеживать точные микроконверсии и оптимизировать РК по ним, а не только по кликам</p>
+                  <p className="text-muted-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: дает возможность отслеживать точные микроконверсии и оптимизировать РК по ним, а не только по кликам</p>
                 </CardContent>
               </Card>
 
@@ -221,7 +207,7 @@ export function NTIntelligenceSlide() {
                     <li>Система активирует окно атрибуции (от 1 до 30 дней)</li>
                     <li>Если в течение этого времени пользователь самостоятельно заходит на сайт и совершает покупку, алгоритм связывает этот визит с недавним показом рекламы</li>
                   </ol>
-                  <p className="text-muted-foreground font-medium text-[#0029FF] mt-4">Преимущество подхода: позволяет учитывать влияние рекламы на пользователей, которые долго принимают решение</p>
+                  <p className="text-muted-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет учитывать влияние рекламы на пользователей, которые долго принимают решение</p>
                 </CardContent>
               </Card>
 
@@ -237,7 +223,7 @@ export function NTIntelligenceSlide() {
                     <li>Вместо того чтобы сразу платить максимальную цену, система прогнозирует минимальную ставку, которая позволит выиграть аукцион, или отказывается от участия, если вероятность целевого действия слишком мала</li>
                     <li>Автоматически выставляются ограничения для медийных кампаний, чтобы не переплачивать за показы с низкой Viewability</li>
                   </ol>
-                  <p className="text-muted-foreground font-medium text-[#0029FF] mt-4">Преимущество подхода: снижение fraud- и brand safety-рисков, отборные White lists, выше прозрачность закупки</p>
+                  <p className="text-muted-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: снижение fraud- и brand safety-рисков, отборные White lists, выше прозрачность закупки</p>
                 </CardContent>
               </Card>
             </div>
@@ -307,10 +293,10 @@ export function NTIntelligenceSlide() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <p className="font-semibold text-foreground">→ {item.description}</p>
+                    <p className="text-foreground">→ {item.description}</p>
                   </div>
                   <div>
-                    <p className="text-muted-foreground">→ {item.details}</p>
+                    <p className="text-foreground">→ {item.details}</p>
                   </div>
                 </CardContent>
               </Card>
