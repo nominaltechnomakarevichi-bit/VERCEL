@@ -175,10 +175,10 @@ export function NTIntelligenceSlide() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Banner Spinner */}
                 <div className="space-y-3">
-                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg aspect-video flex items-center justify-center overflow-hidden">
+                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg h-96 flex items-center justify-center overflow-hidden">
                     <video 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Banner%20Spinner-PlChE8Qnm6vEAIcAKJ3nKle2Tkyu0g.mov"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       autoPlay
                       loop
                       muted
@@ -192,10 +192,10 @@ export function NTIntelligenceSlide() {
 
                 {/* Pull Coupon Banner */}
                 <div className="space-y-3">
-                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg aspect-video flex items-center justify-center overflow-hidden">
+                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg h-96 flex items-center justify-center overflow-hidden">
                     <video 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pull%20Coupon%20Banner-dlhcrsNcKqfmY86TBaQ7J64KdTNdv2.mov"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       autoPlay
                       loop
                       muted
@@ -209,10 +209,10 @@ export function NTIntelligenceSlide() {
 
                 {/* Tap&Melt Banner */}
                 <div className="space-y-3">
-                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg aspect-video flex items-center justify-center overflow-hidden">
+                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg h-96 flex items-center justify-center overflow-hidden">
                     <video 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tap%26Melt-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80-HDWAGlXuqIOwWMqGvgYlPXXxJl199t.mov"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       autoPlay
                       loop
                       muted
