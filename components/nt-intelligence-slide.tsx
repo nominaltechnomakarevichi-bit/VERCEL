@@ -149,7 +149,7 @@ export function NTIntelligenceSlide() {
                   <Zap className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-foreground text-lg">Собственные форматы креативов для Open RTB</p>
-                    <p className="text-muted-foreground">Уникальные интерактивные креативы преодолевают баннерную слепоту и увеличивают вовлеченность</p>
+                    <p className="text-muted-foreground">Уникальные интерактивные креативы преодолевают баннерную слепоту и ув��личивают вовлеченность</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -387,13 +387,13 @@ export function NTIntelligenceSlide() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
+                  <ol className="space-y-3 text-foreground list-decimal list-inside">
                     <li>Пользователь совершает микроконверсию внутри баннера (наводит курсор, проходит мини-опрос или прокручивает каталог)</li>
                     <li>Действие регистрируется как успешный ивент</li>
-                    <li>Алгоритм DSP анализирует профиль этого ��ользователя и контекст показа</li>
+                    <li>Алгоритм DSP анализирует профиль этого пользователя и контекст показа</li>
                     <li>Ставки на аукционе повышаются для тех сегментов, которые с наибольшей вероятностью совершат целевое действие</li>
                   </ol>
-                  <p className="text-muted-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: дает возможность отслеживать точные микроконверсии и оптимизировать РК по ним, а не только по кликам</p>
+                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: дает возможность отслеживать точные микроконверсии и оптимизировать РК по ним, а не только по кликам</p>
                 </CardContent>
               </Card>
 
@@ -403,12 +403,12 @@ export function NTIntelligenceSlide() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
+                  <ol className="space-y-3 text-foreground list-decimal list-inside">
                     <li>Когда пользователь просматривает рекламу его cookie-файл или ID устройства запоминается</li>
                     <li>Система активирует окно атрибуции (от 1 до 30 дней)</li>
                     <li>Если в течение этого времени пользователь самостоятельно заходит на сайт и совершает покупку, алгоритм связывает этот визит с недавним показом рекламы</li>
                   </ol>
-                  <p className="text-muted-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет учитывать влияние рекламы на пользователей, которые долго принимают решение</p>
+                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет учитывать влияние рекламы на пользователей, которые долго принимают решение</p>
                 </CardContent>
               </Card>
 
@@ -418,13 +418,13 @@ export function NTIntelligenceSlide() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
+                  <ol className="space-y-3 text-foreground list-decimal list-inside">
                     <li>DSP анализирует входящий запрос (размещение, устройство, географию, геолокацию пользователя) за миллисекунды до того, как ставка будет отправлена на аукцион</li>
                     <li>Алгоритмы оценивают вероятность конверсии для конкретного пользователя</li>
                     <li>Вместо того чтобы сразу платить максимальную цену, система прогнозирует минимальную ставку, которая позволит выиграть аукцион, или отказывается от участия, если вероятность целевого действия слишком мала</li>
                     <li>Автоматически выставляются ограничения для медийных кампаний, чтобы не переплачивать за показы с низкой Viewability</li>
                   </ol>
-                  <p className="text-muted-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: снижение fraud- и brand safety-рисков, отборные White lists, выше прозрачность закупки</p>
+                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: снижение fraud- и brand safety-рисков, отборные White lists, выше прозрачность закупки</p>
                 </CardContent>
               </Card>
             </div>
@@ -436,7 +436,7 @@ export function NTIntelligenceSlide() {
           <section className="space-y-6 animate-fadeIn">
             <h2 className="text-4xl font-bold text-foreground">Measurement Intelligence</h2>
             
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-foreground">
               Мы меняем подход "нет клика = нет ценности" на оценку вклада медийной рекламы в бизнес-результат
             </p>
 
@@ -445,14 +445,38 @@ export function NTIntelligenceSlide() {
                 <CardTitle className="text-[#0029FF] text-2xl">Sales Lift</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="font-medium text-foreground">Как работа��т:</p>
-                <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
+                <p className="font-medium text-foreground">Как работает:</p>
+                <ol className="space-y-3 text-foreground list-decimal list-inside">
                   <li>После запуска рекламной кампании аудитория делится на две равные группы: тестовая группа (пользователи, которые видели рекламное объявление) и контрольная группа (пользователи с точно такими же характеристиками, которым рекламу не показывали)</li>
-                  <li>Система отслеживает покупки ��ли другие целевые действия в обеих г��уппах</li>
+                  <li>Система отслеживает покупки или другие целевые действия в обеих группах</li>
                   <li>Из конверсии тестовой группы вычитается конверсия контрольной</li>
                 </ol>
                 <p className="font-medium text-foreground mt-4">Sales Lift = CRтест/CRконтроль - 100%, где CR - коэффициент конверсии</p>
-                <p className="text-muted-foreground font-medium text-[#0029FF] mt-4">Преимущество подхода: позволяет оценить инкрементальный вклад медийной рекламы в продажи</p>
+                <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет оценить инкрементальный вклад медийной рекламы в продажи</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-border bg-white">
+              <CardHeader>
+                <CardTitle className="text-[#0029FF] text-2xl">Частота покупок и пенетрация бренда</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="flex items-start gap-3">
+                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-foreground text-lg">Пенетрация бренда</p>
+                    <p className="text-foreground">Доля покупателей, которые хотя бы один раз за период купили что-то от этого бренда</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-foreground text-lg">Частота покупок</p>
+                    <p className="text-foreground">Среднее количество покупок бренда за период теми, кто его покупал</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground pt-4 border-t border-border">Источник данных: обезличенные электронные чеки ФНС России</p>
+                <p className="text-foreground font-bold text-[#0029FF]">Преимущества подхода: показывает, насколько хорошо работает реклама и узнаваемость (осведомленность переходит в покупку)</p>
               </CardContent>
             </Card>
 
@@ -476,7 +500,7 @@ export function NTIntelligenceSlide() {
                   </div>
                 </div>
                 <p className="text-muted-foreground pt-4 border-t border-border">Источник данных: обезличенные электронные чеки ФНС России</p>
-                <p className="text-muted-foreground font-medium text-[#0029FF]">Преимущества подхода: показывает, насколько хорошо работает реклама и узнаваемость (осведомленность переходит в покупку)</p>
+                <p className="text-muted-foreground font-medium text-[#0029FF]">Преимущества подхода: показывает, насколь��о хорошо работает реклама и узнаваемость (осведомленность переходит в покупку)</p>
               </CardContent>
             </Card>
           </section>
