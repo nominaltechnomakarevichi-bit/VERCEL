@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import { Gilroy } from 'next/font/google'
+import { Geist, Geist_Mono, Outfit } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
  
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const gilroy = Gilroy({ subsets: ["latin"], variable: "--font-gilroy" })
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-gilroy" })
  
 export const metadata: Metadata = {
   title: 'Pharma Solutions | Программатик платформа',
