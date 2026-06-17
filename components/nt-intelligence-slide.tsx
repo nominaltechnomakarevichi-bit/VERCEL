@@ -58,9 +58,9 @@ export function NTIntelligenceSlide() {
         {/* Header Section */}
         <section className="space-y-4">
           <div className="flex items-center gap-3">
-            <img src="/logos/nt.png" alt="NT" className="h-10 w-10 object-contain" />
+            <img src="/logos/nt-logo.png" alt="NT" className="h-12 w-12 object-contain" />
             <BarChart3 className="w-8 h-8 text-[#0029FF]" />
-            <span className="text-2xl font-bold text-[#0029FF]">Programmatic, который влияет на бизнес-результат</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground">Programmatic, который влияет на бизнес-результат</h1>
           </div>
         </section>
 
@@ -94,9 +94,9 @@ export function NTIntelligenceSlide() {
           </div>
 
           {/* Insight Badge */}
-          <div className="p-6 rounded-lg bg-[#0029FF] border-2 border-[#0029FF]">
-            <p className="text-white text-lg">
-              💡 <span className="font-bold">Инсайт:</span> стандартный подход подразумевает закупку показов, но не всегда учитывает управление вниманием и вклад в продажи.
+          <div className="p-6 rounded-lg bg-white border-2 border-[#0029FF]">
+            <p className="text-foreground text-lg">
+              💡 <span className="font-bold">Инсайт:</span> стандартный подход подразумевает закупку показов, но не всегда учитывает управление вниманием и вклад в продажи
             </p>
           </div>
 
@@ -169,8 +169,143 @@ export function NTIntelligenceSlide() {
               </CardContent>
             </Card>
 
+            {/* Creative Examples */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-foreground">Примеры креативов</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Banner Spinner */}
+                <div className="space-y-3">
+                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg aspect-video flex items-center justify-center overflow-hidden">
+                    <video 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Banner%20Spinner-PlChE8Qnm6vEAIcAKJ3nKle2Tkyu0g.mov"
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                    />
+                  </div>
+                  <div>
+                    <p className="font-bold text-foreground">Banner Spinner</p>
+                    <p className="text-sm text-muted-foreground">Вращающийся баннер с динамичной анимацией</p>
+                  </div>
+                </div>
+
+                {/* Pull Coupon Banner */}
+                <div className="space-y-3">
+                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg aspect-video flex items-center justify-center overflow-hidden">
+                    <video 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pull%20Coupon%20Banner-dlhcrsNcKqfmY86TBaQ7J64KdTNdv2.mov"
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                    />
+                  </div>
+                  <div>
+                    <p className="font-bold text-foreground">Pull Coupon Banner</p>
+                    <p className="text-sm text-muted-foreground">Интерактивный баннер с вытягиванием купона</p>
+                  </div>
+                </div>
+
+                {/* Tap&Melt Banner */}
+                <div className="space-y-3">
+                  <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg aspect-video flex items-center justify-center overflow-hidden">
+                    <video 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tap%26Melt-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80-HDWAGlXuqIOwWMqGvgYlPXXxJl199t.mov"
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                    />
+                  </div>
+                  <div>
+                    <p className="font-bold text-foreground">Tap&Melt-баннер</p>
+                    <p className="text-sm text-muted-foreground">Баннер с эффектом таяния/разрушения</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="p-6 rounded-lg border-2 border-[#0029FF] bg-white">
               <p className="text-foreground text-lg">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
+            </div>
+
+            {/* How Creative Impacts Results */}
+            <div className="space-y-6 border-t-2 border-border pt-8">
+              <h3 className="text-3xl font-bold text-foreground">Как креатив влияет на результат</h3>
+              
+              {/* Case 1: Dapalen */}
+              <Card className="border-2 border-border bg-white">
+                <CardHeader>
+                  <CardTitle className="text-[#0029FF] text-2xl">NT Technology × Дапален гель</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div>
+                    <p className="font-semibold text-foreground mb-2">Как с помощью Rich Media увеличить CTR в 1,5 раза?</p>
+                    <p className="text-muted-foreground text-sm mb-4">Компания использовала статичные баннеры, banner slider и scratch-баннер на Display канале для продвижения сухого геля</p>
+                  </div>
+                  <div className="grid grid-cols-3 gap-4 text-center">
+                    <div className="p-4 rounded-lg bg-slate-50 border border-border">
+                      <p className="text-sm text-muted-foreground mb-2">Статичный баннер</p>
+                      <p className="text-3xl font-bold text-[#0029FF]">0.28%</p>
+                      <p className="text-xs text-muted-foreground">CTR</p>
+                    </div>
+                    <div className="p-4 rounded-lg bg-slate-50 border border-border">
+                      <p className="text-sm text-muted-foreground mb-2">Banner Slider</p>
+                      <p className="text-3xl font-bold text-[#0029FF]">0.4%</p>
+                      <p className="text-xs text-muted-foreground">CTR</p>
+                    </div>
+                    <div className="p-4 rounded-lg bg-[#0029FF] border border-[#0029FF]">
+                      <p className="text-sm text-white mb-2">Scratch-баннер</p>
+                      <p className="text-3xl font-bold text-white">0.42%</p>
+                      <p className="text-xs text-white/80">CTR +1.5x</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-bold">Результат: Rich Media увеличила CTR на 1,5 раза</p>
+                </CardContent>
+              </Card>
+
+              {/* Case 2: MTBank */}
+              <Card className="border-2 border-border bg-white">
+                <CardHeader>
+                  <CardTitle className="text-[#0029FF] text-2xl">NT Technology × МТБанк</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div>
+                    <p className="font-semibold text-foreground mb-2">Rich Media vs Статика: чей CTR выше и причём тут кошка?</p>
+                    <p className="text-muted-foreground text-sm mb-4">Банк тестировал статичные баннеры против banner spinner на Display канале с targeting на Республику Беларусь</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="p-4 rounded-lg bg-slate-50 border border-border">
+                      <p className="text-sm text-muted-foreground mb-4">Статичный баннер</p>
+                      <div className="space-y-3">
+                        <div>
+                          <p className="text-2xl font-bold text-[#0029FF]">30%</p>
+                          <p className="text-xs text-muted-foreground">viewability</p>
+                        </div>
+                        <div>
+                          <p className="text-2xl font-bold text-[#0029FF]">0.05%</p>
+                          <p className="text-xs text-muted-foreground">CTR</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="p-4 rounded-lg bg-[#0029FF] border border-[#0029FF]">
+                      <p className="text-sm text-white mb-4">Banner Spinner</p>
+                      <div className="space-y-3">
+                        <div>
+                          <p className="text-2xl font-bold text-white">75%</p>
+                          <p className="text-xs text-white/80">viewability</p>
+                        </div>
+                        <div>
+                          <p className="text-2xl font-bold text-white">0.2%</p>
+                          <p className="text-xs text-white/80">CTR 4x выше</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-bold">Результат: Rich Media улучшила viewability на 45% и увеличила CTR в 4 раза</p>
+                </CardContent>
+              </Card>
             </div>
           </section>
         )}
@@ -248,7 +383,7 @@ export function NTIntelligenceSlide() {
                 <p className="font-medium text-foreground">Как работает:</p>
                 <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
                   <li>После запуска рекламной кампании аудитория делится на две равные группы: тестовая группа (пользователи, которые видели рекламное объявление) и контрольная группа (пользователи с точно такими же характеристиками, которым рекламу не показывали)</li>
-                  <li>Система отслеживает покупки или другие целевые действия в обеих г��уппах</li>
+                  <li>Система отслеживает покупки ��ли другие целевые действия в обеих г��уппах</li>
                   <li>Из конверсии тестовой группы вычитается конверсия контрольной</li>
                 </ol>
                 <p className="font-medium text-foreground mt-4">Sales Lift = CRтест/CRконтроль - 100%, где CR - коэффициент конверсии</p>
