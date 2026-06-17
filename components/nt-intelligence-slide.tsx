@@ -181,6 +181,7 @@ export function NTIntelligenceSlide() {
             <h2 className="text-4xl font-bold text-foreground">Optimization Intelligence</h2>
             
             <div className="space-y-6">
+              <Card className="border-2 border-border bg-white">
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">In-Banner Events Optimization</CardTitle>
                 </CardHeader>
@@ -247,7 +248,7 @@ export function NTIntelligenceSlide() {
                 <p className="font-medium text-foreground">Как работает:</p>
                 <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
                   <li>После запуска рекламной кампании аудитория делится на две равные группы: тестовая группа (пользователи, которые видели рекламное объявление) и контрольная группа (пользователи с точно такими же характеристиками, которым рекламу не показывали)</li>
-                  <li>Система отслеживает покупки или другие целевые действия в обеих группах</li>
+                  <li>Система отслеживает покупки или другие целевые действия в обеих г��уппах</li>
                   <li>Из конверсии тестовой группы вычитается конверсия контрольной</li>
                 </ol>
                 <p className="font-medium text-foreground mt-4">Sales Lift = CRтест/CRконтроль - 100%, где CR - коэффициент конверсии</p>
