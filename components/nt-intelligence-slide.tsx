@@ -101,17 +101,17 @@ export function NTIntelligenceSlide() {
           </div>
 
           {/* NT Technology Block */}
-          <div className="space-y-6 p-8 rounded-lg bg-gradient-to-br from-blue-50 to-white border-2 border-[#0029FF]">
-            <div>
-              <h3 className="text-3xl font-bold text-foreground mb-3">NT Technology решает 4 ключевых проблемы</h3>
-              <p className="text-lg text-foreground">Мы объединяем три типа интеллекта для достижения результатов:</p>
-            </div>
+          <div className="space-y-6">
+            <h2 className="text-4xl font-bold text-foreground">NT Technology — это</h2>
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {intelligenceItems.map((item) => (
-                <div key={item.id} className="p-4 rounded-lg bg-white border border-border">
-                  <h4 className="font-bold text-foreground text-lg mb-2">{item.title}</h4>
-                  <p className="text-sm text-foreground mb-3">{item.description}</p>
-                  <p className="text-sm text-[#0029FF] font-medium">{item.details}</p>
+                <div key={item.id} className="p-6 rounded-2xl border-2 border-gray-200 bg-white">
+                  <h3 className="text-[#0029FF] text-2xl font-bold mb-4">{item.title}</h3>
+                  <div className="space-y-3">
+                    <p className="text-foreground">→ {item.description}</p>
+                    <p className="text-foreground">→ {item.details}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -489,7 +489,7 @@ export function NTIntelligenceSlide() {
                   <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-foreground text-lg">Частота покупок</p>
-                    <p className="text-foreground">Среднее количество покупок бренда за период теми, кто его покупал</p>
+                    <p className="text-foreground">Среднее к��личество покупок бренда за период теми, кто его покупал</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground pt-4 border-t border-border">Источник данных: обезличенные электронные чеки ФНС России</p>
@@ -522,29 +522,6 @@ export function NTIntelligenceSlide() {
             </Card>
           </section>
         )}
-
-        {/* Final Block */}
-        <section className="space-y-8 border-t-2 border-border pt-12">
-          <h2 className="text-4xl font-bold text-foreground">NT Technology — это</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {intelligenceItems.map((item) => (
-              <Card key={item.id} className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <p className="text-foreground">→ {item.description}</p>
-                  </div>
-                  <div>
-                    <p className="text-foreground">→ {item.details}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
 
       </div>
     </main>
