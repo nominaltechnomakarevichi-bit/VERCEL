@@ -127,7 +127,7 @@ export function NTIntelligenceSlide() {
                   : 'bg-white border-2 border-[#0029FF] text-[#0029FF] hover:bg-blue-50'
               }`}
             >
-              Creative Intelligence
+              Подробнее
             </button>
             <button
               onClick={() => setActiveTab('optimization')}
@@ -137,7 +137,7 @@ export function NTIntelligenceSlide() {
                   : 'bg-white border-2 border-[#0029FF] text-[#0029FF] hover:bg-blue-50'
               }`}
             >
-              Optimization Intelligence
+              Подробнее
             </button>
             <button
               onClick={() => setActiveTab('measurement')}
@@ -147,7 +147,7 @@ export function NTIntelligenceSlide() {
                   : 'bg-white border-2 border-[#0029FF] text-[#0029FF] hover:bg-blue-50'
               }`}
             >
-              Measurement Intelligence
+              Подробнее
             </button>
           </div>
         </section>
