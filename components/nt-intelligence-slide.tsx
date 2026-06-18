@@ -100,6 +100,23 @@ export function NTIntelligenceSlide() {
             </p>
           </div>
 
+          {/* NT Technology Block */}
+          <div className="space-y-6 p-8 rounded-lg bg-gradient-to-br from-blue-50 to-white border-2 border-[#0029FF]">
+            <div>
+              <h3 className="text-3xl font-bold text-foreground mb-3">NT Technology решает 4 ключевых проблемы</h3>
+              <p className="text-lg text-foreground">Мы объединяем три типа интеллекта для достижения результатов:</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {intelligenceItems.map((item) => (
+                <div key={item.id} className="p-4 rounded-lg bg-white border border-border">
+                  <h4 className="font-bold text-foreground text-lg mb-2">{item.title}</h4>
+                  <p className="text-sm text-foreground mb-3">{item.description}</p>
+                  <p className="text-sm text-[#0029FF] font-medium">{item.details}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Tab Navigation - Full Width */}
           <div className="flex gap-4 flex-col md:flex-row">
             <button
@@ -149,7 +166,7 @@ export function NTIntelligenceSlide() {
                   <Zap className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-foreground text-lg">Собственные форматы креативов для Open RTB</p>
-                    <p className="text-muted-foreground">Уникальные интерактивные креативы преодолевают баннерную слепоту и ув��личивают вовлеченность</p>
+                    <p className="text-muted-foreground">Уникальные интерактивные креативы преодолевают баннерную слепоту и увеличивают вовлеченность</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -258,13 +275,7 @@ export function NTIntelligenceSlide() {
                     <div className="grid grid-cols-3 gap-4">
                       <div className="space-y-3 flex flex-col items-center">
                         <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
-                          <video 
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-17%20%D0%B2%2017.58.03-dELEOGj6boHwWJMer4qibftAwrYHIQ.mov"
-                            className="max-h-full object-contain"
-                            autoPlay
-                            loop
-                            muted
-                          />
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0YF9UdGIbKad9sl2J6LA9uIW5rGani.png" alt="Статичный баннер" className="max-h-full object-contain" />
                         </div>
                         <div className="text-center">
                           <p className="text-2xl font-bold text-[#0029FF]">0.28%</p>
@@ -275,7 +286,7 @@ export function NTIntelligenceSlide() {
                       <div className="space-y-3 flex flex-col items-center">
                         <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
                           <video 
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-17%20%D0%B2%2017.58.24-KphEe1CAEqzbKkghMFHK7ZbECEYDk9.mov"
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-17%20%D0%B2%2017.58.03-dELEOGj6boHwWJMer4qibftAwrYHIQ.mov"
                             className="max-h-full object-contain"
                             autoPlay
                             loop
@@ -290,7 +301,13 @@ export function NTIntelligenceSlide() {
                       
                       <div className="space-y-3 flex flex-col items-center border-2 border-[#0029FF] rounded-xl p-2">
                         <div className="w-full bg-slate-100 rounded-xl p-4 flex items-center justify-center h-56">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0YF9UdGIbKad9sl2J6LA9uIW5rGani.png" alt="Scratch-баннер" className="max-h-full object-contain" />
+                          <video 
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-17%20%D0%B2%2017.58.24-KphEe1CAEqzbKkghMFHK7ZbECEYDk9.mov"
+                            className="max-h-full object-contain"
+                            autoPlay
+                            loop
+                            muted
+                          />
                         </div>
                         <div className="text-center">
                           <p className="text-2xl font-bold text-[#0029FF]">0.42%</p>
