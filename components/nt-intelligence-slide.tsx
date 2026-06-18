@@ -489,7 +489,7 @@ export function NTIntelligenceSlide() {
                   <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-foreground text-lg">Частота покупок</p>
-                    <p className="text-foreground">Среднее к��личество покупок бренда за период теми, кто его покупал</p>
+                    <p className="text-foreground">Среднее количество покупок бренда за период теми, кто его покупал</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground pt-4 border-t border-border">Источник данных: обезличенные электронные чеки ФНС России</p>
@@ -497,30 +497,7 @@ export function NTIntelligenceSlide() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-border bg-white">
-              <CardHeader>
-                <CardTitle className="text-[#0029FF] text-2xl">Частота покупок и пенетрация бренда</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-foreground text-lg">Пенетрация бренда</p>
-                    <p className="text-muted-foreground">Доля покупателей, которые хотя бы один раз за период купили что-то от этого бренда</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-foreground text-lg">Частота покупок</p>
-                    <p className="text-muted-foreground">Среднее количество покупок бренда за период теми, кто его покупал</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground pt-4 border-t border-border">Источник данных: обезличенные электронные чеки ФНС России</p>
-                <p className="text-muted-foreground font-medium text-[#0029FF]">Преимущества подхода: показывает, насколь��о хорошо работает реклама и узнаваемость (осведомленность переходит в покупку)</p>
-              </CardContent>
-            </Card>
-          </section>
+            </section>
         )}
 
       </div>
