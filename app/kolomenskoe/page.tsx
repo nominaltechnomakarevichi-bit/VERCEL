@@ -92,55 +92,96 @@ export default function KolomenskePage() {
 
           {/* Rich Media Cards */}
           <div className="space-y-8">
-            {richMediaFormats.map((format, idx) => (
-              <div key={format.id} className="border-2 border-border rounded-xl p-4 bg-white">
-                <div className={format.strategy ? "flex flex-col" : "grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6"}>
-                  <div className={format.strategy ? "grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6" : ""}>
-                    {/* Video Preview */}
-                    <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
-                      <video 
-                        src={format.videoUrl}
-                        className="w-full h-full object-contain"
-                        autoPlay
-                        loop
-                        muted
-                      />
-                    </div>
+            {richMediaFormats.map((format, idx) => {
+              const isMultiLayer = format.id === 3;
+              return (
+                <div key={format.id} className="border-2 border-border rounded-xl p-4 bg-white">
+                  {isMultiLayer ? (
+                    <div className="flex flex-col">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+                        {/* Video Preview */}
+                        <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
+                          <video 
+                            src={format.videoUrl}
+                            className="w-full h-full object-contain"
+                            autoPlay
+                            loop
+                            muted
+                          />
+                        </div>
 
-                    {/* Content */}
-                    <div className="flex flex-col justify-center">
-                      <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
-                      <p className="text-base text-foreground mb-4">{format.description}</p>
-                      
-                      <div className="mb-6">
-                        <p className="font-bold text-foreground mb-3">Преимущества:</p>
-                        <ul className="space-y-2">
-                          {format.advantages.map((adv, i) => (
-                            <li key={i} className="text-foreground flex gap-3">
-                              <span className="text-[#0029FF] flex-shrink-0">•</span>
-                              <span>{adv}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        {/* Content */}
+                        <div className="flex flex-col justify-center">
+                          <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
+                          <p className="text-base text-foreground mb-4">{format.description}</p>
+                          
+                          <div className="mb-6">
+                            <p className="font-bold text-foreground mb-3">Преимущества:</p>
+                            <ul className="space-y-2">
+                              {format.advantages.map((adv, i) => (
+                                <li key={i} className="text-foreground flex gap-3">
+                                  <span className="text-[#0029FF] flex-shrink-0">•</span>
+                                  <span>{adv}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
 
-                  {format.strategy && (
-                    <div className="bg-blue-50 border-l-4 border-[#0029FF] p-4 rounded">
-                      <p className="font-bold text-foreground mb-3">Стратегия для «Коломенское»:</p>
-                      <div className="space-y-2">
-                        {format.strategy.map((item, i) => (
-                          <p key={i} className="text-foreground">
-                            → {item}
-                          </p>
-                        ))}
+                      {format.strategy && (
+                        <div className="bg-blue-50 border-l-4 border-[#0029FF] p-4 rounded">
+                          <p className="font-bold text-foreground mb-3">Стратегия для «Коломенское»:</p>
+                          <div className="space-y-2">
+                            {format.strategy.map((item, i) => (
+                              <p key={i} className="text-foreground">
+                                {item === 'В статичных блоках демонстрируем товар/линейку товаров бренда' ? '→ ' : i === 0 ? '' : '→ '}{item}
+                              </p>
+                            ))}
+                          </div>
+                          <div className="mt-4 pt-4 border-t border-[#0029FF]">
+                            <p className="text-foreground">
+                              Преимущество: демонстрируем пользователю на реальном примере, как можно использовать продукцию и замотивировать к покупке
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                      {/* Video Preview */}
+                      <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
+                        <video 
+                          src={format.videoUrl}
+                          className="w-full h-full object-contain"
+                          autoPlay
+                          loop
+                          muted
+                        />
+                      </div>
+
+                      {/* Content */}
+                      <div className="flex flex-col justify-center">
+                        <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
+                        <p className="text-base text-foreground mb-4">{format.description}</p>
+                        
+                        <div>
+                          <p className="font-bold text-foreground mb-3">Преимущества:</p>
+                          <ul className="space-y-2">
+                            {format.advantages.map((adv, i) => (
+                              <li key={i} className="text-foreground flex gap-3">
+                                <span className="text-[#0029FF] flex-shrink-0">•</span>
+                                <span>{adv}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Rich Media Insight */}
@@ -272,11 +313,14 @@ export default function KolomenskePage() {
                 <CardTitle className="text-[#0029FF] text-2xl">Indoor</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                <div className="bg-slate-100 rounded-lg h-40 flex items-center justify-center mb-4">
+                  <p className="text-muted-foreground">МЕСТО ДЛЯ ИЗОБРАЖЕНИЯ</p>
+                </div>
                 <p className="text-foreground">LED-экраны в магазинах</p>
                 <div className="bg-blue-50 rounded p-4">
                   <p className="font-semibold text-foreground mb-3">Возможности расположения:</p>
                   <ul className="space-y-2">
-                    {['Лента', 'Пятерочка', 'Перекресток', 'Дикси', 'Магнит'].map((store, i) => (
+                    {['Лента', 'Пятерочка', 'Перекр��сток', 'Дикси', 'Магнит'].map((store, i) => (
                       <li key={i} className="text-foreground flex gap-2">
                         <span className="text-[#0029FF]">−</span>
                         <span>{store}</span>
@@ -293,6 +337,9 @@ export default function KolomenskePage() {
                 <CardTitle className="text-[#0029FF] text-2xl">Outdoor</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                <div className="bg-slate-100 rounded-lg h-40 flex items-center justify-center mb-4">
+                  <p className="text-muted-foreground">МЕСТО ДЛЯ ИЗОБРАЖЕНИЯ</p>
+                </div>
                 <p className="text-foreground">Ситиборды, билборды</p>
                 <div className="bg-blue-50 rounded p-4">
                   <p className="font-semibold text-foreground mb-3">Возможности расположения:</p>
@@ -317,7 +364,7 @@ export default function KolomenskePage() {
           {/* Store Locator Map */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-6">Физические точки продаж</h3>
-            <div className="bg-slate-100 rounded-lg overflow-hidden max-w-md">
+            <div className="bg-slate-100 rounded-lg overflow-hidden w-full">
               <img 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.20.24-RCepqEtb45YBlWOtVmpieNWtGeNGr5.png"
                 alt="Russia Coverage Map"
