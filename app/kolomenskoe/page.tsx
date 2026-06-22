@@ -86,114 +86,6 @@ export default function KolomenskePage() {
         </div>
       </section>
 
-      {/* Rich Media Section */}
-      <section className="border-b-2 border-border py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-2">Rich Media форматы</h2>
-            <p className="text-xl text-foreground">Инструмент удержания внимания в эпоху баннерной слепоты</p>
-          </div>
-
-          {/* Rich Media Cards */}
-          <div className="space-y-8">
-            {richMediaFormats.map((format, idx) => {
-              const isMultiLayer = format.id === 3;
-              return (
-                <div key={format.id} className="border-2 border-border rounded-xl p-4 bg-white">
-                  {isMultiLayer ? (
-                    <div className="flex flex-col">
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
-                        {/* Video Preview */}
-                        <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
-                          <video 
-                            src={format.videoUrl}
-                            className="w-full h-full object-contain"
-                            autoPlay
-                            loop
-                            muted
-                          />
-                        </div>
-
-                        {/* Content */}
-                        <div className="flex flex-col justify-center">
-                          <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
-                          <p className="text-base text-foreground mb-4">{format.description}</p>
-                          
-                          <div className="mb-6">
-                            <p className="font-bold text-foreground mb-3">Преимущества:</p>
-                            <ul className="space-y-2">
-                              {format.advantages.map((adv, i) => (
-                                <li key={i} className="text-foreground flex gap-3">
-                                  <span className="text-[#0029FF] flex-shrink-0">•</span>
-                                  <span>{adv}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      {format.strategy && (
-                        <div className="bg-blue-50 border-l-4 border-[#0029FF] p-4 rounded">
-                          <p className="font-bold text-foreground mb-3">Стратегия для «Коломенское»:</p>
-                          <div className="space-y-2">
-                            {format.strategy.map((item, i) => (
-                              <p key={i} className="text-foreground">
-                                {item === 'В статичных блоках демонстрируем товар/линейку товаров бренда' ? '→ ' : i === 0 ? '' : '→ '}{item}
-                              </p>
-                            ))}
-                          </div>
-
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                      {/* Video Preview */}
-                      <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
-                        <video 
-                          src={format.videoUrl}
-                          className="w-full h-full object-contain"
-                          autoPlay
-                          loop
-                          muted
-                        />
-                      </div>
-
-                      {/* Content */}
-                      <div className="flex flex-col justify-center">
-                        <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
-                        <p className="text-base text-foreground mb-4">{format.description}</p>
-                        
-                        <div>
-                          <p className="font-bold text-foreground mb-3">Преимущества:</p>
-                          <ul className="space-y-2">
-                            {format.advantages.map((adv, i) => (
-                              <li key={i} className="text-foreground flex gap-3">
-                                <span className="text-[#0029FF] flex-shrink-0">•</span>
-                                <span>{adv}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Rich Media Insight */}
-          <div className="mt-12 p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
-            <p className="text-lg">
-              <span className="font-bold text-foreground">Инсайт:</span>{' '}
-              <span className="text-foreground">Rich Media креативы обеспечивают рост внимания пользователя, увеличивают время взаимодействия с креативом и обеспечивают высокую запоминаемость бренда</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Audience Segments Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -337,6 +229,114 @@ export default function KolomenskePage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Rich Media Section */}
+      <section className="border-b-2 border-border py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-2">Rich Media форматы</h2>
+            <p className="text-xl text-foreground">Инструмент удержания внимания в эпоху баннерной слепоты</p>
+          </div>
+
+          {/* Rich Media Cards */}
+          <div className="space-y-8">
+            {richMediaFormats.map((format, idx) => {
+              const isMultiLayer = format.id === 3;
+              return (
+                <div key={format.id} className="border-2 border-border rounded-xl p-4 bg-white">
+                  {isMultiLayer ? (
+                    <div className="flex flex-col">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+                        {/* Video Preview */}
+                        <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
+                          <video 
+                            src={format.videoUrl}
+                            className="w-full h-full object-contain"
+                            autoPlay
+                            loop
+                            muted
+                          />
+                        </div>
+
+                        {/* Content */}
+                        <div className="flex flex-col justify-center">
+                          <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
+                          <p className="text-base text-foreground mb-4">{format.description}</p>
+                          
+                          <div className="mb-6">
+                            <p className="font-bold text-foreground mb-3">Преимущества:</p>
+                            <ul className="space-y-2">
+                              {format.advantages.map((adv, i) => (
+                                <li key={i} className="text-foreground flex gap-3">
+                                  <span className="text-[#0029FF] flex-shrink-0">•</span>
+                                  <span>{adv}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      {format.strategy && (
+                        <div className="bg-blue-50 border-l-4 border-[#0029FF] p-4 rounded">
+                          <p className="font-bold text-foreground mb-3">Стратегия для «Коломенское»:</p>
+                          <div className="space-y-2">
+                            {format.strategy.map((item, i) => (
+                              <p key={i} className="text-foreground">
+                                {item === 'В статичных блоках демонстрируем товар/линейку товаров бренда' ? '→ ' : i === 0 ? '' : '→ '}{item}
+                              </p>
+                            ))}
+                          </div>
+
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                      {/* Video Preview */}
+                      <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
+                        <video 
+                          src={format.videoUrl}
+                          className="w-full h-full object-contain"
+                          autoPlay
+                          loop
+                          muted
+                        />
+                      </div>
+
+                      {/* Content */}
+                      <div className="flex flex-col justify-center">
+                        <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
+                        <p className="text-base text-foreground mb-4">{format.description}</p>
+                        
+                        <div>
+                          <p className="font-bold text-foreground mb-3">Преимущества:</p>
+                          <ul className="space-y-2">
+                            {format.advantages.map((adv, i) => (
+                              <li key={i} className="text-foreground flex gap-3">
+                                <span className="text-[#0029FF] flex-shrink-0">•</span>
+                                <span>{adv}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Rich Media Insight */}
+          <div className="mt-12 p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
+            <p className="text-lg">
+              <span className="font-bold text-foreground">Инсайт:</span>{' '}
+              <span className="text-foreground">Rich Media креативы обеспечивают рост внимания пользователя, увеличивают время взаимодействия с креативом и обеспечивают высокую запоминаемость бренда</span>
+            </p>
           </div>
         </div>
       </section>
