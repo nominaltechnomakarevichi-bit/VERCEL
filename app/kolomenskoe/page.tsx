@@ -139,7 +139,7 @@ export default function KolomenskePage() {
                           <div className="space-y-2">
                             {format.strategy.map((item, i) => (
                               <p key={i} className="text-foreground">
-                                {item === 'В статичных блоках демонстрируем товар/линейку товаров бр��нда' ? '→ ' : i === 0 ? '' : '→ '}{item}
+                                {item === 'В статичных блоках демонстрируем товар/линейку товаров бренда' ? '→ ' : i === 0 ? '' : '→ '}{item}
                               </p>
                             ))}
                           </div>
@@ -287,7 +287,7 @@ export default function KolomenskePage() {
           <div className="p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
             <p className="text-lg">
               <span className="font-bold text-foreground">Инсайт:</span>{' '}
-              <span className="text-foreground">СTV реклама - значимый крючок для привлечения внима��ия аудитории, т.к. ее практически невозможно про��устить</span>
+              <span className="text-foreground">СTV реклама - значимый крючок для привлечения внимания аудитории, т.к. ее практически невозможно пропустить</span>
             </p>
           </div>
         </div>
@@ -298,7 +298,7 @@ export default function KolomenskePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-2">DOOH</h2>
-            <p className="text-xl text-foreground">Рекл��мный канал для О2О (online-to-offline) взаимодействия</p>
+            <p className="text-xl text-foreground">Рекламный канал для О2О (online-to-offline) взаимодействия</p>
           </div>
 
           {/* DOOH Grid */}
@@ -421,7 +421,7 @@ export default function KolomenskePage() {
             <div className="border-l-4 border-[#0029FF] pl-6">
               <h3 className="text-2xl font-bold text-foreground mb-3">Этап 3: Конверсия в точке продажи (DOOH)</h3>
               <p className="text-lg text-foreground mb-3">
-                DOOH рекламу размещаем в магазинах Лента, Пятерочка и других торговых сетях, где пользователь принимает финальное решение о покупке. Outdoor реклама рядом с торговыми точками и на высокотрафиковых дорогах напоминает о бренде перед посещением магазина.
+                DOOH рекламу размещаем в магазинах Лента, Пятерочка и других торговых сетях, где пользователь при��имает финальное решение о покупке. Outdoor реклама рядом с торговыми точками и на высокотрафиковых дорогах напоминает о бренде перед посещением магазина.
               </p>
             </div>
 
