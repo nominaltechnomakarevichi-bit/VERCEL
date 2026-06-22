@@ -57,16 +57,20 @@ export default function KolomenskePage() {
           <div className="flex items-start gap-8">
             {/* Logos */}
             <div className="flex gap-6 items-center flex-shrink-0">
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulbU9iEEau7dtNf8jpBqUpuSopx3mL.png" 
-                alt="NT Technology" 
-                className="w-20 h-20 object-contain"
-              />
-              <img 
-                src="https://kolomenskoe.com/static/images/logo-simple-large.svg" 
-                alt="Kolomenskoe" 
-                className="w-20 h-20 object-contain"
-              />
+              <div className="w-24 h-24 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulbU9iEEau7dtNf8jpBqUpuSopx3mL.png" 
+                  alt="NT Technology" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="w-24 h-24 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-simple-large-8AtdnIzsYjB3JEFoCkus5A2zyVtV0x.svg" 
+                  alt="Kolomenskoe" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
 
             {/* Title and Subtitle */}
@@ -78,6 +82,153 @@ export default function KolomenskePage() {
                 ТОП-3 инструмента для роста брендовых метрик
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Audience Segments Section */}
+      <section className="border-b-2 border-border py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-2">Аудитория бренда</h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Segment 1: Young Moms */}
+            <Card className="border-2 border-border bg-white overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_23_04-Q7bZleGEthfBdoC2TAjPx2ckm7xDtD.png"
+                  alt="Молодые мамы и семьи с детьми"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <CardContent className="pt-6 space-y-4">
+                <h3 className="text-xl font-bold text-[#0029FF]">Молодые мамы и семьи с детьми</h3>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Продукты</p>
+                  <p className="text-foreground text-sm">Творог, Сметана, Кефир, Ряженка, Молоко, Термостатная продукция</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Возраст</p>
+                  <p className="text-foreground text-sm">28–42 года</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Интересы</p>
+                  <p className="text-foreground text-sm">Здоровье, правильное питание детей, домашняя кухня, рецепты, семейный отдых, родительские сообщества</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
+                  <p className="text-foreground text-sm">Натуральный состав, доверие к российскому производителю, безопасные продукты для детей</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Segment 2: Healthy Lifestyle */}
+            <Card className="border-2 border-border bg-white overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_32_54-4s5v3h8TmIGuYvuAVFG1VFoaPY5Lke.png"
+                  alt="Сторонники здорового образа жизни"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <CardContent className="pt-6 space-y-4">
+                <h3 className="text-xl font-bold text-[#0029FF]">Сторонники здорового образа жизни</h3>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Продукты</p>
+                  <p className="text-foreground text-sm">Кефир, Ряженка, Натуральные йогурты, Термостатные йогурты</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Возраст</p>
+                  <p className="text-foreground text-sm">25–40 лет</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Интересы</p>
+                  <p className="text-foreground text-sm">Фитнес, бег, йога, велоспорт, правильное питание, нутрициология, wellness</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
+                  <p className="text-foreground text-sm">Полезный перекус, контроль питания, белковый рацион, натуральность продукта</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Segment 3: Young Urban Consumers */}
+            <Card className="border-2 border-border bg-white overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_36_29-V4Qfo1UZ8gV4n3fH8zf0usS8LDf0xu.png"
+                  alt="Молодые городские потребители"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <CardContent className="pt-6 space-y-4">
+                <h3 className="text-xl font-bold text-[#0029FF]">Молодые городские потребители</h3>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Продукты</p>
+                  <p className="text-foreground text-sm">Десерты, Йогурты с наполнителями, Panna Cotta, Фруктовые творожные продукты</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Возраст</p>
+                  <p className="text-foreground text-sm">18–30 лет</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Интересы</p>
+                  <p className="text-foreground text-sm">Соцсети, кафе, путешествия, сериалы, доставка продуктов, современные food-тренды</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
+                  <p className="text-foreground text-sm">Вкусный перекус, десерт без чувства вины, удобный формат, новые вкусы</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Segment 4: 45+ Generation */}
+            <Card className="border-2 border-border bg-white overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_38_11-hpsXRnnBw4Ch7nB5JaVkppoEprAkay.png"
+                  alt="Поколение 45+"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <CardContent className="pt-6 space-y-4">
+                <h3 className="text-xl font-bold text-[#0029FF]">Поколение 45+</h3>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Продукты</p>
+                  <p className="text-foreground text-sm">Ряженка, Кефир, Сметана, Масло, Сыры</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Возраст</p>
+                  <p className="text-foreground text-sm">45–65 лет</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Интересы</p>
+                  <p className="text-foreground text-sm">Дача, садоводство, кулинария, здоровье, семейные традиции, путешествия по России</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
+                  <p className="text-foreground text-sm">Привычный вкус, доверие к производителю, натуральность, воспоминание о «настоящих молочных продуктах»</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -205,7 +356,7 @@ export default function KolomenskePage() {
               <CardContent className="pt-6 space-y-6">
                 <div className="overflow-hidden h-96 mb-4" style={{borderRadius: '24px'}}>
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_40_00-cczYyYxV5D4xi78eAnuuxBFQHygD3u.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_30_15-5VOgbnwmo3pxHPjFvcmb3BdKQ4MN2e.png"
                     alt="CTV Kolomenskoe Example"
                     className="w-full h-full object-contain"
                     style={{borderRadius: '24px'}}
@@ -307,7 +458,7 @@ export default function KolomenskePage() {
               <CardContent className="space-y-4">
                 <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_43_14-MMTYvhIGecHF7Wyfln4WMc91G1ZyRg.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_42_43-aCf29WnixynT8jYqBNSBdVMOrWDPlm.png"
                     alt="Indoor LED Screen"
                     className="w-full h-full object-cover"
                   />
@@ -335,7 +486,7 @@ export default function KolomenskePage() {
               <CardContent className="space-y-4">
                 <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_41_20-0qI8QnHtgX4UXyYekHw3DH6YaZUk2w.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_45_35-dzSRO9pHGcLGniXsszwbWuA2mSzwRv.png"
                     alt="Outdoor Billboard"
                     className="w-full h-full object-cover"
                   />
@@ -366,7 +517,7 @@ export default function KolomenskePage() {
             <h3 className="text-2xl font-bold text-foreground mb-6">Физические точки продаж</h3>
             <div className="bg-slate-100 rounded-lg overflow-hidden w-full">
               <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.20.24-RCepqEtb45YBlWOtVmpieNWtGeNGr5.png"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_51_51-QKHLLR4vmycGr3SgPZNGpOotRruFNG.png"
                 alt="Russia Coverage Map"
                 className="w-full h-auto"
               />
@@ -384,7 +535,7 @@ export default function KolomenskePage() {
             <div className="p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
               <p className="text-lg">
                 <span className="font-bold text-foreground">Инсайт 2:</span>{' '}
-                <span className="text-foreground">с помощью DOOH мы можем охватить их физические точки контакта с аудиторией</span>
+                <span className="text-foreground">с помощью DOOH мы можем охватить физические точки контакта бренда с аудиторией</span>
               </p>
             </div>
           </div>
