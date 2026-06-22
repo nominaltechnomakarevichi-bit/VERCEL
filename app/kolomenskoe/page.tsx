@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Flame, Sparkles, TV } from 'lucide-react'
+import { Flame, Sparkles, Tv } from 'lucide-react'
 
 const ntLogo = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI4IiBmaWxsPSIjMDAyOUZGIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIj5OVDwvdGV4dD48L3N2Zz4='
 
@@ -246,7 +246,7 @@ export default function KolomenskePage() {
                   <p className="font-bold text-foreground">Типы устройств:</p>
                   <div className="grid grid-cols-3 gap-3">
                     <div className="text-center p-3 bg-slate-50 rounded-lg">
-                      <TV className="w-8 h-8 text-[#0029FF] mx-auto mb-2" />
+                      <Tv className="w-8 h-8 text-[#0029FF] mx-auto mb-2" />
                       <p className="text-sm text-foreground">Smart TVs</p>
                     </div>
                     <div className="text-center p-3 bg-slate-50 rounded-lg">
