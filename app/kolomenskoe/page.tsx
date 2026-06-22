@@ -204,11 +204,11 @@ export default function KolomenskePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Segment 1: Young Moms */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-64 overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_23_04-Q7bZleGEthfBdoC2TAjPx2ckm7xDtD.png"
                   alt="Молодые мамы и семьи с детьми"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
@@ -238,11 +238,11 @@ export default function KolomenskePage() {
 
             {/* Segment 2: Healthy Lifestyle */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-64 overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_32_54-4s5v3h8TmIGuYvuAVFG1VFoaPY5Lke.png"
                   alt="Сторонники здорового образа жизни"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
@@ -272,11 +272,11 @@ export default function KolomenskePage() {
 
             {/* Segment 3: Young Urban Consumers */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-64 overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_36_29-V4Qfo1UZ8gV4n3fH8zf0usS8LDf0xu.png"
                   alt="Молодые городские потребители"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
@@ -306,11 +306,11 @@ export default function KolomenskePage() {
 
             {/* Segment 4: 45+ Generation */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-64 overflow-hidden">
+              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_38_11-hpsXRnnBw4Ch7nB5JaVkppoEprAkay.png"
                   alt="Поколение 45+"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
@@ -566,7 +566,7 @@ export default function KolomenskePage() {
 
             {/* Stage 3 */}
             <div className="border-l-4 border-[#0029FF] pl-6">
-              <h3 className="text-2xl font-bold text-foreground mb-3">Этап 3: Конверсия в точке продажи (DOOH)</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Этап 3: Конверси�� в точке продажи (DOOH)</h3>
               <p className="text-lg text-foreground mb-3">
                 DOOH рекламу размещаем в магазинах Лента, Пятерочка и других торговых сетях, где пользователь при��имает финальное решение о покупке. Outdoor реклама рядом с торговыми точками и на высокотрафиковых дорогах напоминает о бренде перед посещением магазина.
               </p>
