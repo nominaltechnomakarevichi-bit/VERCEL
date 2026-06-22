@@ -20,7 +20,7 @@ export default function KolomenskePage() {
       id: 2,
       name: 'Cube-баннер',
       description: '3D куб с возможностью взаимодействия',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cube-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80-47Zgxe0qHV8j084TvbHhQCt6eNbGFr.mov',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.36.44-ROTecWU18Vjx7pn8xwFFaFdhgWkOYY.mov',
       advantages: [
         'Предлагает интерактивное взаимодействие',
         'Показывает до 4-х баннеров в одном креативе',
@@ -139,11 +139,7 @@ export default function KolomenskePage() {
                               </p>
                             ))}
                           </div>
-                          <div className="mt-4 pt-4 border-t border-[#0029FF]">
-                            <p className="text-foreground">
-                              Преимущество: демонстрируем пользователю на реальном примере, как можно использовать продукцию и замотивировать к покупке
-                            </p>
-                          </div>
+
                         </div>
                       )}
                     </div>
@@ -210,6 +206,13 @@ export default function KolomenskePage() {
                 <CardTitle className="text-[#0029FF] text-2xl">Programmatic CTV</CardTitle>
               </CardHeader>
               <CardContent className="pt-6 space-y-6">
+                <div className="rounded-lg overflow-hidden h-64 mb-4">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_40_00-cczYyYxV5D4xi78eAnuuxBFQHygD3u.png"
+                    alt="CTV Kolomenskoe Example"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div>
                   <p className="text-foreground mb-6">
                     Реклама на TV-устройствах, подключенных к интернету: Smart TV, OTT-приставки (Apple TV, Android TV Box, Chromecast) и игровые консоли.
@@ -313,17 +316,54 @@ export default function KolomenskePage() {
                 <CardTitle className="text-[#0029FF] text-2xl">Indoor</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="bg-slate-100 rounded-lg h-40 flex items-center justify-center mb-4">
-                  <p className="text-muted-foreground">МЕСТО ДЛЯ ИЗОБРАЖЕНИЯ</p>
+                <div className="bg-slate-100 rounded-lg h-40 overflow-hidden mb-4">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_43_14-MMTYvhIGecHF7Wyfln4WMc91G1ZyRg.png"
+                    alt="Indoor LED Screen"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <p className="text-foreground">LED-экраны в магазинах</p>
                 <div className="bg-blue-50 rounded p-4">
                   <p className="font-semibold text-foreground mb-3">Возможности расположения:</p>
                   <ul className="space-y-2">
-                    {['Лента', 'Пятерочка', 'Перекр��сток', 'Дикси', 'Магнит'].map((store, i) => (
+                    {['Лента', 'Пятерочка', 'Перекресток', 'Дикси', 'Магнит'].map((store, i) => (
                       <li key={i} className="text-foreground flex gap-2">
-                        <span className="text-[#0029FF]">−</span>
+                        <span className="text-[#0029FF]">-</span>
                         <span>{store}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Outdoor Card */}
+            <Card className="border-2 border-border bg-white">
+              <CardHeader>
+                <CardTitle className="text-[#0029FF] text-2xl">Outdoor</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-slate-100 rounded-lg h-40 overflow-hidden mb-4">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_41_20-0qI8QnHtgX4UXyYekHw3DH6YaZUk2w.png"
+                    alt="Outdoor Billboard"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-foreground">Ситиборды, билборды</p>
+                <div className="bg-blue-50 rounded p-4">
+                  <p className="font-semibold text-foreground mb-3">Возможности расположения:</p>
+                  <ul className="space-y-2">
+                    {[
+                      'рядом с ЖК',
+                      'рядом с дорогами с высоким трафиком',
+                      'рядом с МКАД',
+                      'рядом с физическими точками продаж'
+                    ].map((item, i) => (
+                      <li key={i} className="text-foreground flex gap-2">
+                        <span className="text-[#0029FF]">-</span>
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
