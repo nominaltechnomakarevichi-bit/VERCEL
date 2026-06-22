@@ -255,7 +255,7 @@ export default function KolomenskePage() {
               {/* CTV APP */}
               <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006423-XUriFvIDK5xOWn9llddjg7C59Je0Np.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006338%20%289%29-T1AYvmXzun7ysPnWK41JDPGsNHO0L0.png"
                   alt="CTV APP Inventory"
                   className="w-full rounded"
                 />
