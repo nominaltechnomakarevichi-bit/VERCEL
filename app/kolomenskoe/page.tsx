@@ -203,11 +203,12 @@ export default function KolomenskePage() {
             {/* Programmatic CTV - Full Width */}
             <Card className="border-2 border-border bg-white">
               <CardContent className="pt-6 space-y-6">
-                <div className="rounded-lg overflow-hidden h-96 mb-4">
+                <div className="overflow-hidden h-96 mb-4" style={{borderRadius: '24px'}}>
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_40_00-cczYyYxV5D4xi78eAnuuxBFQHygD3u.png"
                     alt="CTV Kolomenskoe Example"
                     className="w-full h-full object-contain"
+                    style={{borderRadius: '24px'}}
                   />
                 </div>
                 <div>
@@ -254,7 +255,7 @@ export default function KolomenskePage() {
               {/* CTV APP */}
               <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006338-Kb8iKcCP2PWJifhp9cN5tYTk4O7WWl.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006423-XUriFvIDK5xOWn9llddjg7C59Je0Np.png"
                   alt="CTV APP Inventory"
                   className="w-full rounded"
                 />
