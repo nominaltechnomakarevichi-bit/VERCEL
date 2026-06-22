@@ -245,19 +245,19 @@ export default function KolomenskePage() {
             <h3 className="text-2xl font-bold text-foreground mb-6">Инвентарь</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* CTV WEB */}
-              <div className="p-3 border-2 border-border rounded-lg bg-white">
+              <div className="p-3 border-2 border-border rounded-lg bg-white h-48 flex items-center justify-center">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006337-qSdk79BP6BdV7IzgvXA60tYXjtmRtC.png"
                   alt="CTV WEB Inventory"
-                  className="w-full rounded"
+                  className="w-full h-full rounded object-contain"
                 />
               </div>
               {/* CTV APP */}
-              <div className="p-3 border-2 border-border rounded-lg bg-white">
+              <div className="p-3 border-2 border-border rounded-lg bg-white h-48 flex items-center justify-center">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006338%20%289%29-T1AYvmXzun7ysPnWK41JDPGsNHO0L0.png"
                   alt="CTV APP Inventory"
-                  className="w-full rounded"
+                  className="w-full h-full rounded object-contain"
                 />
               </div>
               {/* Цифровое ТВ-вещание */}
