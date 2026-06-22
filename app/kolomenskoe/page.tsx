@@ -445,7 +445,7 @@ export default function KolomenskePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-2">DOOH</h2>
-            <p className="text-xl text-foreground">Рекламны�� канал для О2О (online-to-offline) взаимодействия</p>
+            <p className="text-xl text-foreground">Рекламный канал для О2О (online-to-offline) взаимодействия</p>
           </div>
 
           {/* DOOH Grid */}
@@ -566,9 +566,9 @@ export default function KolomenskePage() {
 
             {/* Stage 3 */}
             <div className="border-l-4 border-[#0029FF] pl-6">
-              <h3 className="text-2xl font-bold text-foreground mb-3">Этап 3: Конверси�� в точке продажи (DOOH)</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Этап 3: Конверсия в точке продажи (DOOH)</h3>
               <p className="text-lg text-foreground mb-3">
-                DOOH рекламу размещаем в магазинах Лента, Пятерочка и других торговых сетях, где пользователь при��имает финальное решение о покупке. Outdoor реклама рядом с торговыми точками и на высокотрафиковых дорогах напоминает о бренде перед посещением магазина.
+                DOOH рекламу размещаем в магазинах Лента, Пятерочка и других торговых сетях, где пользователь принимает финальное решение о покупке. Outdoor реклама рядом с торговыми точками и на высокотрафиковых дорогах напоминает о бренде перед посещением магазина.
               </p>
             </div>
 
