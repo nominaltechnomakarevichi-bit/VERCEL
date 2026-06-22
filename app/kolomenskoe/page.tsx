@@ -247,7 +247,7 @@ export default function KolomenskePage() {
               {/* CTV WEB */}
               <div className="p-3 border-2 border-border rounded-lg bg-white h-48 flex items-center justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006337-qSdk79BP6BdV7IzgvXA60tYXjtmRtC.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006337%20%282%29-1k0PuysMSfsYeAq6RNYBuQ56sHEQLN.png"
                   alt="CTV WEB Inventory"
                   className="w-full h-full rounded object-contain"
                 />
