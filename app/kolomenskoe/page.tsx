@@ -57,16 +57,20 @@ export default function KolomenskePage() {
           <div className="flex items-start gap-8">
             {/* Logos */}
             <div className="flex gap-6 items-center flex-shrink-0">
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulbU9iEEau7dtNf8jpBqUpuSopx3mL.png" 
-                alt="NT Technology" 
-                className="w-20 h-20 object-contain"
-              />
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-simple-large-8AtdnIzsYjB3JEFoCkus5A2zyVtV0x.svg" 
-                alt="Kolomenskoe" 
-                className="w-20 h-20 object-contain"
-              />
+              <div className="w-24 h-24 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulbU9iEEau7dtNf8jpBqUpuSopx3mL.png" 
+                  alt="NT Technology" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="w-24 h-24 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-simple-large-8AtdnIzsYjB3JEFoCkus5A2zyVtV0x.svg" 
+                  alt="Kolomenskoe" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
 
             {/* Title and Subtitle */}
@@ -283,7 +287,7 @@ export default function KolomenskePage() {
           <div className="p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
             <p className="text-lg">
               <span className="font-bold text-foreground">Инсайт:</span>{' '}
-              <span className="text-foreground">СTV реклама - значимый крючок для привлечения внимания аудитории, т.к. ее практически невозможно пропустить</span>
+              <span className="text-foreground">СTV реклама - значимый крючок для привлечения внимания аудитории, т.к. ее практически невозможно про��устить</span>
             </p>
           </div>
         </div>
