@@ -91,15 +91,15 @@ export default function KolomenskePage() {
           </div>
 
           {/* Rich Media Cards */}
-          <div className="space-y-12">
+          <div className="space-y-8">
             {richMediaFormats.map((format, idx) => (
-              <div key={format.id} className="border-2 border-border rounded-xl p-8 bg-white">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div key={format.id} className="border-2 border-border rounded-xl p-4 bg-white">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
                   {/* Video Preview */}
-                  <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden min-h-96">
+                  <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
                     <video 
                       src={format.videoUrl}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       autoPlay
                       loop
                       muted
@@ -107,9 +107,9 @@ export default function KolomenskePage() {
                   </div>
 
                   {/* Content */}
-                  <div>
-                    <h3 className="text-3xl font-bold text-foreground mb-2">{format.name}</h3>
-                    <p className="text-lg text-foreground mb-6">{format.description}</p>
+                  <div className="flex flex-col justify-center">
+                    <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
+                    <p className="text-base text-foreground mb-4">{format.description}</p>
                     
                     <div className="mb-6">
                       <p className="font-bold text-foreground mb-3">Преимущества:</p>
@@ -145,7 +145,7 @@ export default function KolomenskePage() {
           <div className="mt-12 p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
             <p className="text-lg">
               <span className="font-bold text-foreground">Инсайт:</span>{' '}
-              <span className="text-foreground">Rich Media креативы обеспечивают рост внимания пользователя, увеличивают время взаимодействия с креативом и обеспечивают высокую запоминаемость бренда</span>
+              <span className="text-foreground">Rich Media креативы обеспечивают рост внимания пользователя, увеличивают время взаимодействия с креативом и обе��печивают высокую запоминаемость бренда</span>
             </p>
           </div>
         </div>
@@ -166,25 +166,30 @@ export default function KolomenskePage() {
               <CardHeader className="bg-gradient-to-br from-blue-50 to-white">
                 <CardTitle className="text-[#0029FF] text-2xl">Programmatic CTV</CardTitle>
               </CardHeader>
-              <CardContent className="pt-6 space-y-4">
+              <CardContent className="pt-6 space-y-6">
                 <div>
-                  <p className="text-foreground mb-4">
+                  <p className="text-foreground mb-6">
                     Реклама на TV-устройствах, подключенных к интернету: Smart TV, OTT-приставки (Apple TV, Android TV Box, Chromecast) и игровые консоли.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-foreground mb-3">CTV аудитория активно растет</p>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <span className="text-foreground">2022 г.</span>
-                      <div className="flex-1 h-2 bg-blue-100 rounded" style={{width: '60%'}}></div>
-                      <span className="text-foreground font-semibold">18 млн</span>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="text-center p-3 bg-slate-50 rounded-lg">
+                    <div className="w-12 h-12 bg-[#0029FF] rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <span className="text-white text-xl">📺</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <span className="text-foreground">2024 г.</span>
-                      <div className="flex-1 h-2 bg-[#0029FF] rounded"></div>
-                      <span className="text-foreground font-semibold">30 млн</span>
+                    <p className="text-sm text-foreground">Smart TVs</p>
+                  </div>
+                  <div className="text-center p-3 bg-slate-50 rounded-lg">
+                    <div className="w-12 h-12 bg-[#0029FF] rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <span className="text-white text-xl">🎮</span>
                     </div>
+                    <p className="text-sm text-foreground">Game consoles</p>
+                  </div>
+                  <div className="text-center p-3 bg-slate-50 rounded-lg">
+                    <div className="w-12 h-12 bg-[#0029FF] rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <span className="text-white text-xl">📱</span>
+                    </div>
+                    <p className="text-sm text-foreground">Streaming devices</p>
                   </div>
                 </div>
               </CardContent>
@@ -202,11 +207,45 @@ export default function KolomenskePage() {
 
           {/* CTV Inventory */}
           <div className="mb-12">
-            <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.06.06-V979kRtrFQdBJh9ngjvTo3FePCAXLY.png"
-              alt="CTV Inventory"
-              className="w-full rounded-lg"
-            />
+            <h3 className="text-2xl font-bold text-foreground mb-6">Инвентарь</h3>
+            <div className="space-y-6">
+              {/* CTV WEB */}
+              <div className="p-6 border-2 border-border rounded-lg bg-white">
+                <h4 className="text-xl font-bold text-[#0029FF] mb-4">CTV WEB</h4>
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.17.53-a63Qj0hFVZ8yVgv9NVIOwXgSc4sIcj.png"
+                  alt="CTV WEB Inventory"
+                  className="w-full rounded"
+                />
+              </div>
+              {/* CTV APP */}
+              <div className="p-6 border-2 border-border rounded-lg bg-white">
+                <h4 className="text-xl font-bold text-[#0029FF] mb-4">CTV APP</h4>
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.05-9m72whGEsQMSNrB7Kq7W9q0bBnQddY.png"
+                  alt="CTV APP Inventory"
+                  className="w-full rounded"
+                />
+              </div>
+              {/* Цифровое ТВ-вещание */}
+              <div className="p-6 border-2 border-border rounded-lg bg-white">
+                <h4 className="text-xl font-bold text-[#0029FF] mb-4">Цифровое ТВ-вещание</h4>
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.20-bOg2nD4GKeqJjQbyE8PgfL7WigbRW6.png"
+                  alt="Digital TV"
+                  className="w-full rounded"
+                />
+              </div>
+              {/* Нелицензионные онлайн-кинотеатры */}
+              <div className="p-6 border-2 border-border rounded-lg bg-white">
+                <h4 className="text-xl font-bold text-[#0029FF] mb-4">Нелицензионные онлайн-кинотеатры</h4>
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.33-tGryTjqPK1MsyYs0SFuA7IibBpVeXY.png"
+                  alt="Unlicensed Cinemas"
+                  className="w-full rounded"
+                />
+              </div>
+            </div>
           </div>
 
           {/* CTV Insight */}
@@ -272,11 +311,11 @@ export default function KolomenskePage() {
           {/* Store Locator Map */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-6">Физические точки продаж</h3>
-            <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
-              <iframe
-                src="https://kolomenskoe.com/where-to-buy/"
-                title="Kolomenskoe Store Locator"
-                className="w-full h-full border-0"
+            <div className="bg-slate-100 rounded-lg overflow-hidden">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.20.24-RCepqEtb45YBlWOtVmpieNWtGeNGr5.png"
+                alt="Russia Coverage Map"
+                className="w-full h-auto"
               />
             </div>
           </div>
@@ -303,6 +342,27 @@ export default function KolomenskePage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-foreground mb-12">Комплексная стратегия для бренда «Коломенское»</h2>
+
+          {/* Strategy Flow Diagram */}
+          <div className="mb-16 p-8 bg-gradient-to-r from-blue-50 to-white border-2 border-[#0029FF] rounded-lg">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-[#0029FF] mb-2">Rich Media</div>
+                <div className="text-foreground">———————————→</div>
+                <div className="text-lg font-semibold text-foreground mt-2">первичный интерес</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-[#0029FF] mb-2">CTV</div>
+                <div className="text-foreground">———————————→</div>
+                <div className="text-lg font-semibold text-foreground mt-2">расширение охвата</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-[#0029FF] mb-2">DOOH</div>
+                <div className="text-foreground">———————————→</div>
+                <div className="text-lg font-semibold text-foreground mt-2">конверсия в продажи</div>
+              </div>
+            </div>
+          </div>
 
           <div className="space-y-8">
             {/* Stage 1 */}
