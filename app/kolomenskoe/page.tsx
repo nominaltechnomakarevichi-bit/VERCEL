@@ -205,7 +205,7 @@ export default function KolomenskePage() {
               <CardContent className="pt-6 space-y-6">
                 <div className="overflow-hidden h-96 mb-4" style={{borderRadius: '24px'}}>
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_40_00-cczYyYxV5D4xi78eAnuuxBFQHygD3u.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_30_15-5VOgbnwmo3pxHPjFvcmb3BdKQ4MN2e.png"
                     alt="CTV Kolomenskoe Example"
                     className="w-full h-full object-contain"
                     style={{borderRadius: '24px'}}
@@ -307,7 +307,7 @@ export default function KolomenskePage() {
               <CardContent className="space-y-4">
                 <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_43_14-MMTYvhIGecHF7Wyfln4WMc91G1ZyRg.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_42_43-aCf29WnixynT8jYqBNSBdVMOrWDPlm.png"
                     alt="Indoor LED Screen"
                     className="w-full h-full object-cover"
                   />
@@ -335,7 +335,7 @@ export default function KolomenskePage() {
               <CardContent className="space-y-4">
                 <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_41_20-0qI8QnHtgX4UXyYekHw3DH6YaZUk2w.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_45_35-dzSRO9pHGcLGniXsszwbWuA2mSzwRv.png"
                     alt="Outdoor Billboard"
                     className="w-full h-full object-cover"
                   />
@@ -366,7 +366,7 @@ export default function KolomenskePage() {
             <h3 className="text-2xl font-bold text-foreground mb-6">Физические точки продаж</h3>
             <div className="bg-slate-100 rounded-lg overflow-hidden w-full">
               <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.20.24-RCepqEtb45YBlWOtVmpieNWtGeNGr5.png"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_51_51-QKHLLR4vmycGr3SgPZNGpOotRruFNG.png"
                 alt="Russia Coverage Map"
                 className="w-full h-auto"
               />
@@ -384,7 +384,7 @@ export default function KolomenskePage() {
             <div className="p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
               <p className="text-lg">
                 <span className="font-bold text-foreground">Инсайт 2:</span>{' '}
-                <span className="text-foreground">с помощью DOOH мы можем охватить их физические точки контакта с аудиторией</span>
+                <span className="text-foreground">с помощью DOOH мы можем охватить физические точки контакта бренда с аудиторией</span>
               </p>
             </div>
           </div>
