@@ -199,8 +199,8 @@ export default function KolomenskePage() {
           </div>
 
           {/* CTV Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            {/* Left - Description */}
+          <div className="mb-12">
+            {/* Programmatic CTV - Full Width */}
             <Card className="border-2 border-border bg-white">
               <CardHeader className="bg-gradient-to-br from-blue-50 to-white">
                 <CardTitle className="text-[#0029FF] text-2xl">Programmatic CTV</CardTitle>
@@ -240,15 +240,6 @@ export default function KolomenskePage() {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Right - Example */}
-            <div className="bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center min-h-96">
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2013.41.06-kTR0bT0CwlACInMKzX65teeNxARff.png"
-                alt="CTV Example"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
 
           {/* CTV Inventory */}
@@ -316,7 +307,7 @@ export default function KolomenskePage() {
                 <CardTitle className="text-[#0029FF] text-2xl">Indoor</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="bg-slate-100 rounded-lg h-40 overflow-hidden mb-4">
+                <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_43_14-MMTYvhIGecHF7Wyfln4WMc91G1ZyRg.png"
                     alt="Indoor LED Screen"
@@ -344,7 +335,7 @@ export default function KolomenskePage() {
                 <CardTitle className="text-[#0029FF] text-2xl">Outdoor</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="bg-slate-100 rounded-lg h-40 overflow-hidden mb-4">
+                <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_41_20-0qI8QnHtgX4UXyYekHw3DH6YaZUk2w.png"
                     alt="Outdoor Billboard"
@@ -363,35 +354,6 @@ export default function KolomenskePage() {
                     ].map((item, i) => (
                       <li key={i} className="text-foreground flex gap-2">
                         <span className="text-[#0029FF]">-</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Outdoor Card */}
-            <Card className="border-2 border-border bg-white">
-              <CardHeader>
-                <CardTitle className="text-[#0029FF] text-2xl">Outdoor</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="bg-slate-100 rounded-lg h-40 flex items-center justify-center mb-4">
-                  <p className="text-muted-foreground">МЕСТО ДЛЯ ИЗОБРАЖЕНИЯ</p>
-                </div>
-                <p className="text-foreground">Ситиборды, билборды</p>
-                <div className="bg-blue-50 rounded p-4">
-                  <p className="font-semibold text-foreground mb-3">Возможности расположения:</p>
-                  <ul className="space-y-2">
-                    {[
-                      'рядом с ЖК',
-                      'рядом с дорогами с высоким трафиком',
-                      'рядом с МКАД',
-                      'рядом с физическими точками продаж'
-                    ].map((item, i) => (
-                      <li key={i} className="text-foreground flex gap-2">
-                        <span className="text-[#0029FF]">−</span>
                         <span>{item}</span>
                       </li>
                     ))}
