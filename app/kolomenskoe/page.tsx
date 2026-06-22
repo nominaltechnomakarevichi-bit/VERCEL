@@ -94,48 +94,50 @@ export default function KolomenskePage() {
           <div className="space-y-8">
             {richMediaFormats.map((format, idx) => (
               <div key={format.id} className="border-2 border-border rounded-xl p-4 bg-white">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
-                  {/* Video Preview */}
-                  <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
-                    <video 
-                      src={format.videoUrl}
-                      className="w-full h-full object-contain"
-                      autoPlay
-                      loop
-                      muted
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
-                    <p className="text-base text-foreground mb-4">{format.description}</p>
-                    
-                    <div className="mb-6">
-                      <p className="font-bold text-foreground mb-3">Преимущества:</p>
-                      <ul className="space-y-2">
-                        {format.advantages.map((adv, i) => (
-                          <li key={i} className="text-foreground flex gap-3">
-                            <span className="text-[#0029FF] flex-shrink-0">•</span>
-                            <span>{adv}</span>
-                          </li>
-                        ))}
-                      </ul>
+                <div className={format.strategy ? "flex flex-col" : "grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6"}>
+                  <div className={format.strategy ? "grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6" : ""}>
+                    {/* Video Preview */}
+                    <div className="flex items-center justify-center bg-slate-100 rounded-lg overflow-hidden h-64">
+                      <video 
+                        src={format.videoUrl}
+                        className="w-full h-full object-contain"
+                        autoPlay
+                        loop
+                        muted
+                      />
                     </div>
 
-                    {format.strategy && (
-                      <div className="bg-blue-50 border-l-4 border-[#0029FF] p-4 rounded">
-                        <p className="font-bold text-foreground mb-3">Стратегия для «Коломенское»:</p>
-                        <div className="space-y-2">
-                          {format.strategy.map((item, i) => (
-                            <p key={i} className="text-foreground">
-                              → {item}
-                            </p>
+                    {/* Content */}
+                    <div className="flex flex-col justify-center">
+                      <h3 className="text-2xl font-bold text-foreground mb-1">{format.name}</h3>
+                      <p className="text-base text-foreground mb-4">{format.description}</p>
+                      
+                      <div className="mb-6">
+                        <p className="font-bold text-foreground mb-3">Преимущества:</p>
+                        <ul className="space-y-2">
+                          {format.advantages.map((adv, i) => (
+                            <li key={i} className="text-foreground flex gap-3">
+                              <span className="text-[#0029FF] flex-shrink-0">•</span>
+                              <span>{adv}</span>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
                       </div>
-                    )}
+                    </div>
                   </div>
+
+                  {format.strategy && (
+                    <div className="bg-blue-50 border-l-4 border-[#0029FF] p-4 rounded">
+                      <p className="font-bold text-foreground mb-3">Стратегия для «Коломенское»:</p>
+                      <div className="space-y-2">
+                        {format.strategy.map((item, i) => (
+                          <p key={i} className="text-foreground">
+                            → {item}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -145,7 +147,7 @@ export default function KolomenskePage() {
           <div className="mt-12 p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
             <p className="text-lg">
               <span className="font-bold text-foreground">Инсайт:</span>{' '}
-              <span className="text-foreground">Rich Media креативы обеспечивают рост внимания пользователя, увеличивают время взаимодействия с креативом и обе��печивают высокую запоминаемость бренда</span>
+              <span className="text-foreground">Rich Media креативы обеспечивают рост внимания пользователя, увеличивают время взаимодействия с креативом и обеспечивают высокую запоминаемость бренда</span>
             </p>
           </div>
         </div>
@@ -208,10 +210,9 @@ export default function KolomenskePage() {
           {/* CTV Inventory */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-6">Инвентарь</h3>
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* CTV WEB */}
-              <div className="p-6 border-2 border-border rounded-lg bg-white">
-                <h4 className="text-xl font-bold text-[#0029FF] mb-4">CTV WEB</h4>
+              <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.17.53-a63Qj0hFVZ8yVgv9NVIOwXgSc4sIcj.png"
                   alt="CTV WEB Inventory"
@@ -219,8 +220,7 @@ export default function KolomenskePage() {
                 />
               </div>
               {/* CTV APP */}
-              <div className="p-6 border-2 border-border rounded-lg bg-white">
-                <h4 className="text-xl font-bold text-[#0029FF] mb-4">CTV APP</h4>
+              <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.05-9m72whGEsQMSNrB7Kq7W9q0bBnQddY.png"
                   alt="CTV APP Inventory"
@@ -228,8 +228,7 @@ export default function KolomenskePage() {
                 />
               </div>
               {/* Цифровое ТВ-вещание */}
-              <div className="p-6 border-2 border-border rounded-lg bg-white">
-                <h4 className="text-xl font-bold text-[#0029FF] mb-4">Цифровое ТВ-вещание</h4>
+              <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.20-bOg2nD4GKeqJjQbyE8PgfL7WigbRW6.png"
                   alt="Digital TV"
@@ -237,8 +236,7 @@ export default function KolomenskePage() {
                 />
               </div>
               {/* Нелицензионные онлайн-кинотеатры */}
-              <div className="p-6 border-2 border-border rounded-lg bg-white">
-                <h4 className="text-xl font-bold text-[#0029FF] mb-4">Нелицензионные онлайн-кинотеатры</h4>
+              <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.33-tGryTjqPK1MsyYs0SFuA7IibBpVeXY.png"
                   alt="Unlicensed Cinemas"
@@ -266,52 +264,60 @@ export default function KolomenskePage() {
             <p className="text-xl text-foreground">Рекламный канал для О2О (online-to-offline) взаимодействия</p>
           </div>
 
-          {/* Indoor Section */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Indoor</h3>
-            <p className="text-lg text-foreground mb-8">LED-экраны в магазинах</p>
-            
-            <div className="mb-8 p-8 bg-slate-50 rounded-lg">
-              <p className="font-semibold text-foreground mb-6">Где можно разместить рекламу:</p>
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.01.26-zEAd4AEloXLkwoVkxbsL37JCYeJ1wd.png"
-                alt="Store Logos"
-                className="w-full"
-              />
-            </div>
-          </div>
+          {/* DOOH Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            {/* Indoor Card */}
+            <Card className="border-2 border-border bg-white">
+              <CardHeader>
+                <CardTitle className="text-[#0029FF] text-2xl">Indoor</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-foreground">LED-экраны в магазинах</p>
+                <div className="bg-blue-50 rounded p-4">
+                  <p className="font-semibold text-foreground mb-3">Возможности расположения:</p>
+                  <ul className="space-y-2">
+                    {['Лента', 'Пятерочка', 'Перекресток', 'Дикси', 'Магнит'].map((store, i) => (
+                      <li key={i} className="text-foreground flex gap-2">
+                        <span className="text-[#0029FF]">−</span>
+                        <span>{store}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
 
-          {/* Outdoor Section */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Outdoor</h3>
-            <p className="text-lg text-foreground mb-8">Ситиборды, билборды</p>
-            
-            <div className="bg-slate-100 rounded-lg p-8 mb-8 min-h-64 flex items-center justify-center">
-              <p className="text-muted-foreground">ПРИМЕР БИЛБОРДА (место для изображения)</p>
-            </div>
-
-            <div className="bg-blue-50 border-l-4 border-[#0029FF] p-6 rounded-lg mb-8">
-              <p className="font-semibold text-foreground mb-4">Возможности расположения:</p>
-              <ul className="space-y-2">
-                {[
-                  'рядом с ЖК',
-                  'рядом с дорогами с высоким трафиком',
-                  'рядом с МКАД',
-                  'рядом с физическими точками продаж (магазины)'
-                ].map((item, i) => (
-                  <li key={i} className="text-foreground flex gap-3">
-                    <span className="text-[#0029FF]">−</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {/* Outdoor Card */}
+            <Card className="border-2 border-border bg-white">
+              <CardHeader>
+                <CardTitle className="text-[#0029FF] text-2xl">Outdoor</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-foreground">Ситиборды, билборды</p>
+                <div className="bg-blue-50 rounded p-4">
+                  <p className="font-semibold text-foreground mb-3">Возможности расположения:</p>
+                  <ul className="space-y-2">
+                    {[
+                      'рядом с ЖК',
+                      'рядом с дорогами с высоким трафиком',
+                      'рядом с МКАД',
+                      'рядом с физическими точками продаж'
+                    ].map((item, i) => (
+                      <li key={i} className="text-foreground flex gap-2">
+                        <span className="text-[#0029FF]">−</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Store Locator Map */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-6">Физические точки продаж</h3>
-            <div className="bg-slate-100 rounded-lg overflow-hidden">
+            <div className="bg-slate-100 rounded-lg overflow-hidden max-w-md">
               <img 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.20.24-RCepqEtb45YBlWOtVmpieNWtGeNGr5.png"
                 alt="Russia Coverage Map"
@@ -342,27 +348,6 @@ export default function KolomenskePage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-foreground mb-12">Комплексная стратегия для бренда «Коломенское»</h2>
-
-          {/* Strategy Flow Diagram */}
-          <div className="mb-16 p-8 bg-gradient-to-r from-blue-50 to-white border-2 border-[#0029FF] rounded-lg">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-[#0029FF] mb-2">Rich Media</div>
-                <div className="text-foreground">———————————→</div>
-                <div className="text-lg font-semibold text-foreground mt-2">первичный интерес</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-[#0029FF] mb-2">CTV</div>
-                <div className="text-foreground">———————————→</div>
-                <div className="text-lg font-semibold text-foreground mt-2">расширение охвата</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-[#0029FF] mb-2">DOOH</div>
-                <div className="text-foreground">———————————→</div>
-                <div className="text-lg font-semibold text-foreground mt-2">конверсия в продажи</div>
-              </div>
-            </div>
-          </div>
 
           <div className="space-y-8">
             {/* Stage 1 */}
