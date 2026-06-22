@@ -56,18 +56,18 @@ export default function KolomenskePage() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="flex items-start gap-8">
             {/* Logos */}
-            <div className="flex gap-6 items-center flex-shrink-0">
-              <div className="w-24 h-24 flex items-center justify-center">
-                <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulbU9iEEau7dtNf8jpBqUpuSopx3mL.png" 
-                  alt="NT Technology" 
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="w-24 h-24 flex items-center justify-center">
+            <div className="flex flex-col gap-2 items-center flex-shrink-0 h-full">
+              <div className="w-20 h-20 flex items-center justify-center">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-simple-large-8AtdnIzsYjB3JEFoCkus5A2zyVtV0x.svg" 
                   alt="Kolomenskoe" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="w-20 h-20 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulbU9iEEau7dtNf8jpBqUpuSopx3mL.png" 
+                  alt="NT Technology" 
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -298,7 +298,7 @@ export default function KolomenskePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-2">DOOH</h2>
-            <p className="text-xl text-foreground">Рекламный канал для О2О (online-to-offline) взаимодействия</p>
+            <p className="text-xl text-foreground">Рекл��мный канал для О2О (online-to-offline) взаимодействия</p>
           </div>
 
           {/* DOOH Grid */}
