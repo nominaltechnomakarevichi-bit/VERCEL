@@ -202,15 +202,12 @@ export default function KolomenskePage() {
           <div className="mb-12">
             {/* Programmatic CTV - Full Width */}
             <Card className="border-2 border-border bg-white">
-              <CardHeader className="bg-gradient-to-br from-blue-50 to-white">
-                <CardTitle className="text-[#0029FF] text-2xl">Programmatic CTV</CardTitle>
-              </CardHeader>
               <CardContent className="pt-6 space-y-6">
-                <div className="rounded-lg overflow-hidden h-64 mb-4">
+                <div className="rounded-lg overflow-hidden h-96 mb-4">
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_40_00-cczYyYxV5D4xi78eAnuuxBFQHygD3u.png"
                     alt="CTV Kolomenskoe Example"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div>
@@ -249,7 +246,7 @@ export default function KolomenskePage() {
               {/* CTV WEB */}
               <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.17.53-a63Qj0hFVZ8yVgv9NVIOwXgSc4sIcj.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006337-qSdk79BP6BdV7IzgvXA60tYXjtmRtC.png"
                   alt="CTV WEB Inventory"
                   className="w-full rounded"
                 />
@@ -257,7 +254,7 @@ export default function KolomenskePage() {
               {/* CTV APP */}
               <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.05-9m72whGEsQMSNrB7Kq7W9q0bBnQddY.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006338-Kb8iKcCP2PWJifhp9cN5tYTk4O7WWl.png"
                   alt="CTV APP Inventory"
                   className="w-full rounded"
                 />
@@ -265,7 +262,7 @@ export default function KolomenskePage() {
               {/* Цифровое ТВ-вещание */}
               <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.20-bOg2nD4GKeqJjQbyE8PgfL7WigbRW6.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006340-H2Kkxa51h4RZgVC5BSkcIhfuXHSgtU.png"
                   alt="Digital TV"
                   className="w-full rounded"
                 />
@@ -273,7 +270,7 @@ export default function KolomenskePage() {
               {/* Нелицензионные онлайн-кинотеатры */}
               <div className="p-3 border-2 border-border rounded-lg bg-white">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.18.33-tGryTjqPK1MsyYs0SFuA7IibBpVeXY.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006339-Jo4jMyoaC31ybTyZrr7H4QGQWxHvsx.png"
                   alt="Unlicensed Cinemas"
                   className="w-full rounded"
                 />
