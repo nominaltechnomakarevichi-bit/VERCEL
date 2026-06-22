@@ -63,7 +63,7 @@ export default function KolomenskePage() {
                 className="w-20 h-20 object-contain"
               />
               <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.00.36-lA3g4PoXKlXjMt5V3EhFXGbQh0oUc4.png" 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-simple-large-8AtdnIzsYjB3JEFoCkus5A2zyVtV0x.svg" 
                 alt="Kolomenskoe" 
                 className="w-20 h-20 object-contain"
               />
@@ -135,7 +135,7 @@ export default function KolomenskePage() {
                           <div className="space-y-2">
                             {format.strategy.map((item, i) => (
                               <p key={i} className="text-foreground">
-                                {item === 'В статичных блоках демонстрируем товар/линейку товаров бренда' ? '→ ' : i === 0 ? '' : '→ '}{item}
+                                {item === 'В статичных блоках демонстрируем товар/линейку товаров бр��нда' ? '→ ' : i === 0 ? '' : '→ '}{item}
                               </p>
                             ))}
                           </div>
