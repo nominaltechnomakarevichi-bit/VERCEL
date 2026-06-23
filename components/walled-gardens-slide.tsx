@@ -53,14 +53,9 @@ export function WalledGardensSlide() {
       programmatic: "Независимая платформа, объединяющая множество источников инвентаря и данных",
     },
     {
-      criterion: "Таргетинги",
-      walledGardens: "First-party data на основе собственных данных платформы",
-      programmatic: "Third-party data комбинация различных источников данных (поведенческие, соц-дем, гео и др)",
-    },
-    {
       criterion: "Площадки и каналы",
       walledGardens: "Только площадки внутри конкретной экосистемы",
-      programmatic: "1000+ сайтов, приложений, видеоплощадок Open Internet",
+      programmatic: "10 000+ сайтов, приложений, видеоплощадок Open Internet",
     },
     {
       criterion: "Рекламные форматы",
@@ -68,24 +63,14 @@ export function WalledGardensSlide() {
       programmatic: "Баннеры, видео, rich media, CTV, DOOH, нативная реклама в единой среде закупки",
     },
     {
-      criterion: "Охват",
-      walledGardens: "Высокий внутри конкретной экосистемы",
-      programmatic: "Широкий охват аудитории за пределами закрытых платформ с возможностью объединения множества каналов",
+      criterion: "Управление площадками",
+      walledGardens: "Ограниченные возможности контроля инвентаря",
+      programmatic: "Возможность использовать White Lists (списки разрешенных площадок) и Black Lists (списки исключенных площадок) для точного контроля окружения рекламы",
     },
     {
-      criterion: "Аукцион",
-      walledGardens: "Внутренний аукцион платформы",
-      programmatic: "Доступ к аукционам множества SSP и рекламных площадок через единую платформу",
-    },
-    {
-      criterion: "Гибкость",
-      walledGardens: "Ограничена правилами и возможностями конкретной экосистемы",
-      programmatic: "Гибкая настройка стратегий, данных, инвентаря и KPI под задачи рекламодателя",
-    },
-    {
-      criterion: "Отчетность",
-      walledGardens: "Отчеты доступны только по данным внутри экосистемы",
-      programmatic: "Единая аналитика по различным площадкам, форматам и источникам данных",
+      criterion: "Brand Safety",
+      walledGardens: "Настройки безопасности зависят от правил экосистемы",
+      programmatic: "Гибкие инструменты Brand Safety через сторонних вендоров, настройка безопасных категорий и контента",
     },
   ]
 
@@ -107,7 +92,7 @@ export function WalledGardensSlide() {
               </div>
               <div className="flex-1">
                 <h1 className="text-3xl font-bold text-foreground leading-tight">
-                  Walled Gardens vs NT Technology
+                  Walled Gardens vs Open Internet
                 </h1>
                 <p className="mt-2 text-base text-muted-foreground">
                   Почему медиамикс — лучшая стратегия
