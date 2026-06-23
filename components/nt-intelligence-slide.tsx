@@ -402,15 +402,14 @@ export function NTIntelligenceSlide() {
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">In-Banner Events Optimization</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-foreground list-decimal list-inside">
-                    <li>Пользователь совершает микроконверсию внутри баннера (наводит курсор, проходит мини-опрос или прокручивает каталог)</li>
-                    <li>Действие регистрируется как успешный ивент</li>
-                    <li>Алгоритм DSP анализирует профиль этого пользователя и контекст показа</li>
-                    <li>Ставки на аукционе повышаются для тех сегментов, которые с наибольшей вероятностью совершат целевое действие</li>
-                  </ol>
-                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: дает возможность отслеживать точные микроконверсии и оптимизировать РК по ним, а не только по кликам</p>
+                <CardContent className="space-y-6">
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_04_59-EzGJjSk4Pt3D9jnU8TTqmzOBSPvuGd.png"
+                      alt="In-Banner Events Optimization"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </CardContent>
               </Card>
 
@@ -418,14 +417,14 @@ export function NTIntelligenceSlide() {
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">Post-View Optimization</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-foreground list-decimal list-inside">
-                    <li>Когда пользователь просматривает рекламу его cookie-файл или ID устройства запоминается</li>
-                    <li>Система активирует окно атрибуции (от 1 до 30 дней)</li>
-                    <li>Если в течение этого времени пользователь самостоятельно заходит на сайт и совершает покупку, алгоритм связывает этот визит с недавним показом рекламы</li>
-                  </ol>
-                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет учитывать влияние рекламы на пользователей, которые долго принимают решение</p>
+                <CardContent>
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_50_33-yS5WnS6czzYMhvhL6D4qs9aNWocMXZ.png"
+                      alt="Post-View Optimization"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </CardContent>
               </Card>
 
@@ -433,15 +432,14 @@ export function NTIntelligenceSlide() {
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">Pre-bid Optimization</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-foreground list-decimal list-inside">
-                    <li>DSP анализирует входящий запрос (размещение, устройство, географию, геолокацию пользователя) за миллисекунды до того, как ставка будет отправлена на аукцион</li>
-                    <li>Алгоритмы оценивают вероятность конверсии для конкретного пользователя</li>
-                    <li>Вместо того чтобы сразу платить максимальную цену, система прогнозирует минимальную ставку, которая позволит выиграть аукцион, или отказывается от участия, если вероятность целевого действия слишком мала</li>
-                    <li>Автоматически выставляются ограничения для медийных кампаний, чтобы не переплачивать за показы с низкой Viewability</li>
-                  </ol>
-                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: снижение fraud- и brand safety-рисков, отборные White lists, выше прозрачность закупки</p>
+                <CardContent>
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pre_bid_optimization_quality_filter_rounded-IA1dr6BaVaVolH7C5DzmG4XO7OMMBJ.png"
+                      alt="Pre-bid Optimization"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>
