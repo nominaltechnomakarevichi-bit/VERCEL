@@ -421,14 +421,14 @@ export function NTIntelligenceSlide() {
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">Post-View Optimization</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-foreground list-decimal list-inside">
-                    <li>Когда пользователь просматривает рекламу его cookie-файл или ID устройства запоминается</li>
-                    <li>Система активирует окно атрибуции (от 1 до 30 дней)</li>
-                    <li>Если в течение этого времени пользователь самостоятельно заходит на сайт и совершает покупку, алгоритм связывает этот визит с недавним показом рекламы</li>
-                  </ol>
-                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет учитывать влияние рекламы на пользователей, которые долго принимают решение</p>
+                <CardContent>
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_50_33-yS5WnS6czzYMhvhL6D4qs9aNWocMXZ.png"
+                      alt="Post-View Optimization"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </CardContent>
               </Card>
 
