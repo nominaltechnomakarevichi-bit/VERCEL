@@ -55,7 +55,7 @@ export function WalledGardensSlide() {
     {
       criterion: "Площадки и каналы",
       walledGardens: "Только площадки внутри конкретной экосистемы",
-      programmatic: "1000+ сайтов, приложений, видеоплощадок Open Internet",
+      programmatic: "10 000+ сайтов, приложений, видеоплощадок Open Internet",
     },
     {
       criterion: "Рекламные форматы",
@@ -63,9 +63,14 @@ export function WalledGardensSlide() {
       programmatic: "Баннеры, видео, rich media, CTV, DOOH, нативная реклама в единой среде закупки",
     },
     {
-      criterion: "Гибкость",
-      walledGardens: "Ограничена правилами и возможностями конкретной экосистемы",
-      programmatic: "Гибкая настройка стратегий, данных, инвентаря и KPI под задачи рекламодателя",
+      criterion: "Управление площадками",
+      walledGardens: "Ограниченные возможности контроля инвентаря",
+      programmatic: "Возможность использовать White Lists (списки разрешенных площадок) и Black Lists (списки исключенных площадок) для точного контроля окружения рекламы",
+    },
+    {
+      criterion: "Brand Safety",
+      walledGardens: "Настройки безопасности зависят от правил экосистемы",
+      programmatic: "Гибкие инструменты Brand Safety через сторонних вендоров, настройка безопасных категорий и контента",
     },
   ]
 
