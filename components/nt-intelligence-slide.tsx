@@ -402,15 +402,15 @@ export function NTIntelligenceSlide() {
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">In-Banner Events Optimization</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-foreground list-decimal list-inside">
-                    <li>Пользователь совершает микроконверсию внутри баннера (наводит курсор, проходит мини-опрос или прокручивает каталог)</li>
-                    <li>Действие регистрируется как успешный ивент</li>
-                    <li>Алгоритм DSP анализирует профиль этого пользователя и контекст показа</li>
-                    <li>Ставки на аукционе повышаются для тех сегментов, которые с наибольшей вероятностью совершат целевое действие</li>
-                  </ol>
-                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: дает возможность отслеживать точные микроконверсии и оптимизировать РК по ним, а не только по кликам</p>
+                <CardContent className="space-y-6">
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2015_55_42-qoFUmQU8Umgcbqihe29JyIHjgjaMOi.png"
+                      alt="In-Banner Events Optimization"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                  <p className="text-foreground font-bold text-lg">Преимущество подхода: дает возможность отслеживать точные микроконверсии и более детально оптимизировать РК</p>
                 </CardContent>
               </Card>
 
