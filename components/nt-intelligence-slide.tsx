@@ -405,12 +405,15 @@ export function NTIntelligenceSlide() {
                 <CardContent className="space-y-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2015_55_42-qoFUmQU8Umgcbqihe29JyIHjgjaMOi.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_04_59-EzGJjSk4Pt3D9jnU8TTqmzOBSPvuGd.png"
                       alt="In-Banner Events Optimization"
                       className="w-full h-auto object-contain"
                     />
                   </div>
-                  <p className="text-foreground font-bold text-lg">Преимущество подхода: дает возможность отслеживать точные микроконверсии и более детально оптимизировать РК</p>
+                  <p className="text-foreground text-lg">
+                    <span className="font-bold">Преимущество подхода:</span>{' '}
+                    дает возможность отслеживать точные микроконверсии и более детально оптимизировать РК
+                  </p>
                 </CardContent>
               </Card>
 
