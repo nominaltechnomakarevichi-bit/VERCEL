@@ -410,10 +410,6 @@ export function NTIntelligenceSlide() {
                       className="w-full h-auto object-contain"
                     />
                   </div>
-                  <p className="text-foreground text-lg">
-                    <span className="font-bold">Преимущество подхода:</span>{' '}
-                    дает возможность отслеживать точные микроконверсии и более детально оптимизировать РК
-                  </p>
                 </CardContent>
               </Card>
 
@@ -436,15 +432,14 @@ export function NTIntelligenceSlide() {
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-2xl">Pre-bid Optimization</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="font-medium text-foreground">Как работает:</p>
-                  <ol className="space-y-3 text-foreground list-decimal list-inside">
-                    <li>DSP анализирует входящий запрос (размещение, устройство, географию, геолокацию пользователя) за миллисекунды до того, как ставка будет отправлена на аукцион</li>
-                    <li>Алгоритмы оценивают вероятность конверсии для конкретного пользователя</li>
-                    <li>Вместо того чтобы сразу платить максимальную цену, система прогнозирует минимальную ставку, которая позволит выиграть аукцион, или отказывается от участия, если вероятность целевого действия слишком мала</li>
-                    <li>Автоматически выставляются ограничения для медийных кампаний, чтобы не переплачивать за показы с низкой Viewability</li>
-                  </ol>
-                  <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: снижение fraud- и brand safety-рисков, отборные White lists, выше прозрачность закупки</p>
+                <CardContent>
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pre_bid_optimization_quality_filter_rounded-IA1dr6BaVaVolH7C5DzmG4XO7OMMBJ.png"
+                      alt="Pre-bid Optimization"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>
