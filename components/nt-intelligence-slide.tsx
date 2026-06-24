@@ -397,11 +397,8 @@ export function NTIntelligenceSlide() {
             <h2 className="text-4xl font-bold text-foreground">Optimization Intelligence</h2>
             
             <div className="space-y-6">
-              <Card className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">In-Banner Events Optimization</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
+              <Card className="border-2 border-border bg-white overflow-hidden">
+                <CardContent className="p-0">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_04_59-EzGJjSk4Pt3D9jnU8TTqmzOBSPvuGd.png"
@@ -412,11 +409,8 @@ export function NTIntelligenceSlide() {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">Post-View Optimization</CardTitle>
-                </CardHeader>
-                <CardContent>
+              <Card className="border-2 border-border bg-white overflow-hidden">
+                <CardContent className="p-0">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_50_33-yS5WnS6czzYMhvhL6D4qs9aNWocMXZ.png"
@@ -427,11 +421,8 @@ export function NTIntelligenceSlide() {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">Pre-bid Optimization</CardTitle>
-                </CardHeader>
-                <CardContent>
+              <Card className="border-2 border-border bg-white overflow-hidden">
+                <CardContent className="p-0">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pre_bid_optimization_quality_filter_rounded-IA1dr6BaVaVolH7C5DzmG4XO7OMMBJ.png"
@@ -454,11 +445,8 @@ export function NTIntelligenceSlide() {
               Мы меняем подход «нет клика = нет ценности» на оценку вклада медийной рекламы в бизнес-результат
             </p>
 
-              <Card className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">Sales Lift</CardTitle>
-                </CardHeader>
-                <CardContent>
+              <Card className="border-2 border-border bg-white overflow-hidden">
+                <CardContent className="p-0">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_25_38-eTumGbrEN9uPjqQUGRsSIrpgJcbuIZ.png"
@@ -469,11 +457,8 @@ export function NTIntelligenceSlide() {
                 </CardContent>
               </Card>
 
-            <Card className="border-2 border-border bg-white">
-              <CardHeader>
-                <CardTitle className="text-[#0029FF] text-2xl">Частота покупок и пенетрация бренда</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <Card className="border-2 border-border bg-white overflow-hidden">
+              <CardContent className="p-0">
                 <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_28_48-VC8KBeyO6BjFjs4K0qtsowdFhBxGc3.png"
