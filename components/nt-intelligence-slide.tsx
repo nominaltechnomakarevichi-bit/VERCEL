@@ -247,14 +247,16 @@ export function NTIntelligenceSlide() {
               <p className="text-foreground text-lg">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
             </div>
             
-            <a 
-              href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3 px-6 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors text-center"
-            >
-              Больше форматов
-            </a>
+            <div className="flex justify-center">
+              <a 
+                href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors"
+              >
+                Больше форматов
+              </a>
+            </div>
 
             {/* How Creative Impacts Results */}
             <div className="space-y-6 border-t-2 border-border pt-8">
