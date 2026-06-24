@@ -326,7 +326,7 @@ export function NTIntelligenceSlide() {
                     <div>
                       <p className="text-sm text-[#0029FF] font-bold mb-2">КЕЙС</p>
                       <CardTitle className="text-[#0029FF] text-3xl">NT Technology × МТБанк</CardTitle>
-                      <p className="text-lg font-medium text-muted-foreground mt-3">Rich Media vs Статика: чей CTR выше и причём тут кошка?</p>
+                      <p className="text-lg font-medium text-muted-foreground mt-3">Rich Media vs Статика: чей CTR выше?</p>
                     </div>
                     <img src="/logos/mtbank-logo.png" alt="МТБанк" className="w-16 h-16 rounded-full flex-shrink-0 object-cover" />
                   </div>
@@ -335,7 +335,6 @@ export function NTIntelligenceSlide() {
                   <div className="space-y-2">
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">цель:</span> продвижение новой МТКарты</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">каналы:</span> Display</p>
-                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">гео:</span> Республика Беларусь</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">формат:</span> статичные баннеры, banner spinner</p>
                   </div>
                   
@@ -347,12 +346,12 @@ export function NTIntelligenceSlide() {
                           <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
                             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/240x400-qI4qJgSwXJCqjbBshdZJ48ZIJKX5Ou.jpg" alt="Статичный баннер" className="max-h-full object-contain p-2" />
                           </div>
-                          <div className="grid grid-cols-2 gap-12 text-center w-full">
-                            <div>
+                          <div className="flex justify-center gap-20">
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-[#0029FF]">30%</p>
                               <p className="text-sm text-muted-foreground">viewability</p>
                             </div>
-                            <div>
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-[#0029FF]">0.05%</p>
                               <p className="text-sm text-muted-foreground">ctr</p>
                             </div>
@@ -372,12 +371,12 @@ export function NTIntelligenceSlide() {
                               muted
                             />
                           </div>
-                          <div className="grid grid-cols-2 gap-12 text-center w-full">
-                            <div>
+                          <div className="flex justify-center gap-20">
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-white">75%</p>
                               <p className="text-sm text-white/70">viewability</p>
                             </div>
-                            <div>
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-white">0.2%</p>
                               <p className="text-sm text-white/70">ctr</p>
                             </div>
@@ -452,7 +451,7 @@ export function NTIntelligenceSlide() {
             <h2 className="text-4xl font-bold text-foreground">Measurement Intelligence</h2>
             
             <p className="text-lg text-foreground">
-              Мы меняем подход "нет клика = нет ценности" на оценку вклада медийной рекламы в бизнес-результат
+              Мы меняем подход «нет клика = нет ценности» на оценку вклада медийной рекламы в бизнес-результат
             </p>
 
             <Card className="border-2 border-border bg-white">
