@@ -155,7 +155,7 @@ export function NTIntelligenceSlide() {
         {/* Block 3: Creative Intelligence */}
         {activeTab === 'creative' && (
           <section className="space-y-6 animate-fadeIn">
-            <h2 className="text-4xl font-bold text-foreground">Creative Intelligence как источник роста эффективности</h2>
+            <h2 className="text-4xl font-bold text-foreground">Креативные решения</h2>
             
             <Card className="border-2 border-border bg-white">
               <CardHeader>
@@ -188,17 +188,7 @@ export function NTIntelligenceSlide() {
 
             {/* Creative Examples */}
             <div className="space-y-6">
-              <div className="flex items-center justify-between">
-                <h3 className="text-2xl font-bold text-foreground">Примеры креативов</h3>
-                <a 
-                  href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-2 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors"
-                >
-                  Больше форматов
-                </a>
-              </div>
+              <h3 className="text-2xl font-bold text-foreground">Примеры креативов</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Banner Spinner */}
                 <div className="space-y-3">
@@ -250,6 +240,17 @@ export function NTIntelligenceSlide() {
                     <p className="text-sm text-muted-foreground">Баннер с эффектом таяния/разрушения</p>
                   </div>
                 </div>
+              </div>
+              
+              <div className="flex justify-center pt-4">
+                <a 
+                  href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-2 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors"
+                >
+                  Больше форматов
+                </a>
               </div>
             </div>
 
