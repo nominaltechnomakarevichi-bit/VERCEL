@@ -241,8 +241,12 @@ export function NTIntelligenceSlide() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="p-6 rounded-lg border-2 border-[#0029FF] bg-white">
+              <p className="text-foreground text-lg">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
               
-              <div className="flex justify-center pt-4">
+              <div className="flex justify-center pt-6">
                 <a 
                   href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
                   target="_blank"
@@ -252,10 +256,6 @@ export function NTIntelligenceSlide() {
                   Больше форматов
                 </a>
               </div>
-            </div>
-
-            <div className="p-6 rounded-lg border-2 border-[#0029FF] bg-white">
-              <p className="text-foreground text-lg">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
             </div>
 
             {/* How Creative Impacts Results */}
