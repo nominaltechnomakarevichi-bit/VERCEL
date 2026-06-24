@@ -454,43 +454,33 @@ export function NTIntelligenceSlide() {
               Мы меняем подход «нет клика = нет ценности» на оценку вклада медийной рекламы в бизнес-результат
             </p>
 
-            <Card className="border-2 border-border bg-white">
-              <CardHeader>
-                <CardTitle className="text-[#0029FF] text-2xl">Sales Lift</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="font-medium text-foreground">Как работает:</p>
-                <ol className="space-y-3 text-foreground list-decimal list-inside">
-                  <li>После запуска рекламной кампании аудитория делится на две равные группы: тестовая группа (пользователи, которые видели рекламное объявление) и контрольная группа (пользователи с точно такими же характеристиками, которым рекламу не показывали)</li>
-                  <li>Система отслеживает покупки или другие целевые действия в обеих группах</li>
-                  <li>Из конверсии тестовой группы вычитается конверсия контрольной</li>
-                </ol>
-                <p className="font-medium text-foreground mt-4">Sales Lift = CRтест/CRконтроль - 100%, где CR - коэффициент конверсии</p>
-                <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет оценить инкрементальный вклад медийной рекламы в продажи</p>
-              </CardContent>
-            </Card>
+              <Card className="border-2 border-border bg-white">
+                <CardHeader>
+                  <CardTitle className="text-[#0029FF] text-2xl">Sales Lift</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_25_38-eTumGbrEN9uPjqQUGRsSIrpgJcbuIZ.png"
+                      alt="Sales Lift"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
 
             <Card className="border-2 border-border bg-white">
               <CardHeader>
                 <CardTitle className="text-[#0029FF] text-2xl">Частота покупок и пенетрация бренда</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-foreground text-lg">Пенетрация бренда</p>
-                    <p className="text-foreground">Доля покупателей, которые хотя бы один раз за период купили что-то от этого бренда</p>
-                  </div>
+              <CardContent>
+                <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_28_48-VC8KBeyO6BjFjs4K0qtsowdFhBxGc3.png"
+                    alt="Частота покупок и пенетрация бренда"
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-foreground text-lg">Частота покупок</p>
-                    <p className="text-foreground">Среднее количество покупок бренда за период теми, кто его покупал</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground pt-4 border-t border-border">Источник данных: обезличенные электронные чеки ФНС России</p>
-                <p className="text-foreground font-bold text-[#0029FF]">Преимущества подхода: показывает, насколько хорошо работает реклама и узнаваемость (осведомленность переходит в покупку)</p>
               </CardContent>
             </Card>
 
