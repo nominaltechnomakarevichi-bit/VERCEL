@@ -107,7 +107,7 @@ export function NTIntelligenceSlide() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {intelligenceItems.map((item) => (
                 <div key={item.id} className="p-6 rounded-2xl border-2 border-gray-200 bg-white">
-                  <h3 className="text-[#0029FF] text-2xl font-bold mb-4">{item.title}</h3>
+                  <h3 className="text-[#0029FF] text-lg font-bold mb-4">{item.title}</h3>
                   <div className="space-y-3">
                     <p className="text-foreground">→ {item.description}</p>
                     <p className="text-foreground">→ {item.details}</p>
@@ -245,17 +245,17 @@ export function NTIntelligenceSlide() {
 
             <div className="p-6 rounded-lg border-2 border-[#0029FF] bg-white">
               <p className="text-foreground text-lg">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
-              
-              <div className="flex justify-center pt-6">
-                <a 
-                  href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-2 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors"
-                >
-                  Больше форматов
-                </a>
-              </div>
+            </div>
+            
+            <div className="flex justify-center">
+              <a 
+                href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors"
+              >
+                Больше форматов
+              </a>
             </div>
 
             {/* How Creative Impacts Results */}
