@@ -384,8 +384,6 @@ export default function BkkKolomenskyPage() {
                     <p className="text-sm text-foreground">Streaming devices</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* CTV Inventory */}
@@ -545,7 +543,7 @@ export default function BkkKolomenskyPage() {
             <div className="border-l-4 border-[#0029FF] pl-6">
               <h3 className="text-2xl font-bold text-foreground mb-3">Этап 2: Расширение охвата (CTV)</h3>
               <p className="text-lg text-foreground mb-3">
-                Параллельно запускаем CTV рекламу, которая охватывает аудиторию во время домашнего просмотра. Видео-контент с продуктовой линейкой и рецептами органично интегрируется в видео-сервисы, усиливая осведомленность и формируя кросс-канальное воздействие на пользователя
+                Параллельно запускаем CTV рекламу, которая охватывает аудиторию во время домашнего просмотра. Видео-контент с продуктовой линейкой и рецептами органично интегрируется в видео-сервисы, усиливая осведомленность и формируя кросс-кана��ьное воздействие на пользователя
               </p>
             </div>
 
