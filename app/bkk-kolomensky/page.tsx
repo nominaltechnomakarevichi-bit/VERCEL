@@ -96,11 +96,11 @@ export default function BkkKolomenskyPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Segment 1: Young Moms */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+              <div className="min-h-96 bg-slate-100 flex items-center justify-center p-4">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_13_58-oIJGlyJbvjMQsWca9pp75Qy8QCJ6BP.png"
                   alt="Молодые мамы и семьи с детьми"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto max-h-96 object-contain"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
@@ -130,11 +130,11 @@ export default function BkkKolomenskyPage() {
 
             {/* Segment 2: Healthy Lifestyle */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+              <div className="min-h-96 bg-slate-100 flex items-center justify-center p-4">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_22_16-llFMP5cdZOr2KT7e2BV7p2e1bDwgiY.png"
                   alt="Сторонники здорового образа жизни"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto max-h-96 object-contain"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
@@ -164,11 +164,11 @@ export default function BkkKolomenskyPage() {
 
             {/* Segment 3: Young Urban Consumers */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+              <div className="min-h-96 bg-slate-100 flex items-center justify-center p-4">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_25_41-uVkdcReKbc8kktiI1TisIfYYiuejNM.png"
                   alt="Любители сладкого"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto max-h-96 object-contain"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
@@ -198,11 +198,11 @@ export default function BkkKolomenskyPage() {
 
             {/* Segment 4: Young Active Consumers */}
             <Card className="border-2 border-border bg-white overflow-hidden">
-              <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
+              <div className="min-h-96 bg-slate-100 flex items-center justify-center p-4">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_23_42-8IXvBEMYjpgVuhDfOpMQNCGr6eb91W.png"
                   alt="Молодые активные потребители"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto max-h-96 object-contain"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
