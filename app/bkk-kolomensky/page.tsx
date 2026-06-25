@@ -66,8 +66,8 @@ export default function BkkKolomenskyPage() {
               </div>
               <div className="w-24 h-24 flex items-center justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-simple-large-8AtdnIzsYjB3JEFoCkus5A2zyVtV0x.svg" 
-                  alt="Kolomenskoe" 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-HBx5dYzOTSoDHTWnFJd2Ori4TEuEz9.svg" 
+                  alt="БКК Коломенский" 
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -76,7 +76,7 @@ export default function BkkKolomenskyPage() {
             {/* Title and Subtitle */}
             <div className="flex-1">
               <h1 className="text-4xl font-bold text-foreground mb-3">
-                Programmatic-кампания для бренда «Коломенское»
+                Programmatic-кампания для БКК «Коломенский»
               </h1>
               <p className="text-xl text-foreground">
                 ТОП-3 инструмента для роста брендовых метрик
@@ -98,7 +98,7 @@ export default function BkkKolomenskyPage() {
             <Card className="border-2 border-border bg-white overflow-hidden">
               <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_23_04-Q7bZleGEthfBdoC2TAjPx2ckm7xDtD.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_22_16-llFMP5cdZOr2KT7e2BV7p2e1bDwgiY.png"
                   alt="Молодые мамы и семьи с детьми"
                   className="w-full h-full object-cover object-top"
                 />
@@ -108,22 +108,22 @@ export default function BkkKolomenskyPage() {
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Продукты</p>
-                  <p className="text-foreground text-sm">Творог, Сметана, Кефир, Ряженка, Молоко, Термостатная продукция</p>
+                  <p className="text-foreground text-sm">Батоны, Белый хлеб, Нарезной хлеб, Сдобные булочки, Хлеб для бутербродов</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Возраст</p>
-                  <p className="text-foreground text-sm">28–42 года</p>
+                  <p className="text-foreground text-sm">30–45 лет</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Интересы</p>
-                  <p className="text-foreground text-sm">Здоровье, правильное питание детей, домашняя кухня, рецепты, семейный отдых, родительские сообщества</p>
+                  <p className="text-foreground text-sm">Семья, домашняя кухня, школьные завтраки, семейные ужины, закупка продуктов на неделю, рецепты</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
-                  <p className="text-foreground text-sm">Натуральный состав, доверие к российскому производителю, безопасные продукты для детей</p>
+                  <p className="text-foreground text-sm">Свежесть, натуральный состав, стабильное качество, удобная упаковка, продукция, которую любят дети</p>
                 </div>
               </CardContent>
             </Card>
@@ -132,7 +132,7 @@ export default function BkkKolomenskyPage() {
             <Card className="border-2 border-border bg-white overflow-hidden">
               <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_32_54-4s5v3h8TmIGuYvuAVFG1VFoaPY5Lke.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_13_58-oIJGlyJbvjMQsWca9pp75Qy8QCJ6BP.png"
                   alt="Сторонники здорового образа жизни"
                   className="w-full h-full object-cover object-top"
                 />
@@ -142,22 +142,22 @@ export default function BkkKolomenskyPage() {
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Продукты</p>
-                  <p className="text-foreground text-sm">Кефир, Ряженка, Натуральные йогурты, Термостатные йогурты</p>
+                  <p className="text-foreground text-sm">Ржаной хлеб, Зерновой хлеб, Хлеб с семенами, Хлеб с отрубями, Линейки полезного хлеба</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Возраст</p>
-                  <p className="text-foreground text-sm">25–40 лет</p>
+                  <p className="text-foreground text-sm">25–45 лет</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Интересы</p>
-                  <p className="text-foreground text-sm">Фитнес, бег, йога, велоспорт, правильное питание, нутрициология, wellness</p>
+                  <p className="text-foreground text-sm">Фитнес, бег, правильное питание, нутрициология, здоровый образ жизни, натуральные продукты</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
-                  <p className="text-foreground text-sm">Полезный перекус, контроль питания, белковый рацион, натуральность продукта</p>
+                  <p className="text-foreground text-sm">Цельнозерновая мука, пищевые волокна, натуральный состав, длительное насыщение, польза для здоровья</p>
                 </div>
               </CardContent>
             </Card>
@@ -166,66 +166,66 @@ export default function BkkKolomenskyPage() {
             <Card className="border-2 border-border bg-white overflow-hidden">
               <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_36_29-V4Qfo1UZ8gV4n3fH8zf0usS8LDf0xu.png"
-                  alt="Молодые городские потребители"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_25_41-uVkdcReKbc8kktiI1TisIfYYiuejNM.png"
+                  alt="Любители сладкого"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
-                <h3 className="text-xl font-bold text-[#0029FF]">Молодые городские потребители</h3>
+                <h3 className="text-xl font-bold text-[#0029FF]">Любители сладкого</h3>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Продукты</p>
-                  <p className="text-foreground text-sm">Десерты, Йогурты с наполнителями, Panna Cotta, Фруктовые творожные продукты</p>
+                  <p className="text-foreground text-sm">Вафельные торты, Вафли, Зефир, Печенье, Пряники, Сушки</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Возраст</p>
-                  <p className="text-foreground text-sm">18–30 лет</p>
+                  <p className="text-foreground text-sm">20–55 лет</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Интересы</p>
-                  <p className="text-foreground text-sm">Соцсети, кафе, путешествия, сериалы, доставка продуктов, современные food-тренды</p>
+                  <p className="text-foreground text-sm">Домашние праздники, гости, семейные выходные, сладости, просмотр фильмов дома</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
-                  <p className="text-foreground text-sm">Вкусный перекус, десерт без чувства вины, удобный формат, новые вкусы</p>
+                  <p className="text-foreground text-sm">Любимые вкусы, традиционные рецептуры, доступная цена, сладости для всей семьи</p>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Segment 4: 45+ Generation */}
+            {/* Segment 4: Young Active Consumers */}
             <Card className="border-2 border-border bg-white overflow-hidden">
               <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_38_11-hpsXRnnBw4Ch7nB5JaVkppoEprAkay.png"
-                  alt="Поколение 45+"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_23_42-8IXvBEMYjpgVuhDfOpMQNCGr6eb91W.png"
+                  alt="Молодые активные потребители"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <CardContent className="pt-6 space-y-4">
-                <h3 className="text-xl font-bold text-[#0029FF]">Поколение 45+</h3>
+                <h3 className="text-xl font-bold text-[#0029FF]">Молодые активные потребители</h3>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Продукты</p>
-                  <p className="text-foreground text-sm">Ряженка, Кефир, Сметана, Масло, Сыры</p>
+                  <p className="text-foreground text-sm">Замороженные хлебобулочные изделия, Замороженная выпечка, Тесто, Булочки для бургеров, Булочки для хот-догов, Круассаны и слойки для допекания</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Возраст</p>
-                  <p className="text-foreground text-sm">45–65 лет</p>
+                  <p className="text-foreground text-sm">22–40 лет</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Интересы</p>
-                  <p className="text-foreground text-sm">Дача, садоводство, кулинария, здоровье, семейные традиции, путешествия по России</p>
+                  <p className="text-foreground text-sm">Быстрый ритм жизни, доставка еды, кофейни, кафе, домашняя выпечка, convenience food</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-foreground mb-2">Мотивация покупки</p>
-                  <p className="text-foreground text-sm">Привычный вкус, доверие к производителю, натуральность, воспоминание о «настоящих молочных продуктах»</p>
+                  <p className="text-foreground text-sm">Скорость приготовления, качество ресторанного уровня, удобство хранения, минимум времени на приготовление</p>
                 </div>
               </CardContent>
             </Card>
@@ -282,7 +282,7 @@ export default function BkkKolomenskyPage() {
 
                       {format.strategy && (
                         <div className="bg-blue-50 border-l-4 border-[#0029FF] p-4 rounded">
-                          <p className="font-bold text-foreground mb-3">Стратегия для «Коломенское»:</p>
+                          <p className="font-bold text-foreground mb-3">Стратегия для БКК «Коломенский»:</p>
                           <div className="space-y-2">
                             {format.strategy.map((item, i) => (
                               <p key={i} className="text-foreground">
@@ -351,15 +351,12 @@ export default function BkkKolomenskyPage() {
 
           {/* CTV Grid */}
           <div className="mb-12">
-            {/* Programmatic CTV - Full Width */}
-            <Card className="border-2 border-border bg-white">
-              <CardContent className="pt-6 space-y-6">
-                <div className="overflow-hidden h-96 mb-4" style={{borderRadius: '24px'}}>
+                {/* Programmatic CTV - Full Width */}
+                <div className="lg:col-span-2 h-80 overflow-hidden bg-slate-100 rounded-lg flex items-start justify-center">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_30_15-5VOgbnwmo3pxHPjFvcmb3BdKQ4MN2e.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_40_51-SryPujynM0IZ6Rd9W6X1J1tln3jDwa.png"
                     alt="CTV Kolomenskoe Example"
-                    className="w-full h-full object-contain"
-                    style={{borderRadius: '24px'}}
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
@@ -458,7 +455,7 @@ export default function BkkKolomenskyPage() {
               <CardContent className="space-y-4">
                 <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_42_43-aCf29WnixynT8jYqBNSBdVMOrWDPlm.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_36_58-9sZFF77bvY6dzpxyYVGNj56a4AlLt2.png"
                     alt="Indoor LED Screen"
                     className="w-full h-full object-cover"
                   />
@@ -486,7 +483,7 @@ export default function BkkKolomenskyPage() {
               <CardContent className="space-y-4">
                 <div className="bg-slate-100 rounded-lg h-96 overflow-hidden mb-4">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_45_35-dzSRO9pHGcLGniXsszwbWuA2mSzwRv.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_37_57-A1tx7ZViMQIM2Whg7woc0qF5stuhJ7.png"
                     alt="Outdoor Billboard"
                     className="w-full h-full object-cover"
                   />
@@ -512,18 +509,6 @@ export default function BkkKolomenskyPage() {
             </Card>
           </div>
 
-          {/* Store Locator Map */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Физические точки продаж</h3>
-            <div className="bg-slate-100 rounded-lg overflow-hidden w-full">
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2022%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_51_51-QKHLLR4vmycGr3SgPZNGpOotRruFNG.png"
-                alt="Russia Coverage Map"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-
           {/* DOOH Insights */}
           <div className="space-y-4">
             <div className="p-6 rounded-lg bg-blue-50 border-l-4 border-[#0029FF]">
@@ -545,7 +530,7 @@ export default function BkkKolomenskyPage() {
       {/* Strategy Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">Комплексная стратегия для бренда «Коломенское»</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Комплексная стратегия для БКК «Коломенский»</h2>
 
           <div className="space-y-8">
             {/* Stage 1 */}
