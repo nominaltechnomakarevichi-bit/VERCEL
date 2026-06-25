@@ -33,19 +33,19 @@ export function NTIntelligenceSlide() {
   const intelligenceItems = [
     {
       id: 'creative',
-      title: "Creative Intelligence",
+      title: "Креативные решения",
       description: "привлекаем внимание через уникальный креатив",
       details: "проводим creative research"
     },
     {
       id: 'optimization',
-      title: "Optimization Intelligence",
+      title: "Оптимизация эффективности",
       description: "находим аудиторию по качественным сигналам внутри баннера",
       details: "проводим post-view оптимизацию, чтобы учесть вклад рекламы на всех этапах"
     },
     {
       id: 'measurement',
-      title: "Measurement Intelligence",
+      title: "Измерение результатов",
       description: "Sales Lift доказываем влияние медийной рекламы на продажи",
       details: "Частота покупок и пенетрация бренда показывают как узнаваемость бренда перерастает в продажи"
     },
@@ -107,7 +107,7 @@ export function NTIntelligenceSlide() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {intelligenceItems.map((item) => (
                 <div key={item.id} className="p-6 rounded-2xl border-2 border-gray-200 bg-white">
-                  <h3 className="text-[#0029FF] text-2xl font-bold mb-4">{item.title}</h3>
+                  <h3 className="text-[#0029FF] text-lg font-bold mb-4">{item.title}</h3>
                   <div className="space-y-3">
                     <p className="text-foreground">→ {item.description}</p>
                     <p className="text-foreground">→ {item.details}</p>
@@ -155,7 +155,7 @@ export function NTIntelligenceSlide() {
         {/* Block 3: Creative Intelligence */}
         {activeTab === 'creative' && (
           <section className="space-y-6 animate-fadeIn">
-            <h2 className="text-4xl font-bold text-foreground">Creative Intelligence как источник роста эффективности</h2>
+            <h2 className="text-4xl font-bold text-foreground">Креативные решения</h2>
             
             <Card className="border-2 border-border bg-white">
               <CardHeader>
@@ -246,6 +246,17 @@ export function NTIntelligenceSlide() {
             <div className="p-6 rounded-lg border-2 border-[#0029FF] bg-white">
               <p className="text-foreground text-lg">Мы не просто закупаем инвентарь — мы создаем дополнительные точки контакта с пользователем</p>
             </div>
+            
+            <div className="flex justify-center">
+              <a 
+                href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors"
+              >
+                Больше форматов
+              </a>
+            </div>
 
             {/* How Creative Impacts Results */}
             <div className="space-y-6 border-t-2 border-border pt-8">
@@ -326,7 +337,7 @@ export function NTIntelligenceSlide() {
                     <div>
                       <p className="text-sm text-[#0029FF] font-bold mb-2">КЕЙС</p>
                       <CardTitle className="text-[#0029FF] text-3xl">NT Technology × МТБанк</CardTitle>
-                      <p className="text-lg font-medium text-muted-foreground mt-3">Rich Media vs Статика: чей CTR выше и причём тут кошка?</p>
+                      <p className="text-lg font-medium text-muted-foreground mt-3">Rich Media vs Статика: чей CTR выше?</p>
                     </div>
                     <img src="/logos/mtbank-logo.png" alt="МТБанк" className="w-16 h-16 rounded-full flex-shrink-0 object-cover" />
                   </div>
@@ -335,7 +346,6 @@ export function NTIntelligenceSlide() {
                   <div className="space-y-2">
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">цель:</span> продвижение новой МТКарты</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">каналы:</span> Display</p>
-                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">гео:</span> Республика Беларусь</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">формат:</span> статичные баннеры, banner spinner</p>
                   </div>
                   
@@ -347,12 +357,12 @@ export function NTIntelligenceSlide() {
                           <div className="w-40 h-64 bg-white rounded-lg flex items-center justify-center shadow-md">
                             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/240x400-qI4qJgSwXJCqjbBshdZJ48ZIJKX5Ou.jpg" alt="Статичный баннер" className="max-h-full object-contain p-2" />
                           </div>
-                          <div className="grid grid-cols-2 gap-12 text-center w-full">
-                            <div>
+                          <div className="flex justify-center gap-20">
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-[#0029FF]">30%</p>
                               <p className="text-sm text-muted-foreground">viewability</p>
                             </div>
-                            <div>
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-[#0029FF]">0.05%</p>
                               <p className="text-sm text-muted-foreground">ctr</p>
                             </div>
@@ -372,12 +382,12 @@ export function NTIntelligenceSlide() {
                               muted
                             />
                           </div>
-                          <div className="grid grid-cols-2 gap-12 text-center w-full">
-                            <div>
+                          <div className="flex justify-center gap-20">
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-white">75%</p>
                               <p className="text-sm text-white/70">viewability</p>
                             </div>
-                            <div>
+                            <div className="text-center">
                               <p className="text-2xl font-bold text-white">0.2%</p>
                               <p className="text-sm text-white/70">ctr</p>
                             </div>
@@ -395,14 +405,15 @@ export function NTIntelligenceSlide() {
         {/* Block 4: Optimization Intelligence */}
         {activeTab === 'optimization' && (
           <section className="space-y-6 animate-fadeIn">
-            <h2 className="text-4xl font-bold text-foreground">Optimization Intelligence</h2>
+            <h2 className="text-4xl font-bold text-foreground">Оптимизация эффективности</h2>
+            
+            <p className="text-lg text-foreground">
+              Мы меняем подход «нет клика = нет ценности» на оценку вклада медийной рекламы в бизнес-результат
+            </p>
             
             <div className="space-y-6">
               <Card className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">In-Banner Events Optimization</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_04_59-EzGJjSk4Pt3D9jnU8TTqmzOBSPvuGd.png"
@@ -414,10 +425,7 @@ export function NTIntelligenceSlide() {
               </Card>
 
               <Card className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">Post-View Optimization</CardTitle>
-                </CardHeader>
-                <CardContent>
+                <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_50_33-yS5WnS6czzYMhvhL6D4qs9aNWocMXZ.png"
@@ -429,10 +437,7 @@ export function NTIntelligenceSlide() {
               </Card>
 
               <Card className="border-2 border-border bg-white">
-                <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-2xl">Pre-bid Optimization</CardTitle>
-                </CardHeader>
-                <CardContent>
+                <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pre_bid_optimization_quality_filter_rounded-IA1dr6BaVaVolH7C5DzmG4XO7OMMBJ.png"
@@ -449,49 +454,33 @@ export function NTIntelligenceSlide() {
         {/* Block 5: Measurement Intelligence */}
         {activeTab === 'measurement' && (
           <section className="space-y-6 animate-fadeIn">
-            <h2 className="text-4xl font-bold text-foreground">Measurement Intelligence</h2>
+            <h2 className="text-4xl font-bold text-foreground">Измерение результатов</h2>
             
             <p className="text-lg text-foreground">
-              Мы меняем подход "нет клика = нет ценности" на оценку вклада медийной рекламы в бизнес-результат
+              Оцениваем инкрементальный вклад рекламы в продажи
             </p>
 
-            <Card className="border-2 border-border bg-white">
-              <CardHeader>
-                <CardTitle className="text-[#0029FF] text-2xl">Sales Lift</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="font-medium text-foreground">Как работает:</p>
-                <ol className="space-y-3 text-foreground list-decimal list-inside">
-                  <li>После запуска рекламной кампании аудитория делится на две равные группы: тестовая группа (пользователи, которые видели рекламное объявление) и контрольная группа (пользователи с точно такими же характеристиками, которым рекламу не показывали)</li>
-                  <li>Система отслеживает покупки или другие целевые действия в обеих группах</li>
-                  <li>Из конверсии тестовой группы вычитается конверсия контрольной</li>
-                </ol>
-                <p className="font-medium text-foreground mt-4">Sales Lift = CRтест/CRконтроль - 100%, где CR - коэффициент конверсии</p>
-                <p className="text-foreground font-bold text-[#0029FF] mt-4">Преимущество подхода: позволяет оценить инкрементальный вклад медийной рекламы в продажи</p>
-              </CardContent>
-            </Card>
+              <Card className="border-2 border-border bg-white">
+                <CardContent className="p-6">
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_45_14-VgLOLyabuK5THm2DpzvhhKFGT4PwZu.png"
+                      alt="Sales Lift"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
 
             <Card className="border-2 border-border bg-white">
-              <CardHeader>
-                <CardTitle className="text-[#0029FF] text-2xl">Частота покупок и пенетрация бренда</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-foreground text-lg">Пенетрация бренда</p>
-                    <p className="text-foreground">Доля покупателей, которые хотя бы один раз за период купили что-то от этого бренда</p>
-                  </div>
+              <CardContent className="p-6">
+                <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_46_49-lbgxKmnRDDgjG1KfR79kHZedNMpWfn.png"
+                    alt="Частота покупок и пенетрация бренда"
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-[#0029FF] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-foreground text-lg">Частота покупок</p>
-                    <p className="text-foreground">Среднее количество покупок бренда за период теми, кто его покупал</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground pt-4 border-t border-border">Источник данных: обезличенные электронные чеки ФНС России</p>
-                <p className="text-foreground font-bold text-[#0029FF]">Преимущества подхода: показывает, насколько хорошо работает реклама и узнаваемость (осведомленность переходит в покупку)</p>
               </CardContent>
             </Card>
 
