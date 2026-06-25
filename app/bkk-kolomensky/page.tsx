@@ -98,7 +98,7 @@ export default function BkkKolomenskyPage() {
             <Card className="border-2 border-border bg-white overflow-hidden">
               <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_22_16-llFMP5cdZOr2KT7e2BV7p2e1bDwgiY.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_13_58-oIJGlyJbvjMQsWca9pp75Qy8QCJ6BP.png"
                   alt="Молодые мамы и семьи с детьми"
                   className="w-full h-full object-cover object-top"
                 />
@@ -132,7 +132,7 @@ export default function BkkKolomenskyPage() {
             <Card className="border-2 border-border bg-white overflow-hidden">
               <div className="h-80 overflow-hidden bg-slate-100 flex items-start justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_13_58-oIJGlyJbvjMQsWca9pp75Qy8QCJ6BP.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_22_16-llFMP5cdZOr2KT7e2BV7p2e1bDwgiY.png"
                   alt="Сторонники здорового образа жизни"
                   className="w-full h-full object-cover object-top"
                 />
@@ -352,11 +352,11 @@ export default function BkkKolomenskyPage() {
           {/* CTV Grid */}
           <div className="mb-12">
                 {/* Programmatic CTV - Full Width */}
-                <div className="lg:col-span-2 h-80 overflow-hidden bg-slate-100 rounded-lg flex items-start justify-center">
+                <div className="lg:col-span-2 bg-slate-100 rounded-lg flex items-center justify-center p-4">
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_40_51-SryPujynM0IZ6Rd9W6X1J1tln3jDwa.png"
                     alt="CTV Kolomenskoe Example"
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto max-h-96 object-contain"
                   />
                 </div>
                 <div>
