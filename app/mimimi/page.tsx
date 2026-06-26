@@ -394,26 +394,77 @@ export default function MimimiPage() {
 
                 {/* CTV Inventory */}
                 <div>
-                  <h4 className="font-bold text-foreground mb-4">Инвентарь</h4>
+                  <h4 className="font-bold text-foreground mb-6">Инвентарь</h4>
                   
-                  <div className="mb-6">
-                    <p className="text-sm font-semibold text-foreground mb-3">CTV WEB</p>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center">
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
                       <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006337%20%281%29-sp87npUJhVRURQZOuKK9BNMyquVGx9.png"
-                        alt="CTV WEB Services"
-                        className="w-full h-auto max-h-24 object-contain"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006326-9y1BWXoCA7jHuYMucBYzX5ZUtMNNfa.png"
+                        alt="30НА ФИЛЬМОВ"
+                        className="h-16 w-auto object-contain"
                       />
                     </div>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-foreground mb-3">CTV APP</p>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center">
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
                       <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006338%20%289%29-vGwCS6IepDdG6bCW3CSpfOpzHC9IRW.png"
-                        alt="CTV APP Services"
-                        className="w-full h-auto max-h-24 object-contain"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lordfilm.ru-rKgEf5m5NwFLr4UerZwkiuvIMFMGJS.png"
+                        alt="LORDFILM"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20HDrezka-uSHAaOOyhuT4In0WzijVOIdtZeGgzj.png"
+                        alt="New HDrezka"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB_%C2%AB%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D0%B8%CC%86%C2%BB-h4rCBSSwrtAD3InK2AfkNrOcC8S0gX.png"
+                        alt="ДОМАШНИЙ"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vokrug.tv%201-xbswxoc4eynjFgq5SHz8uLxqskFvyH.png"
+                        alt="ВОКРУГ ТВ"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/film.ru%201-763YETTK9KyBczot7PlIAYnpOlap70.png"
+                        alt="FILM"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lostfilm.ink-VQ42ifXCWyl00JqU9NYZ2SLRwLJvGr.png"
+                        alt="LOSTFILM"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lordserial.ru-cVY1dV7gIwApbXdPxzbyivgOA5QsNJ.png"
+                        alt="LORDSERIALS"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%81%D1%82%D1%81%201-oQ8ALpx7tuO2f8VQM1CHap8pedADoV.png"
+                        alt="СТС"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/wink.tw-og4BjFROARYbzMqyFfzt6peIupzoxJ.png"
+                        alt="WINK"
+                        className="h-16 w-auto object-contain"
                       />
                     </div>
                   </div>
