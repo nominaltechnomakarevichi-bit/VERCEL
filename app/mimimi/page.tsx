@@ -613,6 +613,15 @@ export default function MimimiPage() {
             </Card>
           </div>
 
+          {/* Product Image */}
+          <div className="mb-8 rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center min-h-96">
+            <img 
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png"
+              alt="Mimimi Baby Food Product"
+              className="w-full h-auto max-h-96 object-contain"
+            />
+          </div>
+
           {/* Результаты */}
           <Card className="border-2 border-[#0029FF] bg-white p-8">
             <h3 className="text-2xl font-bold text-foreground mb-8">Результаты</h3>
