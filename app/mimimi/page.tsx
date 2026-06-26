@@ -296,10 +296,7 @@ export default function MimimiPage() {
       {/* Rich Media Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-2">Rich Media форматы</h2>
-            <p className="text-lg text-foreground">Интерактивные решения для максимального привлечения внимания</p>
-          </div>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Rich Media форматы</h2>
 
           <div className="space-y-12">
             {richMediaFormats.map((format) => (
@@ -308,32 +305,66 @@ export default function MimimiPage() {
                   <CardTitle className="text-2xl text-[#0029FF]">{format.name}</CardTitle>
                   <p className="text-foreground mt-2">{format.description}</p>
                 </CardHeader>
-                <CardContent className="space-y-8">
-                  {/* Video Preview */}
-                  <div className="bg-slate-100 rounded-lg overflow-hidden h-56">
-                    <video 
-                      className="w-full h-full object-contain"
-                      autoPlay 
-                      loop 
-                      muted 
-                      playsInline
-                    >
-                      <source src={format.videoUrl} type="video/mp4" />
-                    </video>
-                  </div>
+                <CardContent>
+                  {format.id === 3 ? (
+                    // Multi-Layer Banner - keep original layout
+                    <div className="space-y-8">
+                      {/* Video Preview */}
+                      <div className="bg-slate-100 rounded-lg overflow-hidden h-56">
+                        <video 
+                          className="w-full h-full object-contain"
+                          autoPlay 
+                          loop 
+                          muted 
+                          playsInline
+                        >
+                          <source src={format.videoUrl} type="video/mp4" />
+                        </video>
+                      </div>
 
-                  {/* Advantages */}
-                  <div>
-                    <h4 className="font-bold text-foreground mb-4">Преимущества:</h4>
-                    <ul className="space-y-2">
-                      {format.advantages.map((adv, idx) => (
-                        <li key={idx} className="flex gap-3 text-foreground">
-                          <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
-                          <span>{adv}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                      {/* Advantages */}
+                      <div>
+                        <h4 className="font-bold text-foreground mb-4">Преимущества:</h4>
+                        <ul className="space-y-2">
+                          {format.advantages.map((adv, idx) => (
+                            <li key={idx} className="flex gap-3 text-foreground">
+                              <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                              <span>{adv}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ) : (
+                    // Banner Spinner and Cube-banner - side-by-side layout
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                      {/* Video Preview - Left Side */}
+                      <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
+                        <video 
+                          className="w-full h-full object-contain"
+                          autoPlay 
+                          loop 
+                          muted 
+                          playsInline
+                        >
+                          <source src={format.videoUrl} type="video/mp4" />
+                        </video>
+                      </div>
+
+                      {/* Advantages - Right Side */}
+                      <div>
+                        <h4 className="font-bold text-foreground mb-4">Преимущества:</h4>
+                        <ul className="space-y-3">
+                          {format.advantages.map((adv, idx) => (
+                            <li key={idx} className="flex gap-3 text-foreground">
+                              <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                              <span>{adv}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -363,7 +394,7 @@ export default function MimimiPage() {
 
                 {/* CTV Inventory */}
                 <div>
-                  <h4 className="font-bold text-foreground mb-4">Инвентарь:</h4>
+                  <h4 className="font-bold text-foreground mb-4">Инвентарь</h4>
                   
                   <div className="mb-6">
                     <p className="text-sm font-semibold text-foreground mb-3">CTV WEB</p>
@@ -410,7 +441,7 @@ export default function MimimiPage() {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-foreground mb-4">Избранные каналы:</h4>
+                  <h4 className="font-bold text-foreground mb-4">Избранные каналы</h4>
                   <div className="flex flex-wrap gap-3">
                     {youtubeChannels.map((channel, idx) => (
                       <span 
