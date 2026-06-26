@@ -569,15 +569,66 @@ export default function MimimiPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            {/* О кампании */}
-            <Card className="border-2 border-border bg-white p-8">
-              <h3 className="text-2xl font-bold text-[#0029FF] mb-6">О кампании</h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="font-semibold text-foreground min-w-32">Продукт</span>
-                  <span className="text-foreground">бренд детского питания</span>
+          {/* Main Layout - Image Left, Content Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 items-start">
+            {/* Product Image */}
+            <div className="rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center min-h-96">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png"
+                alt="Mimimi Baby Food Product"
+                className="w-full h-auto max-h-96 object-contain"
+              />
+            </div>
+
+            {/* Content Right */}
+            <div className="space-y-6">
+              {/* О кампании */}
+              <Card className="border-2 border-border bg-white p-8">
+                <h3 className="text-2xl font-bold text-[#0029FF] mb-6">О кампании</h3>
+                <div className="space-y-4">
+                  <div className="flex gap-3">
+                    <span className="font-semibold text-foreground min-w-32">Продукт</span>
+                    <span className="text-foreground">бренд детского питания</span>
+                  </div>
+                  <div className="flex gap-3">
+                    <span className="font-semibold text-foreground min-w-32">Цель</span>
+                    <span className="text-foreground">рост узнаваемости и лояльности к бренду</span>
+                  </div>
+                  <div className="flex gap-3">
+                    <span className="font-semibold text-foreground min-w-32">Каналы</span>
+                    <span className="text-foreground">Social + Media</span>
+                  </div>
+                  <div className="flex gap-3">
+                    <span className="font-semibold text-foreground min-w-32">Период</span>
+                    <span className="text-foreground">3 месяца</span>
+                  </div>
                 </div>
+              </Card>
+
+              {/* Особенности кампании */}
+              <Card className="border-2 border-border bg-white p-8">
+                <h3 className="text-2xl font-bold text-[#0029FF] mb-6">Особенности кампании</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Для точности таргетинга использовали кастомные сегменты</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Собрали аудиторию, которая ранее заходила на сайт, для дальнейшей работы</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Настроили таргетинг на аудиторию конкурентов</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Настроили кросс-девайсную оптимизацию для управления показами</span>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+          </div>
                 <div className="flex gap-3">
                   <span className="font-semibold text-foreground min-w-32">Цель</span>
                   <span className="text-foreground">рост узнаваемости и лояльности к бренду</span>
@@ -603,7 +654,7 @@ export default function MimimiPage() {
                 </li>
                 <li className="flex gap-3">
                   <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Настроили таргетинг на аудиторию конкурентов</span>
+                  <span className="text-foreground">Настроили ��аргетинг на аудиторию конкурентов</span>
                 </li>
                 <li className="flex gap-3">
                   <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
