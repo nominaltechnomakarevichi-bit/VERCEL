@@ -89,7 +89,7 @@ export default function MimimiPage() {
               </div>
               <div className="w-24 h-24 flex items-center justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-HBx5dYzOTSoDHTWnFJd2Ori4TEuEz9.svg" 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-YXZ8o3A4MNdQu4slmNvBVyywfSPYxx.png" 
                   alt="Mimimi" 
                   className="w-full h-full object-contain"
                 />
@@ -111,7 +111,7 @@ export default function MimimiPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-2">Аудитория бренда</h2>
-            <p className="text-lg text-foreground">Портрет целевой аудитории</p>
+
           </div>
 
           {/* Audience Portrait Card */}
@@ -120,7 +120,7 @@ export default function MimimiPage() {
               {/* Image Section */}
               <div className="min-h-96 bg-slate-100 flex items-center justify-center rounded-lg p-4">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_22_16-llFMP5cdZOr2KT7e2BV7p2e1bDwgiY.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_58_08-a8nRjOCqFOltMYq2XJwtA5aGl909b5.png"
                   alt="Целевая аудитория"
                   className="w-full h-auto max-h-96 object-contain"
                 />
@@ -310,9 +310,9 @@ export default function MimimiPage() {
                 </CardHeader>
                 <CardContent className="space-y-8">
                   {/* Video Preview */}
-                  <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
+                  <div className="bg-slate-100 rounded-lg overflow-hidden h-56">
                     <video 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       autoPlay 
                       loop 
                       muted 
@@ -334,21 +334,6 @@ export default function MimimiPage() {
                       ))}
                     </ul>
                   </div>
-
-                  {/* Strategy */}
-                  {format.strategy && (
-                    <div>
-                      <h4 className="font-bold text-foreground mb-4">Рекомендуемая стратегия:</h4>
-                      <ul className="space-y-2">
-                        {format.strategy.map((str, idx) => (
-                          <li key={idx} className="flex gap-3 text-foreground">
-                            <span className="text-[#0029FF] font-bold flex-shrink-0">→</span>
-                            <span>{str}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
                 </CardContent>
               </Card>
             ))}
@@ -370,27 +355,36 @@ export default function MimimiPage() {
               <CardContent className="space-y-6">
                 <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center min-h-80">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2025%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2018_40_51-SryPujynM0IZ6Rd9W6X1J1tln3jDwa.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_04_24-iydlTnjPaDtQTUGHmbH9uNkZcxfsyr.png"
                     alt="CTV Example"
                     className="w-full h-auto max-h-96 object-contain"
                   />
                 </div>
-                <p className="text-foreground">
-                  Параллельно запускаем CTV рекламу, которая охватывает аудиторию во время домашнего просмотра. Видео-контент с продуктовой линейкой и рецептами органично интегрируется в видео-сервисы, усиливая осведомленность и формируя кросс-канальное воздействие на пользователя.
-                </p>
 
                 {/* CTV Inventory */}
                 <div>
                   <h4 className="font-bold text-foreground mb-4">Инвентарь:</h4>
-                  <div className="grid grid-cols-2 gap-4">
-                    <Card className="border border-border p-4 bg-slate-50">
-                      <p className="font-semibold text-foreground mb-2">Видео 15 сек</p>
-                      <p className="text-foreground text-sm">1920x1080 px, MP4</p>
-                    </Card>
-                    <Card className="border border-border p-4 bg-slate-50">
-                      <p className="font-semibold text-foreground mb-2">Видео 30 сек</p>
-                      <p className="text-foreground text-sm">1920x1080 px, MP4</p>
-                    </Card>
+                  
+                  <div className="mb-6">
+                    <p className="text-sm font-semibold text-foreground mb-3">CTV WEB</p>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006337%20%281%29-sp87npUJhVRURQZOuKK9BNMyquVGx9.png"
+                        alt="CTV WEB Services"
+                        className="w-full h-auto max-h-24 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-semibold text-foreground mb-3">CTV APP</p>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006338%20%289%29-vGwCS6IepDdG6bCW3CSpfOpzHC9IRW.png"
+                        alt="CTV APP Services"
+                        className="w-full h-auto max-h-24 object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -402,6 +396,14 @@ export default function MimimiPage() {
                 <CardTitle className="text-2xl text-[#0029FF]">Youtube</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
+                <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center min-h-80">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_10_59-IOUkg5hEHv0qneRi9YrZ3v3KPT6lEG.png"
+                    alt="YouTube Advertising"
+                    className="w-full h-auto max-h-96 object-contain"
+                  />
+                </div>
+
                 <div>
                   <h4 className="font-bold text-foreground mb-4">Реклама по White list</h4>
                   <p className="text-foreground mb-4">Размещение рекламы на каналах, ориентированных на семейный контент и развитие детей</p>
@@ -419,15 +421,6 @@ export default function MimimiPage() {
                       </span>
                     ))}
                   </div>
-                </div>
-
-                <div>
-                  <h4 className="font-bold text-foreground mb-4">Форматы:</h4>
-                  <ul className="space-y-2 text-foreground">
-                    <li>• In-stream видео рекламы (до 30 сек)</li>
-                    <li>• Bumper ads (6 сек)</li>
-                    <li>• Masthead (баннер на главной странице YouTube)</li>
-                  </ul>
                 </div>
               </CardContent>
             </Card>
