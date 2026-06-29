@@ -1,7 +1,9 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Sparkles, Check } from 'lucide-react'
+import { useState } from 'react'
 
 export default function MimimiPage() {
   const richMediaFormats = [
@@ -70,6 +72,97 @@ export default function MimimiPage() {
     'Синий трактор',
     'Три кота',
     'Маша и медведь'
+  ]
+
+  const caseStudies = [
+    {
+      id: 1,
+      title: 'Как кастомные сегменты и кросс-девайсная оптимизация увеличили знание о бренде на 13%',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png',
+      campaign: {
+        product: 'бренд детского питания',
+        goal: 'рост узнаваемости и лояльности к бренду',
+        channels: 'Social + Media',
+        period: '3 месяца'
+      },
+      features: [
+        'Для точности таргетинга использовали кастомные сегменты',
+        'Собрали аудиторию, которая ранее заходила на сайт, для дальнейшей работы',
+        'Настроили таргетинг на аудиторию конкурентов',
+        'Настроили кросс-девайсную оптимизацию для управления показами'
+      ],
+      results: [
+        { value: '1.5+ млн', label: 'охват' },
+        { value: '3+ млн', label: 'показов' },
+        { value: '13%+', label: 'Brand Lift' }
+      ]
+    },
+    {
+      id: 2,
+      title: 'Как White list из тематических площадок привел к росту KPI на 206%+',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png',
+      campaign: {
+        product: 'детские подгузники MOMI',
+        goal: 'продвижение розыгрыша призов',
+        channels: 'Social + Media',
+        period: '1 месяц'
+      },
+      features: [
+        'Для роста качества аудитории собрали White list, включающий тематические приложения (календари беременности)',
+        'Использовали сайты с целевым контентом (материнство, путешествия с детьми, советы будущим мамам)',
+        'Фокусировались на качественных конверсиях',
+        'Оптимизация по KPI площадок'
+      ],
+      results: [
+        { value: '500+ тыс', label: 'показов' },
+        { value: '3+ тыс', label: 'переходов' },
+        { value: '206%+', label: 'к прогнозам' }
+      ]
+    },
+    {
+      id: 3,
+      title: 'Как кастомные сегменты и ОФД данные привели к перевыполнению плановых KPI на 169%+',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png',
+      campaign: {
+        product: 'детское питание Фрутоняня',
+        goal: 'повышение лояльности к бренду, охват',
+        channels: 'Media',
+        period: '3 месяца'
+      },
+      features: [
+        'Сегментировали аудиторию на 4 тематические группы',
+        'Использовали технологию Affinity List Builder - приоритезация URLs в зависимости от позиции в органической выдаче',
+        'Использовали данные ОФД для расширения аудитории',
+        'Применили инновационные подходы к таргетированию'
+      ],
+      results: [
+        { value: '1.5+ млн', label: 'охват' },
+        { value: '4.6+ млн', label: 'показов' },
+        { value: '28+ тыс', label: 'кликов' }
+      ]
+    },
+    {
+      id: 4,
+      title: 'Как микс форматов и точный таргетинг увеличил узнаваемость бренда на 153%',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png',
+      campaign: {
+        product: 'сироп от кашля для детей Флюдитек',
+        goal: 'увеличить узнаваемость бренда',
+        channels: 'Display, Video',
+        period: '4 месяца'
+      },
+      features: [
+        'Использование Cube-баннера позволило преодолеть баннерную слепоту',
+        'Увеличение ERR в 2,5 раза в сравнении со статикой',
+        'Комбинирование Display и Video форматов',
+        'Точный таргетинг по аудиториям с детьми'
+      ],
+      results: [
+        { value: '-18%', label: 'средний CPM' },
+        { value: '+153%', label: 'по брендовым запросам' },
+        { value: '+75%', label: 'средний прирост охвата' }
+      ]
+    }
   ]
 
   return (
@@ -510,6 +603,51 @@ export default function MimimiPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="border-b-2 border-border py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-foreground mb-12">Видео</h2>
+          
+          <Card className="border-2 border-border bg-white overflow-hidden">
+            <CardHeader>
+              <CardTitle className="text-2xl text-[#0029FF]">Видео реклама</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center min-h-80">
+                <video 
+                  className="w-full h-full object-contain"
+                  controls
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                >
+                  <source src="/mimimi-video.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-foreground mb-4">Преимущества видео рекламы</h4>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Повышает эффективность коммуникации благодаря комбинации видео, звука и динамичного визуала</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Увеличивает время взаимодействия с брендом и улучшает запоминаемость сообщения</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Демонстрирует преимущества продукта в действии, что повышает вероятность конверсии</span>
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Technical Capabilities */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -557,94 +695,97 @@ export default function MimimiPage() {
         </div>
       </section>
 
-      {/* Case Study */}
+      {/* Case Studies Carousel */}
       <section className="border-t-2 border-border py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <span className="inline-block px-4 py-1.5 bg-[#0029FF] text-white text-sm font-semibold rounded-full mb-4">
-              Кейс
+              Кейсы
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance max-w-4xl">
-              Как кастомные сегменты и кросс-девайсная оптимизация увеличили знание о бренде на 13%
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Истории успеха наших клиентов
             </h2>
           </div>
 
-          {/* Main Layout - Image Left, Content Right with equal heights */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            {/* Product Image */}
-            <div className="rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center h-full">
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png"
-                alt="Mimimi Baby Food Product"
-                className="w-full h-auto object-contain"
-              />
+          <Carousel className="w-full">
+            <CarouselContent>
+              {caseStudies.map((caseStudy) => (
+                <CarouselItem key={caseStudy.id}>
+                  <div className="space-y-8">
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
+                      {caseStudy.title}
+                    </h3>
+
+                    {/* Main Layout - Image Left, Content Right with equal heights */}
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                      {/* Product Image */}
+                      <div className="rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center h-full">
+                        <img 
+                          src={caseStudy.image}
+                          alt={`${caseStudy.campaign.product} Product`}
+                          className="w-full h-auto object-contain"
+                        />
+                      </div>
+
+                      {/* О кампании */}
+                      <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
+                        <h4 className="text-xl font-bold text-[#0029FF] mb-6">О кампании</h4>
+                        <div className="space-y-4 flex-1">
+                          <div className="flex gap-3">
+                            <span className="font-semibold text-foreground min-w-28">Продукт</span>
+                            <span className="text-foreground">{caseStudy.campaign.product}</span>
+                          </div>
+                          <div className="flex gap-3">
+                            <span className="font-semibold text-foreground min-w-28">Цель</span>
+                            <span className="text-foreground">{caseStudy.campaign.goal}</span>
+                          </div>
+                          <div className="flex gap-3">
+                            <span className="font-semibold text-foreground min-w-28">Каналы</span>
+                            <span className="text-foreground">{caseStudy.campaign.channels}</span>
+                          </div>
+                          <div className="flex gap-3">
+                            <span className="font-semibold text-foreground min-w-28">Период</span>
+                            <span className="text-foreground">{caseStudy.campaign.period}</span>
+                          </div>
+                        </div>
+                      </Card>
+
+                      {/* Особенности кампании */}
+                      <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
+                        <h4 className="text-xl font-bold text-[#0029FF] mb-6">Особенности</h4>
+                        <ul className="space-y-3 flex-1">
+                          {caseStudy.features.map((feature, idx) => (
+                            <li key={idx} className="flex gap-3">
+                              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                              <span className="text-sm text-foreground">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </Card>
+                    </div>
+
+                    {/* Результаты */}
+                    <Card className="border-2 border-[#0029FF] bg-white p-8">
+                      <h4 className="text-xl font-bold text-foreground mb-8">Результаты</h4>
+                      <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
+                        {caseStudy.results.map((result, idx) => (
+                          <div key={idx} className="text-center">
+                            <p className="text-3xl md:text-4xl font-bold text-[#0029FF] mb-2">{result.value}</p>
+                            <p className="text-foreground text-sm">{result.label}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-end gap-4 mt-8">
+              <CarouselPrevious className="relative position-static w-12 h-12" />
+              <CarouselNext className="relative position-static w-12 h-12" />
             </div>
-
-            {/* О кампании */}
-            <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
-              <h3 className="text-2xl font-bold text-[#0029FF] mb-6">О кампании</h3>
-              <div className="space-y-4 flex-1">
-                <div className="flex gap-3">
-                  <span className="font-semibold text-foreground min-w-32">Продукт</span>
-                  <span className="text-foreground">бренд детского питания</span>
-                </div>
-                <div className="flex gap-3">
-                  <span className="font-semibold text-foreground min-w-32">Цель</span>
-                  <span className="text-foreground">рост узнаваемости и лояльности к бренду</span>
-                </div>
-                <div className="flex gap-3">
-                  <span className="font-semibold text-foreground min-w-32">Каналы</span>
-                  <span className="text-foreground">Social + Media</span>
-                </div>
-                <div className="flex gap-3">
-                  <span className="font-semibold text-foreground min-w-32">Период</span>
-                  <span className="text-foreground">3 месяца</span>
-                </div>
-              </div>
-            </Card>
-
-            {/* Особенности кампании */}
-            <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
-              <h3 className="text-2xl font-bold text-[#0029FF] mb-6">Особенности кампании</h3>
-              <ul className="space-y-3 flex-1">
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Для точности таргетинга использовали кастомные сегменты</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Собрали аудиторию, которая ранее заходила на сайт, для дальнейшей работы</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Настроили таргетинг на аудиторию конкурентов</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Настроили кросс-девайсную оптимизацию для управления показами</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-
-          {/* Результаты */}
-          <Card className="border-2 border-[#0029FF] bg-white p-8">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Результаты</h3>
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-[#0029FF] mb-2">1.5+ млн</p>
-                <p className="text-foreground">охват</p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-[#0029FF] mb-2">3+ млн</p>
-                <p className="text-foreground">показов</p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-[#0029FF] mb-2">13%+</p>
-                <p className="text-foreground">Brand Lift</p>
-              </div>
-            </div>
-          </Card>
+          </Carousel>
         </div>
       </section>
     </main>
