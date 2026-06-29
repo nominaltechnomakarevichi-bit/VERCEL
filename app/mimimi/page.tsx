@@ -140,7 +140,7 @@ export default function MimimiPage() {
     {
       id: 4,
       title: 'Как микс форматов и точный таргетинг увеличил узнаваемость бренда на 153%',
-      image: '/fluditec-video.mov',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pharma-case-slide__PharmaCaseSlide_6-uy5HZLRdREH7JuZp9yB40KcUkCZdi3.mov',
       isVideo: true,
       campaign: {
         product: 'сироп от кашля для детей Флюдитек',
