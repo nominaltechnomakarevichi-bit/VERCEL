@@ -100,7 +100,7 @@ export default function MimimiPage() {
     {
       id: 2,
       title: 'Как White list из тематических площадок привел к росту KPI на 206%+',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1000025729-I9qoD4dfopcQO1SSYovrQsXYPYiwQX.png',
       campaign: {
         product: 'детские подгузники MOMI',
         goal: 'продвижение розыгрыша призов',
@@ -122,7 +122,7 @@ export default function MimimiPage() {
     {
       id: 3,
       title: 'Как кастомные сегменты и ОФД данные привели к перевыполнению плановых KPI на 169%+',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%20240x400%20%D0%9F%D0%98%CC%86_2%20%283%29-gfTZIkefhx7rhXb6Vs72Fo68pHGI8P.jpg',
       campaign: {
         product: 'детское питание Фрутоняня',
         goal: 'повышение лояльности к бренду, охват',
@@ -144,7 +144,8 @@ export default function MimimiPage() {
     {
       id: 4,
       title: 'Как микс форматов и точный таргетинг увеличил узнаваемость бренда на 153%',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png',
+      image: '/fluditec-video.mov',
+      isVideo: true,
       campaign: {
         product: 'сироп от кашля для детей Флюдитек',
         goal: 'увеличить узнаваемость бренда',
@@ -698,6 +699,11 @@ export default function MimimiPage() {
       {/* Case Studies Carousel */}
       <section className="border-t-2 border-border py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <span className="inline-block px-4 py-1.5 bg-[#0029FF] text-white text-sm font-semibold rounded-full mb-4">
+              Кейсы
+            </span>
+          </div>
           <Carousel className="w-full relative">
             <CarouselPrevious className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
             <CarouselContent>
@@ -710,11 +716,24 @@ export default function MimimiPage() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                       <div className="rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center h-full">
-                        <img 
-                          src={caseStudy.image}
-                          alt={`${caseStudy.campaign.product} Product`}
-                          className="w-full h-auto object-contain"
-                        />
+                        {caseStudy.isVideo ? (
+                          <video 
+                            className="w-full h-auto object-contain"
+                            controls
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline
+                          >
+                            <source src={caseStudy.image} type="video/quicktime" />
+                          </video>
+                        ) : (
+                          <img 
+                            src={caseStudy.image}
+                            alt={`${caseStudy.campaign.product} Product`}
+                            className="w-full h-auto object-contain"
+                          />
+                        )}
                       </div>
 
                       <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
