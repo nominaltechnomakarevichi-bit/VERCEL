@@ -465,6 +465,51 @@ export default function MimimiPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="border-b-2 border-border py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-foreground mb-12">Video</h2>
+          
+          <Card className="border-2 border-border bg-white overflow-hidden">
+            <CardHeader>
+              <CardTitle className="text-2xl text-[#0029FF]">Видео реклама</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center min-h-28">
+                <video 
+                  className="w-full h-full object-contain"
+                  controls
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                >
+                  <source src="/mimimi-video.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-foreground mb-4">Преимущества видео рекламы</h4>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Повышает эффективность коммуникации благодаря комбинации видео, звука и динамичного визуала</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Увеличивает время взаимодействия с брендом и улучшает запоминаемость сообщения</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">Демонстрирует преимущества продукта в действии, что повышает вероятность конверсии</span>
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Ad Channels Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -603,51 +648,6 @@ export default function MimimiPage() {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="border-b-2 border-border py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">Video</h2>
-          
-          <Card className="border-2 border-border bg-white overflow-hidden">
-            <CardHeader>
-              <CardTitle className="text-2xl text-[#0029FF]">Видео реклама</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center min-h-40">
-                <video 
-                  className="w-full h-full object-contain"
-                  controls
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                >
-                  <source src="/mimimi-video.mp4" type="video/mp4" />
-                </video>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-foreground mb-4">Преимущества видео рекламы</h4>
-                <ul className="space-y-3">
-                  <li className="flex gap-3">
-                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">Повышает эффективность коммуникации благодаря комбинации видео, звука и динамичного визуала</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">Увеличивает время взаимодействия с брендом и улучшает запоминаемость сообщения</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">Демонстрирует преимущества продукта в действии, что повышает вероятность конверсии</span>
-                  </li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* Technical Capabilities */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -698,18 +698,20 @@ export default function MimimiPage() {
       {/* Case Studies Carousel */}
       <section className="border-t-2 border-border py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
-          <Carousel className="w-full">
-            <CarouselContent>
-              {caseStudies.map((caseStudy) => (
-                <CarouselItem key={caseStudy.id}>
-                  <div className="space-y-8">
-                    {/* Title */}
-                    <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
-                      {caseStudy.title}
-                    </h3>
+          <div className="flex items-start gap-8">
+            <CarouselPrevious className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
+            <Carousel className="w-full flex-1">
+              <CarouselContent>
+                {caseStudies.map((caseStudy) => (
+                  <CarouselItem key={caseStudy.id}>
+                    <div className="space-y-8">
+                      {/* Title */}
+                      <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
+                        {caseStudy.title}
+                      </h3>
 
-                    {/* Main Layout - Image Left, Content Right with equal heights */}
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                      {/* Main Layout - Image Left, Content Right with equal heights */}
+                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                       {/* Product Image */}
                       <div className="rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center h-full">
                         <img 
@@ -771,12 +773,10 @@ export default function MimimiPage() {
                   </div>
                 </CarouselItem>
               ))}
-            </CarouselContent>
-            <div className="flex justify-center gap-4 mt-8">
-              <CarouselPrevious className="relative position-static w-12 h-12" />
-              <CarouselNext className="relative position-static w-12 h-12" />
-            </div>
-          </Carousel>
+              </CarouselContent>
+            </Carousel>
+            <CarouselNext className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
+          </div>
         </div>
       </section>
     </main>
