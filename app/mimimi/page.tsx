@@ -217,7 +217,7 @@ export default function MimimiPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-bold text-[#0029FF] mb-4">Молодая активная мама</h3>
-                  <p className="text-foreground mb-6">Современная женщина, которая ценит качество, безопасность и удобство в товарах для своей семьи. Активна в соцсетях, доверяет отзывам и советам педиатров.</p>
+                  <p className="text-foreground mb-6">Современная женщина, которая ценит качество, безопасность и удобство в товарах для своей се��ьи. Активна в соцсетях, доверяет отзывам и советам педиатров.</p>
                 </div>
 
                 {/* Gender */}
@@ -708,16 +708,17 @@ export default function MimimiPage() {
                     </h3>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                      <div className={`rounded-lg overflow-hidden p-8 flex items-center justify-center h-full ${caseStudy.isVideo ? 'bg-[#f0eef5]' : 'bg-slate-100'}`}>
+                      <div className={`rounded-lg overflow-hidden p-8 flex items-center justify-center h-full min-h-96 ${caseStudy.isVideo ? 'bg-[#f0eef5]' : 'bg-slate-100'}`}>
                         {caseStudy.isVideo ? (
                           <video 
-                            className="w-full h-auto object-contain"
+                            className="w-full h-full object-contain"
                             autoPlay 
                             loop 
                             muted 
                             playsInline
+                            crossOrigin="anonymous"
                           >
-                            <source src={caseStudy.image} type="video/quicktime" />
+                            <source src={caseStudy.image} />
                           </video>
                         ) : (
                           <img 
