@@ -702,16 +702,13 @@ export default function MimimiPage() {
             <CarouselPrevious className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
             <CarouselContent>
               {caseStudies.map((caseStudy) => (
-                <CarouselItem key={caseStudy.id}>
+                <CarouselItem key={caseStudy.id} className="w-full">
                   <div className="space-y-8">
-                    {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
                       {caseStudy.title}
                     </h3>
 
-                    {/* Main Layout - Image Left, Content Right with equal heights */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                      {/* Product Image */}
                       <div className="rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center h-full">
                         <img 
                           src={caseStudy.image}
@@ -720,7 +717,6 @@ export default function MimimiPage() {
                         />
                       </div>
 
-                      {/* О кампании */}
                       <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
                         <h4 className="text-xl font-bold text-[#0029FF] mb-6">О кампании</h4>
                         <div className="space-y-4 flex-1">
@@ -743,7 +739,6 @@ export default function MimimiPage() {
                         </div>
                       </Card>
 
-                      {/* Особенности кампании */}
                       <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
                         <h4 className="text-xl font-bold text-[#0029FF] mb-6">Особенности</h4>
                         <ul className="space-y-3 flex-1">
@@ -757,7 +752,6 @@ export default function MimimiPage() {
                       </Card>
                     </div>
 
-                    {/* Результаты */}
                     <Card className="border-2 border-[#0029FF] bg-white p-8">
                       <h4 className="text-xl font-bold text-foreground mb-8">Результаты</h4>
                       <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
