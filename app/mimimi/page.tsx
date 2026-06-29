@@ -698,20 +698,19 @@ export default function MimimiPage() {
       {/* Case Studies Carousel */}
       <section className="border-t-2 border-border py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-start gap-8">
+          <Carousel className="w-full relative">
             <CarouselPrevious className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
-            <Carousel className="w-full flex-1">
-              <CarouselContent>
-                {caseStudies.map((caseStudy) => (
-                  <CarouselItem key={caseStudy.id}>
-                    <div className="space-y-8">
-                      {/* Title */}
-                      <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
-                        {caseStudy.title}
-                      </h3>
+            <CarouselContent>
+              {caseStudies.map((caseStudy) => (
+                <CarouselItem key={caseStudy.id}>
+                  <div className="space-y-8">
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
+                      {caseStudy.title}
+                    </h3>
 
-                      {/* Main Layout - Image Left, Content Right with equal heights */}
-                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    {/* Main Layout - Image Left, Content Right with equal heights */}
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                       {/* Product Image */}
                       <div className="rounded-lg overflow-hidden bg-slate-100 p-8 flex items-center justify-center h-full">
                         <img 
@@ -773,10 +772,9 @@ export default function MimimiPage() {
                   </div>
                 </CarouselItem>
               ))}
-              </CarouselContent>
-            </Carousel>
+            </CarouselContent>
             <CarouselNext className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
-          </div>
+          </Carousel>
         </div>
       </section>
     </main>
