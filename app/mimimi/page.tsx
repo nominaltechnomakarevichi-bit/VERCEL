@@ -606,14 +606,14 @@ export default function MimimiPage() {
       {/* Video Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">Видео</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Video</h2>
           
           <Card className="border-2 border-border bg-white overflow-hidden">
             <CardHeader>
               <CardTitle className="text-2xl text-[#0029FF]">Видео реклама</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center min-h-80">
+              <div className="bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center min-h-40">
                 <video 
                   className="w-full h-full object-contain"
                   controls
@@ -698,15 +698,6 @@ export default function MimimiPage() {
       {/* Case Studies Carousel */}
       <section className="border-t-2 border-border py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <span className="inline-block px-4 py-1.5 bg-[#0029FF] text-white text-sm font-semibold rounded-full mb-4">
-              Кейсы
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Истории успеха наших клиентов
-            </h2>
-          </div>
-
           <Carousel className="w-full">
             <CarouselContent>
               {caseStudies.map((caseStudy) => (
@@ -781,7 +772,7 @@ export default function MimimiPage() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="flex justify-end gap-4 mt-8">
+            <div className="flex justify-center gap-4 mt-8">
               <CarouselPrevious className="relative position-static w-12 h-12" />
               <CarouselNext className="relative position-static w-12 h-12" />
             </div>
