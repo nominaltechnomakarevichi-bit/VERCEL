@@ -143,7 +143,7 @@ export default function MimimiPage() {
       image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pharma-case-slide__PharmaCaseSlide_6-uy5HZLRdREH7JuZp9yB40KcUkCZdi3.mov',
       isVideo: true,
       campaign: {
-        product: 'сироп от кашля для детей Флюдитек',
+        product: 'сироп от кашля для детей Флюдите��',
         goal: 'увеличить узнаваемость бренда',
         channels: 'Display, Video',
         period: '4 месяца'
@@ -708,16 +708,17 @@ export default function MimimiPage() {
                     </h3>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                      <div className={`rounded-lg overflow-hidden p-8 flex items-center justify-center h-full ${caseStudy.isVideo ? 'bg-[#f0eef5]' : 'bg-slate-100'}`}>
+                      <div className={`rounded-lg overflow-hidden p-8 flex items-center justify-center h-full min-h-96 ${caseStudy.isVideo ? 'bg-[#f0eef5]' : 'bg-slate-100'}`}>
                         {caseStudy.isVideo ? (
                           <video 
-                            className="w-full h-auto object-contain"
+                            className="w-full h-full object-contain"
                             autoPlay 
                             loop 
                             muted 
                             playsInline
+                            crossOrigin="anonymous"
                           >
-                            <source src={caseStudy.image} type="video/quicktime" />
+                            <source src={caseStudy.image} />
                           </video>
                         ) : (
                           <img 
