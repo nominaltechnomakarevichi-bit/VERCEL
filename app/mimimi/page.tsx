@@ -143,7 +143,7 @@ export default function MimimiPage() {
       image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pharma-case-slide__PharmaCaseSlide_6-uy5HZLRdREH7JuZp9yB40KcUkCZdi3.mov',
       isVideo: true,
       campaign: {
-        product: 'сироп от кашля для детей Флюдите��',
+        product: 'сироп от кашля для детей Флюдитек',
         goal: 'увеличить узнаваемость бренда',
         channels: 'Display, Video',
         period: '4 месяца'
