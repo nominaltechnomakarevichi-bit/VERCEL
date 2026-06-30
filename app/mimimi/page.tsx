@@ -143,7 +143,7 @@ export default function MimimiPage() {
       image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pharma-case-slide__PharmaCaseSlide_6-uy5HZLRdREH7JuZp9yB40KcUkCZdi3.mov',
       isVideo: true,
       campaign: {
-        product: 'сироп от кашля для детей Флюдитек',
+        product: 'сироп от кашля для детей Флюдите��',
         goal: 'увеличить узнаваемость бренда',
         channels: 'Display, Video',
         period: '4 месяца'
@@ -217,7 +217,7 @@ export default function MimimiPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-bold text-[#0029FF] mb-4">Молодая активная мама</h3>
-                  <p className="text-foreground mb-6">Современная женщина, которая ценит качество, безопасность и удобство в товарах для своей се��ьи. Активна в соцсетях, доверяет отзывам и советам педиатров.</p>
+                  <p className="text-foreground mb-6">Современная женщина, которая ценит качество, безопасность и удобство в товарах для своей семьи. Активна в соцсетях, доверяет отзывам и советам педиатров.</p>
                 </div>
 
                 {/* Gender */}

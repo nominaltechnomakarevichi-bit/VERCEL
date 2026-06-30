@@ -4,9 +4,9 @@ import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
  
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-gilroy" })
+const _geist = Geist({ subsets: ["latin", "cyrillic"] })
+const _geistMono = Geist_Mono({ subsets: ["latin", "cyrillic"] })
+const outfit = Outfit({ subsets: ["latin", "cyrillic"], variable: "--font-gilroy" })
  
 export const metadata: Metadata = {
   title: 'Pharma Solutions | Программатик платформа',
