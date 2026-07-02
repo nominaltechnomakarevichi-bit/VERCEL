@@ -355,7 +355,8 @@ export function BrandformanceSlide() {
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-02%20%D0%B2%2016.54.35-xsEE6nb3113me3xzZjz3KzYhFfebH8.png"
                       alt="Красная Поляна горнолыжный курорт"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full object-cover rounded-lg"
+                      style={{ height: '550px' }}
                     />
                   </div>
                   
