@@ -188,11 +188,7 @@ export function BrandformanceSlide() {
                   <span className="font-semibold text-[#0029FF]">Performance не создает спрос</span> — он перераспределяет уже существующий.
                 </CardContent>
               </Card>
-            </div>
-          )}
 
-          {activeScenario === 1 && (
-            <div className="space-y-8 animate-in fade-in duration-300">
               <Card className="border-2 border-[#7C5CFF] bg-white">
                 <CardHeader>
                   <CardTitle className="text-[#7C5CFF] text-lg">Brandformance-решение</CardTitle>
