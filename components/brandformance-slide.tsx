@@ -194,17 +194,15 @@ export function BrandformanceSlide() {
 
           {activeScenario === 1 && (
             <div className="space-y-8 animate-in fade-in duration-300">
-              <div>
-                <h3 className="text-lg font-bold text-foreground">Brandformance-решение</h3>
-              </div>
-
               <Card className="border-2 border-[#7C5CFF] bg-white">
                 <CardHeader>
-                  <CardTitle className="text-[#7C5CFF] text-lg">Основной канал</CardTitle>
+                  <CardTitle className="text-[#7C5CFF] text-lg">Brandformance-решение</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="px-4 py-2 rounded-full bg-[#7C5CFF] text-white text-sm font-medium w-fit">
-                    Programmatic
+                  <div className="flex flex-wrap gap-3">
+                    <div className="px-4 py-2 rounded-full bg-[#7C5CFF] text-white text-sm font-medium">
+                      Programmatic
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -299,17 +297,18 @@ export function BrandformanceSlide() {
                       <tr 
                         key={idx} 
                         style={{ 
-                          backgroundColor: row.criterion === 'Результат' ? "#0029FF15" : (idx % 2 === 0 ? "#FFFFFF" : "#F8F8F8")
+                          backgroundColor: row.criterion === 'Результат' ? "#0029FF15" : (idx % 2 === 0 ? "#FFFFFF" : "#F8F8F8"),
+                          borderBottom: row.criterion === 'Результат' ? `1px solid #0029FF` : 'none'
                         }}
                       >
-                        <td className={`border border-border p-4 text-foreground font-semibold flex items-center gap-3 ${row.criterion === 'Результат' ? 'text-[#0029FF]' : ''}`}>
+                        <td className={`border border-border p-4 text-foreground font-semibold flex items-center gap-3 ${row.criterion === 'Результат' ? 'text-[#0029FF] border-b-2 border-b-[#0029FF]' : ''}`}>
                           {iconMap[row.criterion]}
                           <span>{row.criterion}</span>
                         </td>
-                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
+                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base border-b-2 border-b-[#0029FF]' : 'text-sm'}`}>
                           {row.performance}
                         </td>
-                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
+                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base border-b-2 border-b-[#0029FF]' : 'text-sm'}`}>
                           {row.brandformance}
                         </td>
                       </tr>
@@ -364,7 +363,7 @@ export function BrandformanceSlide() {
               <div className="flex-1">
                 <Card className="bg-white border-2 border-[#0029FF]">
                   <CardContent className="pt-6">
-                    <p className="text-foreground text-lg md:text-xl leading-relaxed">
+                    <p className="text-foreground text-base md:text-lg leading-relaxed">
                       Если ваша задача — собрать максимум «дешевых» лидов из уже существующего спроса, начните с поиска, ретаргетинга и маркетплейсов. Но если вы хотите масштабировать продажи, а не только перераспределять существующий спрос, вам нужен Brandformance
                     </p>
                   </CardContent>
@@ -383,18 +382,17 @@ export function BrandformanceSlide() {
         )}
 
         {/* Block 10: Final Conclusion */}
-        <section>
-          <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
-            <CardHeader>
-              <CardTitle className="text-white text-lg font-bold">Вывод</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 text-white text-base md:text-lg">
-              <p>
-                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
-              </p>
-            </CardContent>
-          </Card>
-        </section>
+        {activeScenario && (
+          <section>
+            <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
+              <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
+                <p>
+                  <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
+                </p>
+              </CardContent>
+            </Card>
+          </section>
+        )}
 
       </div>
     </main>
