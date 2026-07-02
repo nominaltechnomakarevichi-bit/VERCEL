@@ -374,18 +374,16 @@ export function BrandformanceSlide() {
               </div>
             </div>
           </section>
-        )}
 
         {/* Block 10: Final Conclusion */}
-        {activeScenario && (
-          <section>
-            <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
-              <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
-                <p>
-                  <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
-                </p>
-              </CardContent>
-            </Card>
+        <section>
+          <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
+            <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
+              <p>
+                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
+              </p>
+            </CardContent>
+          </Card>
         </section>
       </div>
     </main>
