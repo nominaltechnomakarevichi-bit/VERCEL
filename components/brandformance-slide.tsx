@@ -223,11 +223,11 @@ export function BrandformanceSlide() {
               <Card className="border-2 border-border bg-white overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
                   {/* Case Image */}
-                  <div className="flex items-center justify-center">
+                  <div className="flex items-center justify-center bg-white">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A2%D0%93%D0%91%201200_628-wjNLFLM4YxRRN6TuukUCQ42Ita0ret.png"
                       alt="Kapika школьная коллекция 2024"
-                      className="w-full h-auto object-contain rounded-lg"
+                      className="w-full h-full max-h-96 object-cover rounded-lg transform-none"
                     />
                   </div>
                   
@@ -254,6 +254,14 @@ export function BrandformanceSlide() {
                         <div>
                           <p className="text-sm font-semibold text-muted-foreground">Период РК</p>
                           <p className="text-sm text-foreground">1 месяц</p>
+                        </div>
+                        
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Стратегия</p>
+                          <div className="space-y-1">
+                            <p className="text-sm text-foreground">Основной Brandformance-инструмент – нативная реклама (ТГБ)</p>
+                            <p className="text-sm text-foreground">Оптимизировали и обучали РК на микроконверсиях</p>
+                          </div>
                         </div>
                       </div>
                       
