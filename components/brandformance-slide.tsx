@@ -219,6 +219,8 @@ export function BrandformanceSlide() {
                 </CardContent>
               </Card>
 
+              <h3 className="text-xl font-bold text-foreground">Кейс</h3>
+
               {/* Kapika Case Study */}
               <Card className="border-2 border-border bg-white overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
