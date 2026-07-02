@@ -396,7 +396,6 @@ export function BrandformanceSlide() {
             </Card>
           </section>
         )}
-
       </div>
     </main>
   )
