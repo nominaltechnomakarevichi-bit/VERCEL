@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { AlertCircle, Zap, Target, TrendingUp, AlertTriangle, TrendingDown, Lock } from "lucide-react"
+import { AlertCircle, Zap, Target, TrendingUp, AlertTriangle, TrendingDown, Lock, Users, Clock, Share2, BarChart3, Zap as ZapIcon, Trophy } from "lucide-react"
 
 export function BrandformanceSlide() {
   const [activeScenario, setActiveScenario] = useState<1 | 2 | null>(null)
@@ -140,7 +140,7 @@ export function BrandformanceSlide() {
 
               <Card className="border-2 border-[#0029FF] bg-white">
                 <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-lg">Brandformance-решение</CardTitle>
+                  <CardTitle className="text-[#0029FF] text-lg">Performance-решения</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-3">
@@ -286,24 +286,35 @@ export function BrandformanceSlide() {
                   </tr>
                 </thead>
                 <tbody>
-                  {tableRows.filter(row => row.criterion !== 'Момент подключения').map((row, idx) => (
-                    <tr 
-                      key={idx} 
-                      style={{ 
-                        backgroundColor: row.criterion === 'Результат' ? "#0029FF15" : (idx % 2 === 0 ? "#FFFFFF" : "#F8F8F8")
-                      }}
-                    >
-                      <td className={`border border-border p-4 text-foreground font-semibold ${row.criterion === 'Результат' ? 'text-base' : 'text-sm'}`}>
-                        {row.criterion}
-                      </td>
-                      <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
-                        {row.performance}
-                      </td>
-                      <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
-                        {row.brandformance}
-                      </td>
-                    </tr>
-                  ))}
+                  {tableRows.filter(row => row.criterion !== 'Момент подключения').map((row, idx) => {
+                    const iconMap: Record<string, React.ReactNode> = {
+                      'Бизнес-логика': <Users className="h-6 w-6" />,
+                      'Каналы': <Share2 className="h-6 w-6" />,
+                      'Работа с аудиторией': <BarChart3 className="h-6 w-6" />,
+                      'Измерение и оптимизация': <ZapIcon className="h-6 w-6" />,
+                      'Результат': <Trophy className="h-6 w-6" />
+                    };
+                    
+                    return (
+                      <tr 
+                        key={idx} 
+                        style={{ 
+                          backgroundColor: row.criterion === 'Результат' ? "#0029FF15" : (idx % 2 === 0 ? "#FFFFFF" : "#F8F8F8")
+                        }}
+                      >
+                        <td className={`border border-border p-4 text-foreground font-semibold flex items-center gap-3 ${row.criterion === 'Результат' ? 'text-[#0029FF]' : ''}`}>
+                          {iconMap[row.criterion]}
+                          <span>{row.criterion}</span>
+                        </td>
+                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
+                          {row.performance}
+                        </td>
+                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
+                          {row.brandformance}
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -377,7 +388,7 @@ export function BrandformanceSlide() {
             <CardHeader>
               <CardTitle className="text-white text-lg font-bold">Вывод</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4 text-white text-sm">
+            <CardContent className="space-y-4 text-white text-base md:text-lg">
               <p>
                 <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
               </p>
