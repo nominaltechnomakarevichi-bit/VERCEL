@@ -351,14 +351,12 @@ export function BrandformanceSlide() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
                   {/* Case Image */}
-                  <div className="flex flex-col gap-4">
-                    <div className="rounded-lg overflow-hidden border border-border bg-white">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-02%20%D0%B2%2016.54.35-xsEE6nb3113me3xzZjz3KzYhFfebH8.png"
-                        alt="Красная Поляна горнолыжный курорт"
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
+                  <div className="flex items-center justify-center">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-02%20%D0%B2%2016.54.35-xsEE6nb3113me3xzZjz3KzYhFfebH8.png"
+                      alt="Красная Поляна горнолыжный курорт"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                   
                   {/* Case Content */}
@@ -366,7 +364,7 @@ export function BrandformanceSlide() {
                     <div className="space-y-4">
                       <div>
                         <h3 className="text-2xl font-bold text-foreground">
-                          Как омниканальный подход и 80 паков креативов обеспечили 73% post-view конверсий
+                          Как омниканальный подход обеспечил 73% post-view конверсий
                         </h3>
                       </div>
                       
