@@ -219,10 +219,13 @@ export function BrandformanceSlide() {
                 </CardContent>
               </Card>
 
-              <h3 className="text-xl font-bold text-foreground">Кейс</h3>
-
               {/* Kapika Case Study */}
               <Card className="border-2 border-border bg-white overflow-hidden">
+                <div className="flex items-center gap-3 px-6 pt-6 pb-0 mb-4">
+                  <span className="inline-block px-3 py-1 rounded-full bg-[#0029FF] text-white text-xs font-bold">
+                    Кейс
+                  </span>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
                   {/* Case Images */}
                   <div className="flex flex-col gap-4">
