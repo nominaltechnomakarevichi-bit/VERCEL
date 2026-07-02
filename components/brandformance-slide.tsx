@@ -275,12 +275,12 @@ export function BrandformanceSlide() {
             <h2 className="mb-8 text-2xl font-bold text-foreground">Сравнение подходов</h2>
             
             <div className="overflow-x-auto rounded-lg border border-border">
-              <table className="w-full border-collapse">
+              <table className="w-full">
                 <thead>
                   <tr style={{ backgroundColor: "#0029FF" }}>
-                    <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Параметр</th>
-                    <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Performance</th>
-                    <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Brandformance</th>
+                    <th className="p-4 text-left font-bold text-white text-sm">Параметр</th>
+                    <th className="p-4 text-left font-bold text-white text-sm">Performance</th>
+                    <th className="p-4 text-left font-bold text-white text-sm">Brandformance</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -293,22 +293,26 @@ export function BrandformanceSlide() {
                       'Результат': <Trophy className="h-6 w-6" />
                     };
                     
+                    const filteredRows = tableRows.filter(row => row.criterion !== 'Момент подключения');
+                    const isLastRow = idx === filteredRows.length - 1;
+                    
                     return (
                       <tr 
                         key={idx} 
                         style={{ 
                           backgroundColor: row.criterion === 'Результат' ? "#0029FF15" : (idx % 2 === 0 ? "#FFFFFF" : "#F8F8F8"),
-                          borderBottom: row.criterion === 'Результат' ? `1px solid #0029FF` : 'none'
+                          borderTop: idx === 0 ? 'none' : `1px solid #E5E7EB`,
+                          borderBottom: isLastRow ? 'none' : undefined
                         }}
                       >
-                        <td className={`border border-border p-4 text-foreground font-semibold flex items-center gap-3 ${row.criterion === 'Результат' ? 'text-[#0029FF] border-b-2 border-b-[#0029FF]' : ''}`}>
+                        <td className={`p-4 text-foreground font-semibold flex items-center gap-3 ${row.criterion === 'Результат' ? 'text-[#0029FF] text-base' : 'text-sm'}`}>
                           {iconMap[row.criterion]}
                           <span>{row.criterion}</span>
                         </td>
-                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base border-b-2 border-b-[#0029FF]' : 'text-sm'}`}>
+                        <td className={`p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
                           {row.performance}
                         </td>
-                        <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base border-b-2 border-b-[#0029FF]' : 'text-sm'}`}>
+                        <td className={`p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
                           {row.brandformance}
                         </td>
                       </tr>
