@@ -340,13 +340,94 @@ export function BrandformanceSlide() {
                 </CardContent>
               </Card>
 
-              {/* Case Studies Placeholder */}
-              <div className="py-12 bg-slate-50 rounded-lg border border-border flex items-center justify-center min-h-96">
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-muted-foreground">Кейсы</h3>
-                  <p className="text-muted-foreground text-sm mt-2">(место для кейсов)</p>
+              <h3 className="text-xl font-bold text-foreground">Кейс</h3>
+
+              {/* Krasnaya Polyana Case Study */}
+              <Card className="border-2 border-border bg-white overflow-hidden">
+                <div className="flex items-center gap-3 px-6 pt-1 pb-0 mb-1">
+                  <span className="inline-block px-6 py-2 rounded-full bg-[#7C5CFF] text-white text-sm font-bold">
+                    Кейс
+                  </span>
                 </div>
-              </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                  {/* Case Image */}
+                  <div className="flex items-center justify-center bg-white rounded-lg" style={{ height: '550px' }}>
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-02%20%D0%B2%2016.54.35-xsEE6nb3113me3xzZjz3KzYhFfebH8.png"
+                      alt="Красная Поляна горнолыжный курорт"
+                      className="h-full w-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  
+                  {/* Case Content */}
+                  <div className="flex flex-col justify-between">
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="text-2xl font-bold text-foreground">
+                          Как омниканальный подход обеспечил 73% post-view конверсий
+                        </h3>
+                      </div>
+                      
+                      <div className="space-y-3">
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Особенности кейса</p>
+                          <p className="text-sm text-foreground">Необходимость отследить влияние медийной рекламы на бизнес-результат</p>
+                        </div>
+                        
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Цель</p>
+                          <p className="text-sm text-foreground">Рост узнаваемости бренда и конверсий</p>
+                        </div>
+                        
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Период РК</p>
+                          <p className="text-sm text-foreground">10 месяцев</p>
+                        </div>
+
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Стратегия</p>
+                          <div className="space-y-1">
+                            <p className="text-sm text-foreground">Использовали 80 пакетов креативов, разделенных по сегментам</p>
+                            <p className="text-sm text-foreground">Провели многоканальное АВС тестирование</p>
+                            <p className="text-sm text-foreground">Интегрировали DOOH</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="pt-2">
+                        <p className="text-sm font-semibold text-muted-foreground mb-2">Результаты</p>
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="bg-purple-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#7C5CFF]">+146%</p>
+                            <p className="text-xs text-foreground">к плану по кликам</p>
+                          </div>
+                          <div className="bg-purple-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#7C5CFF]">+76%</p>
+                            <p className="text-xs text-foreground">к плану по показам</p>
+                          </div>
+                          <div className="bg-purple-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#7C5CFF]">73%</p>
+                            <p className="text-xs text-foreground">post-view конверсий</p>
+                          </div>
+                          <div className="bg-purple-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#7C5CFF]">86%</p>
+                            <p className="text-xs text-foreground">доход от post-view</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <a 
+                      href="https://www.figma.com/deck/vCB0JLRcc5F45FrGAR30Fg/%D0%9A%D0%B5%D0%B9%D1%81-programmatic-%D0%B4%D0%BB%D1%8F---%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F-%D0%9F%D0%BE%D0%BB%D1%8F%D0%BD%D0%B0--?node-id=217-20&t=4b8Smwq62LIC1tOh-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center justify-center px-6 py-2 rounded-lg border-2 border-[#7C5CFF] text-[#7C5CFF] font-bold text-sm hover:bg-[#7C5CFF] hover:text-white transition-all"
+                    >
+                      Подробнее
+                    </a>
+                  </div>
+                </div>
+              </Card>
             </div>
           )}
 
