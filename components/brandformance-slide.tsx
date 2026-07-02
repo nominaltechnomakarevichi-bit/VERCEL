@@ -305,14 +305,14 @@ export function BrandformanceSlide() {
                           borderBottom: isLastRow ? 'none' : undefined
                         }}
                       >
-                        <td className={`p-4 text-foreground font-semibold flex items-center gap-3 ${row.criterion === 'Результат' ? 'text-[#0029FF] text-base' : 'text-sm'}`}>
+                        <td className={`p-4 text-foreground font-semibold flex items-center gap-3 ${row.criterion === 'Результат' ? 'text-[#0029FF]' : ''} text-sm`}>
                           {iconMap[row.criterion]}
                           <span>{row.criterion}</span>
                         </td>
-                        <td className={`p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
+                        <td className={`p-4 text-foreground font-semibold text-sm ${row.criterion === 'Результат' ? 'text-[#0029FF]' : ''}`}>
                           {row.performance}
                         </td>
-                        <td className={`p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
+                        <td className={`p-4 text-foreground font-semibold text-sm ${row.criterion === 'Результат' ? 'text-[#0029FF]' : ''}`}>
                           {row.brandformance}
                         </td>
                       </tr>
