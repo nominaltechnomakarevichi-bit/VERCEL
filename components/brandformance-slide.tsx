@@ -105,32 +105,31 @@ export function BrandformanceSlide() {
         </section>
 
         {/* Block 2: Scenario Selection */}
-        <section className="space-y-8">
-          <div>
-            <h2 className="text-2xl font-bold text-foreground mb-8">Разбираемся, что для вас Performance</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <button
-                onClick={() => setActiveScenario(1)}
-                className={`p-6 rounded-lg border-2 text-left transition-all transform hover:scale-105 cursor-pointer ${
-                  activeScenario === 1
-                    ? 'border-[#0029FF] bg-[#0029FF] text-white shadow-lg'
-                    : 'border-[#0029FF] bg-white text-foreground hover:bg-[#0029FF]/10'
-                }`}
-              >
-                <p className="font-bold text-base">Last-click продажи здесь и сейчас</p>
-              </button>
-              <button
-                onClick={() => setActiveScenario(2)}
-                className={`p-6 rounded-lg border-2 text-left transition-all transform hover:scale-105 cursor-pointer ${
-                  activeScenario === 2
-                    ? 'border-[#7C5CFF] bg-[#7C5CFF] text-white shadow-lg'
-                    : 'border-[#7C5CFF] bg-white text-foreground hover:bg-[#7C5CFF]/10'
-                }`}
-              >
-                <p className="font-bold text-base">Измеримый результат кампании</p>
-              </button>
-            </div>
+        <div>
+          <h2 className="text-2xl font-bold text-foreground mb-8">Разбираемся, что для вас Performance</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <button
+              onClick={() => setActiveScenario(1)}
+              className={`p-6 rounded-lg border-2 text-left transition-all transform hover:scale-105 cursor-pointer ${
+                activeScenario === 1
+                  ? 'border-[#0029FF] bg-[#0029FF] text-white shadow-lg'
+                  : 'border-[#0029FF] bg-white text-foreground hover:bg-[#0029FF]/10'
+              }`}
+            >
+              <p className="font-bold text-base">Last-click продажи здесь и сейчас</p>
+            </button>
+            <button
+              onClick={() => setActiveScenario(2)}
+              className={`p-6 rounded-lg border-2 text-left transition-all transform hover:scale-105 cursor-pointer ${
+                activeScenario === 2
+                  ? 'border-[#7C5CFF] bg-[#7C5CFF] text-white shadow-lg'
+                  : 'border-[#7C5CFF] bg-white text-foreground hover:bg-[#7C5CFF]/10'
+              }`}
+            >
+              <p className="font-bold text-base">Измеримый результат кампании</p>
+            </button>
           </div>
+        </div>
 
           {activeScenario === 1 && (
             <div className="space-y-8 animate-in fade-in duration-300">
