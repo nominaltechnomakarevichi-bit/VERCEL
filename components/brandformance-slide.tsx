@@ -190,7 +190,6 @@ export function BrandformanceSlide() {
               </Card>
             </div>
           )}
-        </section>
 
           {activeScenario === 1 && (
             <div className="space-y-8 animate-in fade-in duration-300">
@@ -293,7 +292,7 @@ export function BrandformanceSlide() {
                       'Результат': <Trophy className="h-6 w-6" />
                     };
                     
-                    const filteredRows = tableRows.filter(row => row.criterion !== 'Момент подключения');
+                    const filteredRows = tableRows.filter(row => row.criterion !== 'Момент подключени��');
                     const isLastRow = idx === filteredRows.length - 1;
                     
                     return (
