@@ -111,38 +111,36 @@ export function BrandformanceSlide() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <button
                 onClick={() => setActiveScenario(1)}
-                className={`p-6 rounded-lg border-2 text-left transition-all ${
+                className={`p-6 rounded-lg border-2 text-left transition-all transform hover:scale-105 cursor-pointer ${
                   activeScenario === 1
-                    ? 'border-[#0029FF] bg-[#0029FF]/5'
-                    : 'border-border bg-white hover:border-[#0029FF]'
+                    ? 'border-[#0029FF] bg-[#0029FF] text-white shadow-lg'
+                    : 'border-[#0029FF] bg-white text-foreground hover:bg-[#0029FF]/10'
                 }`}
               >
-                <p className="font-bold text-foreground">«Нам нужен performance» = last-click</p>
-                <p className="text-sm text-muted-foreground mt-2">Продажи здесь и сейчас</p>
+                <p className="font-bold text-base">Last-click продажи здесь и сейчас</p>
               </button>
               <button
                 onClick={() => setActiveScenario(2)}
-                className={`p-6 rounded-lg border-2 text-left transition-all ${
+                className={`p-6 rounded-lg border-2 text-left transition-all transform hover:scale-105 cursor-pointer ${
                   activeScenario === 2
-                    ? 'border-[#0029FF] bg-[#0029FF]/5'
-                    : 'border-border bg-white hover:border-[#0029FF]'
+                    ? 'border-[#7C5CFF] bg-[#7C5CFF] text-white shadow-lg'
+                    : 'border-[#7C5CFF] bg-white text-foreground hover:bg-[#7C5CFF]/10'
                 }`}
               >
-                <p className="font-bold text-foreground">«Нам нужен performance» = измеримый результат</p>
-                <p className="text-sm text-muted-foreground mt-2">Полный вклад кампании</p>
+                <p className="font-bold text-base">Измеримый результат кампании</p>
               </button>
             </div>
           </div>
 
           {activeScenario === 1 && (
             <div className="space-y-8 animate-in fade-in duration-300">
-              <div className="bg-white border-2 border-[#0029FF] rounded-lg p-6 md:p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-2">«Нам нужен performance» = last-click продажи здесь и сейчас</h3>
+              <div className="bg-blue-50 border-2 border-[#0029FF] rounded-lg p-6 md:p-8">
+                <h3 className="text-2xl font-bold text-[#0029FF]">«Нам нужен performance» = last-click продажи здесь и сейчас</h3>
               </div>
 
               <Card className="border-2 border-[#0029FF] bg-white">
                 <CardHeader>
-                  <CardTitle className="text-[#0029FF] text-lg">Performance-решение</CardTitle>
+                  <CardTitle className="text-[#0029FF] text-lg">Brandformance-решение</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-3">
@@ -241,8 +239,8 @@ export function BrandformanceSlide() {
 
           {activeScenario === 2 && (
             <div className="space-y-8 animate-in fade-in duration-300">
-              <div className="bg-white border-2 border-[#0029FF] rounded-lg p-6 md:p-8">
-                <h3 className="text-2xl font-bold text-foreground">«Нам нужен performance» = измеримый результат</h3>
+              <div className="bg-purple-50 border-2 border-[#7C5CFF] rounded-lg p-6 md:p-8">
+                <h3 className="text-2xl font-bold text-[#7C5CFF]">«Нам нужен performance» = измеримый результат</h3>
               </div>
 
               {/* What Brandformance Measures */}
@@ -282,6 +280,7 @@ export function BrandformanceSlide() {
               <table className="w-full border-collapse">
                 <thead>
                   <tr style={{ backgroundColor: "#0029FF" }}>
+                    <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Параметр</th>
                     <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Performance</th>
                     <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Brandformance</th>
                   </tr>
@@ -291,10 +290,12 @@ export function BrandformanceSlide() {
                     <tr 
                       key={idx} 
                       style={{ 
-                        backgroundColor: idx % 2 === 0 ? "#FFFFFF" : "#F8F8F8",
-                        ...(row.criterion === 'Результат' ? { backgroundColor: "#0029FF15" } : {})
+                        backgroundColor: row.criterion === 'Результат' ? "#0029FF15" : (idx % 2 === 0 ? "#FFFFFF" : "#F8F8F8")
                       }}
                     >
+                      <td className={`border border-border p-4 text-foreground font-semibold ${row.criterion === 'Результат' ? 'text-base' : 'text-sm'}`}>
+                        {row.criterion}
+                      </td>
                       <td className={`border border-border p-4 text-foreground ${row.criterion === 'Результат' ? 'font-bold text-base' : 'text-sm'}`}>
                         {row.performance}
                       </td>
@@ -347,6 +348,7 @@ export function BrandformanceSlide() {
         {/* Block 9: Conclusion */}
         {activeScenario && (
           <section className="space-y-8">
+            <h2 className="text-2xl font-bold text-foreground">Вывод</h2>
             <div className="flex gap-6 md:gap-12 items-center justify-end">
               <div className="flex-1">
                 <Card className="bg-white border-2 border-[#0029FF]">
@@ -366,15 +368,6 @@ export function BrandformanceSlide() {
                 <p className="mt-3 text-sm font-bold text-foreground">Digital-эксперт</p>
               </div>
             </div>
-
-            {/* Block 10: Final Conclusion */}
-            <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
-              <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
-                <p>
-                  <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
-                </p>
-              </CardContent>
-            </Card>
           </section>
         )}
 
