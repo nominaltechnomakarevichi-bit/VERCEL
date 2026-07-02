@@ -264,8 +264,7 @@ export function BrandformanceSlide() {
           )}
 
         {/* Block 7: Comparison Table */}
-        {activeScenario && (
-          <section>
+        <section className="space-y-8">
             <h2 className="mb-8 text-2xl font-bold text-foreground">Сравнение подходов</h2>
             
             <div className="overflow-x-auto rounded-lg border border-border">
@@ -315,8 +314,7 @@ export function BrandformanceSlide() {
                 </tbody>
               </table>
             </div>
-          </section>
-        )}
+        </section>
 
         {/* Block 8: Why Programmatic */}
         <section className="space-y-6">
@@ -354,8 +352,7 @@ export function BrandformanceSlide() {
         </section>
 
         {/* Block 9: Conclusion */}
-        {activeScenario && (
-          <section className="space-y-8">
+        <section className="space-y-8">
             <h2 className="text-2xl font-bold text-foreground">Вывод</h2>
             <div className="flex gap-6 md:gap-12 items-center justify-end">
               <div className="flex-1">
@@ -389,8 +386,7 @@ export function BrandformanceSlide() {
                 </p>
               </CardContent>
             </Card>
-          </section>
-        )}
+        </section>
       </div>
     </main>
   )
