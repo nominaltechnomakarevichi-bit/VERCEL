@@ -219,13 +219,73 @@ export function BrandformanceSlide() {
                 </CardContent>
               </Card>
 
-              {/* Case Study Placeholder */}
-              <div className="py-12 bg-slate-50 rounded-lg border border-border flex items-center justify-center min-h-96">
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-muted-foreground">Кейс</h3>
-                  <p className="text-muted-foreground text-sm mt-2">(место для кейса)</p>
+              {/* Kapika Case Study */}
+              <Card className="border-2 border-border bg-white overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                  {/* Case Image */}
+                  <div className="flex items-center justify-center">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A2%D0%93%D0%91%201200_628-wjNLFLM4YxRRN6TuukUCQ42Ita0ret.png"
+                      alt="Kapika школьная коллекция 2024"
+                      className="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  
+                  {/* Case Content */}
+                  <div className="flex flex-col justify-between">
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="text-2xl font-bold text-foreground">
+                          Как Brandformance-подход и микс форматов увеличил ЦД на 640%
+                        </h3>
+                      </div>
+                      
+                      <div className="space-y-3">
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Особенности кейса</p>
+                          <p className="text-sm text-foreground">Интернет-магазин детской одежды и обуви достиг потолка по поиску и ретаргетингу</p>
+                        </div>
+                        
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Цель</p>
+                          <p className="text-sm text-foreground">Привлечение аудитории на сайт, рост конверсий</p>
+                        </div>
+                        
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground">Период РК</p>
+                          <p className="text-sm text-foreground">1 месяц</p>
+                        </div>
+                      </div>
+                      
+                      <div className="pt-2">
+                        <p className="text-sm font-semibold text-muted-foreground mb-2">Результаты</p>
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#0029FF]">+275%</p>
+                            <p className="text-xs text-foreground">Search Lift</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#0029FF]">+364%</p>
+                            <p className="text-xs text-foreground">Visit Lift</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#0029FF]">+89%</p>
+                            <p className="text-xs text-foreground">оформленных заказов</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#0029FF]">+100%</p>
+                            <p className="text-xs text-foreground">CR в клик</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button className="mt-6 px-6 py-2 rounded-lg border-2 border-[#0029FF] text-[#0029FF] font-bold text-sm hover:bg-[#0029FF] hover:text-white transition-all">
+                      Подробнее
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </Card>
             </div>
           )}
 
