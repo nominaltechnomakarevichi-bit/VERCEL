@@ -222,13 +222,22 @@ export function BrandformanceSlide() {
               {/* Kapika Case Study */}
               <Card className="border-2 border-border bg-white overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-                  {/* Case Image */}
-                  <div className="flex items-center justify-center bg-white">
-                    <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A2%D0%93%D0%91%201200_628-wjNLFLM4YxRRN6TuukUCQ42Ita0ret.png"
-                      alt="Kapika школьная коллекция 2024"
-                      className="w-full h-full max-h-96 object-cover rounded-lg transform-none"
-                    />
+                  {/* Case Images */}
+                  <div className="flex flex-col gap-4">
+                    <div className="rounded-lg overflow-hidden border border-border bg-white">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1200x628_2_tgb_ru%20%281%29-Lmbt9mUSVTxb1g66v83N3ZpDEqn4eE.png"
+                        alt="Новая школьная коллекция 2024"
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                    <div className="rounded-lg overflow-hidden border border-border bg-white">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A2%D0%93%D0%91%201200_628%20%281%29-YveH26MCvzQsxevz7fI1oIKKQAI5a8.png"
+                        alt="Школьная коллекция 2024"
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
                   </div>
                   
                   {/* Case Content */}
