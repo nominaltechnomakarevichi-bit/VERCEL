@@ -222,7 +222,7 @@ export function BrandformanceSlide() {
               {/* Kapika Case Study */}
               <Card className="border-2 border-border bg-white overflow-hidden">
                 <div className="flex items-center gap-3 px-6 pt-6 pb-0 mb-4">
-                  <span className="inline-block px-3 py-1 rounded-full bg-[#0029FF] text-white text-xs font-bold">
+                  <span className="inline-block px-6 py-2 rounded-full bg-[#0029FF] text-white text-sm font-bold">
                     Кейс
                   </span>
                 </div>
