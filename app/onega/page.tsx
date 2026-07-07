@@ -283,6 +283,10 @@ export default function OnegaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {audiences.map((audience) => (
               <Card key={audience.id} className="border-2 border-border bg-white overflow-hidden">
+                {/* Header */}
+                <div className="bg-blue-50 px-6 py-4 border-b border-border">
+                  <h3 className="text-2xl font-bold text-[#0029FF]">{audience.name}</h3>
+                </div>
                 <div className="space-y-6 p-6">
                   {/* Image */}
                   <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
