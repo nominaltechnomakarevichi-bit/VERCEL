@@ -451,7 +451,7 @@ export default function OnegaPage() {
                 <CardContent className="space-y-6">
                   {/* Image Placeholder */}
                   <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
-                    {channel.id === 1 && (
+                    {channel.id === 'ctv' && (
                       <div className="flex flex-wrap justify-center gap-3 p-4">
                         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-8 object-contain" />
                         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-8 object-contain" />
@@ -466,12 +466,12 @@ export default function OnegaPage() {
                         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-shCkgYKW75oLtzazCR7P933BwRKb3D.png" alt="BARON" className="h-8 object-contain" />
                       </div>
                     )}
-                    {channel.id !== 1 && (
+                    {channel.id !== 'ctv' && (
                       <span className="text-muted-foreground">Изображение канала</span>
                     )}
                   </div>
 
-                  {channel.id === 1 && (
+                  {channel.id === 'ctv' && (
                     <div>
                       <p className="font-bold text-foreground mb-2">Инвентарь</p>
                       <p className="text-foreground text-sm">Доступ к 11+ каналам Connected TV с охватом более 80% аудитории</p>
