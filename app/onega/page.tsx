@@ -449,22 +449,14 @@ export default function OnegaPage() {
                   <p className="text-foreground mt-2">{channel.description}</p>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  {/* Image Placeholder */}
-                  <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
+                  {/* TV Ad Image */}
+                  <div className="bg-slate-100 rounded-lg h-64 flex items-center justify-center overflow-hidden">
                     {channel.id === 'ctv' && (
-                      <div className="flex flex-wrap justify-center gap-3 p-4">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Zi8vS3EU2cZ2uBUCLTtCDCvZxOiJeb.png" alt="Школково" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-8 object-contain" />
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-shCkgYKW75oLtzazCR7P933BwRKb3D.png" alt="BARON" className="h-8 object-contain" />
-                      </div>
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png"
+                        alt="CTV Advertisement"
+                        className="w-full h-full object-cover"
+                      />
                     )}
                     {channel.id !== 'ctv' && (
                       <span className="text-muted-foreground">Изображение канала</span>
@@ -473,8 +465,39 @@ export default function OnegaPage() {
 
                   {channel.id === 'ctv' && (
                     <div>
-                      <p className="font-bold text-foreground mb-2">Инвентарь</p>
-                      <p className="text-foreground text-sm">Доступ к 11+ каналам Connected TV с охватом более 80% аудитории</p>
+                      <p className="font-bold text-foreground mb-4">Инвентарь</p>
+                      <div className="grid grid-cols-5 gap-6">
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-10 object-contain" />
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <span className="text-sm font-bold text-foreground">CTC</span>
+                        </div>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-10 object-contain" />
+                        </div>
+                      </div>
                     </div>
                   )}
 
