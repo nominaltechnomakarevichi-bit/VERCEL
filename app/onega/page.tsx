@@ -466,36 +466,36 @@ export default function OnegaPage() {
                   {channel.id === 'ctv' && (
                     <div>
                       <p className="font-bold text-foreground mb-4">Инвентарь</p>
-                      <div className="grid grid-cols-5 gap-6">
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-10 object-contain" />
+                      <div className="grid grid-cols-5 gap-4">
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <span className="text-sm font-bold text-foreground">CTC</span>
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xRMLGOJgiTaRFRSEvLtioPK0k4mKzz.png" alt="CTC" className="h-16 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-3 h-20">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-10 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-16 object-contain" />
                         </div>
                       </div>
                     </div>
@@ -544,25 +544,25 @@ export default function OnegaPage() {
         <div className="max-w-7xl mx-auto px-6">
           <Card className="border-2 border-border bg-white overflow-hidden">
             <CardContent className="p-8">
-              <div className="flex flex-wrap justify-center gap-8 w-full">
-                {/* Static Logos */}
-                <div className="flex items-center justify-center">
-                  <span className="text-2xl font-bold text-foreground">BORJOMI</span>
+              <div className="flex flex-wrap justify-center gap-12 w-full">
+                {/* Brand Logos */}
+                <div className="flex items-center justify-center h-20">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7hBU7YK0CjpGigm1MSlxLRYwGfaCo6.png" alt="BORJOMI" className="h-full object-contain" />
                 </div>
-                <div className="flex items-center justify-center">
-                  <span className="text-2xl font-bold text-orange-500">Царская</span>
+                <div className="flex items-center justify-center h-20">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Zi8vS3EU2cZ2uBUCLTtCDCvZxOiJeb.png" alt="Школково" className="h-full object-contain" />
                 </div>
-                <div className="flex items-center justify-center">
-                  <span className="text-2xl font-bold text-red-600">Сиартака</span>
+                <div className="flex items-center justify-center h-20">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bfRcn1o9KW2f1sactHZTOoDBY3YiNL.png" alt="Снарпак" className="h-full object-contain" />
                 </div>
-                <div className="flex items-center justify-center">
-                  <span className="text-2xl font-bold text-blue-600">ВИТЬБА</span>
+                <div className="flex items-center justify-center h-20">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-BSNGQ58AkQ1EIdnuA9mRwpeSbDa1Xo.png" alt="Витьба" className="h-full object-contain" />
                 </div>
-                <div className="flex items-center justify-center">
-                  <span className="text-2xl font-bold text-amber-700">FRESCO COFFEE</span>
+                <div className="flex items-center justify-center h-20">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kqld9FrINHYwiFrgPI8WPMiyoASlKP.png" alt="Fresco Coffee" className="h-full object-contain" />
                 </div>
-                <div className="flex items-center justify-center">
-                  <span className="text-2xl font-bold text-red-500">BARON</span>
+                <div className="flex items-center justify-center h-20">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-shCkgYKW75oLtzazCR7P933BwRKb3D.png" alt="BARON" className="h-full object-contain" />
                 </div>
               </div>
             </CardContent>
@@ -576,67 +576,68 @@ export default function OnegaPage() {
           <h2 className="text-4xl font-bold text-foreground mb-12">Кейсы</h2>
 
           <Card className="border-2 border-border bg-white overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-              {/* Image */}
-              <div className="bg-slate-100 rounded-lg h-96 flex items-center justify-center overflow-hidden">
-                <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-BSNGQ58AkQ1EIdnuA9mRwpeSbDa1Xo.png"
-                  alt="Borjomi"
-                  className="w-full h-full object-contain"
+            <div className="flex flex-col p-8 space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">Кейс</h3>
+              </div>
+
+              {/* Video Preview */}
+              <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                <video 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-04-22%20%D0%B2%2016.48.46-xhVwHuce85HHPh46La5tBEuDgvlg5z.mov"
+                  controls
+                  className="w-full h-full object-cover"
                 />
               </div>
 
-              {/* Content */}
-              <div className="flex flex-col justify-between">
-                <div className="space-y-6">
+              {/* Content Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="md:col-span-2 space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-foreground mb-3">
-                      Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT
-                    </h3>
+                    <p className="text-lg font-bold text-foreground mb-2">Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT</p>
                   </div>
 
-                  <div className="space-y-4">
-                    <div>
-                      <p className="font-bold text-foreground mb-2">О кампании</p>
-                      <div className="space-y-1 text-sm text-foreground">
-                        <p><span className="font-semibold">Продукт:</span> минеральная вода Borjomi</p>
-                        <p><span className="font-semibold">Цель:</span> продвижение нового позиционирования</p>
-                        <p><span className="font-semibold">Каналы:</span> Display</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <p className="font-bold text-foreground mb-2">Особенности кампании</p>
-                      <ul className="space-y-1 text-sm text-foreground">
-                        <li>• Rich Media (Cube-баннер) позволил визуально передать идею Food Pairing и увеличить время контакта с брендом</li>
-                        <li>• Жесткий контроль качества: использование собственной антифрод-системы обеспечило кристально чистый трафик (менее 0.3% фрода)</li>
-                      </ul>
+                  <div>
+                    <p className="font-bold text-foreground mb-2">О кампании</p>
+                    <div className="space-y-1 text-sm text-foreground">
+                      <p><span className="font-semibold">Продукт:</span> минеральная вода Borjomi</p>
+                      <p><span className="font-semibold">Цель:</span> продвижение нового позиционирования</p>
+                      <p><span className="font-semibold">Каналы:</span> Display</p>
                     </div>
                   </div>
 
                   <div>
-                    <p className="font-bold text-foreground mb-3">Результаты</p>
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="bg-blue-50 rounded-lg p-3">
-                        <p className="text-sm font-bold text-[#0029FF]">+11%</p>
-                        <p className="text-xs text-foreground">перевыполнение плана по показам</p>
-                      </div>
-                      <div className="bg-blue-50 rounded-lg p-3">
-                        <p className="text-sm font-bold text-[#0029FF]">+9%</p>
-                        <p className="text-xs text-foreground">узнаваемость бренда</p>
-                      </div>
-                      <div className="bg-blue-50 rounded-lg p-3">
-                        <p className="text-sm font-bold text-[#0029FF]">-10%</p>
-                        <p className="text-xs text-foreground">средний СРМ</p>
-                      </div>
-                      <div className="bg-blue-50 rounded-lg p-3">
-                        <p className="text-sm font-bold text-[#0029FF]">0,3%</p>
-                        <p className="text-xs text-foreground">GIVT+SIVT</p>
-                      </div>
-                      <div className="bg-blue-50 rounded-lg p-3 col-span-2">
-                        <p className="text-sm font-bold text-[#0029FF]">1,5 месяца</p>
-                        <p className="text-xs text-foreground">период ведения</p>
-                      </div>
+                    <p className="font-bold text-foreground mb-2">Особенности кампании</p>
+                    <ul className="space-y-1 text-sm text-foreground">
+                      <li>• Rich Media (Cube-баннер) позволил визуально передать идею Food Pairing и увеличить время контакта с брендом</li>
+                      <li>• Жесткий контроль качества: использование собственной антифрод-системы обеспечило кристально чистый трафик (менее 0.3% фрода)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Results - Right column */}
+                <div>
+                  <p className="font-bold text-foreground mb-4">Результаты</p>
+                  <div className="space-y-3">
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <p className="text-sm font-bold text-[#0029FF]">+11%</p>
+                      <p className="text-xs text-foreground">перевыполнение плана по показам</p>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <p className="text-sm font-bold text-[#0029FF]">+9%</p>
+                      <p className="text-xs text-foreground">узнаваемость бренда</p>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <p className="text-sm font-bold text-[#0029FF]">-10%</p>
+                      <p className="text-xs text-foreground">средний СРМ</p>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <p className="text-sm font-bold text-[#0029FF]">0,3%</p>
+                      <p className="text-xs text-foreground">GIVT+SIVT</p>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <p className="text-sm font-bold text-[#0029FF]">1,5 месяца</p>
+                      <p className="text-xs text-foreground">период ведения</p>
                     </div>
                   </div>
                 </div>
