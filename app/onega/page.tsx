@@ -578,9 +578,9 @@ export default function OnegaPage() {
           <Card className="border-2 border-border bg-white overflow-hidden">
             <div className="flex flex-col p-8 space-y-6">
               {/* Top Section: Video + Content */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-start">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
                 {/* Video Preview - Left */}
-                <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden w-fit">
+                <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden w-fit h-fit">
                   <video 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-04-22%20%D0%B2%2016.48.46-xhVwHuce85HHPh46La5tBEuDgvlg5z.mov"
                     autoPlay
@@ -591,7 +591,7 @@ export default function OnegaPage() {
                 </div>
 
                 {/* Content - Right */}
-                <div className="flex flex-col justify-between h-full space-y-4">
+                <div className="flex flex-col justify-between h-full space-y-2">
                   <div>
                     <p className="text-lg font-bold text-foreground mb-2">Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT</p>
                   </div>
@@ -618,26 +618,26 @@ export default function OnegaPage() {
               {/* Bottom Section: Results */}
               <div>
                 <p className="font-bold text-foreground mb-4">Результаты</p>
-                <div className="grid grid-cols-5 gap-3">
-                  <div className="bg-blue-50 rounded-lg p-3">
-                    <p className="text-sm font-bold text-[#0029FF]">+11%</p>
-                    <p className="text-xs text-foreground">перевыполнение плана по показам</p>
+                <div className="grid grid-cols-5 gap-4">
+                  <div className="bg-blue-50 rounded-lg p-6 text-center">
+                    <p className="text-2xl font-bold text-[#0029FF] mb-2">+11%</p>
+                    <p className="text-sm text-foreground">перевыполнение плана по показам</p>
                   </div>
-                  <div className="bg-blue-50 rounded-lg p-3">
-                    <p className="text-sm font-bold text-[#0029FF]">+9%</p>
-                    <p className="text-xs text-foreground">узнаваемость бренда</p>
+                  <div className="bg-blue-50 rounded-lg p-6 text-center">
+                    <p className="text-2xl font-bold text-[#0029FF] mb-2">+9%</p>
+                    <p className="text-sm text-foreground">узнаваемость бренда</p>
                   </div>
-                  <div className="bg-blue-50 rounded-lg p-3">
-                    <p className="text-sm font-bold text-[#0029FF]">-10%</p>
-                    <p className="text-xs text-foreground">средний СРМ</p>
+                  <div className="bg-blue-50 rounded-lg p-6 text-center">
+                    <p className="text-2xl font-bold text-[#0029FF] mb-2">-10%</p>
+                    <p className="text-sm text-foreground">средний СРМ</p>
                   </div>
-                  <div className="bg-blue-50 rounded-lg p-3">
-                    <p className="text-sm font-bold text-[#0029FF]">0,3%</p>
-                    <p className="text-xs text-foreground">GIVT+SIVT</p>
+                  <div className="bg-blue-50 rounded-lg p-6 text-center">
+                    <p className="text-2xl font-bold text-[#0029FF] mb-2">0,3%</p>
+                    <p className="text-sm text-foreground">GIVT+SIVT</p>
                   </div>
-                  <div className="bg-blue-50 rounded-lg p-3">
-                    <p className="text-sm font-bold text-[#0029FF]">1,5 месяца</p>
-                    <p className="text-xs text-foreground">период ведения</p>
+                  <div className="bg-blue-50 rounded-lg p-6 text-center">
+                    <p className="text-2xl font-bold text-[#0029FF] mb-2">1,5 месяца</p>
+                    <p className="text-sm text-foreground">период ведения</p>
                   </div>
                 </div>
               </div>
