@@ -259,7 +259,7 @@ export default function OnegaPage() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="w-24 h-24 flex items-center justify-center">
+              <div className="w-24 h-24 flex items-center justify-center rounded-lg" style={{ backgroundColor: '#E31E24' }}>
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Onega_logo-ovw5p6q3oin3a29l6x07in08fp60m15fsotj6zfy6i-mdh3zpvhDxT6jNMgnYvqrHM1ZhL8Dk.png" 
                   alt="Onega" 
