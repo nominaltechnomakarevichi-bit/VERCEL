@@ -11,112 +11,103 @@ export default function OnegaPage() {
       id: 1,
       name: 'Онега',
       title: 'Молодая семья',
-      description: 'Активная семья, ценящая качество напитков и здоровый образ жизни',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_58_08-a8nRjOCqFOltMYq2XJwtA5aGl909b5.png',
+      description: 'Вкус, объединяющий семью и друзей',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_17_19-pMEKSYrsWJWWRRqb8MO0if9Hhl5rHM.png',
       gender: {
         label: 'Пол',
         data: [
-          'Женщины 55-60%',
-          'Мужчины 40-45%'
+          'Женщины 60%',
+          'Мужчины 40%'
         ]
       },
       age: {
         label: 'Возраст',
-        data: 'Основная группа 25-40 лет'
-      },
-      income: {
-        label: 'Доход',
-        data: 'Средний и выше среднего'
-      },
-      interests: [
-        'здоровый образ жизни',
-        'здоровое питание',
-        'природа',
-        'активный отдых',
-        'путешествия',
-        'экология'
-      ],
-      triggers: [
-        'качество',
-        'натуральность',
-        'безопасность',
-        'вкус',
-        'удобство',
-        'цена'
-      ]
-    },
-    {
-      id: 2,
-      name: 'Рень',
-      title: 'Рень',
-      description: 'Экономный покупатель, ищущий хорошее соотношение цены и качества',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1000025729-I9qoD4dfopcQO1SSYovrQsXYPYiwQX.png',
-      gender: {
-        label: 'Пол',
-        data: [
-          'Женщины 60-70%',
-          'Мужчины 30-40%'
-        ]
-      },
-      age: {
-        label: 'Возраст',
-        data: 'Основная группа 30-50 лет'
+        data: '28–42 года'
       },
       income: {
         label: 'Доход',
         data: 'Средний'
       },
       interests: [
-        'экономия',
-        'скидки и акции',
-        'маркетплейсы',
-        'бюджетный шопинг',
-        'распродажи',
-        'кэшбек'
+        'просмотр фильма',
+        'семейные выходные',
+        'пикник',
+        'гости дома'
       ],
       triggers: [
-        'цена',
-        'скидка',
-        'пакет товаров',
-        'качество по цене',
-        'удобство'
+        'проверенный бренд',
+        'большой выбор вкусов',
+        'акции',
+        'удобная упаковка'
+      ]
+    },
+    {
+      id: 2,
+      name: 'Рень',
+      title: 'Любитель традиционных снеков',
+      description: 'Настоящий отдых начинается с простых удовольствий',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_19_45-A1eFbd8r2jT6phlImiKZwQsgCl0pdM.png',
+      gender: {
+        label: 'Пол',
+        data: [
+          'Женщины 70%',
+          'Мужчины 30%'
+        ]
+      },
+      age: {
+        label: 'Возраст',
+        data: '30–55 лет'
+      },
+      income: {
+        label: 'Доход',
+        data: 'Средний'
+      },
+      interests: [
+        'отдых на природе',
+        'рыбалка',
+        'дача',
+        'футбол',
+        'встречи с друзьями'
+      ],
+      triggers: [
+        'качественные семечки',
+        'натуральный вкус',
+        'хорошая прожарка',
+        'удобная упаковка'
       ]
     },
     {
       id: 3,
       name: 'Just Brutal',
-      title: 'Just Brutal',
-      description: 'Молодой активный потребитель с экстремальным образом жизни',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%20240x400%20%D0%9F%D0%98%CC%86_2%20%283%29-gfTZIkefhx7rhXb6Vs72Fo68pHGI8P.jpg',
+      title: 'Трендсеттер',
+      description: 'Будь смелее, пробуй новое',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_23_28-9KuLSlahz0YdxT1iLsZyxRJmDIlmN3.png',
       gender: {
         label: 'Пол',
         data: [
-          'Мужчины 70-80%',
-          'Женщины 20-30%'
+          'Женщины 30%',
+          'Мужчины 70%'
         ]
       },
       age: {
         label: 'Возраст',
-        data: 'Основная группа 18-35 лет'
+        data: '18–30 лет'
       },
       income: {
         label: 'Доход',
-        data: 'Средний и выше среднего'
+        data: 'Средний'
       },
       interests: [
-        'спорт',
-        'экстремальные виды спорта',
-        'путешествия',
-        'авто',
-        'видеоигры',
-        'социальные сети'
+        'вечеринка',
+        'отдых с друзьями',
+        'просмотр сериалов',
+        'компьютерные игры'
       ],
       triggers: [
-        'энергия',
-        'адреналин',
-        'стиль',
-        'качество',
-        'инновация'
+        'необычные цвета',
+        'нестандартные вкусы',
+        'яркая упаковка',
+        'ограниченные серии'
       ]
     }
   ]
@@ -292,6 +283,10 @@ export default function OnegaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {audiences.map((audience) => (
               <Card key={audience.id} className="border-2 border-border bg-white overflow-hidden">
+                {/* Header */}
+                <div className="bg-blue-50 px-6 py-4 border-b border-border">
+                  <h3 className="text-2xl font-bold text-[#0029FF]">{audience.name}</h3>
+                </div>
                 <div className="space-y-6 p-6">
                   {/* Image */}
                   <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
@@ -453,13 +448,24 @@ export default function OnegaPage() {
                   <div className="bg-slate-100 rounded-lg h-64 flex items-center justify-center overflow-hidden">
                     {channel.id === 'ctv' && (
                       <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_26_07-9o6IWG3p9LJ2IlbaPe7AvtENUYngQf.png"
                         alt="CTV Advertisement"
                         className="w-full h-full object-cover"
                       />
                     )}
-                    {channel.id !== 'ctv' && (
-                      <span className="text-muted-foreground">Изображение канала</span>
+                    {channel.id === 'display' && (
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_45_14-zvfa8YbBcCtQBaQntmzBPVixcNGCdo.png"
+                        alt="Display Advertisement"
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                    {channel.id === 'video' && (
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_30_51-oXCEzkBZzqtzO8Qsdlhb8Vnha9Bdws.png"
+                        alt="Video Advertisement"
+                        className="w-full h-full object-cover"
+                      />
                     )}
                   </div>
 
