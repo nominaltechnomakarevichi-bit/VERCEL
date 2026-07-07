@@ -581,18 +581,21 @@ export default function OnegaPage() {
                 <h3 className="text-2xl font-bold text-foreground mb-3">Кейс</h3>
               </div>
 
-              {/* Video Preview */}
-              <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden" style={{ aspectRatio: '16/9' }}>
-                <video 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-04-22%20%D0%B2%2016.48.46-xhVwHuce85HHPh46La5tBEuDgvlg5z.mov"
-                  controls
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              {/* Top Section: Video + Content */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Video Preview - Left */}
+                <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden" style={{ aspectRatio: '4/3' }}>
+                  <video 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-04-22%20%D0%B2%2016.48.46-xhVwHuce85HHPh46La5tBEuDgvlg5z.mov"
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              {/* Content Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="md:col-span-2 space-y-4">
+                {/* Content - Right */}
+                <div className="space-y-4">
                   <div>
                     <p className="text-lg font-bold text-foreground mb-2">Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT</p>
                   </div>
@@ -614,31 +617,31 @@ export default function OnegaPage() {
                     </ul>
                   </div>
                 </div>
+              </div>
 
-                {/* Results - Right column */}
-                <div>
-                  <p className="font-bold text-foreground mb-4">Результаты</p>
-                  <div className="space-y-3">
-                    <div className="bg-blue-50 rounded-lg p-3">
-                      <p className="text-sm font-bold text-[#0029FF]">+11%</p>
-                      <p className="text-xs text-foreground">перевыполнение плана по показам</p>
-                    </div>
-                    <div className="bg-blue-50 rounded-lg p-3">
-                      <p className="text-sm font-bold text-[#0029FF]">+9%</p>
-                      <p className="text-xs text-foreground">узнаваемость бренда</p>
-                    </div>
-                    <div className="bg-blue-50 rounded-lg p-3">
-                      <p className="text-sm font-bold text-[#0029FF]">-10%</p>
-                      <p className="text-xs text-foreground">средний СРМ</p>
-                    </div>
-                    <div className="bg-blue-50 rounded-lg p-3">
-                      <p className="text-sm font-bold text-[#0029FF]">0,3%</p>
-                      <p className="text-xs text-foreground">GIVT+SIVT</p>
-                    </div>
-                    <div className="bg-blue-50 rounded-lg p-3">
-                      <p className="text-sm font-bold text-[#0029FF]">1,5 месяца</p>
-                      <p className="text-xs text-foreground">период ведения</p>
-                    </div>
+              {/* Bottom Section: Results */}
+              <div>
+                <p className="font-bold text-foreground mb-4">Результаты</p>
+                <div className="grid grid-cols-5 gap-3">
+                  <div className="bg-blue-50 rounded-lg p-3">
+                    <p className="text-sm font-bold text-[#0029FF]">+11%</p>
+                    <p className="text-xs text-foreground">перевыполнение плана по показам</p>
+                  </div>
+                  <div className="bg-blue-50 rounded-lg p-3">
+                    <p className="text-sm font-bold text-[#0029FF]">+9%</p>
+                    <p className="text-xs text-foreground">узнаваемость бренда</p>
+                  </div>
+                  <div className="bg-blue-50 rounded-lg p-3">
+                    <p className="text-sm font-bold text-[#0029FF]">-10%</p>
+                    <p className="text-xs text-foreground">средний СРМ</p>
+                  </div>
+                  <div className="bg-blue-50 rounded-lg p-3">
+                    <p className="text-sm font-bold text-[#0029FF]">0,3%</p>
+                    <p className="text-xs text-foreground">GIVT+SIVT</p>
+                  </div>
+                  <div className="bg-blue-50 rounded-lg p-3">
+                    <p className="text-sm font-bold text-[#0029FF]">1,5 месяца</p>
+                    <p className="text-xs text-foreground">период ведения</p>
                   </div>
                 </div>
               </div>
