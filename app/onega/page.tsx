@@ -448,7 +448,36 @@ export default function OnegaPage() {
                   <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
                   <p className="text-foreground mt-2">{channel.description}</p>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-6">
+                  {/* Image Placeholder */}
+                  <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
+                    {channel.id === 1 && (
+                      <div className="flex flex-wrap justify-center gap-3 p-4">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Zi8vS3EU2cZ2uBUCLTtCDCvZxOiJeb.png" alt="Школково" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-8 object-contain" />
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-shCkgYKW75oLtzazCR7P933BwRKb3D.png" alt="BARON" className="h-8 object-contain" />
+                      </div>
+                    )}
+                    {channel.id !== 1 && (
+                      <span className="text-muted-foreground">Изображение канала</span>
+                    )}
+                  </div>
+
+                  {channel.id === 1 && (
+                    <div>
+                      <p className="font-bold text-foreground mb-2">Инвентарь</p>
+                      <p className="text-foreground text-sm">Доступ к 11+ каналам Connected TV с охватом более 80% аудитории</p>
+                    </div>
+                  )}
+
                   <div>
                     <h4 className="font-bold text-foreground mb-4">Преимущества:</h4>
                     <ul className="space-y-2">
@@ -493,9 +522,6 @@ export default function OnegaPage() {
           <Card className="border-2 border-border bg-white overflow-hidden">
             <CardContent className="p-8">
               <div className="flex flex-wrap items-center justify-center gap-12">
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-8">Бренды, с которыми мы работаем</h3>
-                </div>
                 <div className="flex flex-wrap justify-center gap-8 w-full">
                   {/* Static Logos */}
                   <div className="flex items-center justify-center">
@@ -516,7 +542,6 @@ export default function OnegaPage() {
                   <div className="flex items-center justify-center">
                     <span className="text-2xl font-bold text-red-500">BARON</span>
                   </div>
-                </div>
               </div>
             </CardContent>
           </Card>
@@ -533,8 +558,8 @@ export default function OnegaPage() {
               {/* Image */}
               <div className="bg-slate-100 rounded-lg h-96 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2017_44_50-NKW3xSNYe2pRLhJ28bJ6t4jyiK2aKR.png"
-                  alt="Borjomi Case Study"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-BSNGQ58AkQ1EIdnuA9mRwpeSbDa1Xo.png"
+                  alt="Borjomi"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -544,68 +569,51 @@ export default function OnegaPage() {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-3">
-                      Как кастомные сегменты и кросс-девайсная оптимизация увеличили знание о бренде на 13%
+                      Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT
                     </h3>
                   </div>
 
                   <div className="space-y-4">
                     <div>
-                      <p className="font-bold text-foreground mb-2">Продукт</p>
-                      <p className="text-foreground text-sm">Вода Borjomi</p>
+                      <p className="font-bold text-foreground mb-2">О кампании</p>
+                      <div className="space-y-1 text-sm text-foreground">
+                        <p><span className="font-semibold">Продукт:</span> минеральная вода Borjomi</p>
+                        <p><span className="font-semibold">Цель:</span> продвижение нового позиционирования</p>
+                        <p><span className="font-semibold">Каналы:</span> Display</p>
+                      </div>
                     </div>
 
                     <div>
-                      <p className="font-bold text-foreground mb-2">Цель</p>
-                      <p className="text-foreground text-sm">Рост узнаваемости и лояльности к бренду</p>
+                      <p className="font-bold text-foreground mb-2">Особенности кампании</p>
+                      <ul className="space-y-1 text-sm text-foreground">
+                        <li>• Rich Media (Cube-баннер) позволил визуально передать идею Food Pairing и увеличить время контакта с брендом</li>
+                        <li>• Жесткий контроль качества: использование собственной антифрод-системы обеспечило кристально чистый трафик (менее 0.3% фрода)</li>
+                      </ul>
                     </div>
-
-                    <div>
-                      <p className="font-bold text-foreground mb-2">Каналы</p>
-                      <p className="text-foreground text-sm">Social + Media</p>
-                    </div>
-
-                    <div>
-                      <p className="font-bold text-foreground mb-2">Период</p>
-                      <p className="text-foreground text-sm">3 месяца</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p className="font-bold text-foreground mb-3">Ключевые приемы</p>
-                    <ul className="space-y-2">
-                      <li className="flex gap-3 text-foreground">
-                        <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
-                        <span>Использовали кастомные сегменты</span>
-                      </li>
-                      <li className="flex gap-3 text-foreground">
-                        <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
-                        <span>Собрали аудиторию, которая ранее заходила на сайт</span>
-                      </li>
-                      <li className="flex gap-3 text-foreground">
-                        <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
-                        <span>Настроили таргетинг на аудиторию конкурентов</span>
-                      </li>
-                      <li className="flex gap-3 text-foreground">
-                        <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
-                        <span>Настроили кросс-девайсную оптимизацию</span>
-                      </li>
-                    </ul>
                   </div>
 
                   <div>
                     <p className="font-bold text-foreground mb-3">Результаты</p>
-                    <div className="grid grid-cols-3 gap-3">
-                      <div className="bg-blue-50 rounded-lg p-3 text-center">
-                        <p className="text-lg font-bold text-[#0029FF]">1.5+ млн</p>
-                        <p className="text-xs text-foreground">охват</p>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="bg-blue-50 rounded-lg p-3">
+                        <p className="text-sm font-bold text-[#0029FF]">+11%</p>
+                        <p className="text-xs text-foreground">перевыполнение плана по показам</p>
                       </div>
-                      <div className="bg-blue-50 rounded-lg p-3 text-center">
-                        <p className="text-lg font-bold text-[#0029FF]">3+ млн</p>
-                        <p className="text-xs text-foreground">показов</p>
+                      <div className="bg-blue-50 rounded-lg p-3">
+                        <p className="text-sm font-bold text-[#0029FF]">+9%</p>
+                        <p className="text-xs text-foreground">узнаваемость бренда</p>
                       </div>
-                      <div className="bg-blue-50 rounded-lg p-3 text-center">
-                        <p className="text-lg font-bold text-[#0029FF]">13%+</p>
-                        <p className="text-xs text-foreground">Brand Lift</p>
+                      <div className="bg-blue-50 rounded-lg p-3">
+                        <p className="text-sm font-bold text-[#0029FF]">-10%</p>
+                        <p className="text-xs text-foreground">средний СРМ</p>
+                      </div>
+                      <div className="bg-blue-50 rounded-lg p-3">
+                        <p className="text-sm font-bold text-[#0029FF]">0,3%</p>
+                        <p className="text-xs text-foreground">GIVT+SIVT</p>
+                      </div>
+                      <div className="bg-blue-50 rounded-lg p-3 col-span-2">
+                        <p className="text-sm font-bold text-[#0029FF]">1,5 месяца</p>
+                        <p className="text-xs text-foreground">период ведения</p>
                       </div>
                     </div>
                   </div>
