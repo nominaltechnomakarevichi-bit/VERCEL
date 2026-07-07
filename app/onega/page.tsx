@@ -578,8 +578,8 @@ export default function OnegaPage() {
           <Card className="border-2 border-border bg-white overflow-hidden">
             <div className="flex flex-col p-8 space-y-6">
               {/* Top Section: Video + Content */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
-                {/* Video Preview - Left */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                {/* Video Preview - Left (1/3) */}
                 <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden w-fit h-fit">
                   <video 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-04-22%20%D0%B2%2016.48.46-xhVwHuce85HHPh46La5tBEuDgvlg5z.mov"
@@ -590,15 +590,15 @@ export default function OnegaPage() {
                   />
                 </div>
 
-                {/* Content - Right */}
-                <div className="flex flex-col justify-between h-full space-y-2">
+                {/* Content - Right (2/3) */}
+                <div className="md:col-span-2 flex flex-col justify-between h-full space-y-3">
                   <div>
-                    <p className="text-lg font-bold text-foreground mb-2">Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT</p>
+                    <p className="text-2xl font-bold text-foreground mb-3">Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT</p>
                   </div>
 
                   <div>
-                    <p className="font-bold text-foreground mb-2">О кампании</p>
-                    <div className="space-y-1 text-sm text-foreground">
+                    <p className="text-lg font-bold text-foreground mb-3">О кампании</p>
+                    <div className="space-y-2 text-base text-foreground">
                       <p><span className="font-semibold">Продукт:</span> минеральная вода Borjomi</p>
                       <p><span className="font-semibold">Цель:</span> продвижение нового позиционирования</p>
                       <p><span className="font-semibold">Каналы:</span> Display</p>
@@ -606,8 +606,8 @@ export default function OnegaPage() {
                   </div>
 
                   <div className="flex-grow">
-                    <p className="font-bold text-foreground mb-2">Особенности кампании</p>
-                    <ul className="space-y-1 text-sm text-foreground">
+                    <p className="text-lg font-bold text-foreground mb-3">Особенности кампании</p>
+                    <ul className="space-y-2 text-base text-foreground">
                       <li>• Rich Media (Cube-баннер) позволил визуально передать идею Food Pairing и увеличить время контакта с брендом</li>
                       <li>• Жесткий контроль качества: использование собственной антифрод-системы обеспечило кристально чистый трафик (менее 0.3% фрода)</li>
                     </ul>
