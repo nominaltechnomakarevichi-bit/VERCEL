@@ -577,12 +577,8 @@ export default function OnegaPage() {
 
           <Card className="border-2 border-border bg-white overflow-hidden">
             <div className="flex flex-col p-8 space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Кейс</h3>
-              </div>
-
               {/* Top Section: Video + Content */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                 {/* Video Preview - Left */}
                 <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden w-fit">
                   <video 
@@ -595,7 +591,7 @@ export default function OnegaPage() {
                 </div>
 
                 {/* Content - Right */}
-                <div className="space-y-4">
+                <div className="flex flex-col justify-between h-full space-y-4">
                   <div>
                     <p className="text-lg font-bold text-foreground mb-2">Как привлечь внимание к новому позиционированию бренда и удержать 0,3% GIVT+SIVT</p>
                   </div>
@@ -609,7 +605,7 @@ export default function OnegaPage() {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="flex-grow">
                     <p className="font-bold text-foreground mb-2">Особенности кампании</p>
                     <ul className="space-y-1 text-sm text-foreground">
                       <li>• Rich Media (Cube-баннер) позволил визуально передать идею Food Pairing и увеличить время контакта с брендом</li>
