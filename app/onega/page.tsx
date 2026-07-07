@@ -573,12 +573,12 @@ export default function OnegaPage() {
       {/* Case Studies Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">Кейсы</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Кейс</h2>
 
           <Card className="border-2 border-border bg-white overflow-hidden">
             <div className="flex flex-col p-8 space-y-6">
               {/* Top Section: Video + Content */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-start">
                 {/* Video Preview - Left */}
                 <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden w-fit">
                   <video 
