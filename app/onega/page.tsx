@@ -584,13 +584,13 @@ export default function OnegaPage() {
               {/* Top Section: Video + Content */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Video Preview - Left */}
-                <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden" style={{ aspectRatio: '4/3' }}>
+                <div className="bg-slate-100 rounded-lg flex items-center justify-center overflow-hidden w-fit">
                   <video 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-04-22%20%D0%B2%2016.48.46-xhVwHuce85HHPh46La5tBEuDgvlg5z.mov"
                     autoPlay
                     loop
                     muted
-                    className="w-full h-full object-cover"
+                    className="object-contain"
                   />
                 </div>
 
