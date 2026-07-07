@@ -521,27 +521,26 @@ export default function OnegaPage() {
         <div className="max-w-7xl mx-auto px-6">
           <Card className="border-2 border-border bg-white overflow-hidden">
             <CardContent className="p-8">
-              <div className="flex flex-wrap items-center justify-center gap-12">
-                <div className="flex flex-wrap justify-center gap-8 w-full">
-                  {/* Static Logos */}
-                  <div className="flex items-center justify-center">
-                    <span className="text-2xl font-bold text-foreground">BORJOMI</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <span className="text-2xl font-bold text-orange-500">Царская</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <span className="text-2xl font-bold text-red-600">Сиартака</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <span className="text-2xl font-bold text-blue-600">ВИТЬБА</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <span className="text-2xl font-bold text-amber-700">FRESCO COFFEE</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <span className="text-2xl font-bold text-red-500">BARON</span>
-                  </div>
+              <div className="flex flex-wrap justify-center gap-8 w-full">
+                {/* Static Logos */}
+                <div className="flex items-center justify-center">
+                  <span className="text-2xl font-bold text-foreground">BORJOMI</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-2xl font-bold text-orange-500">Царская</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-2xl font-bold text-red-600">Сиартака</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-2xl font-bold text-blue-600">ВИТЬБА</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-2xl font-bold text-amber-700">FRESCO COFFEE</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-2xl font-bold text-red-500">BARON</span>
+                </div>
               </div>
             </CardContent>
           </Card>
