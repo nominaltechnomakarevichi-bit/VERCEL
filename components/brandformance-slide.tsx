@@ -290,9 +290,13 @@ export function BrandformanceSlide() {
                             <p className="text-sm font-bold text-[#0029FF]">+364%</p>
                             <p className="text-xs text-foreground">посещений сайта</p>
                           </div>
-                          <div className="bg-blue-50 rounded-lg p-3 col-span-2">
+                          <div className="bg-blue-50 rounded-lg p-3">
                             <p className="text-sm font-bold text-[#0029FF]">+100%</p>
                             <p className="text-xs text-foreground">CR в «оформить заказ»</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="text-sm font-bold text-[#0029FF]">+89%</p>
+                            <p className="text-xs text-foreground">оформленных заказов</p>
                           </div>
                         </div>
                       </div>
