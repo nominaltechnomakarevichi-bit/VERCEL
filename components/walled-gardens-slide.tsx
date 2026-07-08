@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { AlertCircle, Zap } from "lucide-react"
+import { AlertCircle, Zap, Lock, Globe, Monitor, BarChart3, Shield } from "lucide-react"
 
 export function WalledGardensSlide() {
   const risksData = [
@@ -30,47 +30,53 @@ export function WalledGardensSlide() {
   const advantagesData = [
     {
       title: "Полный охват",
-      description: "Walled Gardens охватывают пользователей внутри своих экосистем, а Programmatic достраивает охват за их пределами в Open Internet",
+      description: "Walled Gardens охватывают пользователей внутри своих экосистем, а Programmatic достраивает охват за их пределами в Open Internet"
     },
     {
       title: "Диверсификация бюджета",
-      description: "Бюджет распределяется между разными источниками инвентаря, что снижает риски роста цен и изменений правил отдельных площадок",
+      description: "Бюджет распределяется между разными источниками инвентаря, что снижает риски роста цен и изменений правил отдельных площадок"
     },
     {
       title: "Оптимизация воронки",
-      description: "Закрытые экосистемы хорошо работают на сбор спроса и вовлечение, а Programmatic усиливает узнаваемость и поддерживает пользователя на разных этапах Customer Journey",
-    },
-    {
-      title: "Премиум-каналы",
-      description: "Мобильные приложения, CTV, DOOH и другие premium каналы доступны только через Programmatic",
+      description: "Закрытые экосистемы хорошо работают на сбор спроса и вовлечение, а Programmatic усиливает узнаваемость и поддерживает пользователя на разных этапах Customer Journey"
     },
   ]
 
   const tableData = [
     {
       criterion: "Контроль платформы",
+      icon: Lock,
       walledGardens: "Доступны только внутренние инструменты и данные",
       programmatic: "Независимая платформа, объединяющая множество источников инвентаря и данных",
+      benefit: "Больше возможностей для оптимизации кампаний без зависимости от одной экосистемы.",
     },
     {
       criterion: "Площадки и каналы",
+      icon: Globe,
       walledGardens: "Только площадки внутри конкретной экосистемы",
       programmatic: "10 000+ сайтов, приложений, видеоплощадок Open Internet",
+      benefit: "Расширение охвата целевой аудитории и возможность находить пользователей в разных цифровых средах.",
     },
     {
       criterion: "Рекламные форматы",
+      icon: Monitor,
       walledGardens: "Только форматы, доступные внутри платформы",
       programmatic: "Баннеры, видео, rich media, CTV, DOOH, нативная реклама в единой среде закупки",
+      benefit: "Возможность выбрать наиболее эффективный формата под конкретную маркетинговую задачу.",
     },
     {
       criterion: "Управление площадками",
+      icon: BarChart3,
       walledGardens: "Ограниченные возможности контроля инвентаря",
       programmatic: "Возможность использовать White Lists (списки разрешенных площадок) и Black Lists (списки исключенных площадок) для точного контроля окружения рекламы",
+      benefit: "Реклама показывается только на релевантных площадках, что повышает качество трафика и снижает расходы.",
     },
     {
       criterion: "Brand Safety",
+      icon: Shield,
       walledGardens: "Настройки безопасности зависят от правил экосистемы",
       programmatic: "Гибкие инструменты Brand Safety через сторонних вендоров, настройка безопасных категорий и контента",
+      benefit: "Защита репутации бренда за счет исключения нежелательного контента и мошеннического трафика.",
     },
   ]
 
@@ -206,16 +212,26 @@ export function WalledGardensSlide() {
                   <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm"></th>
                   <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Walled Gardens<br /><span className="font-normal text-xs">(Яндекс, VK, Ozon и др)</span></th>
                   <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Programmatic-платформа<br /><span className="font-normal text-xs">(NT Technology)</span></th>
+                  <th className="border border-[#0029FF] p-4 text-left font-bold text-white text-sm">Польза для бизнеса</th>
                 </tr>
               </thead>
               <tbody>
-                {tableData.map((row, idx) => (
-                  <tr key={idx} style={{ backgroundColor: idx % 2 === 0 ? "#FFFFFF" : "#F0F0F0" }}>
-                    <td className="border border-border p-4 font-semibold text-foreground text-sm whitespace-nowrap">{row.criterion}</td>
-                    <td className="border border-border p-4 text-foreground text-sm">{row.walledGardens}</td>
-                    <td className="border border-border p-4 text-foreground text-sm">{row.programmatic}</td>
-                  </tr>
-                ))}
+                {tableData.map((row, idx) => {
+                  const IconComponent = row.icon
+                  return (
+                    <tr key={idx} style={{ backgroundColor: idx % 2 === 0 ? "#FFFFFF" : "#F0F0F0" }}>
+                      <td className="border border-border p-4 font-semibold text-foreground text-sm whitespace-nowrap">
+                        <div className="flex items-center gap-3">
+                          <IconComponent className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
+                          <span>{row.criterion}</span>
+                        </div>
+                      </td>
+                      <td className="border border-border p-4 text-foreground text-sm">{row.walledGardens}</td>
+                      <td className="border border-border p-4 text-foreground text-sm">{row.programmatic}</td>
+                      <td className="border border-border p-4 text-foreground text-sm">{row.benefit}</td>
+                    </tr>
+                  )
+                })}
               </tbody>
             </table>
           </div>
@@ -231,10 +247,10 @@ export function WalledGardensSlide() {
         <section>
           <h2 className="mb-8 text-3xl font-bold text-foreground">Карта digital-рекламы России</h2>
           <div className="bg-background rounded-lg p-6 border border-border">
-            <iframe
-              src="https://market.nt1.tech/"
-              className="w-full h-[600px] rounded-lg border border-border"
-              title="NT Market"
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%208%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_05_04-BkORdwRlsZMGUBX90sS7djdqyRg8wb.png"
+              alt="Digital-реклама России"
+              className="w-full h-auto rounded-lg"
             />
           </div>
         </section>
