@@ -323,12 +323,19 @@ export function WalledGardensSlide() {
           
           <div className="grid md:grid-cols-2 gap-6">
             {/* Article Card */}
-            <Card className="border-2 border-border bg-white flex flex-col">
+            <Card className="border-2 border-border bg-white flex flex-col overflow-hidden">
+              <div className="h-48 w-full overflow-hidden bg-slate-100">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-plHxRqtHckYMINbRs2gtPuHjuQvFw3.png"
+                  alt="Walled Gardens vs Open Internet"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle className="text-foreground text-lg font-bold mb-2">Статья</CardTitle>
                 <p className="text-foreground text-sm">Walled Gardens vs Open Internet: зачем брендам Programmatic</p>
               </CardHeader>
-              <CardContent className="flex-grow flex items-end">
+              <CardContent className="flex-grow flex items-end pt-0">
                 <a
                   href="https://nt.technology/blog/walled-gardens-vs-open-internet-zachem-brendam-programmatic/"
                   target="_blank"
@@ -341,13 +348,19 @@ export function WalledGardensSlide() {
             </Card>
 
             {/* Case Study Card */}
-            <Card className="border-2 border-border bg-white flex flex-col">
+            <Card className="border-2 border-border bg-white flex flex-col overflow-hidden">
+              <div className="h-48 w-full overflow-hidden bg-slate-100">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-08%20%D0%B2%2017.30.17.png-vZ1pdC6xTeuUtqtEPcA4iaBFcPIdp3.jpeg"
+                  alt="Fresco Programmatic Campaign"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
-                <CardTitle className="text-foreground text-lg font-bold mb-2">Кейс Fresco</CardTitle>
-                <p className="text-foreground text-sm mb-2">Programmatic + РСЯ для бренда кофе</p>
-                <p className="text-[#0029FF] text-lg font-bold">+6.7% к продажам</p>
+                <CardTitle className="text-foreground text-lg font-bold mb-2">Кейс</CardTitle>
+                <p className="text-foreground text-sm">Programmatic + РСЯ для бренда кофе Fresco: +6.7% к продажам</p>
               </CardHeader>
-              <CardContent className="flex-grow flex items-end">
+              <CardContent className="flex-grow flex items-end pt-0">
                 <a
                   href="https://www.figma.com/proto/H6vtvf9ubhUYSiKqg1o9kQ/%D0%9A%D0%B5%D0%B9%D1%81-%22Fresco%22--NT-Technology?node-id=1-6&viewport=622%2C168%2C0.07&t=oMd5wOweYmNuY2JN-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
                   target="_blank"
