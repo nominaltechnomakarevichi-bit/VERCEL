@@ -230,7 +230,7 @@ export function WalledGardensSlide() {
 
           <div className="mt-8 p-6 rounded-lg" style={{ backgroundColor: "#0029FF" }}>
             <p className="text-white text-sm">
-              Walled Gardens обеспечивают доступ к собственной аудитории внутри экосистемы, а Programmatic-платформа позво��яет централизованно работать с аудиторией и инвентарем всего Open Internet, обеспечивая больший контроль, гибкость и прозрачность закупки.
+              Walled Gardens обеспечивают доступ к собственной аудитории внутри экосистемы, а Programmatic-платформа позволяет централизованно работать с аудиторией и инвентарем всего Open Internet, обеспечивая больший контроль, гибкость и прозрачность закупки.
             </p>
           </div>
         </section>
@@ -274,7 +274,7 @@ export function WalledGardensSlide() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-foreground text-sm">
-              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их предел������ми.</span>
+              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
             </CardContent>
           </Card>
         </section>
