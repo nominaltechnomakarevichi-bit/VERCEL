@@ -274,7 +274,7 @@ export function WalledGardensSlide() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-foreground text-sm">
-              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
+              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их предел��ми.</span>
             </CardContent>
           </Card>
         </section>
@@ -315,6 +315,50 @@ export function WalledGardensSlide() {
               </p>
             </CardContent>
           </Card>
+        </section>
+
+        {/* Block 7: Additional Materials */}
+        <section>
+          <h2 className="mb-8 text-3xl font-bold text-foreground">Дополнительные материалы</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Article Card */}
+            <Card className="border-2 border-border bg-white flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-foreground text-lg font-bold mb-2">Статья</CardTitle>
+                <p className="text-foreground text-sm">Walled Gardens vs Open Internet: зачем брендам Programmatic</p>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end">
+                <a
+                  href="https://nt.technology/blog/walled-gardens-vs-open-internet-zachem-brendam-programmatic/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
+                >
+                  Читать
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* Case Study Card */}
+            <Card className="border-2 border-border bg-white flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-foreground text-lg font-bold mb-2">Кейс Fresco</CardTitle>
+                <p className="text-foreground text-sm mb-2">Programmatic + РСЯ для бренда кофе</p>
+                <p className="text-[#0029FF] text-lg font-bold">+6.7% к продажам</p>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end">
+                <a
+                  href="https://www.figma.com/proto/H6vtvf9ubhUYSiKqg1o9kQ/%D0%9A%D0%B5%D0%B9%D1%81-%22Fresco%22--NT-Technology?node-id=1-6&viewport=622%2C168%2C0.07&t=oMd5wOweYmNuY2JN-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
+                >
+                  Подробнее
+                </a>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
       </div>
