@@ -274,7 +274,7 @@ export function WalledGardensSlide() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-foreground text-sm">
-              <span className="font-normal">Главный ��иск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределам��.</span>
+              <span className="font-normal">Главный ����иск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределам��.</span>
             </CardContent>
           </Card>
         </section>
@@ -324,10 +324,7 @@ export function WalledGardensSlide() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Article Card */}
             <Card className="border-2 border-border bg-white flex flex-col overflow-hidden">
-              <CardHeader>
-                <CardTitle className="text-foreground text-lg font-bold">Статья</CardTitle>
-              </CardHeader>
-              <div className="px-6 pb-6">
+              <div className="px-6 pt-6 pb-6">
                 <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                   <img
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-plHxRqtHckYMINbRs2gtPuHjuQvFw3.png"
@@ -343,17 +340,14 @@ export function WalledGardensSlide() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
                 >
-                  Читать
+                  Читать статью
                 </a>
               </CardContent>
             </Card>
 
             {/* Case Study Card */}
             <Card className="border-2 border-border bg-white flex flex-col overflow-hidden">
-              <CardHeader>
-                <CardTitle className="text-foreground text-lg font-bold">Кейс</CardTitle>
-              </CardHeader>
-              <div className="px-6 pb-6">
+              <div className="px-6 pt-6 pb-6">
                 <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                   <img
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-08%20%D0%B2%2017.30.17.png-vZ1pdC6xTeuUtqtEPcA4iaBFcPIdp3.jpeg"
@@ -369,9 +363,10 @@ export function WalledGardensSlide() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
                 >
-                  Подробнее
+                  Смотреть кейс
                 </a>
               </CardContent>
+
             </Card>
           </div>
         </section>
