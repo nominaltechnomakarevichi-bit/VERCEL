@@ -274,7 +274,7 @@ export function WalledGardensSlide() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-foreground text-sm">
-              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
+              <span className="font-normal">Главный ��иск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределам��.</span>
             </CardContent>
           </Card>
         </section>
@@ -336,12 +336,12 @@ export function WalledGardensSlide() {
                   />
                 </div>
               </div>
-              <CardContent className="flex items-center justify-start pt-0">
+              <CardContent className="w-full px-6 pb-6 pt-0">
                 <a
                   href="https://nt.technology/blog/walled-gardens-vs-open-internet-zachem-brendam-programmatic/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
+                  className="flex items-center justify-center w-full px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
                 >
                   Читать
                 </a>
@@ -362,12 +362,12 @@ export function WalledGardensSlide() {
                   />
                 </div>
               </div>
-              <CardContent className="flex items-center justify-start pt-0">
+              <CardContent className="w-full px-6 pb-6 pt-0">
                 <a
                   href="https://www.figma.com/proto/H6vtvf9ubhUYSiKqg1o9kQ/%D0%9A%D0%B5%D0%B9%D1%81-%22Fresco%22--NT-Technology?node-id=1-6&viewport=622%2C168%2C0.07&t=oMd5wOweYmNuY2JN-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
+                  className="flex items-center justify-center w-full px-6 py-2 bg-[#0029FF] text-white font-semibold text-sm rounded-lg hover:bg-[#0020CC] transition-colors"
                 >
                   Подробнее
                 </a>
