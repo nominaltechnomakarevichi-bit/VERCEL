@@ -245,7 +245,6 @@ export function WalledGardensSlide() {
 
         {/* Block 3: Interactive Map */}
         <section>
-          <h2 className="mb-8 text-3xl font-bold text-foreground">Карта digital-рекламы России</h2>
           <div className="bg-background rounded-lg p-6 border border-border">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%208%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_05_04-BkORdwRlsZMGUBX90sS7djdqyRg8wb.png"
@@ -260,39 +259,55 @@ export function WalledGardensSlide() {
           <h2 className="mb-8 text-3xl font-bold text-foreground">Риски продвижения только в закрытых экосистемах</h2>
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {risksData.map((risk, idx) => (
-              <Card key={idx} className="border border-border bg-white">
+            <div className="grid grid-cols-1 gap-6">
+              {risksData.slice(0, 4).map((risk, idx) => (
+                <Card key={idx} className="border border-border bg-white">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-foreground text-sm font-bold">
+                      <AlertCircle className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
+                      <span>{risk.title}</span>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-foreground text-sm">
+                    {risk.description}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="flex flex-col gap-6">
+              <Card style={{ backgroundColor: "#FF6B6B15", borderColor: "#FF6B6B" }} className="border-2">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-foreground text-sm font-bold">
-                    <AlertCircle className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
-                    <span>{risk.title}</span>
+                  <CardTitle className="text-foreground flex items-center gap-2 text-sm font-bold">
+                    <AlertCircle className="h-5 w-5 text-[#0029FF]" />
+                    Главный риск
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-foreground text-sm">
-                  {risk.description}
+                  <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
                 </CardContent>
               </Card>
-            ))}
-          </div>
 
-          <Card style={{ backgroundColor: "#FF6B6B15", borderColor: "#FF6B6B" }} className="border-2">
-            <CardHeader>
-              <CardTitle className="text-foreground flex items-center gap-2 text-sm font-bold">
-                <AlertCircle className="h-5 w-5 text-[#0029FF]" />
-                Главный риск
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-foreground text-sm">
-              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
-            </CardContent>
-          </Card>
+              <Card key="analytics" className="border border-border bg-white">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-foreground text-sm font-bold">
+                    <AlertCircle className="h-5 w-5 text-[#0029FF] flex-shrink-0" />
+                    <span>{risksData[4].title}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-foreground text-sm">
+                  {risksData[4].description}
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </section>
 
         {/* Block 5: Why Media Mix */}
         <section>
           <h2 className="mb-12 text-3xl font-bold text-foreground">Почему медиамикс – лучшая стратегия?</h2>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {advantagesData.map((item, idx) => (
               <Card key={idx} className="border border-border bg-white">
                 <CardHeader>
