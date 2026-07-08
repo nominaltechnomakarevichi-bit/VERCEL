@@ -273,7 +273,7 @@ export function BrandformanceSlide() {
                         <div>
                           <p className="text-sm font-semibold text-muted-foreground">Стратегия</p>
                           <div className="space-y-1">
-                            <p className="text-sm text-foreground">Основной Brandformance-инструмент – нативная реклама (Т��Б)</p>
+                            <p className="text-sm text-foreground">Основной Brandformance-инструмент – нативная реклама (ТАБО)</p>
                             <p className="text-sm text-foreground">Оптимизировали и обучали РК на микроконверсиях</p>
                           </div>
                         </div>
@@ -548,7 +548,7 @@ export function BrandformanceSlide() {
           <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
             <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
               <p>
-                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнитель��ый спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
+                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
               </p>
             </CardContent>
           </Card>
