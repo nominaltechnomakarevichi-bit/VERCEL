@@ -249,7 +249,7 @@ export function NTIntelligenceSlide() {
             
             <div className="flex justify-center">
               <a 
-                href="https://www.figma.com/deck/wOXB3BOzr14y8NZLGZQQrX/NT-%7C-AD-GALLERY-%7C-RU-2025?node-id=46-71&t=JREYv5Qz7HEwhKvM-1"
+                href="https://nt.technology/creative/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 bg-[#0029FF] text-white font-bold rounded-lg hover:bg-blue-900 transition-colors"
@@ -416,7 +416,7 @@ export function NTIntelligenceSlide() {
                 <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_04_59-EzGJjSk4Pt3D9jnU8TTqmzOBSPvuGd.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%208%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_24_29-FH1licAJXoQpnVYUHhxn6R2H0u8PGs.png"
                       alt="In-Banner Events Optimization"
                       className="w-full h-auto object-contain"
                     />
@@ -428,7 +428,7 @@ export function NTIntelligenceSlide() {
                 <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2023%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2016_50_33-yS5WnS6czzYMhvhL6D4qs9aNWocMXZ.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%208%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_13_21-TIESxgf9yPlDUhlfijFpLjLscF0Q6k.png"
                       alt="Post-View Optimization"
                       className="w-full h-auto object-contain"
                     />
