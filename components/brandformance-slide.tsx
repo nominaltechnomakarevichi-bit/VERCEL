@@ -273,7 +273,7 @@ export function BrandformanceSlide() {
                         <div>
                           <p className="text-sm font-semibold text-muted-foreground">Стратегия</p>
                           <div className="space-y-1">
-                            <p className="text-sm text-foreground">Основной Brandformance-инструмент – нативная реклама (ТГБ)</p>
+                            <p className="text-sm text-foreground">Основной Brandformance-инструмент – нативная реклама (Т��Б)</p>
                             <p className="text-sm text-foreground">Оптимизировали и обучали РК на микроконверсиях</p>
                           </div>
                         </div>
@@ -284,19 +284,15 @@ export function BrandformanceSlide() {
                         <div className="grid grid-cols-2 gap-3">
                           <div className="bg-blue-50 rounded-lg p-3">
                             <p className="text-sm font-bold text-[#0029FF]">+275%</p>
-                            <p className="text-xs text-foreground">Search Lift</p>
+                            <p className="text-xs text-foreground">брендовых запросов</p>
                           </div>
                           <div className="bg-blue-50 rounded-lg p-3">
                             <p className="text-sm font-bold text-[#0029FF]">+364%</p>
-                            <p className="text-xs text-foreground">Visit Lift</p>
+                            <p className="text-xs text-foreground">посещений сайта</p>
                           </div>
-                          <div className="bg-blue-50 rounded-lg p-3">
-                            <p className="text-sm font-bold text-[#0029FF]">+89%</p>
-                            <p className="text-xs text-foreground">оформленных заказов</p>
-                          </div>
-                          <div className="bg-blue-50 rounded-lg p-3">
+                          <div className="bg-blue-50 rounded-lg p-3 col-span-2">
                             <p className="text-sm font-bold text-[#0029FF]">+100%</p>
-                            <p className="text-xs text-foreground">CR в клик</p>
+                            <p className="text-xs text-foreground">CR в «оформить заказ»</p>
                           </div>
                         </div>
                       </div>
@@ -548,7 +544,7 @@ export function BrandformanceSlide() {
           <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
             <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
               <p>
-                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
+                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнитель��ый спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
               </p>
             </CardContent>
           </Card>
