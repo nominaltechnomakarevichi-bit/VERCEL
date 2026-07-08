@@ -258,7 +258,7 @@ export function WalledGardensSlide() {
         <section>
           <h2 className="mb-8 text-3xl font-bold text-foreground">Риски продвижения только в закрытых экосистемах</h2>
           
-          <div className="grid md:grid-cols-5 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             {risksData.map((risk, idx) => (
               <Card key={idx} className="border border-border bg-white">
                 <CardHeader>
