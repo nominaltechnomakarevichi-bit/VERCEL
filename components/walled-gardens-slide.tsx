@@ -274,7 +274,7 @@ export function WalledGardensSlide() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-foreground text-sm">
-              <span className="font-normal">Главный ��иск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределам��.</span>
+              <span className="font-normal">Главный ����иск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их предел��м��.</span>
             </CardContent>
           </Card>
         </section>
@@ -325,7 +325,7 @@ export function WalledGardensSlide() {
             {/* Article Card */}
             <Card className="border-2 border-border bg-white flex flex-col overflow-hidden">
               <div className="px-6 pt-6 pb-6">
-                <div className="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden">
+                <div className="w-full aspect-[470/255] bg-slate-100 rounded-lg overflow-hidden">
                   <img
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-08%20%D0%B2%2017.40.49-ZsVfn0bC8Gxti8Qf3pRTLuAtSaJJib.png"
                     alt="Walled Gardens vs Open Internet"
@@ -348,7 +348,7 @@ export function WalledGardensSlide() {
             {/* Case Study Card */}
             <Card className="border-2 border-border bg-white flex flex-col overflow-hidden">
               <div className="px-6 pt-6 pb-6">
-                <div className="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden">
+                <div className="w-full aspect-[470/255] bg-slate-100 rounded-lg overflow-hidden">
                   <img
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-08%20%D0%B2%2017.30.17.png-vZ1pdC6xTeuUtqtEPcA4iaBFcPIdp3.jpeg"
                     alt="Fresco Programmatic Campaign"
