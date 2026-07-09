@@ -494,7 +494,7 @@ export default function OnegaPage() {
               <CardContent className="flex gap-8">
                 {/* Left side - Image */}
                 <div className="flex-shrink-0">
-                  <div className="bg-slate-100 rounded-lg h-64 w-64 flex items-center justify-center overflow-hidden">
+                  <div className="bg-slate-100 rounded-lg h-80 w-80 flex items-center justify-center overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_26_07-9o6IWG3p9LJ2IlbaPe7AvtENUYngQf.png"
                       alt="CTV Advertisement"
@@ -508,36 +508,36 @@ export default function OnegaPage() {
                   {/* Inventory */}
                   <div>
                     <p className="font-bold text-foreground mb-3">Инвентарь</p>
-                    <div className="grid grid-cols-5 gap-2">
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-12 object-contain" />
+                    <div className="grid grid-cols-5 gap-1">
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xRMLGOJgiTaRFRSEvLtioPK0k4mKzz.png" alt="CTC" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xRMLGOJgiTaRFRSEvLtioPK0k4mKzz.png" alt="CTC" className="h-8 object-contain" />
                       </div>
-                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-12 object-contain" />
+                      <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-14">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-8 object-contain" />
                       </div>
                     </div>
                   </div>
