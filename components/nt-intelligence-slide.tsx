@@ -407,17 +407,6 @@ export function NTIntelligenceSlide() {
           <section className="space-y-6 animate-fadeIn">
             <h2 className="text-4xl font-bold text-foreground">Оптимизация эффективности</h2>
             
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="text-foreground font-semibold">→</span>
-                <p className="text-lg text-foreground">проводим post-view оптими��ацию, чтобы учесть вклад рекламы на всех этапах</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-foreground font-semibold">→</span>
-                <p className="text-lg text-foreground">фильтруем инвентарь с помощью pre-bid оптимизации, чтобы получать только релевантные показы</p>
-              </div>
-            </div>
-            
             <div className="space-y-6">
               <Card className="border-2 border-border bg-white">
                 <CardContent className="p-6">
