@@ -40,8 +40,8 @@ export function NTIntelligenceSlide() {
     {
       id: 'optimization',
       title: "Оптимизация эффективности",
-      description: "находим аудиторию по качественным сигналам внутри баннера",
-      details: "проводим post-view оптимизацию, чтобы учесть вклад рекламы на всех этапах"
+      description: "проводим post-view оптимизацию, чтобы учесть вклад рекламы на всех этапах",
+      details: "фильтруем инвентарь с помощью pre-bid оптимизации, чтобы получать только релевантные показы"
     },
     {
       id: 'measurement',
@@ -407,23 +407,7 @@ export function NTIntelligenceSlide() {
           <section className="space-y-6 animate-fadeIn">
             <h2 className="text-4xl font-bold text-foreground">Оптимизация эффективности</h2>
             
-            <p className="text-lg text-foreground">
-              Мы меняем подход «нет клика = нет ценности» на оценку вклада медийной рекламы в бизнес-результат
-            </p>
-            
             <div className="space-y-6">
-              <Card className="border-2 border-border bg-white">
-                <CardContent className="p-6">
-                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
-                    <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%208%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_24_29-FH1licAJXoQpnVYUHhxn6R2H0u8PGs.png"
-                      alt="In-Banner Events Optimization"
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-
               <Card className="border-2 border-border bg-white">
                 <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
