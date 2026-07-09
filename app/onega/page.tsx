@@ -710,7 +710,7 @@ export default function OnegaPage() {
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <p className="text-2xl font-bold text-[#0029FF] mb-2">1,5 месяца</p>
-                    <p className="text-sm text-foreground">пери��д ведения</p>
+                    <p className="text-sm text-foreground">период ведения</p>
                   </div>
                 </div>
               </div>
