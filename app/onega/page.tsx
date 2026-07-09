@@ -479,50 +479,68 @@ export default function OnegaPage() {
 
                   {channel.id === 'ctv' && (
                     <div>
-                      <p className="font-bold text-foreground mb-4">Инвентарь</p>
-                      <div className="grid grid-cols-5 gap-4">
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-16 object-contain" />
+                      <p className="font-bold text-foreground mb-3">Инвентарь</p>
+                      <div className="grid grid-cols-5 gap-2">
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FQJ1w3AmyaXSI7bXjZ4FeBymzDaFhv.png" alt="ЗОНА ФИЛЬМОВ" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gPzrEh9HHN8AMMojYSPfDWHpL9QIHs.png" alt="LORDFILM" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-db0XS1o4y8l3qOPmuvb06eSgmFzprq.png" alt="New HDrezka" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GjMaxsz1xOXveutufJejJd8yZCB0jK.png" alt="ДОМАШНИЙ" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-H6UOcDlFHHOXinoGSAWjNbiJhy8Yhp.png" alt="ВОКРУГ ТВ" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FvCJRSyaQv1TMCmxiIuazpQnOKo4N5.png" alt="FILM.RU" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mv849mgrQTSsqvs5R1ntEYyIFMRHL1.png" alt="LOSTFILM.TV" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nzdjAwJuEEFyleQ0WEAhtjPsmMfl3c.png" alt="LORDSERIALS" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xRMLGOJgiTaRFRSEvLtioPK0k4mKzz.png" alt="CTC" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xRMLGOJgiTaRFRSEvLtioPK0k4mKzz.png" alt="CTC" className="h-12 object-contain" />
                         </div>
-                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-2 h-28">
-                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-16 object-contain" />
+                        <div className="flex items-center justify-center bg-slate-50 rounded-lg p-1 h-20">
+                          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-12 object-contain" />
                         </div>
                       </div>
                     </div>
                   )}
 
-                  <div>
-                    <p className="text-foreground text-sm">{channel.contactPoint}</p>
-                  </div>
+                  {(channel.id === 'display' || channel.id === 'video') && (
+                    <div className="space-y-3">
+                      <div>
+                        <h5 className="font-semibold text-foreground text-sm mb-1">Аудитория</h5>
+                        <p className="text-foreground text-xs">{channel.contactPoint}</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-foreground text-sm mb-1">Возможности</h5>
+                        <p className="text-foreground text-xs">{channel.capabilities}</p>
+                      </div>
+                    </div>
+                  )}
 
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Возможности</h4>
-                    <p className="text-foreground text-sm">{channel.capabilities}</p>
-                  </div>
+                  {channel.id === 'ctv' && (
+                    <>
+                      <div>
+                        <h4 className="font-bold text-foreground mb-2">Аудитория</h4>
+                        <p className="text-foreground text-sm">{channel.contactPoint}</p>
+                      </div>
+
+                      <div>
+                        <h4 className="font-bold text-foreground mb-2">Возможности</h4>
+                        <p className="text-foreground text-sm">{channel.capabilities}</p>
+                      </div>
+                    </>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -547,27 +565,38 @@ export default function OnegaPage() {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Process Workflow */}
-          <div className="mt-12">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Процесс работы</h3>
-            <div className="space-y-4">
-              <Card className="border-2 border-border bg-white">
-                <CardContent className="p-6">
-                  <p className="text-lg text-foreground"><span className="font-bold">1</span> Разрабатываем креативы под разные сегменты аудитории и разные продукты</p>
-                </CardContent>
-              </Card>
-              <Card className="border-2 border-border bg-white">
-                <CardContent className="p-6">
-                  <p className="text-lg text-foreground"><span className="font-bold">2</span> Используем нестандартный подход к подбору аудитории</p>
-                </CardContent>
-              </Card>
-              <Card className="border-2 border-border bg-white">
-                <CardContent className="p-6">
-                  <p className="text-lg text-foreground"><span className="font-bold">3</span> Запускаем омниканальную медийную кампанию с учетом разных сегментов аудитории и задач</p>
-                </CardContent>
-              </Card>
-            </div>
+      {/* Process Workflow Section */}
+      <section className="border-b-2 border-border py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-foreground mb-12">Процесс работы</h2>
+          <div className="space-y-4">
+            <Card className="border-2 border-border bg-white">
+              <CardContent className="p-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#0029FF] text-white flex items-center justify-center flex-shrink-0 font-bold text-lg">1</div>
+                  <p className="text-lg text-foreground pt-1">Разрабатываем креативы под разные сегменты аудитории и разные продукты</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="border-2 border-border bg-white">
+              <CardContent className="p-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#0029FF] text-white flex items-center justify-center flex-shrink-0 font-bold text-lg">2</div>
+                  <p className="text-lg text-foreground pt-1">Используем нестандартный подход к подбору аудитории</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="border-2 border-border bg-white">
+              <CardContent className="p-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#0029FF] text-white flex items-center justify-center flex-shrink-0 font-bold text-lg">3</div>
+                  <p className="text-lg text-foreground pt-1">Запускаем омниканальную медийную кампанию с учетом разных сегментов аудитории и задач</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -682,23 +711,23 @@ export default function OnegaPage() {
       {/* Discussion CTA Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Давайте обсудим запуск вашей кампании</h2>
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            {/* Left Side - Text */}
+            <div className="flex-1">
+              <h2 className="text-4xl font-bold text-foreground mb-8">Давайте обсудим запуск вашей кампании</h2>
+              <button className="px-8 py-3 bg-[#0029FF] text-white font-bold rounded-full text-lg hover:bg-blue-900 transition-colors">
+                задать вопрос
+              </button>
+            </div>
 
-          <div className="flex flex-col items-center">
-            <Card className="border-2 border-border bg-white max-w-sm w-full">
-              <CardContent className="p-8 flex flex-col items-center">
-                <div className="w-full flex justify-center mb-6">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-09%20%D0%B2%2018.07.24-BgOPlnjn73tjeMo9ipsdAAcOJe5f9V.png"
-                    alt="QR Code"
-                    className="w-64 h-64 object-contain"
-                  />
-                </div>
-                <button className="w-full px-6 py-3 bg-[#0029FF] text-white font-bold rounded-full text-lg hover:bg-blue-900 transition-colors">
-                  задать вопрос
-                </button>
-              </CardContent>
-            </Card>
+            {/* Right Side - Image */}
+            <div className="flex-1 flex justify-center lg:justify-end">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2061-sEBQqUCRZG5ktlm0wggBi7vIcU9fbf.png"
+                alt="NT Technology Lanyard Badge"
+                className="w-full max-w-sm object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
