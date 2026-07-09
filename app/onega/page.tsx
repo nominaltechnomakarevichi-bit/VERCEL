@@ -454,7 +454,7 @@ export default function OnegaPage() {
                   </CardHeader>
                 <CardContent className="space-y-4 flex flex-col flex-1">
                   {/* TV Ad Image */}
-                  <div className="bg-slate-100 rounded-lg flex-1 flex items-center justify-center overflow-hidden">
+                  <div className="bg-slate-100 rounded-lg h-64 flex items-center justify-center overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_26_07-9o6IWG3p9LJ2IlbaPe7AvtENUYngQf.png"
                       alt="CTV Advertisement"
