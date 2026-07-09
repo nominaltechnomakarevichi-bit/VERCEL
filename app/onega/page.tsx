@@ -491,10 +491,10 @@ export default function OnegaPage() {
                 <CardHeader>
                   <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
                 </CardHeader>
-              <CardContent className="flex gap-8">
+              <CardContent className="flex gap-8 h-80">
                 {/* Left side - Image */}
-                <div className="flex-shrink-0">
-                  <div className="bg-slate-100 rounded-lg h-80 w-80 flex items-center justify-center overflow-hidden">
+                <div className="flex-1">
+                  <div className="bg-slate-100 rounded-lg h-full flex items-center justify-center overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_26_07-9o6IWG3p9LJ2IlbaPe7AvtENUYngQf.png"
                       alt="CTV Advertisement"
