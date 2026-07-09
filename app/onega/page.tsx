@@ -3,9 +3,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Sparkles, Check, Monitor, Play, Tv, Shield, AlertCircle } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function OnegaPage() {
+  useEffect(() => {
+    document.title = 'Programmatic-кампания для бренда «Онега» Как выиграть внимание в FMCG с минимальным временем контакта'
+  }, [])
   const audiences = [
     {
       id: 1,
@@ -128,7 +131,7 @@ export default function OnegaPage() {
       id: 2,
       name: 'Cube-баннер',
       description: '3D куб с возможностью взаимодействия',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-22%20%D0%B2%2014.36.44-ROTecWU18Vjx7pn8xwFFaFdhgWkOYY.mov',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-09%20%D0%B2%2017.50.32-umawnjaouxlqMrGSJclAiV5KbwzssP.mov',
       advantages: [
         'Предлагает интерактивное взаимодействие',
         'Показывает до 4-х баннеров в одном креативе',
@@ -152,32 +155,20 @@ export default function OnegaPage() {
     {
       id: 'ctv',
       name: 'CTV',
-      description: 'Реклама на Smart TV и стриминговых платформах',
-      advantages: [
-        'Полноэкранный формат',
-        'Высокая визуальное воздействие',
-        'Целевая аудитория дома'
-      ]
+      contactPoint: 'Точка контакта с аудиторией семей за просмотром кино (Онега) или Молодой аудиторией за просмотром сериалов (Just Brutal)',
+      capabilities: 'подбор тематических площадок (WL), соответствующих интересам целевой аудитории'
     },
     {
       id: 'display',
       name: 'Display',
-      description: 'Баннерная реклама на сайтах партнеров и медиа',
-      advantages: [
-        'Широкий охват',
-        'Гибкий таргетинг',
-        'Видимость в течение дня'
-      ]
+      contactPoint: 'Точка контакта с аудиторией любителей традиционных снеков',
+      capabilities: 'подбор тематических площадок (WL), соответствующих интересам целевой аудитории'
     },
     {
       id: 'video',
       name: 'Video',
-      description: 'Видеореклама in-stream, out-stream и на платформах',
-      advantages: [
-        'Эмоциональное воздействие',
-        'Высокая запоминаемость',
-        'Социальные сети'
-      ]
+      contactPoint: 'Точка контакта с молодой аудиторией (Just Brutal)',
+      capabilities: 'Размещение рекламы на каналах, ориентированных на молодую аудиторию'
     }
   ]
 
@@ -355,6 +346,15 @@ export default function OnegaPage() {
               </Card>
             ))}
           </div>
+
+          {/* NT Proposal Block */}
+          <Card className="border-2 border-border bg-blue-50 mt-12">
+            <CardContent className="p-8">
+              <p className="text-lg text-foreground">
+                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Онега), так и нестандартные подходы (White lists)
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -428,6 +428,15 @@ export default function OnegaPage() {
               </Card>
             ))}
           </div>
+
+          {/* NT Proposal for Rich Media */}
+          <Card className="border-2 border-border bg-blue-50 mt-12">
+            <CardContent className="p-8">
+              <p className="text-lg text-foreground">
+                <span className="font-bold">Предложение NT:</span> с помощью Rich Media креативов можно показать все преимущества брендов, а также продемонстрировать разные сценарии потребления, чтобы зацепить нужный сегмент аудитории
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -441,7 +450,6 @@ export default function OnegaPage() {
               <Card key={channel.id} className="border-2 border-border bg-white">
                 <CardHeader>
                   <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
-                  <p className="text-foreground mt-2">{channel.description}</p>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   {/* TV Ad Image */}
@@ -508,15 +516,12 @@ export default function OnegaPage() {
                   )}
 
                   <div>
-                    <h4 className="font-bold text-foreground mb-4">Преимущества:</h4>
-                    <ul className="space-y-2">
-                      {channel.advantages.map((adv, idx) => (
-                        <li key={idx} className="flex gap-3 text-foreground">
-                          <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
-                          <span>{adv}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="text-foreground text-sm">{channel.contactPoint}</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-foreground mb-2">Возможности</h4>
+                    <p className="text-foreground text-sm">{channel.capabilities}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -541,6 +546,28 @@ export default function OnegaPage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Process Workflow */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold text-foreground mb-6">Процесс работы</h3>
+            <div className="space-y-4">
+              <Card className="border-2 border-border bg-white">
+                <CardContent className="p-6">
+                  <p className="text-lg text-foreground"><span className="font-bold">1</span> Разрабатываем креативы под разные сегменты аудитории и разные продукты</p>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-border bg-white">
+                <CardContent className="p-6">
+                  <p className="text-lg text-foreground"><span className="font-bold">2</span> Используем нестандартный подход к подбору аудитории</p>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-border bg-white">
+                <CardContent className="p-6">
+                  <p className="text-lg text-foreground"><span className="font-bold">3</span> Запускаем омниканальную медийную кампанию с учетом разных сегментов аудитории и задач</p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -643,12 +670,36 @@ export default function OnegaPage() {
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <p className="text-2xl font-bold text-[#0029FF] mb-2">1,5 месяца</p>
-                    <p className="text-sm text-foreground">период ведения</p>
+                    <p className="text-sm text-foreground">пери��д ведения</p>
                   </div>
                 </div>
               </div>
             </div>
           </Card>
+        </div>
+      </section>
+
+      {/* Discussion CTA Section */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Давайте обсудим запуск вашей кампании</h2>
+
+          <div className="flex flex-col items-center">
+            <Card className="border-2 border-border bg-white max-w-sm w-full">
+              <CardContent className="p-8 flex flex-col items-center">
+                <div className="w-full flex justify-center mb-6">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-09%20%D0%B2%2018.07.24-BgOPlnjn73tjeMo9ipsdAAcOJe5f9V.png"
+                    alt="QR Code"
+                    className="w-64 h-64 object-contain"
+                  />
+                </div>
+                <button className="w-full px-6 py-3 bg-[#0029FF] text-white font-bold rounded-full text-lg hover:bg-blue-900 transition-colors">
+                  задать вопрос
+                </button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
     </main>
