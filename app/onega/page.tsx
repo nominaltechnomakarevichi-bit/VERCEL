@@ -445,8 +445,8 @@ export default function OnegaPage() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-foreground mb-12">Рекламные каналы</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 auto-rows-max">
+            <div className="h-fit">
               {channels.filter(c => c.id === 'ctv').map((channel) => (
                 <Card key={channel.id} className="border-2 border-border bg-white">
                   <CardHeader>
@@ -454,11 +454,11 @@ export default function OnegaPage() {
                   </CardHeader>
                 <CardContent className="space-y-4">
                   {/* TV Ad Image */}
-                  <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
+                  <div className="bg-slate-100 rounded-lg h-40 flex items-center justify-center overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_26_07-9o6IWG3p9LJ2IlbaPe7AvtENUYngQf.png"
                       alt="CTV Advertisement"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
 
@@ -513,26 +513,26 @@ export default function OnegaPage() {
               ))}
             </div>
 
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-8 h-fit">
               {channels.filter(c => c.id === 'display' || c.id === 'video').map((channel) => (
-                <Card key={channel.id} className="border-2 border-border bg-white">
+                <Card key={channel.id} className="border-2 border-border bg-white flex flex-col">
                   <CardHeader>
                     <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="bg-slate-100 rounded-lg h-56 flex items-center justify-center overflow-hidden">
+                  <CardContent className="space-y-4 flex flex-col flex-1">
+                    <div className="bg-slate-100 rounded-lg flex-1 flex items-center justify-center overflow-hidden">
                       {channel.id === 'display' && (
                         <img 
                           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_45_14-zvfa8YbBcCtQBaQntmzBPVixcNGCdo.png"
                           alt="Display Advertisement"
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover"
                         />
                       )}
                       {channel.id === 'video' && (
                         <img 
                           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_30_51-oXCEzkBZzqtzO8Qsdlhb8Vnha9Bdws.png"
                           alt="Video Advertisement"
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover"
                         />
                       )}
                     </div>
