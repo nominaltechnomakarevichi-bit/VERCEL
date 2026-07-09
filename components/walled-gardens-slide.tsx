@@ -54,7 +54,7 @@ export function WalledGardensSlide() {
       icon: Monitor,
       walledGardens: "Только форматы, доступные внутри платформы",
       programmatic: "Баннеры, видео, rich media, CTV, DOOH, нативная реклама в единой среде закупки",
-      benefit: "Возможность выбрать наиболее эффективный формата под конкретную маркетинговую задачу.",
+      benefit: "Возможность выбрать наиболее эффективный формат под конкретную маркетинговую задачу.",
     },
     {
       criterion: "Управление площадками",
@@ -274,7 +274,7 @@ export function WalledGardensSlide() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-foreground text-sm">
-              <span className="font-normal">Главный риск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределами.</span>
+              <span className="font-normal">Главный ��иск работы только через Walled Gardens — зависимость от нескольких закрытых экосистем и потеря части аудитории, находящейся за их пределам��.</span>
             </CardContent>
           </Card>
         </section>
