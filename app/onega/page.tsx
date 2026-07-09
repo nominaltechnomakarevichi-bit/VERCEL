@@ -452,13 +452,13 @@ export default function OnegaPage() {
                   <CardHeader>
                     <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
                   </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-4">
                   {/* TV Ad Image */}
-                  <div className="bg-slate-100 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                  <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_26_07-9o6IWG3p9LJ2IlbaPe7AvtENUYngQf.png"
                       alt="CTV Advertisement"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
 
@@ -519,20 +519,20 @@ export default function OnegaPage() {
                   <CardHeader>
                     <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="bg-slate-100 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                  <CardContent className="space-y-4">
+                    <div className="bg-slate-100 rounded-lg h-56 flex items-center justify-center overflow-hidden">
                       {channel.id === 'display' && (
                         <img 
                           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_45_14-zvfa8YbBcCtQBaQntmzBPVixcNGCdo.png"
                           alt="Display Advertisement"
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       )}
                       {channel.id === 'video' && (
                         <img 
                           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_30_51-oXCEzkBZzqtzO8Qsdlhb8Vnha9Bdws.png"
                           alt="Video Advertisement"
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       )}
                     </div>
