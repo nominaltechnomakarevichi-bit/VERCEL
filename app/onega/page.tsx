@@ -449,8 +449,9 @@ export default function OnegaPage() {
             <div>
               {channels.filter(c => c.id === 'ctv').map((channel) => (
                 <Card key={channel.id} className="border-2 border-border bg-white">
-                  <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
-                </CardHeader>
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-[#0029FF]">{channel.name}</CardTitle>
+                  </CardHeader>
                 <CardContent className="space-y-6">
                   {/* TV Ad Image */}
                   <div className="bg-slate-100 rounded-lg h-64 flex items-center justify-center overflow-hidden">
