@@ -1,14 +1,13 @@
-'use client'
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Sparkles, Check, Monitor, Play, Tv, Shield, AlertCircle } from 'lucide-react'
-import { useState, useEffect } from 'react'
+
+export const metadata = {
+  title: 'Programmatic-кампания для бренда «Онега» - Как выиграть внимание в FMCG',
+  description: 'Programmatic-кампания для бренда «Онега». Как выиграть внимание в FMCG с минимальным временем контакта.',
+}
 
 export default function OnegaPage() {
-  useEffect(() => {
-    document.title = 'Programmatic-кампания для бренда «Онега» Как выиграть внимание в FMCG с минимальным временем контакта'
-  }, [])
   const audiences = [
     {
       id: 1,
