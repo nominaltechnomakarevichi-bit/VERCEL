@@ -6,7 +6,6 @@ import { useState } from "react"
 
 export function NTIntelligenceSlide() {
   const [activeTab, setActiveTab] = useState<'creative' | 'optimization' | 'measurement'>('creative')
-  const [showAiceberg, setShowAiceberg] = useState(false)
 
   const comparisonData = [
     {
@@ -41,8 +40,8 @@ export function NTIntelligenceSlide() {
     {
       id: 'optimization',
       title: "Оптимизация эффективности",
-      description: "находим аудиторию по качественным сигналам внутри баннера",
-      details: "проводим post-view оптимизацию, чтобы учесть вклад рекламы на всех этапах"
+      description: "проводим post-view оптимизацию, чтобы учесть вклад рекламы на всех этапах",
+      details: "фильтруем инвентарь с помощью pre-bid оптимизации, чтобы получать только релевантные показы"
     },
     {
       id: 'measurement',
@@ -411,7 +410,7 @@ export function NTIntelligenceSlide() {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <span className="text-foreground font-semibold">→</span>
-                <p className="text-lg text-foreground">проводим post-view оптимизацию, чтобы учесть вклад рекламы на всех этапах</p>
+                <p className="text-lg text-foreground">проводим post-view оптими��ацию, чтобы учесть вклад рекламы на всех этапах</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-foreground font-semibold">→</span>
@@ -420,28 +419,6 @@ export function NTIntelligenceSlide() {
             </div>
             
             <div className="space-y-6">
-              <div>
-                <button
-                  onClick={() => setShowAiceberg(!showAiceberg)}
-                  className="mb-4 px-4 py-2 bg-[#0029FF] text-white rounded-lg hover:bg-blue-900 transition-colors text-sm font-semibold"
-                >
-                  {showAiceberg ? 'Скрыть изображение' : 'Показать изображение'}
-                </button>
-                {showAiceberg && (
-                  <Card className="border-2 border-border bg-white">
-                    <CardContent className="p-6">
-                      <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
-                        <img 
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%208%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_24_29-FH1licAJXoQpnVYUHhxn6R2H0u8PGs.png"
-                          alt="In-Banner Events Optimization"
-                          className="w-full h-auto object-contain"
-                        />
-                      </div>
-                    </CardContent>
-                  </Card>
-                )}
-              </div>
-
               <Card className="border-2 border-border bg-white">
                 <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
