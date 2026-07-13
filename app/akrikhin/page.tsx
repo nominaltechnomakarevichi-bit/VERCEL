@@ -297,7 +297,7 @@ export default function AkrikhinPage() {
                 </tr>
                 <tr className="hover:bg-slate-100">
                   <td className="border-2 border-border px-4 py-3 font-bold text-[#0029FF]">Сам себе доктор</td>
-                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-������окупатели</td>
+                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активны�� онлайн-������окупатели</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Здоровье<br/>• Спорт<br/>• Карьера</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Аптеки<br/>• Фитнес-клубы<br/>• Вокзалы/аэропорты</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Препараты от простуды<br/>• Витамины</td>
@@ -358,7 +358,7 @@ export default function AkrikhinPage() {
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     {/* Video Preview */}
-                    <div className="bg-slate-100 rounded-lg overflow-hidden max-w-sm">
+                    <div className="bg-slate-100 rounded-lg overflow-hidden max-w-xs">
                       <video 
                         className="w-full h-auto"
                         autoPlay 
