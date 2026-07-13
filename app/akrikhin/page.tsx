@@ -152,8 +152,8 @@ export default function AkrikhinPage() {
     },
     {
       id: 3,
-      title: 'Дапален - как кастомные креативы увеличили конверсии на 43%',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.12-1FNFhMnK2tgXT3zCgKKgpqWWk4zqHb.png'
+      title: 'Дапален гель - как мы разрабатываем специальные креативы для фармы',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.57.24-mMLzjNzkMs8WycyMpnkga8F6YCvrhg.png'
     },
     {
       id: 4,
@@ -297,7 +297,7 @@ export default function AkrikhinPage() {
                 </tr>
                 <tr className="hover:bg-slate-100">
                   <td className="border-2 border-border px-4 py-3 font-bold text-[#0029FF]">Сам себе доктор</td>
-                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-����окупатели</td>
+                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-������окупатели</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Здоровье<br/>• Спорт<br/>• Карьера</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Аптеки<br/>• Фитнес-клубы<br/>• Вокзалы/аэропорты</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Препараты от простуды<br/>• Витамины</td>
