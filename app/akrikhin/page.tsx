@@ -358,9 +358,9 @@ export default function AkrikhinPage() {
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     {/* Video Preview */}
-                    <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
+                    <div className="bg-slate-100 rounded-lg overflow-hidden">
                       <video 
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto"
                         autoPlay 
                         loop 
                         muted 
@@ -514,56 +514,14 @@ export default function AkrikhinPage() {
                     </div>
                     <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
                       <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.34.16-ziFSzXLNCC8dyzS1Y99f9ZCDStYDmm.png"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-aFDHdrmpUQUA5qEkbA27kT1R4V3Bhp.png"
                         alt="WINK"
                         className="h-16 w-auto object-contain"
                       />
                     </div>
                   </div>
                 </div>
-
-                {/* CTV Inventory */}
-                <div>
-                  <h4 className="font-bold text-foreground mb-6">Инвентарь</h4>
                   
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006326-9y1BWXoCA7jHuYMucBYzX5ZUtMNNfa.png"
-                        alt="ЗОНА ФИЛЬМОВ"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lordfilm.ru-rKgEf5m5NwFLr4UerZwkiuvIMFMGJS.png"
-                        alt="LORDFILM"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20HDrezka-uSHAaOOyhuT4In0WzijVOIdtZeGgzj.png"
-                        alt="New HDrezka"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB_%C2%AB%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D0%B8%CC%86%C2%BB-h4rCBSSwrtAD3InK2AfkNrOcC8S0gX.png"
-                        alt="ДОМАШНИЙ"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vokrug.tv%201-xbswxoc4eynjFgq5SHz8uLxqskFvyH.png"
-                        alt="ВОКРУГ ТВ"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
@@ -688,14 +646,12 @@ export default function AkrikhinPage() {
             <CarouselContent>
               {caseStudies.map((caseStudy) => (
                 <CarouselItem key={caseStudy.id} className="basis-full">
-                  <div className="p-1 max-w-2xl mx-auto">
-                    <div className="bg-slate-100 rounded-lg overflow-hidden">
-                      <img 
-                        src={caseStudy.image}
-                        alt={caseStudy.title}
-                        className="w-full h-auto object-contain"
-                      />
-                    </div>
+                  <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
+                    <img 
+                      src={caseStudy.image}
+                      alt={caseStudy.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </CarouselItem>
               ))}
