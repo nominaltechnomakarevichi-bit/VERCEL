@@ -297,7 +297,7 @@ export default function AkrikhinPage() {
                 </tr>
                 <tr className="hover:bg-slate-100">
                   <td className="border-2 border-border px-4 py-3 font-bold text-[#0029FF]">Сам себе доктор</td>
-                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-покупатели</td>
+                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-��окупатели</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Здоровье<br/>• Спорт<br/>• Карьера</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Аптеки<br/>• Фитнес-клубы<br/>• Вокзалы/аэропорты</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Препараты от простуды<br/>• Витамины</td>
@@ -308,7 +308,7 @@ export default function AkrikhinPage() {
                   <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели лекарств для семьи<br/>• Регулярные посетители аптек</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Семья<br/>• Дом и быт<br/>• Здоровье</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Аптеки<br/>• ТЦ<br/>• Поликлиники</td>
-                  <td className="border-2 border-border px-4 py-3 text-sm">• Препараты от простуды<br/>• Витамины</td>
+                  <td className="border-2 border-border px-4 py-3 text-sm">• Препараты от простуды<br/>• Витамин��</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Lifestyle-ресурсы<br/>• E-commerce</td>
                 </tr>
               </tbody>
@@ -358,7 +358,7 @@ export default function AkrikhinPage() {
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     {/* Video Preview */}
-                    <div className="bg-slate-100 rounded-lg overflow-hidden">
+                    <div className="bg-slate-100 rounded-lg overflow-hidden max-w-sm">
                       <video 
                         className="w-full h-auto"
                         autoPlay 
@@ -646,11 +646,11 @@ export default function AkrikhinPage() {
             <CarouselContent>
               {caseStudies.map((caseStudy) => (
                 <CarouselItem key={caseStudy.id} className="basis-full">
-                  <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
+                  <div className="bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center p-4">
                     <img 
                       src={caseStudy.image}
                       alt={caseStudy.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto object-contain max-h-96"
                     />
                   </div>
                 </CarouselItem>
