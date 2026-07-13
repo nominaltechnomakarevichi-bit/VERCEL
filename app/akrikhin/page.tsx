@@ -5,7 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Sparkles, Check } from 'lucide-react'
 import { useState } from 'react'
 
-export default function MimimiPage() {
+export default function AkrikhinPage() {
   const richMediaFormats = [
     {
       id: 1,
@@ -47,31 +47,101 @@ export default function MimimiPage() {
     }
   ]
 
-  const interests = [
-    'беременность и материнство',
-    'развитие детей',
-    'покупки на маркетплейсах',
-    'советы педиатров',
-    'детские товары',
-    'путешествия с детьми'
-  ]
-
-  const purchaseTriggers = [
-    'натуральность',
-    'безопасность',
-    'польза',
-    'удобство',
-    'вкус',
-    'яркий дизайн',
-    'эмоциональная составляющая'
-  ]
-
-  const youtubeChannels = [
-    'Малышарики',
-    'Фиксики',
-    'Синий трактор',
-    'Три кота',
-    'Маша и медведь'
+  const audienceSegments = [
+    {
+      title: 'Сегмент «Мамы»',
+      products: [
+        'Аквадетрим (капли)',
+        'Боботик (капли от коликов)',
+        'Бронхо-Ваксом детский (иммуномодулятор)'
+      ],
+      profile: {
+        title: 'Социально-демографический профиль',
+        description: 'Женщины, 23–50 лет, имеют одного или нескольких детей (от младенцев до младших школьников)'
+      },
+      behavior: {
+        title: 'Как выбирает',
+        description: 'Читает чаты, форумы для мам, доверяет рекомендациям педиатров и «проверенных блогеров-мам».'
+      },
+      triggers: {
+        title: 'Триггеры для покупок',
+        description: 'Авторитет бренда и безопасность состава'
+      },
+      interests: [
+        'дети',
+        'доказательная медицина',
+        'педиатры (Доктор Комаровский)',
+        'консультанты по ГВ и сну',
+        'покупки на МП',
+        'сериалы',
+        'здоровье',
+        'дом',
+        'красота'
+      ],
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_48_24-OuSdyRnGcicECgR5vO3hm9sItrSKIJ.png'
+    },
+    {
+      title: 'Сегмент «Сам себе доктор»',
+      products: [
+        'Амброксол-Акрихин',
+        'Бромгексин-Акрихин (кашель)',
+        'Галазолин (назальные капли)'
+      ],
+      profile: {
+        title: 'Социально-демографический профиль',
+        description: 'Мужчины и женщины, 20–45 лет. Работают, учатся, ведут активный образ жизни'
+      },
+      behavior: {
+        title: 'Как выбирает',
+        description: 'Ищет эффективные препараты, сравнивает цены, читает отзывы'
+      },
+      triggers: {
+        title: 'Триггеры для покупок',
+        description: 'Эффективность и быстродействие препарата'
+      },
+      interests: [
+        'карьера',
+        'учеба',
+        'семья',
+        'здоровье',
+        'покупки',
+        'сериалы и фильмы',
+        'спорт',
+        'новости',
+        'бизнес'
+      ],
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_53_37-VAD5J3JDvYvmTfC1dhc02uSr0CZ4ur.png'
+    },
+    {
+      title: 'Сегмент «Менеджер аптечки»',
+      products: [
+        'Любые безрецептурные препараты и БАДы от простуды и «для профилактики»'
+      ],
+      profile: {
+        title: 'Социально-демографический профиль',
+        description: 'Женщины, 35–60 лет. Закупают лекарства на всю семью (муж, взрослые дети, пожилые родители)'
+      },
+      behavior: {
+        title: 'Как выбирает',
+        description: 'Ищет препараты по действующему веществу в онлайн-аптеках, сравнивает цены, держит аптечку укомплектованной «на всякий случай» до начала сезона простуд'
+      },
+      triggers: {
+        title: 'Триггеры для покупок',
+        description: 'Цена, качество, проверенность'
+      },
+      interests: [
+        'сериалы и фильмы',
+        'спорт',
+        'новости',
+        'покупки',
+        'дача',
+        'покупки на МП',
+        'развлечения',
+        'путешествия',
+        'ремонт'
+      ],
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_00_59-66pKWknbESuT2Si1BKNy7gVa7jSPli.png'
+    }
   ]
 
   const caseStudies = [
@@ -140,8 +210,7 @@ export default function MimimiPage() {
     {
       id: 4,
       title: 'Как микс форматов и точный таргетинг увеличил узнаваемость бренда на 153%',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pharma-case-slide__PharmaCaseSlide_6-uy5HZLRdREH7JuZp9yB40KcUkCZdi3.mov',
-      isVideo: true,
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_10_06-9N8uNE3qB0SaD3F2gPkIAB7oyy162x.png',
       campaign: {
         product: 'сироп от кашля для детей Флюдитек',
         goal: 'увеличить узнаваемость бренда',
@@ -176,102 +245,89 @@ export default function MimimiPage() {
               </div>
               <div className="w-24 h-24 flex items-center justify-center">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-YXZ8o3A4MNdQu4slmNvBVyywfSPYxx.png" 
-                  alt="Mimimi" 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_90_new-akij9bAAqlpWZPmGtWZmPbJLhK3BBy.png" 
+                  alt="Акрихин" 
                   className="w-full h-full object-contain"
                 />
               </div>
             </div>
 
-            {/* Title and Subtitle */}
+            {/* Title */}
             <div className="flex-1">
               <h1 className="text-4xl font-bold text-foreground mb-3">
-                Programmatic-кампания для бренда «Mimimi»
+                Programmatic-кампания для бренда «Акрихин»
               </h1>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Audience Section */}
+      {/* Audience Section - 3 Column Layout */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-2">Аудитория бренда</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Аудитория бренда</h2>
 
-          </div>
-
-          {/* Audience Portrait Card */}
-          <Card className="border-2 border-border bg-white overflow-hidden mb-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-              {/* Image Section */}
-              <div className="min-h-96 bg-slate-100 flex items-center justify-center rounded-lg p-4">
-                <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_58_08-a8nRjOCqFOltMYq2XJwtA5aGl909b5.png"
-                  alt="Целевая аудитория"
-                  className="w-full h-auto max-h-96 object-contain"
-                />
-              </div>
-
-              {/* Info Section */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-bold text-[#0029FF] mb-4">Молодая активная мама</h3>
-                  <p className="text-foreground mb-6">Современная женщина, которая ценит качество, безопасность и удобство в товарах для своей семьи. Активна в соцсетях, доверяет отзывам и советам педиатров.</p>
-                </div>
-
-                {/* Gender */}
-                <div>
-                  <p className="font-bold text-foreground mb-3">Пол</p>
-                  <div className="space-y-2">
-                    <p className="text-foreground text-sm">Женщины 75–85%</p>
-                    <p className="text-foreground text-sm">Мужчины 15–25%</p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {audienceSegments.map((segment, idx) => (
+              <Card key={idx} className="border-2 border-border bg-white overflow-hidden flex flex-col">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-[#0029FF]">{segment.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-1 flex flex-col space-y-6">
+                  {/* Image */}
+                  <div className="bg-slate-100 rounded-lg overflow-hidden h-48 flex items-center justify-center">
+                    <img 
+                      src={segment.image}
+                      alt={segment.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
 
-                {/* Age */}
-                <div>
-                  <p className="font-bold text-foreground mb-2">Возраст</p>
-                  <p className="text-foreground text-sm">Основная группа 25–35 лет</p>
-                </div>
+                  {/* Products */}
+                  <div>
+                    <p className="font-bold text-foreground mb-2">Препараты</p>
+                    <ul className="space-y-1">
+                      {segment.products.map((product, pidx) => (
+                        <li key={pidx} className="text-sm text-foreground">{product}</li>
+                      ))}
+                    </ul>
+                  </div>
 
-                {/* Income */}
-                <div>
-                  <p className="font-bold text-foreground mb-2">Доход</p>
-                  <p className="text-foreground text-sm">Средний и выше среднего</p>
-                </div>
-              </div>
-            </div>
-          </Card>
+                  {/* Profile */}
+                  <div>
+                    <p className="font-bold text-foreground mb-2">{segment.profile.title}</p>
+                    <p className="text-sm text-foreground">{segment.profile.description}</p>
+                  </div>
 
-          {/* Interests Badges */}
-          <div className="mb-12">
-            <h3 className="text-xl font-bold text-foreground mb-4">Интересы</h3>
-            <div className="flex flex-wrap gap-3">
-              {interests.map((interest, idx) => (
-                <span 
-                  key={idx}
-                  className="px-4 py-2 bg-blue-100 text-[#0029FF] font-semibold rounded-full text-sm"
-                >
-                  {interest}
-                </span>
-              ))}
-            </div>
-          </div>
+                  {/* Behavior */}
+                  <div>
+                    <p className="font-bold text-foreground mb-2">{segment.behavior.title}</p>
+                    <p className="text-sm text-foreground">{segment.behavior.description}</p>
+                  </div>
 
-          {/* Purchase Triggers */}
-          <div>
-            <h3 className="text-xl font-bold text-foreground mb-4">Основные триггеры покупки</h3>
-            <div className="flex flex-wrap gap-3">
-              {purchaseTriggers.map((trigger, idx) => (
-                <span 
-                  key={idx}
-                  className="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full text-sm"
-                >
-                  {trigger}
-                </span>
-              ))}
-            </div>
+                  {/* Triggers */}
+                  <div>
+                    <p className="font-bold text-foreground mb-2">{segment.triggers.title}</p>
+                    <p className="text-sm text-foreground">{segment.triggers.description}</p>
+                  </div>
+
+                  {/* Interests */}
+                  <div>
+                    <p className="font-bold text-foreground mb-2">Интересы</p>
+                    <div className="flex flex-wrap gap-2">
+                      {segment.interests.map((interest, iidx) => (
+                        <span 
+                          key={iidx}
+                          className="px-2 py-1 bg-blue-100 text-[#0029FF] font-semibold rounded-full text-xs"
+                        >
+                          {interest}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -294,83 +350,30 @@ export default function MimimiPage() {
                 <tr className="border-b-2 border-border hover:bg-slate-50">
                   <td className="border-r-2 border-border p-4 text-foreground align-top">
                     <ul className="space-y-2">
-                      <li>• Материнство</li>
-                      <li>• Детские товары</li>
-                      <li>• ЗОЖ</li>
+                      <li>• Здоровье</li>
+                      <li>• Семья</li>
+                      <li>• Медицина</li>
                       <li>• Онлайн-покупки</li>
                     </ul>
                   </td>
                   <td className="border-r-2 border-border p-4 text-foreground align-top">
                     <ul className="space-y-2">
-                      <li>• Покупают товары для детей</li>
-                      <li>• Часто посещают детские магазины</li>
-                      <li>• Интересуются детским питанием</li>
-                      <li>• Регулярно совершают покупки в супермаркетах</li>
+                      <li>• Покупают лекарства</li>
+                      <li>• Часто посещают аптеки</li>
+                      <li>• Интересуются здоровьем</li>
+                      <li>• Регулярно совершают покупки</li>
                       <li>• Активные онлайн-покупатели</li>
                     </ul>
                   </td>
                   <td className="p-4 text-foreground align-top">
                     <ul className="space-y-2">
-                      <li>• Статьи о прикорме</li>
-                      <li>• Развитие ребенка</li>
-                      <li>• Рецепты для малышей</li>
-                      <li>• Аллергии</li>
-                      <li>• Детские болезни</li>
-                      <li>• Советы педиатров</li>
-                      <li>• Форумы молодых мам</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* SuperGeo Section */}
-      <section className="border-b-2 border-border py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">SuperGeo</h2>
-          
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-slate-100 border-b-2 border-border">
-                  <th className="border-r-2 border-border p-4 text-left font-bold text-foreground">Торговые точки</th>
-                  <th className="border-r-2 border-border p-4 text-left font-bold text-foreground">Медицинские учреждения</th>
-                  <th className="border-r-2 border-border p-4 text-left font-bold text-foreground">Детская инфраструктура</th>
-                  <th className="p-4 text-left font-bold text-foreground">ЖК для молодых семей</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b-2 border-border hover:bg-slate-50">
-                  <td className="border-r-2 border-border p-4 text-foreground align-top">
-                    <ul className="space-y-2">
-                      <li>• Детские магазины</li>
-                      <li>• Сети, где продается бренд Mimimi</li>
-                      <li>• Аптеки</li>
-                      <li>• Торговые центры</li>
-                    </ul>
-                  </td>
-                  <td className="border-r-2 border-border p-4 text-foreground align-top">
-                    <ul className="space-y-2">
-                      <li>• Детские поликлиники</li>
-                      <li>• Родильные дома</li>
-                      <li>• Женские консультации</li>
-                    </ul>
-                  </td>
-                  <td className="border-r-2 border-border p-4 text-foreground align-top">
-                    <ul className="space-y-2">
-                      <li>• Развивающие центры</li>
-                      <li>• Детские сады</li>
-                      <li>• Парки</li>
-                    </ul>
-                  </td>
-                  <td className="p-4 text-foreground align-top">
-                    <ul className="space-y-2">
-                      <li>• Новая Боровая</li>
-                      <li>• Минск-мир</li>
-                      <li>• Лебяжий</li>
+                      <li>• Статьи о здоровье</li>
+                      <li>• Информация о препаратах</li>
+                      <li>• Медицинские консультации</li>
+                      <li>• Аптечные сайты</li>
+                      <li>• Форумы о здоровье</li>
+                      <li>• Медицинские портали</li>
+                      <li>• Профилактика</li>
                     </ul>
                   </td>
                 </tr>
@@ -394,9 +397,7 @@ export default function MimimiPage() {
                 </CardHeader>
                 <CardContent>
                   {format.id === 3 ? (
-                    // Multi-Layer Banner - keep original layout
                     <div className="space-y-8">
-                      {/* Video Preview */}
                       <div className="bg-slate-100 rounded-lg overflow-hidden h-56">
                         <video 
                           className="w-full h-full object-contain"
@@ -409,7 +410,6 @@ export default function MimimiPage() {
                         </video>
                       </div>
 
-                      {/* Advantages */}
                       <div>
                         <h4 className="font-bold text-foreground mb-4">Преимущества:</h4>
                         <ul className="space-y-2">
@@ -423,9 +423,7 @@ export default function MimimiPage() {
                       </div>
                     </div>
                   ) : (
-                    // Banner Spinner and Cube-banner - side-by-side layout
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                      {/* Video Preview - Left Side */}
                       <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
                         <video 
                           className="w-full h-full object-contain"
@@ -438,7 +436,6 @@ export default function MimimiPage() {
                         </video>
                       </div>
 
-                      {/* Advantages - Right Side */}
                       <div>
                         <h4 className="font-bold text-foreground mb-4">Преимущества:</h4>
                         <ul className="space-y-3">
@@ -459,181 +456,126 @@ export default function MimimiPage() {
         </div>
       </section>
 
-      {/* Video Section */}
+      {/* Reporting Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">Video</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Отчетность</h2>
           
-          <Card className="border-2 border-border bg-white overflow-hidden">
-            <CardHeader>
-              <CardTitle className="text-2xl text-[#0029FF]">Видео реклама</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="bg-slate-100 rounded-lg overflow-hidden flex items-center justify-center min-h-28">
-                <video 
-                  className="w-full h-full object-contain"
-                  controls
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                >
-                  <source src="/mimimi-video.mp4" type="video/mp4" />
-                </video>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-foreground mb-4">Преимущества видео рекламы</h4>
-                <ul className="space-y-3">
-                  <li className="flex gap-3">
-                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">Повышает эффективность коммуникации благодаря комбинации видео, звука и динамичного визуала</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">Увеличивает время взаимодействия с брендом и улучшает запоминаемость сообщения</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">Демонстрирует преимущества продукта в действии, что повышает вероятность конверсии</span>
-                  </li>
-                </ul>
+          <Card className="border-2 border-border bg-blue-50 overflow-hidden">
+            <CardContent className="p-8 space-y-4">
+              <p className="text-foreground text-lg">Готовим отчеты любой сложности по метрикам, интересующим бизнес</p>
+              <div className="flex items-center gap-3 text-foreground">
+                <span className="text-[#0029FF] font-bold">№1</span>
+                <span>в категории «Высокая скорость подготовки отчетов» Технологического индекса AdIndex</span>
               </div>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      {/* Ad Channels Section */}
+      {/* Advertising Channels Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-foreground mb-12">Рекламные каналы</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* CTV */}
+          <div className="space-y-12">
+            {/* CTV Section */}
             <Card className="border-2 border-border bg-white overflow-hidden">
               <CardHeader>
                 <CardTitle className="text-2xl text-[#0029FF]">CTV</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center min-h-80">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_04_24-iydlTnjPaDtQTUGHmbH9uNkZcxfsyr.png"
-                    alt="CTV Example"
-                    className="w-full h-auto max-h-96 object-contain"
-                  />
-                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                  <div className="bg-slate-100 rounded-lg overflow-hidden h-80 flex items-center justify-center">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_08_02-Mglsy5Jn2Cd3lxCDPJwAAVplheKodp.png"
+                      alt="CTV Advertising"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-                {/* CTV Inventory */}
-                <div>
-                  <h4 className="font-bold text-foreground mb-6">Инвентарь</h4>
-                  
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006326-9y1BWXoCA7jHuYMucBYzX5ZUtMNNfa.png"
-                        alt="30НА ФИЛЬМОВ"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lordfilm.ru-rKgEf5m5NwFLr4UerZwkiuvIMFMGJS.png"
-                        alt="LORDFILM"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20HDrezka-uSHAaOOyhuT4In0WzijVOIdtZeGgzj.png"
-                        alt="New HDrezka"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB_%C2%AB%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D0%B8%CC%86%C2%BB-h4rCBSSwrtAD3InK2AfkNrOcC8S0gX.png"
-                        alt="ДОМАШНИЙ"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vokrug.tv%201-xbswxoc4eynjFgq5SHz8uLxqskFvyH.png"
-                        alt="ВОКРУГ ТВ"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/film.ru%201-763YETTK9KyBczot7PlIAYnpOlap70.png"
-                        alt="FILM"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lostfilm.ink-VQ42ifXCWyl00JqU9NYZ2SLRwLJvGr.png"
-                        alt="LOSTFILM"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lordserial.ru-cVY1dV7gIwApbXdPxzbyivgOA5QsNJ.png"
-                        alt="LORDSERIALS"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%81%D1%82%D1%81%201-oQ8ALpx7tuO2f8VQM1CHap8pedADoV.png"
-                        alt="СТС"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
-                      <img 
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/wink.tw-og4BjFROARYbzMqyFfzt6peIupzoxJ.png"
-                        alt="WINK"
-                        className="h-16 w-auto object-contain"
-                      />
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-bold text-foreground mb-2">Форматы</h4>
+                      <ul className="space-y-2">
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                          <span>Стандартные видео-объявления</span>
+                        </li>
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                          <span>Интерактивные видео</span>
+                        </li>
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                          <span>Видео с паузой</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* YouTube */}
+            {/* DOOH Section */}
             <Card className="border-2 border-border bg-white overflow-hidden">
               <CardHeader>
-                <CardTitle className="text-2xl text-[#0029FF]">Youtube</CardTitle>
+                <CardTitle className="text-2xl text-[#0029FF]">DOOH (Digital Out-of-Home)</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center min-h-80">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_10_59-IOUkg5hEHv0qneRi9YrZ3v3KPT6lEG.png"
-                    alt="YouTube Advertising"
-                    className="w-full h-auto max-h-96 object-contain"
-                  />
-                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                  <div className="bg-slate-100 rounded-lg overflow-hidden h-80 flex items-center justify-center">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_10_06-9N8uNE3qB0SaD3F2gPkIAB7oyy162x.png"
+                      alt="DOOH Advertising"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-                <div>
-                  <h4 className="font-bold text-foreground mb-4">Реклама по White list</h4>
-                  <p className="text-foreground mb-4">Размещение рекламы на каналах, ориентированных на семейный контент и развитие детей</p>
-                </div>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-bold text-foreground mb-2">Форматы</h4>
+                      <ul className="space-y-3">
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">•</span>
+                          <span>Indoor</span>
+                        </li>
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">•</span>
+                          <span>Outdoor</span>
+                        </li>
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">•</span>
+                          <span>Транзитная</span>
+                        </li>
+                      </ul>
+                    </div>
 
-                <div>
-                  <h4 className="font-bold text-foreground mb-4">Избранные каналы</h4>
-                  <div className="flex flex-wrap gap-3">
-                    {youtubeChannels.map((channel, idx) => (
-                      <span 
-                        key={idx}
-                        className="px-4 py-2 bg-red-100 text-red-700 font-semibold rounded-full text-sm"
-                      >
-                        {channel}
-                      </span>
-                    ))}
+                    <div>
+                      <h4 className="font-bold text-foreground mb-2">Таргетинги</h4>
+                      <ul className="space-y-2">
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">•</span>
+                          <span>Время</span>
+                        </li>
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">•</span>
+                          <span>Погода</span>
+                        </li>
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">•</span>
+                          <span>Температура</span>
+                        </li>
+                        <li className="flex gap-2 text-foreground">
+                          <span className="text-[#0029FF] font-bold flex-shrink-0">•</span>
+                          <span>Локация</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <p className="text-sm text-foreground mt-4 pt-4 border-t border-border">
+                      Подберем поверхности рядом с офлайн-точками продаж препаратов и покажем на карте, где будет размещаться ваша реклама
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -642,144 +584,115 @@ export default function MimimiPage() {
         </div>
       </section>
 
-      {/* Technical Capabilities */}
-      <section className="py-16">
+      {/* Technical Capabilities Section */}
+      <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-foreground mb-12">Технические возможности</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Brand Safety */}
-            <Card className="border-2 border-border bg-white p-8">
-              <h3 className="text-2xl font-bold text-[#0029FF] mb-6">Brand Safety</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <span className="text-foreground">Исключает показ рекламы рядом с нежелательным контентом (насилие, политика, трагедии, контент 18+).</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <span className="text-foreground">Обеспечивает размещение в безопасном семейном окружении, соответствующем бренду детского питания.</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <span className="text-foreground">Снижает репутационные риски и повышает доверие родителей к бренду.</span>
-                </li>
-              </ul>
+            <Card className="border-2 border-border bg-white overflow-hidden">
+              <CardHeader>
+                <CardTitle className="text-2xl text-[#0029FF]">Brand Safety</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                    <span className="text-foreground">Исключает показ рекламы рядом с нежелательным контентом (насилие, политика, трагедии, контент 18+).</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                    <span className="text-foreground">Обеспечивает размещение в безопасном окружении, соответствующем бренду.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                    <span className="text-foreground">Снижает репутационные риски и повышает доверие к бренду.</span>
+                  </li>
+                </ul>
+              </CardContent>
             </Card>
 
             {/* AntiFraud */}
-            <Card className="border-2 border-border bg-white p-8">
-              <h3 className="text-2xl font-bold text-[#0029FF] mb-6">AntiFraud</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <span className="text-foreground">Блокирует недействительный трафик (ботов, фейковые показы и клики).</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <span className="text-foreground">Исключает сайты и приложения с подозрительной активностью.</span>
-                </li>
-                <li className="flex gap-3">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <span className="text-foreground">Повышает качество охвата и гарантирует, что рекламный бюджет расходуется на реальных пользователей — родителей и семьи с детьми.</span>
-                </li>
-              </ul>
+            <Card className="border-2 border-border bg-white overflow-hidden">
+              <CardHeader>
+                <CardTitle className="text-2xl text-[#0029FF]">AntiFraud</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                    <span className="text-foreground">Блокирует недействительный трафик (ботов, фейковые показы и клики).</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                    <span className="text-foreground">Исключает сайты и приложения с подозрительной активностью.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-[#0029FF] font-bold flex-shrink-0">✓</span>
+                    <span className="text-foreground">Повышает качество охвата и гарантирует, что рекламный бюджет расходуется на реальных пользователей.</span>
+                  </li>
+                </ul>
+              </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Case Studies Carousel */}
-      <section className="border-t-2 border-border py-16 bg-slate-50">
+      {/* Case Studies Section */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
-            <span className="inline-block px-4 py-1.5 bg-[#0029FF] text-white text-sm font-semibold rounded-full mb-4">
-              Кейсы
-            </span>
-          </div>
-          <Carousel className="w-full relative">
-            <CarouselPrevious className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
+          <h2 className="text-4xl font-bold text-foreground mb-12">Кейсы</h2>
+
+          <Carousel className="w-full">
             <CarouselContent>
               {caseStudies.map((caseStudy) => (
-                <CarouselItem key={caseStudy.id} className="w-full">
-                  <div className="space-y-8">
-                    <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
-                      {caseStudy.title}
-                    </h3>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                      <div className={`rounded-lg overflow-hidden p-8 flex items-center justify-center h-full min-h-96 ${caseStudy.isVideo ? 'bg-[#f0eef5]' : 'bg-slate-100'}`}>
-                        {caseStudy.isVideo ? (
-                          <video 
-                            className="w-full h-full object-contain"
-                            autoPlay 
-                            loop 
-                            muted 
-                            playsInline
-                            crossOrigin="anonymous"
-                          >
-                            <source src={caseStudy.image} />
-                          </video>
-                        ) : (
-                          <img 
-                            src={caseStudy.image}
-                            alt={`${caseStudy.campaign.product} Product`}
-                            className="w-full h-auto object-contain"
-                          />
-                        )}
+                <CarouselItem key={caseStudy.id} className="lg:basis-1/2">
+                  <Card className="border-2 border-border bg-white overflow-hidden h-full">
+                    <div className="bg-slate-100 overflow-hidden h-72">
+                      <img 
+                        src={caseStudy.image}
+                        alt={caseStudy.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <CardContent className="p-6 space-y-4">
+                      <h3 className="text-xl font-bold text-[#0029FF]">{caseStudy.title}</h3>
+                      
+                      <div className="space-y-2">
+                        <div><span className="font-bold text-foreground">Продукт: </span><span className="text-foreground">{caseStudy.campaign.product}</span></div>
+                        <div><span className="font-bold text-foreground">Цель: </span><span className="text-foreground">{caseStudy.campaign.goal}</span></div>
+                        <div><span className="font-bold text-foreground">Каналы: </span><span className="text-foreground">{caseStudy.campaign.channels}</span></div>
+                        <div><span className="font-bold text-foreground">Период: </span><span className="text-foreground">{caseStudy.campaign.period}</span></div>
                       </div>
 
-                      <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
-                        <h4 className="text-xl font-bold text-[#0029FF] mb-6">О кампании</h4>
-                        <div className="space-y-4 flex-1">
-                          <div className="flex gap-3">
-                            <span className="font-semibold text-foreground min-w-28">Продукт</span>
-                            <span className="text-foreground">{caseStudy.campaign.product}</span>
-                          </div>
-                          <div className="flex gap-3">
-                            <span className="font-semibold text-foreground min-w-28">Цель</span>
-                            <span className="text-foreground">{caseStudy.campaign.goal}</span>
-                          </div>
-                          <div className="flex gap-3">
-                            <span className="font-semibold text-foreground min-w-28">Каналы</span>
-                            <span className="text-foreground">{caseStudy.campaign.channels}</span>
-                          </div>
-                          <div className="flex gap-3">
-                            <span className="font-semibold text-foreground min-w-28">Период</span>
-                            <span className="text-foreground">{caseStudy.campaign.period}</span>
-                          </div>
-                        </div>
-                      </Card>
-
-                      <Card className="border-2 border-border bg-white p-8 h-full flex flex-col">
-                        <h4 className="text-xl font-bold text-[#0029FF] mb-6">Особенности</h4>
-                        <ul className="space-y-3 flex-1">
+                      <div>
+                        <p className="font-bold text-foreground mb-2">Особенности:</p>
+                        <ul className="space-y-1">
                           {caseStudy.features.map((feature, idx) => (
-                            <li key={idx} className="flex gap-3">
-                              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                              <span className="text-sm text-foreground">{feature}</span>
-                            </li>
+                            <li key={idx} className="text-sm text-foreground">• {feature}</li>
                           ))}
                         </ul>
-                      </Card>
-                    </div>
-
-                    <Card className="border-2 border-[#0029FF] bg-white p-8">
-                      <h4 className="text-xl font-bold text-foreground mb-8">Результаты</h4>
-                      <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
-                        {caseStudy.results.map((result, idx) => (
-                          <div key={idx} className="text-center">
-                            <p className="text-3xl md:text-4xl font-bold text-[#0029FF] mb-2">{result.value}</p>
-                            <p className="text-foreground text-sm">{result.label}</p>
-                          </div>
-                        ))}
                       </div>
-                    </Card>
-                  </div>
+
+                      <div>
+                        <p className="font-bold text-foreground mb-2">Результаты:</p>
+                        <div className="grid grid-cols-3 gap-2">
+                          {caseStudy.results.map((result, idx) => (
+                            <div key={idx} className="text-center p-2 bg-blue-50 rounded">
+                              <div className="text-xl font-bold text-[#0029FF]">{result.value}</div>
+                              <div className="text-xs text-foreground">{result.label}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselNext className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 hidden lg:flex" />
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
         </div>
       </section>
