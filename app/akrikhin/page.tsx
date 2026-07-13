@@ -11,7 +11,7 @@ export default function AkrikhinPage() {
       id: 1,
       name: 'Banner Slider',
       description: 'Интерактивный баннер со слайдером до/после',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.11.07-go8rFu9qRdjPHQRXFiPg1FEEbtecWr.png',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.22.18-nhpDkTXZL63YATq8todoBV4gO5CH07.mov',
       advantages: [
         'Компактная демонстрация свойств препарата',
         'Сокращает путь к покупке',
@@ -22,7 +22,7 @@ export default function AkrikhinPage() {
       id: 2,
       name: 'Scratch-баннер',
       description: 'Интерактивный баннер, где пользователь стирает верхний слой и видит утп или эффект до/после',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.12-1FNFhMnK2tgXT3zCgKKgpqWWk4zqHb.png',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.22.54-gAA7XmQk6iSyvrq2EXj2bbGQZ3mhvP.mov',
       advantages: [
         'Практически нет ограничений по использованию для разных рекламных каналов',
         'В Pharma-сегменте хорошо подходит для демонстрации эффекта до/после',
@@ -33,7 +33,7 @@ export default function AkrikhinPage() {
       id: 3,
       name: 'Cube-баннер',
       description: '3D куб с возможностью взаимодействия',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.39-oQ0E57XUUa2e6gUVieECZfoIepNkWO.png',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.23.40-tWucaKmNz61AV1edK7jJo2ueGNassU.mov',
       advantages: [
         'Предлагает интерактивное взаимодействие',
         'Показывает до 4-х баннеров в одном креативе',
@@ -321,31 +321,23 @@ export default function AkrikhinPage() {
             <p className="text-foreground mb-6">Покупатели препаратов от боли в мышцах и суставах, хондропротекторов, детских препаратов для живота, от простуды и взрослых препаратов от простуды с гео вся РФ - <span className="font-bold">608 507</span></p>
             
             <h4 className="text-lg font-bold text-foreground mb-6">По регионам:</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="space-y-3">
-                <div className="flex justify-between"><span className="text-foreground">Москва</span><span className="font-bold text-[#0029FF]">35 136</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Санкт-Петербург</span><span className="font-bold text-[#0029FF]">9 889</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Екатеринбург</span><span className="font-bold text-[#0029FF]">3 879</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Новосибирск</span><span className="font-bold text-[#0029FF]">1 663</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Казань</span><span className="font-bold text-[#0029FF]">3 646</span></div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex justify-between"><span className="text-foreground">Красноярск</span><span className="font-bold text-[#0029FF]">2 358</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Нижний Новгород</span><span className="font-bold text-[#0029FF]">2 719</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Челябинск</span><span className="font-bold text-[#0029FF]">2 459</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Уфа</span><span className="font-bold text-[#0029FF]">2 955</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Краснодар</span><span className="font-bold text-[#0029FF]">10 173</span></div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex justify-between"><span className="text-foreground">Самара</span><span className="font-bold text-[#0029FF]">5 616</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Ростов-на-Дону</span><span className="font-bold text-[#0029FF]">5 612</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Омск</span><span className="font-bold text-[#0029FF]">2 372</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Воронеж</span><span className="font-bold text-[#0029FF]">2 394</span></div>
-                <div className="flex justify-between"><span className="text-foreground">Пермь</span><span className="font-bold text-[#0029FF]">1 895</span></div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex justify-between"><span className="text-foreground">Волгоград</span><span className="font-bold text-[#0029FF]">3 318</span></div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="flex justify-between"><span className="text-foreground">Москва</span><span className="font-bold text-[#0029FF]">35 136</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Санкт-Петербург</span><span className="font-bold text-[#0029FF]">9 889</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Екатеринбург</span><span className="font-bold text-[#0029FF]">3 879</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Новосибирск</span><span className="font-bold text-[#0029FF]">1 663</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Казань</span><span className="font-bold text-[#0029FF]">3 646</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Красноярск</span><span className="font-bold text-[#0029FF]">2 358</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Нижний Новгород</span><span className="font-bold text-[#0029FF]">2 719</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Челябинск</span><span className="font-bold text-[#0029FF]">2 459</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Уфа</span><span className="font-bold text-[#0029FF]">2 955</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Краснодар</span><span className="font-bold text-[#0029FF]">10 173</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Самара</span><span className="font-bold text-[#0029FF]">5 616</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Ростов-на-Дону</span><span className="font-bold text-[#0029FF]">5 612</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Омск</span><span className="font-bold text-[#0029FF]">2 372</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Воронеж</span><span className="font-bold text-[#0029FF]">2 394</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Пермь</span><span className="font-bold text-[#0029FF]">1 895</span></div>
+              <div className="flex justify-between"><span className="text-foreground">Волгоград</span><span className="font-bold text-[#0029FF]">3 318</span></div>
             </div>
           </div>
         </div>
@@ -365,13 +357,18 @@ export default function AkrikhinPage() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                    {/* Preview Image */}
+                    {/* Video Preview */}
                     <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
-                      <img 
-                        src={format.id === 1 ? 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.11.07-go8rFu9qRdjPHQRXFiPg1FEEbtecWr.png' : format.id === 2 ? 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.12-1FNFhMnK2tgXT3zCgKKgpqWWk4zqHb.png' : 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.39-oQ0E57XUUa2e6gUVieECZfoIepNkWO.png'}
-                        alt={format.name}
+                      <video 
                         className="w-full h-full object-cover"
-                      />
+                        autoPlay 
+                        loop 
+                        muted 
+                        playsInline
+                      >
+                        <source src={format.videoUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
 
                     {/* Advantages */}
@@ -399,18 +396,18 @@ export default function AkrikhinPage() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-foreground mb-12">Отчетность</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            {/* Left - Image */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg flex items-center justify-center p-4">
+          <div className="flex flex-col gap-8 mb-12">
+            {/* Image */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg flex items-center justify-center p-4 w-full">
               <img 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.07.59.png-ScawCzjT83rcnmhC4gdLcRa2nBrFyB.jpeg"
                 alt="Dashboard"
-                className="w-full h-auto max-h-full object-contain"
+                className="w-full h-auto object-contain"
               />
             </div>
 
-            {/* Right - Two text blocks */}
-            <div className="space-y-6">
+            {/* Text blocks below */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border-2 border-border bg-white">
                 <CardContent className="pt-6">
                   <p className="text-lg text-foreground font-semibold">Готовим отчеты любой сложности по метрикам, интересующим бизнес</p>
@@ -441,7 +438,7 @@ export default function AkrikhinPage() {
               <CardContent className="space-y-6">
                 <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_10_06-4eR9ROz5jMxmqitocNVq43kJ9cOqpb.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_08_02-mkNU23WokdS6rQJKgi7N8mT9U8eSYc.png"
                     alt="CTV Example"
                     className="w-full h-auto max-h-96 object-contain"
                   />
@@ -451,11 +448,11 @@ export default function AkrikhinPage() {
                 <div>
                   <h4 className="font-bold text-foreground mb-6">Инвентарь</h4>
                   
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                  <div className="grid grid-cols-5 gap-4">
                     <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
                       <img 
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006326-9y1BWXoCA7jHuYMucBYzX5ZUtMNNfa.png"
-                        alt="30НА ФИЛЬМОВ"
+                        alt="ЗОНА ФИЛЬМОВ"
                         className="h-16 w-auto object-contain"
                       />
                     </div>
@@ -512,6 +509,13 @@ export default function AkrikhinPage() {
                       <img 
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%81%D1%82%D1%81%201-oQ8ALpx7tuO2f8VQM1CHap8pedADoV.png"
                         alt="СТС"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.34.16-ziFSzXLNCC8dyzS1Y99f9ZCDStYDmm.png"
+                        alt="WINK"
                         className="h-16 w-auto object-contain"
                       />
                     </div>
