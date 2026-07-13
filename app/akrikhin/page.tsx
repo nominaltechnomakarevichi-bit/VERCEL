@@ -164,24 +164,34 @@ export default function AkrikhinPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      {/* Header with Logos */}
+      <section className="border-b-2 border-border py-8">
+        <div className="max-w-7xl mx-auto px-6 flex items-center gap-8">
+          <img 
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0sFu1ehjTbpJ2kxNXvhBFJzfhqk97F.png"
+            alt="NT Technology"
+            className="h-12 w-auto"
+          />
+          <div className="w-px h-12 bg-border"></div>
+          <img 
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_90_new-akij9bAAqlpWZPmGtWZmPbJLhK3BBy.png"
+            alt="Акрихин"
+            className="h-12 w-auto"
+          />
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
-            {/* Left - Logo and Text */}
+            {/* Left - Text */}
             <div className="flex-1">
-              <div className="mb-8">
-                <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_90_new-akij9bAAqlpWZPmGtWZmPbJLhK3BBy.png"
-                  alt="Акрихин"
-                  className="h-16 w-auto"
-                />
-              </div>
               <h1 className="text-5xl font-bold text-foreground mb-6">Programmatic-кампания для бренда «Акрихин»</h1>
               <p className="text-lg text-foreground/70">Как выиграть внимание в фармацевтической категории с минимальным временем контакта</p>
             </div>
 
-            {/* Right - Stats or Visual */}
+            {/* Right - Visual */}
             <div className="flex-1">
               <Sparkles className="w-24 h-24 text-[#0029FF]" />
             </div>
@@ -289,7 +299,7 @@ export default function AkrikhinPage() {
                   <td className="border-2 border-border px-4 py-3 text-sm">• Родительские сообщества<br/>• Медицинские ресурсы</td>
                 </tr>
                 <tr className="hover:bg-slate-100">
-                  <td className="border-2 border-border px-4 py-3 font-bold text-[#0029FF]">Активные взрослые</td>
+                  <td className="border-2 border-border px-4 py-3 font-bold text-[#0029FF]">Сам себе доктор</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-покупатели</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Здоровье<br/>• Спорт<br/>• Карьера</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Аптеки<br/>• Фитнес-клубы<br/>• Вокзалы/аэропорты</td>
@@ -306,6 +316,40 @@ export default function AkrikhinPage() {
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          {/* OFD Segments Capacity */}
+          <div className="mt-12 p-8 bg-white border-2 border-border rounded-lg">
+            <h3 className="text-2xl font-bold text-foreground mb-8">Емкость ОФД-сегментов</h3>
+            <p className="text-foreground mb-6">Покупатели препаратов от боли в мышцах и суставах, хондропротекторов, детских препаратов для живота, от простуды и взрослых препаратов от простуды с гео вся РФ - <span className="font-bold">608 507</span></p>
+            
+            <h4 className="text-lg font-bold text-foreground mb-6">По регионам:</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="space-y-3">
+                <div className="flex justify-between"><span className="text-foreground">Москва</span><span className="font-bold text-[#0029FF]">35 136</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Санкт-Петербург</span><span className="font-bold text-[#0029FF]">9 889</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Екатеринбург</span><span className="font-bold text-[#0029FF]">3 879</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Новосибирск</span><span className="font-bold text-[#0029FF]">1 663</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Казань</span><span className="font-bold text-[#0029FF]">3 646</span></div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between"><span className="text-foreground">Красноярск</span><span className="font-bold text-[#0029FF]">2 358</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Нижний Новгород</span><span className="font-bold text-[#0029FF]">2 719</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Челябинск</span><span className="font-bold text-[#0029FF]">2 459</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Уфа</span><span className="font-bold text-[#0029FF]">2 955</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Краснодар</span><span className="font-bold text-[#0029FF]">10 173</span></div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between"><span className="text-foreground">Самара</span><span className="font-bold text-[#0029FF]">5 616</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Ростов-на-Дону</span><span className="font-bold text-[#0029FF]">5 612</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Омск</span><span className="font-bold text-[#0029FF]">2 372</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Воронеж</span><span className="font-bold text-[#0029FF]">2 394</span></div>
+                <div className="flex justify-between"><span className="text-foreground">Пермь</span><span className="font-bold text-[#0029FF]">1 895</span></div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between"><span className="text-foreground">Волгоград</span><span className="font-bold text-[#0029FF]">3 318</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -324,17 +368,13 @@ export default function AkrikhinPage() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                    {/* Video */}
+                    {/* Preview Image */}
                     <div className="bg-slate-100 rounded-lg overflow-hidden h-96">
-                      <video 
-                        className="w-full h-full object-contain"
-                        autoPlay 
-                        loop 
-                        muted 
-                        playsInline
-                      >
-                        <source src={format.videoUrl} type="video/mp4" />
-                      </video>
+                      <img 
+                        src={format.id === 1 ? 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.11.07-go8rFu9qRdjPHQRXFiPg1FEEbtecWr.png' : format.id === 2 ? 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.12-1FNFhMnK2tgXT3zCgKKgpqWWk4zqHb.png' : 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.39-oQ0E57XUUa2e6gUVieECZfoIepNkWO.png'}
+                        alt={format.name}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
 
                     {/* Advantages */}
