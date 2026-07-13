@@ -10,30 +10,30 @@ export default function AkrikhinPage() {
     {
       id: 1,
       name: 'Banner Slider',
-      description: 'Слайдер с кнопками навигации',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.05.01-qO08QxdicptnIm9XtUmGMHT2KgBDP3.mov',
+      description: 'Интерактивный баннер со слайдером до/после',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.11.07-go8rFu9qRdjPHQRXFiPg1FEEbtecWr.png',
       advantages: [
-        'Позволяет показать несколько вариантов в одном креативе',
-        'Пользователь сам управляет контентом',
-        'Повышает время взаимодействия с брендом'
+        'Компактная демонстрация свойств препарата',
+        'Сокращает путь к покупке',
+        'Повышает вовлеченность за счет взаимодействия с креативом'
       ]
     },
     {
       id: 2,
       name: 'Scratch-баннер',
-      description: 'Интерактивный баннер с эффектом соскребания',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.03.55-YeL1uR2Y1J2IPokSTUaxdmjQJxmoRH.mov',
+      description: 'Интерактивный баннер, где пользователь стирает верхний слой и видит утп или эффект до/после',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.12-1FNFhMnK2tgXT3zCgKKgpqWWk4zqHb.png',
       advantages: [
-        'Создает эффект открытия подарка',
-        'Привлекает внимание интерактивностью',
-        'Идеален для промо-акций'
+        'Практически нет ограничений по использованию для разных рекламных каналов',
+        'В Pharma-сегменте хорошо подходит для демонстрации эффекта до/после',
+        'Вовлекает пользователя во взаимодействие с препаратом'
       ]
     },
     {
       id: 3,
       name: 'Cube-баннер',
       description: '3D куб с возможностью взаимодействия',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.06.50-tViX84i1lnvNpRTeG7Bc67NNhLrGDr.mov',
+      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.10.39-oQ0E57XUUa2e6gUVieECZfoIepNkWO.png',
       advantages: [
         'Предлагает интерактивное взаимодействие',
         'Показывает до 4-х баннеров в одном креативе',
@@ -164,36 +164,33 @@ export default function AkrikhinPage() {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* Header with Logos */}
-      <section className="border-b-2 border-border py-8">
-        <div className="max-w-7xl mx-auto px-6 flex items-center gap-8">
-          <img 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0sFu1ehjTbpJ2kxNXvhBFJzfhqk97F.png"
-            alt="NT Technology"
-            className="h-12 w-auto"
-          />
-          <div className="w-px h-12 bg-border"></div>
-          <img 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_90_new-akij9bAAqlpWZPmGtWZmPbJLhK3BBy.png"
-            alt="Акрихин"
-            className="h-12 w-auto"
-          />
-        </div>
-      </section>
-
-      {/* Hero Section */}
-      <section className="border-b-2 border-border py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-8 items-center">
-            {/* Left - Text */}
-            <div className="flex-1">
-              <h1 className="text-5xl font-bold text-foreground mb-6">Programmatic-кампания для бренда «Акрихин»</h1>
-              <p className="text-lg text-foreground/70">Как выиграть внимание в фармацевтической категории с минимальным временем контакта</p>
+      {/* Header */}
+      <section className="border-b-2 border-border">
+        <div className="max-w-7xl mx-auto px-6 py-12">
+          <div className="flex items-start gap-8">
+            {/* Logos */}
+            <div className="flex gap-6 items-center flex-shrink-0">
+              <div className="w-24 h-24 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ulbU9iEEau7dtNf8jpBqUpuSopx3mL.png" 
+                  alt="NT Technology" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="w-24 h-24 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_90_new-akij9bAAqlpWZPmGtWZmPbJLhK3BBy.png"
+                  alt="Акрихин" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
 
-            {/* Right - Visual */}
+            {/* Title */}
             <div className="flex-1">
-              <Sparkles className="w-24 h-24 text-[#0029FF]" />
+              <h1 className="text-4xl font-bold text-foreground mb-3">
+                Programmatic-кампания для бренда «Акрихин»
+              </h1>
             </div>
           </div>
         </div>
@@ -404,11 +401,11 @@ export default function AkrikhinPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {/* Left - Image */}
-            <div className="bg-white rounded-lg overflow-hidden h-96 shadow-lg">
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg flex items-center justify-center p-4">
               <img 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.07.59.png-ScawCzjT83rcnmhC4gdLcRa2nBrFyB.jpeg"
                 alt="Dashboard"
-                className="w-full h-full object-cover"
+                className="w-full h-auto max-h-full object-contain"
               />
             </div>
 
@@ -442,12 +439,83 @@ export default function AkrikhinPage() {
                 <CardTitle className="text-2xl text-[#0029FF]">CTV</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center min-h-80">
+                <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2014_04_24-iydlTnjPaDtQTUGHmbH9uNkZcxfsyr.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_10_06-4eR9ROz5jMxmqitocNVq43kJ9cOqpb.png"
                     alt="CTV Example"
                     className="w-full h-auto max-h-96 object-contain"
                   />
+                </div>
+
+                {/* CTV Inventory */}
+                <div>
+                  <h4 className="font-bold text-foreground mb-6">Инвентарь</h4>
+                  
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000006326-9y1BWXoCA7jHuYMucBYzX5ZUtMNNfa.png"
+                        alt="30НА ФИЛЬМОВ"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lordfilm.ru-rKgEf5m5NwFLr4UerZwkiuvIMFMGJS.png"
+                        alt="LORDFILM"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20HDrezka-uSHAaOOyhuT4In0WzijVOIdtZeGgzj.png"
+                        alt="New HDrezka"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB_%C2%AB%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D0%B8%CC%86%C2%BB-h4rCBSSwrtAD3InK2AfkNrOcC8S0gX.png"
+                        alt="ДОМАШНИЙ"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vokrug.tv%201-xbswxoc4eynjFgq5SHz8uLxqskFvyH.png"
+                        alt="ВОКРУГ ТВ"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/film.ru%201-763YETTK9KyBczot7PlIAYnpOlap70.png"
+                        alt="FILM"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lostfilm.ink-VQ42ifXCWyl00JqU9NYZ2SLRwLJvGr.png"
+                        alt="LOSTFILM"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lordserial.ru-cVY1dV7gIwApbXdPxzbyivgOA5QsNJ.png"
+                        alt="LORDSERIALS"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-lg flex items-center justify-center h-24">
+                      <img 
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D1%81%D1%82%D1%81%201-oQ8ALpx7tuO2f8VQM1CHap8pedADoV.png"
+                        alt="СТС"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 {/* CTV Inventory */}
@@ -501,6 +569,14 @@ export default function AkrikhinPage() {
                 <CardTitle className="text-2xl text-[#0029FF]">DOOH</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
+                <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2016_10_06-4eR9ROz5jMxmqitocNVq43kJ9cOqpb.png"
+                    alt="DOOH Example"
+                    className="w-full h-auto max-h-80 object-contain"
+                  />
+                </div>
+
                 <div>
                   <h4 className="font-bold text-foreground mb-4">Форматы</h4>
                   <ul className="space-y-3">
@@ -560,9 +636,18 @@ export default function AkrikhinPage() {
                 <CardTitle className="text-2xl text-[#0029FF]">Brand Safety</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-foreground">Исключает показ рекламы рядом с нежелательным контентом (насилие, политика, трагедии, контент 18+).</p>
-                <p className="text-foreground">Обеспечивает размещение в безопасном окружении, соответствующем бренду.</p>
-                <p className="text-foreground">Снижает репутационные риски и повышает доверие к бренду.</p>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-[#0029FF] flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground">Исключает показ рекламы рядом с нежелательным контентом (насилие, политика, трагедии, контент 18+).</p>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-[#0029FF] flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground">Обеспечивает размещение в безопасном окружении, соответствующем бренду.</p>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-[#0029FF] flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground">Снижает репутационные риски и повышает доверие к бренду.</p>
+                </div>
               </CardContent>
             </Card>
 
@@ -572,9 +657,18 @@ export default function AkrikhinPage() {
                 <CardTitle className="text-2xl text-[#0029FF]">AntiFraud</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-foreground">Блокирует недействительный трафик (ботов, фейковые показы и клики).</p>
-                <p className="text-foreground">Исключает сайты и приложения с подозрительной активностью.</p>
-                <p className="text-foreground">Повышает качество охвата и гарантирует, что рекламный бюджет расходуется на реальных пользователей.</p>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-[#0029FF] flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground">Блокирует недействительный трафик (ботов, фейковые показы и клики).</p>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-[#0029FF] flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground">Исключает сайты и приложения с подозрительной активностью.</p>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-[#0029FF] flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground">Повышает качество охвата и гарантирует, что рекламный бюджет расходуется на реальных пользователей.</p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -589,20 +683,15 @@ export default function AkrikhinPage() {
           <Carousel className="w-full">
             <CarouselContent>
               {caseStudies.map((caseStudy) => (
-                <CarouselItem key={caseStudy.id} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card className="border-2 border-border overflow-hidden">
-                      <div className="bg-slate-100 h-64 overflow-hidden">
-                        <img 
-                          src={caseStudy.image}
-                          alt={caseStudy.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <CardContent className="pt-6">
-                        <p className="text-sm font-semibold text-foreground">{caseStudy.title}</p>
-                      </CardContent>
-                    </Card>
+                <CarouselItem key={caseStudy.id} className="basis-full">
+                  <div className="p-1 max-w-2xl mx-auto">
+                    <div className="bg-slate-100 rounded-lg overflow-hidden">
+                      <img 
+                        src={caseStudy.image}
+                        alt={caseStudy.title}
+                        className="w-full h-auto object-contain"
+                      />
+                    </div>
                   </div>
                 </CarouselItem>
               ))}
