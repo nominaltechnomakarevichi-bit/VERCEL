@@ -721,44 +721,46 @@ export default function OnegaPage() {
       {/* Discussion CTA Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col gap-12">
-            {/* Title */}
-            <h2 className="text-4xl font-bold text-foreground text-center lg:text-left">Давайте обсудим запуск вашей кампании</h2>
+          <div className="flex flex-col lg:flex-row gap-12 items-start justify-between">
+            {/* Left Side - Title */}
+            <div className="flex-1">
+              <h2 className="text-4xl font-bold text-foreground">Давайте обсудим запуск вашей кампании</h2>
+            </div>
 
-            {/* Badges Section */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 justify-items-center lg:justify-items-start">
+            {/* Right Side - Badges Column */}
+            <div className="flex-1 flex flex-col gap-8">
               {/* First Badge - Вопросы по проекту Онега */}
-              <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col items-center gap-3">
                 <a 
                   href="https://t.me/vstakhno" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="cursor-pointer hover:opacity-90 transition-opacity"
+                  className="cursor-pointer hover:opacity-80 transition-opacity"
                 >
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2014_24_15-WKRiG2u4JgynTwVx99u4kUhw2kFCbK.png"
                     alt="Вопросы по проекту Онега"
-                    className="w-full max-w-sm object-contain"
+                    className="h-32 w-32 object-contain"
                   />
                 </a>
-                <p className="text-foreground font-semibold text-center">Вопросы по проекту Онега</p>
+                <p className="text-foreground font-semibold text-center text-sm">Вопросы по проекту Онега</p>
               </div>
 
               {/* Second Badge - Общие вопросы по сотрудничеству */}
-              <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col items-center gap-3">
                 <a 
                   href="https://t.me/mxmjuice" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="cursor-pointer hover:opacity-90 transition-opacity"
+                  className="cursor-pointer hover:opacity-80 transition-opacity"
                 >
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2061-sEBQqUCRZG5ktlm0wggBi7vIcU9fbf.png"
                     alt="Общие вопросы по сотрудничеству"
-                    className="w-full max-w-sm object-contain"
+                    className="h-32 w-32 object-contain"
                   />
                 </a>
-                <p className="text-foreground font-semibold text-center">Общие вопросы по сотрудничеству</p>
+                <p className="text-foreground font-semibold text-center text-sm">Общие вопросы по сотрудничеству</p>
               </div>
             </div>
           </div>
