@@ -110,7 +110,7 @@ export default function AkrikhinPage() {
     {
       title: 'Менеджер аптечки',
       products: [
-        '��юбые безрецептурные препараты и БАДы от простуды и «для профилактики»'
+        'Любые безрецептурные препараты и БАДы от простуды и «для профилактики»'
       ],
       profile: {
         title: 'Социально-демографический профиль',
@@ -297,7 +297,7 @@ export default function AkrikhinPage() {
                 </tr>
                 <tr className="hover:bg-slate-100">
                   <td className="border-2 border-border px-4 py-3 font-bold text-[#0029FF]">Сам себе доктор</td>
-                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-покупатели</td>
+                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Актив��ые онлайн-покупатели</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Здоровье<br/>• Спорт<br/>• Карьера</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Аптеки<br/>• Фитнес-клубы<br/>• Вокзалы/аэропорты</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Препараты от простуды<br/>• Витамины</td>
