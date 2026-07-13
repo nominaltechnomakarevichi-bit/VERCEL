@@ -143,7 +143,7 @@ export default function AkrikhinPage() {
     {
       id: 1,
       title: 'Меноpace - как детальный таргетинг увеличил конверсии на 60%',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.11.31-FZPT3BPZefkjXq9xAXynTmpPBWA8Vj.png'
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-13%20%D0%B2%2017.55.25-wemWYEnLtC7gnVVV4xBQfrLf3V1KQb.png'
     },
     {
       id: 2,
@@ -297,7 +297,7 @@ export default function AkrikhinPage() {
                 </tr>
                 <tr className="hover:bg-slate-100">
                   <td className="border-2 border-border px-4 py-3 font-bold text-[#0029FF]">Сам себе доктор</td>
-                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-��окупатели</td>
+                  <td className="border-2 border-border px-4 py-3 text-sm">• Покупатели OTC-препаратов<br/>• Активные онлайн-����окупатели</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Здоровье<br/>• Спорт<br/>• Карьера</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Аптеки<br/>• Фитнес-клубы<br/>• Вокзалы/аэропорты</td>
                   <td className="border-2 border-border px-4 py-3 text-sm">• Препараты от простуды<br/>• Витамины</td>
