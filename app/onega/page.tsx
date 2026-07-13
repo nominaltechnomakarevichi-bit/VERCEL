@@ -186,7 +186,7 @@ export default function OnegaPage() {
     },
     {
       title: 'Увеличение выкупа трафика',
-      description: 'Возможность увеличения выкупа трафика по о������ределенным WL в рамках нашей DSP'
+      description: 'Возможность увеличения выкупа трафика по о��������ределенным WL в рамках нашей DSP'
     },
     {
       title: 'Brand Safety',
@@ -738,9 +738,9 @@ export default function OnegaPage() {
                   className="cursor-pointer hover:opacity-80 transition-opacity"
                 >
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2014_24_15-WKRiG2u4JgynTwVx99u4kUhw2kFCbK.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2014_54_07-4uSlswVjtbD0jkGUBQa57ws79iiTg0.png"
                     alt="Вопросы по проекту Онега"
-                    className="h-96 w-96 object-contain"
+                    className="h-screen max-h-96 w-auto object-contain"
                   />
                 </a>
                 <p className="text-foreground font-semibold text-center text-sm">Вопросы по проекту Онега</p>
@@ -757,7 +757,7 @@ export default function OnegaPage() {
                   <img 
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2061-sEBQqUCRZG5ktlm0wggBi7vIcU9fbf.png"
                     alt="Общие вопросы по сотрудничеству"
-                    className="h-96 w-96 object-contain"
+                    className="h-screen max-h-96 w-auto object-contain"
                   />
                 </a>
                 <p className="text-foreground font-semibold text-center text-sm">Общие вопросы по сотрудничеству</p>
