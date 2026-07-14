@@ -721,14 +721,14 @@ export default function OnegaPage() {
       {/* Discussion CTA Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-12 items-start justify-between">
-            {/* Left Side - Title */}
-            <div className="flex-1">
+          <div className="flex flex-col gap-12">
+            {/* Title */}
+            <div>
               <h2 className="text-4xl font-bold text-foreground">Давайте обсудим запуск вашей кампании</h2>
             </div>
 
-            {/* Right Side - Badges Row */}
-            <div className="flex-1 flex flex-row gap-8">
+            {/* Contact Cards Row */}
+            <div className="flex flex-col lg:flex-row gap-8">
               {/* First Badge - Вопросы по проекту Онега */}
               <div className="flex-1 flex flex-col items-center gap-3">
                 <a 
