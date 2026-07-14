@@ -721,24 +721,24 @@ export default function OnegaPage() {
       {/* Discussion CTA Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-12 items-start justify-between">
-            {/* Left Side - Title */}
-            <div className="flex-1">
+          <div className="flex flex-col gap-12">
+            {/* Title */}
+            <div>
               <h2 className="text-4xl font-bold text-foreground">Давайте обсудим запуск вашей кампании</h2>
             </div>
 
-            {/* Right Side - Badges Row */}
-            <div className="flex-1 flex flex-row gap-8">
+            {/* Contact Cards Row */}
+            <div className="flex flex-col lg:flex-row gap-8">
               {/* First Badge - Вопросы по проекту Онега */}
               <div className="flex-1 flex flex-col items-center gap-3">
                 <a 
-                  href="https://t.me/vstakhno" 
+                  href="https://telegram.me/vstakhno" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="cursor-pointer hover:opacity-80 transition-opacity"
                 >
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2013%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2014_55_51-KPKL2dDXhXswEAUxRhekj2wLZsq55T.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_33_49-veKnFNvnrR3c0DGrjV0U3jVs1mQe3w.png"
                     alt="Вопросы по проекту Онега"
                     className="h-screen max-h-96 w-auto object-contain"
                   />
@@ -749,13 +749,13 @@ export default function OnegaPage() {
               {/* Second Badge - Общие вопросы по сотрудничеству */}
               <div className="flex-1 flex flex-col items-center gap-3">
                 <a 
-                  href="https://t.me/mxmjuice" 
+                  href="https://telegram.me/mxmjuice" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="cursor-pointer hover:opacity-80 transition-opacity"
                 >
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2061-sEBQqUCRZG5ktlm0wggBi7vIcU9fbf.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_38_19-r7PAcWlb496Qsgg0p7rvE7SvDHKnwz.png"
                     alt="Общие вопросы по сотрудничеству"
                     className="h-screen max-h-96 w-auto object-contain"
                   />
