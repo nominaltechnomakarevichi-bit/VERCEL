@@ -186,7 +186,7 @@ export default function OnegaPage() {
     },
     {
       title: 'Увеличение выкупа трафика',
-      description: 'Возможность увеличения выкупа трафика по определенным WL в рамках нашей DSP'
+      description: 'Возможность увеличения выкупа трафика по о��ределенным WL в рамках нашей DSP'
     },
     {
       title: 'Brand Safety',
@@ -738,7 +738,7 @@ export default function OnegaPage() {
                   className="cursor-pointer hover:opacity-80 transition-opacity"
                 >
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_38_19-r7PAcWlb496Qsgg0p7rvE7SvDHKnwz.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_33_49-veKnFNvnrR3c0DGrjV0U3jVs1mQe3w.png"
                     alt="Вопросы по проекту Онега"
                     className="h-screen max-h-96 w-auto object-contain"
                   />
@@ -755,7 +755,7 @@ export default function OnegaPage() {
                   className="cursor-pointer hover:opacity-80 transition-opacity"
                 >
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_33_49-veKnFNvnrR3c0DGrjV0U3jVs1mQe3w.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_38_19-r7PAcWlb496Qsgg0p7rvE7SvDHKnwz.png"
                     alt="Общие вопросы по сотрудничеству"
                     className="h-screen max-h-96 w-auto object-contain"
                   />
