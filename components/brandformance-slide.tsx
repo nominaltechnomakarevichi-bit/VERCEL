@@ -42,7 +42,7 @@ export function BrandformanceSlide() {
     {
       criterion: 'Измерение и оптимизация',
       performance: 'Оптимизация по last-click',
-      brandformance: 'Измерение полного вклада рекламы: Post-view, Brand Lift, Sales Lift, Search Lift, Incrementality'
+      brandformance: 'Измерение полного вклада рекламы: Post-view, Brand Lift, Sales Lift'
     },
     {
       criterion: 'Результат',
@@ -548,7 +548,7 @@ export function BrandformanceSlide() {
           <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
             <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
               <p>
-                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
+                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инст��умент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
               </p>
             </CardContent>
           </Card>
