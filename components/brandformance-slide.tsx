@@ -42,7 +42,7 @@ export function BrandformanceSlide() {
     {
       criterion: 'Измерение и оптимизация',
       performance: 'Оптимизация по last-click',
-      brandformance: 'Измерение полного вклада рекламы: Post-view, Brand Lift, Sales Lift, Search Lift, Incrementality'
+      brandformance: 'Измерение полного вклада рекламы: Post-view, Brand Lift, Sales Lift'
     },
     {
       criterion: 'Результат',
