@@ -16,7 +16,7 @@ export function NTIntelligenceSlide() {
     {
       approach: "Оптимизация только по CTR",
       problem: "Много случайных кликов",
-      solution: "In-banner и Post-view оптимизация"
+      solution: "Post-view оптимизация"
     },
     {
       approach: "Last-click атрибуция",
@@ -24,7 +24,7 @@ export function NTIntelligenceSlide() {
       solution: "Аналитика на уровне инкрементального вклада"
     },
     {
-      approach: "Верификация ПОСЛЕ кампании",
+      approach: "Стандартная верификация",
       problem: "Brand-safety- и fraud-риски",
       solution: "Pre-bid защита рекламного бюджета"
     },
@@ -447,11 +447,11 @@ export function NTIntelligenceSlide() {
               <Card className="border-2 border-border bg-white">
                 <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
-                    <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_45_14-VgLOLyabuK5THm2DpzvhhKFGT4PwZu.png"
-                      alt="Sales Lift"
-                      className="w-full h-auto object-contain"
-                    />
+                  <img
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2015%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2014_07_44-gkD7zaQ448QObczyQJKpxmsJJxXFsb.png"
+                    alt="Sales Lift"
+                    className="w-full h-auto object-contain"
+                  />
                   </div>
                 </CardContent>
               </Card>
