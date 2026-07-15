@@ -133,10 +133,6 @@ export function BrandformanceSlide() {
 
           {activeScenario === 1 && (
             <div className="space-y-8 animate-in fade-in duration-300">
-              <div className="bg-blue-50 border-2 border-[#0029FF] rounded-lg p-6 md:p-8">
-                <h3 className="text-2xl font-bold text-[#0029FF]">«Нам нужен performance» = last-click продажи здесь и сейчас</h3>
-              </div>
-
               <Card className="border-2 border-[#0029FF] bg-white">
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-lg">Performance-решения</CardTitle>
@@ -318,10 +314,6 @@ export function BrandformanceSlide() {
 
           {activeScenario === 2 && (
             <div className="space-y-8 animate-in fade-in duration-300">
-              <div className="bg-purple-50 border-2 border-[#7C5CFF] rounded-lg p-6 md:p-8">
-                <h3 className="text-2xl font-bold text-[#7C5CFF]">«Нам нужен performance» = измеримый результат</h3>
-              </div>
-
               {/* What Brandformance Measures */}
               <div className="rounded-lg overflow-hidden border border-border">
                 <img 
@@ -526,9 +518,9 @@ export function BrandformanceSlide() {
               <div className="flex-1">
                 <Card className="bg-white border-2 border-[#0029FF]">
                   <CardContent className="pt-6">
-                    <p className="text-foreground text-base md:text-lg leading-relaxed">
-                      Если ваша задача — собрать максимум «дешевых» лидов из уже существующего спроса, начните с поиска, ретаргетинга и маркетплейсов. Но если вы хотите масштабировать продажи, а не только перераспределять существующий спрос, вам нужен Brandformance
-                    </p>
+                <p className="text-foreground text-base md:text-lg leading-relaxed">
+                  Если ваша задача — собрать максимум лидов из уже существующего спроса, начните с поиска, ретаргетинга и маркетплейсов. Но если вы хотите масштабировать продажи, а не только перераспределять существующий спрос, вам нужен Brandformance
+                </p>
                   </CardContent>
                 </Card>
               </div>
