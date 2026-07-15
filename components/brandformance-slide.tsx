@@ -133,10 +133,6 @@ export function BrandformanceSlide() {
 
           {activeScenario === 1 && (
             <div className="space-y-8 animate-in fade-in duration-300">
-              <div className="bg-blue-50 border-2 border-[#0029FF] rounded-lg p-6 md:p-8">
-                <h3 className="text-2xl font-bold text-[#0029FF]">«Нам нужен performance» = last-click продажи здесь и сейчас</h3>
-              </div>
-
               <Card className="border-2 border-[#0029FF] bg-white">
                 <CardHeader>
                   <CardTitle className="text-[#0029FF] text-lg">Performance-решения</CardTitle>
@@ -318,10 +314,6 @@ export function BrandformanceSlide() {
 
           {activeScenario === 2 && (
             <div className="space-y-8 animate-in fade-in duration-300">
-              <div className="bg-purple-50 border-2 border-[#7C5CFF] rounded-lg p-6 md:p-8">
-                <h3 className="text-2xl font-bold text-[#7C5CFF]">«Нам нужен performance» = измеримый результат</h3>
-              </div>
-
               {/* What Brandformance Measures */}
               <div className="rounded-lg overflow-hidden border border-border">
                 <img 
@@ -548,7 +540,7 @@ export function BrandformanceSlide() {
           <Card style={{ backgroundColor: "#0029FF" }} className="border-0">
             <CardContent className="space-y-4 text-white text-base md:text-lg pt-6">
               <p>
-                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который создает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
+                <span className="font-semibold">Programmatic — это не альтернатива performance.</span> Это инструмент, который ��оздает дополнительный спрос, усиливает работу performance-каналов и позволяет измерять бизнес-результат.
               </p>
             </CardContent>
           </Card>
