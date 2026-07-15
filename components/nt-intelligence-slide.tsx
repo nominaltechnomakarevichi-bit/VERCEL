@@ -16,7 +16,7 @@ export function NTIntelligenceSlide() {
     {
       approach: "Оптимизация только по CTR",
       problem: "Много случайных кликов",
-      solution: "Post-view оптимизация"
+      solution: "In-banner и Post-view оптимизация"
     },
     {
       approach: "Last-click атрибуция",
@@ -24,7 +24,7 @@ export function NTIntelligenceSlide() {
       solution: "Аналитика на уровне инкрементального вклада"
     },
     {
-      approach: "Стандартная верификация",
+      approach: "Верификация ПОСЛЕ кампании",
       problem: "Brand-safety- и fraud-риски",
       solution: "Pre-bid защита рекламного бюджета"
     },
@@ -448,7 +448,7 @@ export function NTIntelligenceSlide() {
                 <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
-                      src="/images/sales-lift-diagram.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_45_14-VgLOLyabuK5THm2DpzvhhKFGT4PwZu.png"
                       alt="Sales Lift"
                       className="w-full h-auto object-contain"
                     />
