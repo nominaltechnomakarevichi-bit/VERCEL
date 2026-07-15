@@ -448,7 +448,7 @@ export function NTIntelligenceSlide() {
                 <CardContent className="p-6">
                   <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                     <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2015%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2014_07_44-GBMGCpNqf0p3cK9d7BAYymyeRPQIAK.png"
+                      src="/images/sales-lift-diagram.png"
                       alt="Sales Lift"
                       className="w-full h-auto object-contain"
                     />
