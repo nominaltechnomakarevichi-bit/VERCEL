@@ -446,11 +446,11 @@ export function NTIntelligenceSlide() {
 
               <Card className="border-2 border-border bg-white">
                 <CardContent className="p-6">
-                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden aspect-video flex items-center justify-center">
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                   <img
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2015%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2014_07_44-gkD7zaQ448QObczyQJKpxmsJJxXFsb.png"
                     alt="Sales Lift"
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain"
                   />
                   </div>
                 </CardContent>
