@@ -460,8 +460,8 @@ export function NTIntelligenceSlide() {
               <CardContent className="p-6">
                 <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
                   <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_46_49-lbgxKmnRDDgjG1KfR79kHZedNMpWfn.png"
-                    alt="Частота покупок и пенетрация бренда"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B8%D1%8E%D0%BD.%202026%20%D0%B3.%2C%2013_46_49-q1M1zk4FFUh4TC1t1tXI1GqFJWCG4x.png"
+                    alt="Частота покупок и охват бренда"
                     className="w-full h-auto object-contain"
                   />
                 </div>
