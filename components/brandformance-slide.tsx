@@ -518,9 +518,9 @@ export function BrandformanceSlide() {
               <div className="flex-1">
                 <Card className="bg-white border-2 border-[#0029FF]">
                   <CardContent className="pt-6">
-                    <p className="text-foreground text-base md:text-lg leading-relaxed">
-                      Если ваша задача — собрать максимум «дешевых» лидов из уже существующего спроса, начните с поиска, ретаргетинга и маркетплейсов. Но если вы хотите масштабировать продажи, а не только перераспределять существующий спрос, вам нужен Brandformance
-                    </p>
+                <p className="text-foreground text-base md:text-lg leading-relaxed">
+                  Если ваша задача — собрать максимум лидов из уже существующего спроса, начните с поиска, ретаргетинга и маркетплейсов. Но если вы хотите масштабировать продажи, а не только перераспределять существующий спрос, вам нужен Brandformance
+                </p>
                   </CardContent>
                 </Card>
               </div>
