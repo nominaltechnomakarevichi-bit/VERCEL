@@ -89,7 +89,7 @@ const richMediaFormats = [
     advantages: ["Компактная демонстрация ассортимента", "Сокращает путь к покупке", "Повышает вовлеченность"],
     forWhom: "E-commerce, Fashion, Beauty, Travel, FMCG",
     sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500, 970x250",
-    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.43.15-O14Yu99WLhYav9fUz2n5IiTM4PWX2V.mov",
+    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.40.33-7tBA45AnhHBe5tIJJOH4PPzsmV9XNq.mov",
   },
   {
     id: 9,
@@ -98,13 +98,13 @@ const richMediaFormats = [
     advantages: ["Предлагает интерактивное взаимодействие", "Показывает до 4-х баннеров в одном креативе", "Может вращаться как автономно, так и пользователем"],
     forWhom: "Всем без ограничений",
     sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500, 970x250",
-    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.40.33-7tBA45AnhHBe5tIJJOH4PPzsmV9XNq.mov",
+    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.43.15-O14Yu99WLhYav9fUz2n5IiTM4PWX2V.mov",
   },
   {
     id: 10,
     name: "3D-баннер",
-    description: "Интерактивный банне�� с эффектом объема",
-    advantages: ["Привлекает ����������нимание за счет 3D-эффекта", "Позволяет детально продемонстрировать товар", "Подходит для брендовых и имиджевых кампаний"],
+    description: "Интерактивный баннер с эффектом объема",
+    advantages: ["Привлекает внимание за счет 3D-эффекта", "Позволяет детально продемонстрировать товар", "Подходит для брендовых и имиджевых кампаний"],
     forWhom: "Всем без ограничений",
     sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500, 970x250",
     videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.41.56-Xe4a7HaVEdw4NvY9dxpm1zMlO304zj.mov",
@@ -151,7 +151,7 @@ const richMediaFormats = [
 const pricingData = {
   costs: [
     { label: "Стоимость разработки интерактивов", value: "40 000 ₽" },
-    { label: "Базовый СРМ за размещение формата", value: "88,00 ₽" },
+    { label: "Базовый СРМ за размещение формата", value: "88 ₽" },
   ],
 }
 
