@@ -89,7 +89,7 @@ const richMediaFormats = [
     advantages: ["Компактная демонстрация ассортимента", "Сокращает путь к покупке", "Повышает вовлеченность"],
     forWhom: "E-commerce, Fashion, Beauty, Travel, FMCG",
     sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500, 970x250",
-    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Banner%20Slider-F8ZTDxjG3N8cJYgQCjoUbAZtXa7V3b.mov",
+    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.40.33-7tBA45AnhHBe5tIJJOH4PPzsmV9XNq.mov",
   },
   {
     id: 9,
@@ -98,16 +98,16 @@ const richMediaFormats = [
     advantages: ["Предлагает интерактивное взаимодействие", "Показывает до 4-х баннеров в одном креативе", "Может вращаться как автономно, так и пользователем"],
     forWhom: "Всем без ограничений",
     sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500, 970x250",
-    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cube-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80-47Zgxe0qHV8j084TvbHhQCt6eNbGFr.mov",
+    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.43.15-O14Yu99WLhYav9fUz2n5IiTM4PWX2V.mov",
   },
   {
     id: 10,
     name: "3D-баннер",
-    description: "Интерактивный банне�� с эффектом объема",
-    advantages: ["Привлекает ����������нимание за счет 3D-эффекта", "Позволяет детально продемонстрировать товар", "Подходит для брендовых и имиджевых кампаний"],
+    description: "Интерактивный баннер с эффектом объема",
+    advantages: ["Привлекает внимание за счет 3D-эффекта", "Позволяет детально продемонстрировать товар", "Подходит для брендовых и имиджевых кампаний"],
     forWhom: "Всем без ограничений",
     sizes: "300x600, 240x400, 240x600, 300x250, 336x280, 300x500, 970x250",
-    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3D-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80-Y1c3mtmeoWn0MEmchBbaNISDX4KQg7.mov",
+    videoUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-11%20%D0%B2%2014.41.56-Xe4a7HaVEdw4NvY9dxpm1zMlO304zj.mov",
   },
   {
     id: 11,
@@ -150,11 +150,8 @@ const richMediaFormats = [
 // Pricing and Coefficients
 const pricingData = {
   costs: [
-    { label: "Стоимость разработки интерактивов", value: "19 000,00 ₽" },
-    { label: "Базовый СРМ за размещение формата", value: "88,00 ₽" },
-  ],
-  coefficients: [
-    { category: "WL", value: "1,2" },
+    { label: "Стоимость разработки интерактивов", value: "40 000 ₽" },
+    { label: "Базовый СРМ за размещение формата", value: "88 ₽" },
   ],
 }
 
@@ -265,26 +262,11 @@ export function RichMediaCatalogSlide() {
           )}
         </div>
 
-        {/* Format Selection Algorithm */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-left">
-            Как выбрать подходящий формат креатива
-          </h2>
-          <Card>
-            <CardContent className="p-4 md:p-6">
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/battle-card-format-selection-qkSsYuhNNXYSHNbAkG28RJUU32ryMi.jpg"
-                alt="Battle Card - Как выбрать формат креатива"
-                className="w-full h-auto object-contain rounded-lg"
-              />
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Pricing and Coefficients */}
-        <div className="mb-16">
+          <div className="mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-8">
-            Стоимость и коэффициенты
+          Стоимость
           </h2>
 
           {/* Scrolling Ribbon */}
@@ -330,7 +312,7 @@ export function RichMediaCatalogSlide() {
           </div>
 
             {/* Costs Card */}
-            <div className="grid gap-6 lg:grid-cols-2">
+            <div className="grid gap-6">
             <Card>
               <CardHeader className="border-b border-border">
                 <CardTitle className="text-lg font-bold">
@@ -347,24 +329,6 @@ export function RichMediaCatalogSlide() {
               </CardContent>
             </Card>
 
-            {/* Coefficients Card */}
-            <Card>
-              <CardHeader className="border-b border-border">
-                <CardTitle className="text-lg font-bold">
-                  Коэффициенты
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <div className="space-y-4 mb-6">
-                  {pricingData.coefficients.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-center p-4 rounded-lg border border-border">
-                      <span className="text-sm font-medium text-foreground">{item.category}</span>
-                      <span className="text-lg font-bold text-[#0029FF]">{item.value}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
             </div>
         </div>
       </div>
