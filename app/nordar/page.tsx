@@ -384,7 +384,7 @@ export default function NordarPage() {
                     <div className="bg-slate-100 rounded-lg flex-1 flex items-center justify-center overflow-hidden">
                       {channel.id === 'display' && (
                         <img 
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_45_14-zvfa8YbBcCtQBaQntmzBPVixcNGCdo.png"
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B0%D0%B2%D0%B3.%202026%20%D0%B3.%2C%2017_08_29-ENqu0xRY29aqritg8QeaoPebIEjdCC.png"
                           alt="Display Advertisement"
                           className="w-full h-full object-cover"
                         />
