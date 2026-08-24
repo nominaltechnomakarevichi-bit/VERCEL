@@ -399,11 +399,6 @@ export default function NordarPage() {
                     </div>
 
                     <div>
-                      <h4 className="font-bold text-foreground mb-2">Аудитория</h4>
-                      <p className="text-foreground text-sm">{channel.contactPoint}</p>
-                    </div>
-
-                    <div>
                       <h4 className="font-bold text-foreground mb-2">Возможности</h4>
                       <p className="text-foreground text-sm">{channel.capabilities}</p>
                     </div>
@@ -467,11 +462,6 @@ export default function NordarPage() {
                         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RsXbib4tHve2stMNxrkSWKLuINgqS2.png" alt="WINK" className="h-8 object-contain" />
                       </div>
                     </div>
-                  </div>
-
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Аудитория</h4>
-                    <p className="text-foreground text-sm">{channel.contactPoint}</p>
                   </div>
 
                   <div>
