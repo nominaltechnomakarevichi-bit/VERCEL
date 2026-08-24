@@ -80,7 +80,7 @@ export default function NordarPage() {
   ]
 
   const richMediaFormats = [
-    { id: 1, name: 'Мороженое Feelin со вкусом пива — Tap&Melt-баннер', description: 'Интерактивный сценарий для продукта со вкусом пива', videoUrl: 'https://presentation-nt-technology.vercel.app/videos/tap-melt-banner.mov', advantages: ['Раскрывает продукт по сценарию', 'Увеличивает время контакта'] },
+    { id: 1, name: 'Мороженое Feelin со вкусом пива — Tap&Melt-баннер', description: 'Интерактивный сценарий для продукта со вкусом пива', videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-24%20%D0%B2%2016.12.39-af7x5CWcMJZpK3unQhehEoznsjfXwx.mov', advantages: ['Раскрывает продукт по сценарию', 'Увеличивает время контакта'] },
     { id: 2, name: 'Мороженое Feelin со вкусом пива — Cube-баннер', description: '3D-формат для демонстрации продукта', videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-09%20%D0%B2%2017.50.32-umawnjaouxlqMrGSJclAiV5KbwzssP.mov', advantages: ['Привлекает внимание', 'Показывает продукт с разных сторон'] },
     { id: 3, name: 'Мороженое Feelin со вкусом пива — Multi-Layer Banner', description: 'Баннер с эффектом подвижных шторок', videoUrl: 'https://presentation-nt-technology.vercel.app/videos/multi-layer-banner.mov', advantages: ['Позволяет исследовать ассортимент', 'Увеличивает время контакта'] },
     { id: 4, name: 'Video', description: 'Видеоформат для яркой подачи продукта', videoUrl: 'https://presentation-nt-technology.vercel.app/videos/video-banner.mov', advantages: ['Динамично показывает продукт', 'Работает на узнаваемость'] },
