@@ -14,7 +14,7 @@ export default function NordarPage() {
       name: 'Мороженое Feelin со вкусом пива',
       title: 'Молодая семья',
       description: 'Вкус, объединяющий семью и друзей',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-24%20%D0%B2%2015.48.46-xlNkF3HnSIg21yZmxfWp300zpCphxM.png',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-removebg-preview-h3mUmh1hTUAMt9GtclxeJQ9203GqmI.png',
       gender: {
         label: 'Пол',
         data: [
@@ -573,7 +573,7 @@ export default function NordarPage() {
       {/* Case Studies Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">Кейс</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">К��йс</h2>
 
           <Card className="border-2 border-border bg-white overflow-hidden">
             <div className="flex flex-col p-8 space-y-6">
