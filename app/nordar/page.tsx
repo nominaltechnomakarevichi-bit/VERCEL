@@ -420,7 +420,7 @@ export default function NordarPage() {
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B0%D0%B2%D0%B3.%202026%20%D0%B3.%2C%2017_15_18-oULsIg4iShvH3lrbosscopteVCyb5X.png"
                       alt="CTV Advertisement"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
