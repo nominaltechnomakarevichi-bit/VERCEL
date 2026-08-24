@@ -193,7 +193,7 @@ export default function NordarPage() {
               <Card key={audience.id} className="border-2 border-border bg-white overflow-hidden">
                 {/* Header */}
                 <div className="bg-blue-50 px-6 py-4 border-b border-border">
-                  <h3 className="text-2xl font-bold text-[#0029FF]">{audience.name}</h3>
+                  <h3 className="text-lg font-bold text-[#0029FF] whitespace-nowrap">{audience.name}</h3>
                 </div>
                 <div className="space-y-6 p-6">
                   {/* Image */}
@@ -268,7 +268,7 @@ export default function NordarPage() {
           <Card className="border-2 border-border bg-blue-50 mt-12">
             <CardContent className="p-8">
               <p className="text-lg text-foreground">
-                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
+                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интерес��, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
               </p>
             </CardContent>
           </Card>
@@ -284,7 +284,7 @@ export default function NordarPage() {
             {richMediaFormats.map((format) => (
               <div key={format.id} className="space-y-3">
                 {format.id === 1 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin со вкусом пива</h3>}
-                {format.id === 2 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin с ароматом соленого огурца</h3>}
+                {format.id === 2 && <h3 className="text-lg font-bold text-foreground whitespace-nowrap">Мороженое Feelin с ароматом соленого огурца</h3>}
               <Card className="border-2 border-border bg-white overflow-hidden">
                 <CardHeader>
                   <CardTitle className="text-2xl text-[#0029FF]">{format.name.replace('Мороженое Feelin со вкусом пива — ', '')}</CardTitle>
