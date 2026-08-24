@@ -418,7 +418,7 @@ export default function NordarPage() {
                 <div className="flex-1">
                   <div className="bg-slate-100 rounded-lg h-full flex items-center justify-center overflow-hidden">
                     <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vmMm8XNmGzKWP4mdH6Z5LkSpE9jfO8.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B0%D0%B2%D0%B3.%202026%20%D0%B3.%2C%2017_15_18-oULsIg4iShvH3lrbosscopteVCyb5X.png"
                       alt="CTV Advertisement"
                       className="w-full h-full object-contain"
                     />
