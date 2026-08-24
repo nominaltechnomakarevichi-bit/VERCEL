@@ -391,7 +391,7 @@ export default function NordarPage() {
                       )}
                       {channel.id === 'video' && (
                         <img 
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_30_51-oXCEzkBZzqtzO8Qsdlhb8Vnha9Bdws.png"
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2024%20%D0%B0%D0%B2%D0%B3.%202026%20%D0%B3.%2C%2017_13_53-ZUeiOKkodjzgJj0xEMqssnp4FB2E7x.png"
                           alt="Video Advertisement"
                           className="w-full h-full object-cover"
                         />
