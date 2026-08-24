@@ -207,7 +207,7 @@ export default function NordarPage() {
 
                   {/* Name and Title */}
                   <div>
-                    <h3 className="text-xl font-bold text-[#0029FF] mb-2">{audience.title}</h3>
+                    <h3 className="text-lg font-bold text-[#0029FF] mb-2">{audience.title}</h3>
                     <p className="text-foreground text-sm">{audience.description}</p>
                   </div>
 
@@ -268,7 +268,7 @@ export default function NordarPage() {
           <Card className="border-2 border-border bg-blue-50 mt-12">
             <CardContent className="p-8">
               <p className="text-lg text-foreground">
-                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интерес��, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
+                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
               </p>
             </CardContent>
           </Card>
@@ -283,7 +283,7 @@ export default function NordarPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {richMediaFormats.map((format) => (
               <div key={format.id} className="space-y-3">
-                {format.id === 1 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin со вкусом пива</h3>}
+                {format.id === 1 && <h3 className="text-lg font-bold text-foreground whitespace-nowrap">Мороженое Feelin со вкусом пива</h3>}
                 {format.id === 2 && <h3 className="text-lg font-bold text-foreground whitespace-nowrap">Мороженое Feelin с ароматом соленого огурца</h3>}
               <Card className="border-2 border-border bg-white overflow-hidden">
                 <CardHeader>
@@ -573,7 +573,7 @@ export default function NordarPage() {
       {/* Case Studies Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">К��йс</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Кейс</h2>
 
           <Card className="border-2 border-border bg-white overflow-hidden">
             <div className="flex flex-col p-8 space-y-6">
