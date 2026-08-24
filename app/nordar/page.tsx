@@ -346,6 +346,7 @@ export default function NordarPage() {
                   )}
                 </CardContent>
               </Card>
+              </div>
             ))}
           </div>
 
