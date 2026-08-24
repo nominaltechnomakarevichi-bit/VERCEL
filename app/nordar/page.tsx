@@ -409,11 +409,10 @@ export default function NordarPage() {
                     </div>
                 </CardContent>
               </Card>
-              </div>
             ))}
           </div>
 
-            {/* CTV row - full width */}
+            {/* CTV row - full width */
             {channels.filter(c => c.id === 'ctv').map((channel) => (
               <Card key={channel.id} className="border-2 border-border bg-white">
                 <CardHeader>
