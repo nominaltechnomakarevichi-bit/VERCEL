@@ -3,18 +3,18 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Sparkles, Check, Monitor, Play, Tv, Shield, AlertCircle } from 'lucide-react'
 
 export const metadata = {
-  title: 'Programmatic-кампания для бренда «Онега» - Как выиграть внимание в FMCG',
-  description: 'Programmatic-кампания для бренда «Онега». Как выиграть внимание в FMCG с минимальным временем контакта.',
+  title: 'Programmatic-кампания для бренда «Нордар»',
+  description: 'Programmatic-кампания для бренда «Нордар».',
 }
 
-export default function OnegaPage() {
+export default function NordarPage() {
   const audiences = [
     {
       id: 1,
-      name: 'Онега',
+      name: 'Мороженое Feelin со вкусом пива',
       title: 'Молодая семья',
       description: 'Вкус, объединяющий семью и друзей',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_17_19-pMEKSYrsWJWWRRqb8MO0if9Hhl5rHM.png',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tNmlUOhvKHgCGhTCfkFygkxWTpraWO.png',
       gender: {
         label: 'Пол',
         data: [
@@ -45,109 +45,47 @@ export default function OnegaPage() {
     },
     {
       id: 2,
-      name: 'Рень',
-      title: 'Любитель традиционных снеков',
-      description: 'Настоящий отдых начинается с простых удовольствий',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_19_45-A1eFbd8r2jT6phlImiKZwQsgCl0pdM.png',
+      name: 'Мороженое Feelin с ароматом соленого огурца',
+      title: 'Любитель необычных вкусов',
+      description: 'Яркий продукт для тех, кто любит пробовать новое',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ctjzwit949aPCmD0EqSEpoHPwmc2jt.png',
       gender: {
         label: 'Пол',
         data: [
-          'Женщины 70%',
-          'Мужчины 30%'
+          'Женщины 50%',
+          'Мужчины 50%'
         ]
       },
       age: {
         label: 'Возраст',
-        data: '30–55 лет'
+        data: '18–35 лет'
       },
       income: {
         label: 'Доход',
         data: 'Средний'
       },
       interests: [
-        'отдых на природе',
-        'рыбалка',
-        'дача',
-        'футбол',
-        'встречи с друзьями'
-      ],
-      triggers: [
-        'качественные семечки',
-        'натуральный вкус',
-        'хорошая прожарка',
-        'удобная упаковка'
-      ]
-    },
-    {
-      id: 3,
-      name: 'Just Brutal',
-      title: 'Трендсеттер',
-      description: 'Будь смелее, пробуй новое',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_23_28-9KuLSlahz0YdxT1iLsZyxRJmDIlmN3.png',
-      gender: {
-        label: 'Пол',
-        data: [
-          'Женщины 30%',
-          'Мужчины 70%'
-        ]
-      },
-      age: {
-        label: 'Возраст',
-        data: '18–30 лет'
-      },
-      income: {
-        label: 'Доход',
-        data: 'Средний'
-      },
-      interests: [
-        'вечеринка',
+        'новые вкусы',
+        'вечеринки',
         'отдых с друзьями',
-        'просмотр сериалов',
-        'компьютерные игры'
+        'яркие продукты'
       ],
       triggers: [
-        'необычные цвета',
-        'нестандартные вкусы',
-        'яркая упаковка',
+        'необычная упаковка',
+        'эксперименты со вкусами',
+        'акции',
         'ограниченные серии'
       ]
-    }
+    },
   ]
 
   const richMediaFormats = [
-    {
-      id: 1,
-      name: 'Banner Spinner',
-      description: 'Вращающийся баннер с динамичной анимацией',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Banner%20Spinner-PlChE8Qnm6vEAIcAKJ3nKle2Tkyu0g.mov',
-      advantages: [
-        'Позволяет показать несколько вариантов продукта в одном креативе',
-        'Эффект витрины усиливает восприятие ассортимента',
-        'Повышает узнаваемость продуктовой линейки'
-      ]
-    },
-    {
-      id: 2,
-      name: 'Cube-баннер',
-      description: '3D куб с возможностью взаимодействия',
-      videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-09%20%D0%B2%2017.50.32-umawnjaouxlqMrGSJclAiV5KbwzssP.mov',
-      advantages: [
-        'Предлагает интерактивное взаимодействие',
-        'Показывает до 4-х баннеров в одном креативе',
-        'Может вращаться как автономно, так и пользователем'
-      ]
-    },
-    {
-      id: 3,
-      name: 'Multi-Layer Banner',
-      description: 'Баннер с эффектом подвижных шторок',
-      videoUrl: 'https://presentation-nt-technology.vercel.app/videos/multi-layer-banner.mov',
-      advantages: [
-        'Пользователь самостоятельно исследует ассортимент, что увеличивает время контакта с брендом',
-        'Подходит для новых линеек и продуктовых коллекций',
-        'Не требует перехода на сайт для первичного знакомства с ассортиментом'
-      ]
-    }
+    { id: 1, name: 'Мороженое Feelin со вкусом пива — Tap&Melt-баннер', description: 'Интерактивный сценарий для продукта со вкусом пива', videoUrl: 'https://presentation-nt-technology.vercel.app/videos/tap-melt-banner.mov', advantages: ['Раскрывает продукт по сценарию', 'Увеличивает время контакта'] },
+    { id: 2, name: 'Мороженое Feelin со вкусом пива — Cube-баннер', description: '3D-формат для демонстрации продукта', videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-09%20%D0%B2%2017.50.32-umawnjaouxlqMrGSJclAiV5KbwzssP.mov', advantages: ['Привлекает внимание', 'Показывает продукт с разных сторон'] },
+    { id: 3, name: 'Мороженое Feelin со вкусом пива — Multi-Layer Banner', description: 'Баннер с эффектом подвижных шторок', videoUrl: 'https://presentation-nt-technology.vercel.app/videos/multi-layer-banner.mov', advantages: ['Позволяет исследовать ассортимент', 'Увеличивает время контакта'] },
+    { id: 4, name: 'Video', description: 'Видеоформат для яркой подачи продукта', videoUrl: 'https://presentation-nt-technology.vercel.app/videos/video-banner.mov', advantages: ['Динамично показывает продукт', 'Работает на узнаваемость'] },
+    { id: 5, name: 'Scratch-баннер', description: 'Механика с эффектом проявления', videoUrl: 'https://presentation-nt-technology.vercel.app/videos/scratch-banner.mov', advantages: ['Создает интригу', 'Подходит для акций и промокодов'] },
+    { id: 6, name: 'Banner Spinner', description: 'Вращающийся баннер с динамичной анимацией', videoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Banner%20Spinner-PlChE8Qnm6vEAIcAKJ3nKle2Tkyu0g.mov', advantages: ['Показывает несколько вариантов продукта', 'Усиливает восприятие ассортимента'] }
   ]
 
   const channels = [
@@ -172,30 +110,10 @@ export default function OnegaPage() {
   ]
 
   const technicalCapabilities = [
-    {
-      title: 'Подбор нестандартных аудиторий',
-      description: 'Возможность подбора нестандартных аудиторий'
-    },
-    {
-      title: 'WL аудитории',
-      description: 'Возможность работы с нестандартными аудиториями (недоступны в рамках стандартных таргетингов) при помощи узко специализированных WL'
-    },
-    {
-      title: 'Работа с бенчмарками',
-      description: 'Возможность работы с бенчмарками клиента и оптимизации РК под них'
-    },
-    {
-      title: 'Увеличение выкупа трафика',
-      description: 'Возможность увеличения выкупа трафи��а по определенным WL в рамках нашей DSP'
-    },
-    {
-      title: 'Brand Safety',
-      description: 'Обеспечивает размещение в безопасном окружении и снижает репутационные риски'
-    },
-    {
-      title: 'AntiFraud',
-      description: 'Блокирует недействительный трафик (ботов, фейковые показы и клики) и исключает площадки с подозрительной активностью'
-    }
+    { title: 'AntiFraud', description: 'Блокирует недействительный трафик и исключает площадки с подозрительной активностью' },
+    { title: 'Brand Safety', description: 'Обеспечивает размещение в безопасном окружении и снижает репутационные риски' },
+    { title: 'Post-view аналитика', description: 'Показывает действия пользователей после контакта с рекламой' },
+    { title: 'Контроль Viewability', description: 'Контролирует видимость рекламных размещений' }
   ]
 
   const brands = [
@@ -242,8 +160,8 @@ export default function OnegaPage() {
               </div>
               <div className="w-24 h-24 flex items-center justify-center rounded-lg" style={{ backgroundColor: '#E31E24' }}>
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Onega_logo-ovw5p6q3oin3a29l6x07in08fp60m15fsotj6zfy6i-mdh3zpvhDxT6jNMgnYvqrHM1ZhL8Dk.png" 
-                  alt="Onega" 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-obV3ycqp7kWbYY9xgJpcdrQvb62Qb0.png" 
+                  alt="Нордар" 
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -252,7 +170,7 @@ export default function OnegaPage() {
             {/* Title */}
             <div className="flex-1">
               <h1 className="text-4xl font-bold text-foreground mb-3">
-                Programmatic-кампания для бренда «Онега»
+                Programmatic-кампания для бренда «Нордар»
               </h1>
               <p className="text-xl text-muted-foreground">
                 Как выиграть внимание в FMCG с минимальным временем контакта
@@ -269,8 +187,8 @@ export default function OnegaPage() {
             <h2 className="text-4xl font-bold text-foreground mb-2">Целевая аудитория</h2>
           </div>
 
-          {/* Three Audience Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          {/* Two Audience Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {audiences.map((audience) => (
               <Card key={audience.id} className="border-2 border-border bg-white overflow-hidden">
                 {/* Header */}
@@ -350,7 +268,7 @@ export default function OnegaPage() {
           <Card className="border-2 border-border bg-blue-50 mt-12">
             <CardContent className="p-8">
               <p className="text-lg text-foreground">
-                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Онега), так и нестандартные подходы (White lists)
+                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
               </p>
             </CardContent>
           </Card>
@@ -360,9 +278,9 @@ export default function OnegaPage() {
       {/* Rich Media Section */}
       <section className="border-b-2 border-border py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-foreground mb-12">Rich Media форматы</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12">Форматы креативов</h2>
 
-          <div className="space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {richMediaFormats.map((format) => (
               <Card key={format.id} className="border-2 border-border bg-white overflow-hidden">
                 <CardHeader>
@@ -428,11 +346,17 @@ export default function OnegaPage() {
             ))}
           </div>
 
+          <div className="flex justify-center mt-12">
+            <a href="https://nt.technology/creative" target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-lg bg-[#0029FF] px-6 py-3 font-semibold text-white hover:opacity-90 transition-opacity">
+              Больше форматов
+            </a>
+          </div>
+
           {/* NT Proposal for Rich Media */}
           <Card className="border-2 border-border bg-blue-50 mt-12">
             <CardContent className="p-8">
               <p className="text-lg text-foreground">
-                <span className="font-bold">Предложение NT:</span> с помощью Rich Media креативов можно показать все преимущества брендов, а также продемонстрировать разные сценарии потребления, чтобы зацепить нужный сегмент аудитории
+                <span className="font-bold">Предложение NT:</span> по запросу можем разработать эксклюзивную механику под ваш продукт
               </p>
             </CardContent>
           </Card>
