@@ -201,7 +201,7 @@ export default function NordarPage() {
                     <img 
                       src={audience.image}
                       alt={audience.name}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain bg-white"
                     />
                   </div>
 
@@ -268,7 +268,7 @@ export default function NordarPage() {
           <Card className="border-2 border-border bg-blue-50 mt-12">
             <CardContent className="p-8">
               <p className="text-lg text-foreground">
-                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем ��спользовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
+                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
               </p>
             </CardContent>
           </Card>
@@ -284,7 +284,7 @@ export default function NordarPage() {
             {richMediaFormats.map((format) => (
               <div key={format.id} className="space-y-3">
                 {format.id === 1 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin со вкусом пива</h3>}
-                {format.id === 4 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin с ароматом соленого огурца</h3>}
+                {format.id === 2 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin с ароматом соленого огурца</h3>}
               <Card className="border-2 border-border bg-white overflow-hidden">
                 <CardHeader>
                   <CardTitle className="text-2xl text-[#0029FF]">{format.name.replace('Мороженое Feelin со вкусом пива — ', '')}</CardTitle>
