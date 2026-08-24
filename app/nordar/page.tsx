@@ -14,7 +14,7 @@ export default function NordarPage() {
       name: 'Мороженое Feelin со вкусом пива',
       title: 'Молодая семья',
       description: 'Вкус, объединяющий семью и друзей',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wGtT6TX60Bjc7xXs6CDxYNIIZc1Sf2.png',
+      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-08-24%20%D0%B2%2015.48.46-xlNkF3HnSIg21yZmxfWp300zpCphxM.png',
       gender: {
         label: 'Пол',
         data: [
