@@ -479,8 +479,9 @@ export default function NordarPage() {
                     <p className="text-foreground text-sm">{channel.capabilities}</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+              </div>
             ))}
           </div>
         </div>
