@@ -158,7 +158,7 @@ export default function NordarPage() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="w-24 h-24 flex items-center justify-center rounded-lg" style={{ backgroundColor: '#E31E24' }}>
+              <div className="w-24 h-24 flex items-center justify-center rounded-lg bg-white">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-obV3ycqp7kWbYY9xgJpcdrQvb62Qb0.png" 
                   alt="Нордар" 
@@ -197,7 +197,7 @@ export default function NordarPage() {
                 </div>
                 <div className="space-y-6 p-6">
                   {/* Image */}
-                  <div className="bg-slate-100 rounded-lg h-48 flex items-center justify-center overflow-hidden">
+                  <div className="bg-white rounded-lg h-48 flex items-center justify-center overflow-hidden">
                     <img 
                       src={audience.image}
                       alt={audience.name}
@@ -268,7 +268,7 @@ export default function NordarPage() {
           <Card className="border-2 border-border bg-blue-50 mt-12">
             <CardContent className="p-8">
               <p className="text-lg text-foreground">
-                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем использовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
+                <span className="font-bold">Предложение NT:</span> для отбора необходимых сегментов аудитории можем ��спользовать как стандартные таргетинги (интересы, поведенческие сегменты, тематические сайты), supergeo (торговые точки, продающие бренд Feelin), так и нестандартные подходы (White lists)
               </p>
             </CardContent>
           </Card>
@@ -282,9 +282,12 @@ export default function NordarPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {richMediaFormats.map((format) => (
-              <Card key={format.id} className="border-2 border-border bg-white overflow-hidden">
+              <div key={format.id} className="space-y-3">
+                {format.id === 1 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin со вкусом пива</h3>}
+                {format.id === 4 && <h3 className="text-2xl font-bold text-foreground">Мороженое Feelin с ароматом соленого огурца</h3>}
+              <Card className="border-2 border-border bg-white overflow-hidden">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-[#0029FF]">{format.name}</CardTitle>
+                  <CardTitle className="text-2xl text-[#0029FF]">{format.name.replace('Мороженое Feelin со вкусом пива — ', '')}</CardTitle>
                   <p className="text-foreground mt-2">{format.description}</p>
                 </CardHeader>
                 <CardContent>
@@ -403,10 +406,11 @@ export default function NordarPage() {
                       <h4 className="font-bold text-foreground mb-2">Возможности</h4>
                       <p className="text-foreground text-sm">{channel.capabilities}</p>
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                </CardContent>
+              </Card>
+              </div>
+            ))}
+          </div>
 
             {/* CTV row - full width */}
             {channels.filter(c => c.id === 'ctv').map((channel) => (
@@ -419,7 +423,7 @@ export default function NordarPage() {
                 <div className="flex-1">
                   <div className="bg-slate-100 rounded-lg h-full flex items-center justify-center overflow-hidden">
                     <img 
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%207%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2017_26_07-9o6IWG3p9LJ2IlbaPe7AvtENUYngQf.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vmMm8XNmGzKWP4mdH6Z5LkSpE9jfO8.png"
                       alt="CTV Advertisement"
                       className="w-full h-full object-contain"
                     />
@@ -489,7 +493,7 @@ export default function NordarPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {technicalCapabilities.map((capability, idx) => (
-              <Card key={idx} className="border-2 border-border bg-white">
+              <Card key={idx} className={`border-2 border-border bg-white ${idx === 3 ? 'md:col-span-2 lg:col-span-3' : ''}`}>
                 <CardHeader>
                   <CardTitle className="text-lg text-[#0029FF]">{capability.title}</CardTitle>
                 </CardHeader>
@@ -642,54 +646,6 @@ export default function NordarPage() {
         </div>
       </section>
 
-      {/* Discussion CTA Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col gap-12">
-            {/* Title */}
-            <div>
-              <h2 className="text-4xl font-bold text-foreground">Давайте обсудим запуск вашей кампании</h2>
-            </div>
-
-            {/* Contact Cards Row */}
-            <div className="flex flex-col lg:flex-row gap-8">
-              {/* First Badge - Вопросы по проекту Онега */}
-              <div className="flex-1 flex flex-col items-center gap-3">
-                <a 
-                  href="https://telegram.me/vstakhno" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="cursor-pointer hover:opacity-80 transition-opacity"
-                >
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_33_49-veKnFNvnrR3c0DGrjV0U3jVs1mQe3w.png"
-                    alt="Вопросы по проекту Онега"
-                    className="h-screen max-h-96 w-auto object-contain"
-                  />
-                </a>
-                <p className="text-foreground font-semibold text-center text-sm">Вопросы по проекту Онега</p>
-              </div>
-
-              {/* Second Badge - Общие вопросы по сотрудничеству */}
-              <div className="flex-1 flex flex-col items-center gap-3">
-                <a 
-                  href="https://telegram.me/mxmjuice" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="cursor-pointer hover:opacity-80 transition-opacity"
-                >
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D0%B8%D1%8E%D0%BB.%202026%20%D0%B3.%2C%2015_38_19-r7PAcWlb496Qsgg0p7rvE7SvDHKnwz.png"
-                    alt="Общие вопросы по сотрудничеству"
-                    className="h-screen max-h-96 w-auto object-contain"
-                  />
-                </a>
-                <p className="text-foreground font-semibold text-center text-sm">Общие вопросы по сотрудничеству</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   )
 }
