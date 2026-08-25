@@ -493,6 +493,17 @@ export default function NordarPage() {
               </Card>
             ))}
           </div>
+
+          <div className="flex justify-center pt-8">
+            <a
+              href="https://docs.google.com/spreadsheets/d/1b28YmI-ES6L77WEfQYe8ijDMHqZEnmOuFvgKiE6OgmE/edit?gid=1939873097#gid=1939873097"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-md bg-[#0029FF] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#001fcc]"
+            >
+              Подробнее
+            </a>
+          </div>
         </div>
       </section>
 
