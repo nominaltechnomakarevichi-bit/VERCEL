@@ -40,7 +40,7 @@ export function NTIntelligenceSlide() {
     {
       id: 'optimization',
       title: "Оптимизация эффективности",
-      description: "проводим post-view оптимизацию, чтобы учесть вклад рекламы на всех этапах",
+      description: "проводим post-view и in-banner оптимизацию, чтобы учесть вклад рекламы на всех этапах",
       details: "фильтруем инвентарь с помощью pre-bid оптимизации, чтобы получать только релевантные показы"
     },
     {
@@ -279,7 +279,7 @@ export function NTIntelligenceSlide() {
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">цель:</span> рост эффективности текущей кампании</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">каналы:</span> Display</p>
                     <p className="text-muted-foreground"><span className="font-semibold text-foreground">формат:</span> banner slider, scratch-баннер</p>
-                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">процесс:</span> анимировали первоначальный баннер и получили рост CTR на 43%, а затем ещё на 5%. При этом визуал остался без изменений и не требовал дополнительных согласований</p>
+                    <p className="text-muted-foreground"><span className="font-semibold text-foreground">процесс:</span> анимировали первоначальный баннер и получили рост CTR на 43%, а затем ещё на 5%. При этом визуал остался без изменений и не требовал дополнительных с��гласований</p>
                   </div>
                   
                   <div className="space-y-4">
@@ -426,6 +426,18 @@ export function NTIntelligenceSlide() {
                     <img 
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pre_bid_optimization_quality_filter_rounded-IA1dr6BaVaVolH7C5DzmG4XO7OMMBJ.png"
                       alt="Pre-bid Optimization"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-border bg-white">
+                <CardContent className="p-6">
+                  <div className="w-full bg-slate-100 rounded-lg overflow-hidden">
+                    <img
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2014%20%D1%81%D0%B5%D0%BD%D1%82.%202026%20%D0%B3.%2C%2018_00_47-xeJRY2jWaBZpvxgNuN2hqujJN5ETpG.png"
+                      alt="In-banner Optimization"
                       className="w-full h-auto object-contain"
                     />
                   </div>
