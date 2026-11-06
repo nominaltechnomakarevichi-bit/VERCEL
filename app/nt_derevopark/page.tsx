@@ -7,6 +7,8 @@ export const metadata: Metadata = {
 
 const siteImages = {
   hero: "https://derevopark.kz/wp-content/uploads/2026/04/1_50_11zon-1-1536x763.webp",
+  display: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-06%20%D0%B2%2016.18.20-OorYdzVGbexgmuUZALAb4WjoGCFPA0.png",
+  video: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-06%20%D0%B2%2016.20.50-w7XUmHfjUOlkmyc817NYIjVQBBEUly.png",
   garden: "https://derevopark.kz/wp-content/uploads/2025/01/Rekoveri-2-e1778075678474.jpg",
   architecture: "https://derevopark.kz/wp-content/uploads/2025/01/Vaskelovo-21.jpg.webp",
   details: "https://derevopark.kz/wp-content/uploads/2025/01/Rekoveri-17-e1778075657522.jpg",
@@ -14,8 +16,8 @@ const siteImages = {
 }
 
 const channels = [
-  { name: "Display", description: "Охватная медийная реклама в окружении контента о доме, дизайне, загородной жизни и благоустройстве.", image: siteImages.garden },
-  { name: "Video", description: "Эмоциональная подача проектов через короткие ролики, pre-roll и in-feed размещения.", image: siteImages.architecture },
+  { name: "Display", description: "Охватная медийная реклама в окружении контента о доме, дизайне, загородной жизни и благоустройстве", image: siteImages.display, placements: ["Новостные сайты", "СМИ", "Интернет-магазины", "Приложения", "Видеосервисы", "Тематические площадки"] },
+  { name: "Video", description: "Эмоциональная подача проектов через короткие ролики in-stream, out-stream, rewarded video", image: siteImages.video, placements: ["Онлайн-кинотеатры", "Видеосервисы", "Тематические площадки", "Новостные сайты", "Приложения"] },
 ]
 
 const formats = [
@@ -52,13 +54,13 @@ export default function DerevoparkPage() {
         <img src={siteImages.hero} alt="Ландшафтный проект Derevopark" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-35" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#102b25] via-[#17352d]/80 to-[#17352d]/30" />
         <div className="mx-auto flex min-h-[720px] max-w-7xl flex-col justify-between px-6 py-8 md:px-12 md:py-12">
-          <div className="flex items-center justify-between text-sm"><span className="font-semibold tracking-[0.2em]">NT TECHNOLOGY</span><span className="rounded-full border border-white/30 px-4 py-2 text-white/80">commercial proposal · 2026</span></div>
-          <div className="max-w-4xl pb-10"><SectionLabel>NT Technology × Derevopark</SectionLabel><h1 className="max-w-3xl text-5xl font-medium leading-[0.94] tracking-[-0.055em] md:text-8xl">Пространства, которые хочется запомнить</h1><p className="mt-8 max-w-xl text-lg leading-8 text-[#dbe4d5] md:text-xl">Медиа-решения для бренда, который превращает ландшафт в образ жизни.</p></div>
+          <div className="flex items-center justify-between text-sm"><img src="/nt-logo-black.svg" alt="NT Technology" className="h-10 w-auto brightness-0 invert" /></div>
+          <div className="max-w-4xl pb-10"><SectionLabel>NT Technology × Derevopark</SectionLabel><h1 className="max-w-3xl text-5xl font-medium leading-[0.94] tracking-[-0.055em] md:text-8xl">Пространства, которые хочется запомнить</h1><p className="mt-8 max-w-xl text-lg leading-8 text-[#dbe4d5] md:text-xl">Медиа-решения для бренда, который превращает ландшафт в образ жизни</p></div>
           <div className="flex max-w-2xl flex-wrap gap-3 text-sm text-[#dbe4d5]"><span className="rounded-full border border-white/20 bg-white/10 px-4 py-2">Охват</span><span className="rounded-full border border-white/20 bg-white/10 px-4 py-2">Внимание</span><span className="rounded-full border border-white/20 bg-white/10 px-4 py-2">Измеримый результат</span></div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-24 md:px-12 md:py-32"><SectionLabel>01 · Каналы</SectionLabel><div className="flex flex-col justify-between gap-8 md:flex-row md:items-end"><h2 className="max-w-3xl text-4xl font-medium leading-tight tracking-[-0.04em] md:text-6xl">Показываем красоту проекта там, где её ищут</h2><p className="max-w-sm leading-7 text-[#5c6e65]">Соединяем визуальный язык Derevopark с каналами, которые помогают пройти путь от первого впечатления до интереса к проекту.</p></div><div className="mt-14 grid gap-6 md:grid-cols-2">{channels.map((channel) => <article key={channel.name} className="group overflow-hidden rounded-[2rem] bg-white shadow-[0_20px_60px_-32px_rgba(23,53,45,0.35)]"><ImageCard image={channel.image} alt={`Визуальный пример канала ${channel.name}`} className="rounded-none" /><div className="p-8"><h3 className="text-3xl font-medium">{channel.name}</h3><p className="mt-4 max-w-lg leading-7 text-[#5c6e65]">{channel.description}</p></div></article>)}</div></section>
+      <section className="mx-auto max-w-7xl px-6 py-24 md:px-12 md:py-32"><SectionLabel>01 · Каналы</SectionLabel><div className="flex flex-col justify-between gap-8 md:flex-row md:items-end"><h2 className="max-w-3xl text-4xl font-medium leading-tight tracking-[-0.04em] md:text-6xl">Показываем проект там, где его ищут</h2><p className="max-w-sm leading-7 text-[#5c6e65]">Соединяем визуальный язык Derevopark с каналами, которые помогают пройти путь от первого впечатления до интереса к проекту</p></div><div className="mt-14 grid gap-6 md:grid-cols-2">{channels.map((channel) => <article key={channel.name} className="group overflow-hidden rounded-[2rem] bg-white shadow-[0_20px_60px_-32px_rgba(23,53,45,0.35)]"><ImageCard image={channel.image} alt={`Визуальный пример канала ${channel.name}`} className="rounded-none" /><div className="p-8"><h3 className="text-3xl font-medium">{channel.name}</h3><p className="mt-4 max-w-lg leading-7 text-[#5c6e65]">{channel.description}</p><p className="mt-7 text-xs font-semibold uppercase tracking-[0.2em] text-[#708b63]">Где размещается реклама</p><div className="mt-3 flex flex-wrap gap-2">{channel.placements.map((placement) => <span key={placement} className="rounded-full border border-[#d7ddd1] bg-[#f4f1e9] px-3 py-2 text-xs font-medium text-[#4f665c]">{placement}</span>)}</div></div></article>)}</div></section>
 
       <section className="bg-[#e4eadf] px-6 py-24 md:px-12 md:py-32"><div className="mx-auto max-w-7xl"><SectionLabel>02 · Форматы</SectionLabel><h2 className="max-w-3xl text-4xl font-medium leading-tight tracking-[-0.04em] md:text-6xl">Собираем медиамикс под характер проекта</h2><div className="mt-14 grid gap-5 md:grid-cols-2">{formats.map((format, index) => <article key={format.name} className="group grid overflow-hidden rounded-[2rem] bg-[#f8f6f0] md:grid-cols-[0.9fr_1.1fr]"><div className="min-h-72 overflow-hidden"><img src={format.image} alt={`Пример формата ${format.name}`} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" /></div><div className="flex flex-col justify-between p-7"><div><span className="text-sm font-semibold text-[#708b63]">0{index + 1}</span><h3 className="mt-10 text-2xl font-medium">{format.name}</h3><p className="mt-4 leading-7 text-[#5c6e65]">{format.description}</p></div><a href="#creative" className="mt-8 text-sm font-semibold text-[#527348]">Как используем формат →</a></div></article>)}</div></div></section>
 
